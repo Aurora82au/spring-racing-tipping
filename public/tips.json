@@ -1,0 +1,912 @@
+[
+    {
+        "meetId": "xvd123",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "4",
+                            "second": "8",
+                            "third": "12"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "12",
+                            "second": "6",
+                            "third": "8"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "11",
+                            "second": "5",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "6",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "2"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "4",
+                            "second": "8",
+                            "third": "12"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "12",
+                            "second": "6",
+                            "third": "8"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "11",
+                            "second": "5",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "6",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "2"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "4",
+                            "second": "8",
+                            "third": "12"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "12",
+                            "second": "6",
+                            "third": "8"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "11",
+                            "second": "5",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "6",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "2"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meetId": "abc123",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "4",
+                            "second": "8",
+                            "third": "12"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "12",
+                            "second": "6",
+                            "third": "8"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "11",
+                            "second": "5",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "6",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "2"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "4",
+                            "second": "8",
+                            "third": "12"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "12",
+                            "second": "6",
+                            "third": "8"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "11",
+                            "second": "5",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "6",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "2"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "4",
+                            "second": "8",
+                            "third": "12"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "12",
+                            "second": "6",
+                            "third": "8"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "11",
+                            "second": "5",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "6",
+                            "third": "7"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "3",
+                            "third": "2"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips":  {
+                            "first": "10",
+                            "second": "2",
+                            "third": "13"
+                        }
+                    },
+                    {
+                        "punterId": 2,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 3,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    },
+                    {
+                        "punterId": 4,
+                        "tips":  {
+                            "first": "1",
+                            "second": "2",
+                            "third": "4"
+                        }
+                    },
+                    {
+                        "punterId": 5,
+                        "tips":  {
+                            "first": "9",
+                            "second": "2",
+                            "third": "3"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
