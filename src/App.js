@@ -7,7 +7,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedMeet: '',
+            selectedMeet: 'test',
             raceMeets: [],
             punters: [],
             tips: []
