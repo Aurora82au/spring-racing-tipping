@@ -7,12 +7,14 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedMeet: 'This is a test of the check in',
+            selectedMeet: '',
+            selectedRace: 1,
             raceMeets: [],
             punters: [],
             tips: []
         }
         this.handleMeetSelect = this.handleMeetSelect.bind(this);
+        this.handleRaceSelect = this.handleRaceSelect.bind(this);
     }
 
     async getData() {
@@ -41,7 +43,14 @@ class App extends Component {
 
     handleMeetSelect(event) {
         this.setState({
-            selectedMeet: event.target.value
+            selectedMeet: event.target.value,
+            selectedRace: 1
+        });
+    }
+
+    handleRaceSelect(event) {
+        this.setState({
+            selectedRace: parseInt(event.target.id, 10)
         });
     }
 
@@ -54,7 +63,7 @@ class App extends Component {
                 <div className="app">
                     {/* <h2>Spring Racing Tipping <img src="horse.png" alt="Title logo" /></h2> */}
                     <RaceMeetSelector meets={this.state.raceMeets} selectedMeetId={this.state.selectedMeet.meetId} onChange={this.handleMeetSelect} />
-                    <RaceMeet meet={meet} punters={this.state.punters} meetTips={meetTips} />
+                    <RaceMeet meet={meet} selectedRace={this.state.selectedRace} punters={this.state.punters} meetTips={meetTips} onClick={this.handleRaceSelect} />
                 </div>
             );
         }

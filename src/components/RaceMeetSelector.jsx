@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 export default class RaceMeetSelector extends Component {
     render() {
         return (
-            <select className="race-meet-selector" value={this.selectedMeetId} onChange={this.props.onChange}>
-                {this.props.meets.map(meet => {
-                    return <option key={meet.meetId} value={meet.meetId}>{meet.name}</option>
-                })}
-            </select>
+            <div  className="race-meet-selector">
+                <select value={this.selectedMeetId} onChange={this.props.onChange}>
+                    {this.props.meets.map(meet => {
+                        return <option key={meet.meetId} value={meet.meetId}>{meet.name}</option>
+                    })}
+                </select>
+                <span className="icon-unfold_more"></span>
+            </div>
         );
     }
 }

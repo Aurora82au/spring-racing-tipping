@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3nsrcx');
-  src:  url('fonts/icomoon.eot?3nsrcx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3nsrcx') format('truetype'),
-    url('fonts/icomoon.woff?3nsrcx') format('woff'),
-    url('fonts/icomoon.svg?3nsrcx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ot5voe');
+  src:  url('fonts/icomoon.eot?ot5voe#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ot5voe') format('truetype'),
+    url('fonts/icomoon.woff?ot5voe') format('woff'),
+    url('fonts/icomoon.svg?ot5voe#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,21 +44,4 @@
 }
 .icon-trophy:before {
   content: "\e99e";
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #666;
 }

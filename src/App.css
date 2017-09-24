@@ -11,6 +11,40 @@
     margin-bottom: .5rem;
 }
 
+.green {
+    color: green !important;
+}
+
+.orange {
+    color: orange !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.blue {
+    color: #458fff !important;
+    /* color: #27D3FF !important; */
+}
+
+.bg-green {
+    background-color: green !important;
+}
+
+.bg-orange {
+    background-color: orange !important;
+}
+
+.bg-red {
+    background-color: red !important;
+}
+
+.bg-blue {
+    background-color: #458fff !important;
+    /* background-color: #27D3FF !important; */
+}
+
 h2 {
     margin-top: .5rem;
     color: #444;
@@ -27,21 +61,68 @@ h2 img {
 }
 
 .race-meet-selector {
+    position: relative;
+}
+
+.race-meet-selector select {
     width: 100%;
-    padding: .5rem;
+    padding: .8rem;
     border: 1px solid #aaa;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.race-meet-selector select::-ms-expand {
+    display: none;
+}
+
+.race-meet-selector select:disabled::-ms-expand {
+    background: #aaa;
+}
+
+.race-meet-selector span {
+    position: absolute;
+    top: 50%;
+    right: .5rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-top: -1.1rem;
+    font-size: 2.2rem;
+}
+
+.race-selector {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.race-selector .circle {
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: .2rem;
+    padding-top: .8rem;
+    border-radius: 100%;
+    opacity: .8;
+    color: #fff;
+    background-color: #458fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.race-selector .circle:last-child {
+    margin-right: 0;
 }
 
 .race {
     display: grid;
     grid-template-columns: 1fr 8rem;
-    grid-template-areas: "details placings"
-                         "tips    tips";
+    grid-template-areas: "details      placings"
+                         "tips-heading tips-heading"
+                         "tips         tips";
     grid-gap: 2rem;
-    padding: .5rem;
-    margin-bottom: 2rem;
-    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
-    border: 1px solid #ccc;
 }
 
 .race .details {
@@ -52,22 +133,6 @@ h2 img {
 .race .details .name {
     /* color: #2954E8; */
     text-transform: uppercase;
-}
-
-.status.green {
-    color: green;
-}
-
-.status.orange {
-    color: orange;
-}
-
-.status.red {
-    color: red;
-}
-
-.status.blue {
-    color: #27D3FF;
 }
 
 .race .placing {
@@ -97,11 +162,21 @@ h2 img {
     background-color: #8C7853;
 }
 
+.tips-heading {
+    grid-area: "tips-heading";
+    font-weight: bold;
+}
+
 .tips {
     display: grid;
     grid-area: tips;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+}
+
+.tip {
+    padding: .5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .tip .pic {
@@ -114,29 +189,46 @@ h2 img {
     vertical-align: -1rem;
 }
 
-/* Used when hiding pic */
 .tip .name {
+    display: inline-block;
+    width: 9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.tip .name::after {
     display: block;
+    content: " ";
 }
 
 .tip .numbers {
     display: inline-block;
-    width: 5rem;
+    width: 60%;
     margin-top: .5rem;
 }
 
 .tip .numbers .group {
     margin-right: .5rem;
+    margin-bottom: .5rem;
 }
 
 .tip .numbers .label {
     display: inline-block;
-    width: 2rem;
+    width: 3.6rem;
     font-weight: bold;
 }
 
 .tip .correct {
     color: #27D3FF;
+}
+
+.tip .correct::after {
+    display: inline-block;
+    content: "\e5ca";
+    margin-left: .2rem;
+    font-family: 'icomoon';
 }
 
 .score {
@@ -145,4 +237,59 @@ h2 img {
     margin-top: .5rem;
     vertical-align: top;
     text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 360px) {
+    .race-selector .circle {
+        width: 3rem;
+        height: 3rem;
+        margin-right: .4rem;
+    }
+
+    .tip .name {
+        width: 11.5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .race-selector .circle {
+        margin-right: .6rem;
+    }
+    
+    .tip .name {
+        width: 12.2rem;
+    }
+}
+
+@media (min-width: 384px) {
+    .race-selector .circle {
+        margin-right: .7rem;
+    }
+    
+    .tip .name {
+        width: 12.7rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .race-selector .circle {
+        margin-right: .8rem;
+    }
+    
+    .tip .name {
+        width: 13.5rem;
+    }
+}
+
+@media (min-width: 410px) {
+    .race-selector .circle {
+        margin-right: 1rem;
+    }
+    
+    .tip .name {
+        width: 14rem;
+    }
 }
