@@ -61,7 +61,7 @@ class App extends Component {
 
             return (
                 <div className="app">
-                    {/* <h2>Spring Racing Tipping <img src="horse.png" alt="Title logo" /></h2> */}
+                    {/* <h2>Spring Racing Tipping <img src="horse.png" alt="Title logo" /><span className="beta">BETA</span></h2> */}
                     <RaceMeetSelector meets={this.state.raceMeets} selectedMeetId={this.state.selectedMeet.meetId} onChange={this.handleMeetSelect} />
                     <RaceMeet meet={meet} selectedRace={this.state.selectedRace} punters={this.state.punters} meetTips={meetTips} onClick={this.handleRaceSelect} />
                 </div>

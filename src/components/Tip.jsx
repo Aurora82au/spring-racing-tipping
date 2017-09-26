@@ -5,9 +5,23 @@ export default class Tip extends Component {
         let self = this,
             punter = this.props.punters.find(tipPunter => { return tipPunter.punterId === self.props.tips.punterId }),
             punterPic = '/pics/' + punter.pic,
-            firstClass = (self.props.tips.tips.first === self.props.placings.first) ? 'correct' : '',
-            secondClass = (self.props.tips.tips.second === self.props.placings.second) ? 'correct' : '',
-            thirdClass = (self.props.tips.tips.third === self.props.placings.third) ? 'correct' : '';
+            score = 0,
+            firstClass = '',
+            secondClass = '',
+            thirdClass = '';
+
+        if (self.props.tips.tips.includes(self.props.placings.first)) {
+            score += 3;
+            firstClass = 'correct';
+        }
+        if (self.props.tips.tips.includes(self.props.placings.second)) {
+            score += 2;
+            secondClass = 'correct';
+        }
+        if (self.props.tips.tips.includes(self.props.placings.third)) {
+            score ++;
+            thirdClass = 'correct';
+        }
 
         return (
             <div className="tip">
@@ -16,20 +30,20 @@ export default class Tip extends Component {
                 <div className="numbers">
                     <div className="group">
                         <span className="label">Pick 1</span>&nbsp;-&nbsp;
-                        <span className={firstClass}>{self.props.tips.tips.first}</span>
+                        <span className={firstClass}>{self.props.tips.tips[0]}</span>
                     </div>
                     <div className="group">
                         <span className="label">Pick 2</span>&nbsp;-&nbsp;
-                        <span className={secondClass}>{self.props.tips.tips.second}</span>
+                        <span className={secondClass}>{self.props.tips.tips[1]}</span>
                     </div>
                     <div className="group">
                         <span className="label">Pick 3</span>&nbsp;-&nbsp;
-                        <span className={thirdClass}>{self.props.tips.tips.third}</span>
+                        <span className={thirdClass}>{self.props.tips.tips[2]}</span>
                     </div>
                 </div>
                 <div className="score">
                     <div className="mb-5 bold">Score</div>
-                    <div>3</div>
+                    <div>{score}</div>
                 </div>
             </div>
         );

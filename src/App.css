@@ -1,4 +1,7 @@
 .app {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
 }
 
@@ -25,7 +28,6 @@
 
 .blue {
     color: #458fff !important;
-    /* color: #27D3FF !important; */
 }
 
 .bg-green {
@@ -42,7 +44,6 @@
 
 .bg-blue {
     background-color: #458fff !important;
-    /* background-color: #27D3FF !important; */
 }
 
 h2 {
@@ -54,6 +55,16 @@ h2 img {
     width: 4rem;
     height: 4rem;
     vertical-align: middle;
+}
+
+.beta {
+    display: inline-block;
+    padding: .1rem .3rem;
+    margin-left: .5rem;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #e029e8;
+    vertical-align: top;
 }
 
 .race-meet h3 {
@@ -71,7 +82,6 @@ h2 img {
     outline: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
 }
 
 .race-meet-selector select::-ms-expand {
@@ -127,11 +137,9 @@ h2 img {
 
 .race .details {
     grid-area: details;
-    /* width: 70%; */
 }
 
 .race .details .name {
-    /* color: #2954E8; */
     text-transform: uppercase;
 }
 

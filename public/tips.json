@@ -7,43 +7,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips": ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips": ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips": ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips": ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips": ["9", "2", "3"]
                     }
                 ]
             },
@@ -52,43 +32,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "4",
-                            "second": "8",
-                            "third": "12"
-                        }
+                        "tips":  ["4", "8", "12"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "7"
-                        }
+                        "tips":  ["9", "3", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "12",
-                            "second": "6",
-                            "third": "8"
-                        }
+                        "tips":  ["12", "6", "8"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -97,43 +57,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "11",
-                            "second": "5",
-                            "third": "7"
-                        }
+                        "tips":  ["11", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "6",
-                            "third": "7"
-                        }
+                        "tips":  ["1", "6", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "2"
-                        }
+                        "tips":  ["9", "3", "2"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -142,43 +82,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips":  ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -187,43 +107,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "4",
-                            "second": "8",
-                            "third": "12"
-                        }
+                        "tips":  ["4", "8", "12"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "7"
-                        }
+                        "tips":  ["9", "3", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "12",
-                            "second": "6",
-                            "third": "8"
-                        }
+                        "tips":  ["12", "6", "8"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -232,43 +132,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "11",
-                            "second": "5",
-                            "third": "7"
-                        }
+                        "tips":  ["11", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "6",
-                            "third": "7"
-                        }
+                        "tips":  ["1", "6", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "2"
-                        }
+                        "tips":  ["9", "3", "2"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -277,43 +157,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips":  ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -322,43 +182,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "4",
-                            "second": "8",
-                            "third": "12"
-                        }
+                        "tips":  ["4", "8", "12"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "7"
-                        }
+                        "tips":  ["9", "3", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "12",
-                            "second": "6",
-                            "third": "8"
-                        }
+                        "tips":  ["12", "6", "8"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -367,43 +207,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "11",
-                            "second": "5",
-                            "third": "7"
-                        }
+                        "tips":  ["11", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "6",
-                            "third": "7"
-                        }
+                        "tips":  ["1", "6", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "2"
-                        }
+                        "tips":  ["9", "3", "2"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -412,43 +232,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips":  ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             }
@@ -462,43 +262,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips": ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips": ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips": ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips": ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips": ["9", "2", "3"]
                     }
                 ]
             },
@@ -507,43 +287,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "4",
-                            "second": "8",
-                            "third": "12"
-                        }
+                        "tips":  ["4", "8", "12"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "7"
-                        }
+                        "tips":  ["9", "3", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "12",
-                            "second": "6",
-                            "third": "8"
-                        }
+                        "tips":  ["12", "6", "8"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -552,43 +312,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "11",
-                            "second": "5",
-                            "third": "7"
-                        }
+                        "tips":  ["11", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "6",
-                            "third": "7"
-                        }
+                        "tips":  ["1", "6", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "2"
-                        }
+                        "tips":  ["9", "3", "2"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -597,43 +337,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips":  ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -642,43 +362,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "4",
-                            "second": "8",
-                            "third": "12"
-                        }
+                        "tips":  ["4", "8", "12"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "7"
-                        }
+                        "tips":  ["9", "3", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "12",
-                            "second": "6",
-                            "third": "8"
-                        }
+                        "tips":  ["12", "6", "8"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -687,43 +387,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "11",
-                            "second": "5",
-                            "third": "7"
-                        }
+                        "tips":  ["11", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "6",
-                            "third": "7"
-                        }
+                        "tips":  ["1", "6", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "2"
-                        }
+                        "tips":  ["9", "3", "2"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -732,43 +412,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips":  ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -777,43 +437,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "4",
-                            "second": "8",
-                            "third": "12"
-                        }
+                        "tips":  ["4", "8", "12"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "7"
-                        }
+                        "tips":  ["9", "3", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "12",
-                            "second": "6",
-                            "third": "8"
-                        }
+                        "tips":  ["12", "6", "8"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -822,43 +462,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "11",
-                            "second": "5",
-                            "third": "7"
-                        }
+                        "tips":  ["11", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "6",
-                            "third": "7"
-                        }
+                        "tips":  ["1", "6", "7"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "3",
-                            "third": "2"
-                        }
+                        "tips":  ["9", "3", "2"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             },
@@ -867,43 +487,23 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  {
-                            "first": "10",
-                            "second": "2",
-                            "third": "13"
-                        }
+                        "tips":  ["10", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips":  {
-                            "first": "1",
-                            "second": "2",
-                            "third": "4"
-                        }
+                        "tips":  ["1", "2", "4"]
                     },
                     {
                         "punterId": 5,
-                        "tips":  {
-                            "first": "9",
-                            "second": "2",
-                            "third": "3"
-                        }
+                        "tips":  ["9", "2", "3"]
                     }
                 ]
             }
