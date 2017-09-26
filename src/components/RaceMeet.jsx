@@ -16,7 +16,7 @@ export default class RaceMeet extends Component {
                     // case "Not Run Yet": className = 'circle bg-blue'; break;
                     default: className = 'circle'; break;
                 }
-                raceSelectors.push(<div id={i + 1} className={className} onClick={self.props.onClick}>{i + 1}</div>);
+                raceSelectors.push(<div key={i} id={i + 1} className={className} onClick={self.props.onClick}>{i + 1}</div>);
             }
             // races = self.props.meet.races.map(race => {
             //     let raceTips = self.props.meetTips.races.find(tipRace => { return tipRace.number === race.number });
