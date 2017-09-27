@@ -67,6 +67,28 @@ h2 img {
     vertical-align: top;
 }
 
+.menu {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px 2px rgba(0,0,0,0.24);
+}
+
+.menu a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu a.selected {
+    color: #458fff;
+}
+
 .race-meet h3 {
     color: #444;
 }

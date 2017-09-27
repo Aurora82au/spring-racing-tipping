@@ -1,35 +1,24 @@
 import React, { Component } from 'react';
-import RaceMeet from './components/RaceMeet';
-import RaceMeetSelector from './components/RaceMeetSelector';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import Tips from './components/Tips';
+import Results from './components/Results';
+import Leaderboard from './components/Leaderboard';
 import './App.css';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedMeet: '',
-            selectedRace: 1,
-            raceMeets: [],
-            punters: [],
-            tips: []
+            punters: []
         }
-        this.handleMeetSelect = this.handleMeetSelect.bind(this);
-        this.handleRaceSelect = this.handleRaceSelect.bind(this);
     }
 
     async getData() {
         try {
-            let raceMeetResponse = await fetch('raceMeets.json'),
-                meets = await raceMeetResponse.json(),
-                punterResponse = await fetch('punters.json'),
-                punters = await punterResponse.json(),
-                tipsResponse = await fetch('tips.json'),
-                tips = await tipsResponse.json();
+            let punterResponse = await fetch('punters.json'),
+                punters = await punterResponse.json();
             this.setState({
-                selectedMeet: meets[0].meetId,
-                raceMeets: meets,
-                punters: punters,
-                tips: tips
+                punters: punters
             });
         }
         catch (e) {
@@ -41,35 +30,17 @@ class App extends Component {
         this.getData();
     }
 
-    handleMeetSelect(event) {
-        this.setState({
-            selectedMeet: event.target.value,
-            selectedRace: 1
-        });
-    }
-
-    handleRaceSelect(event) {
-        this.setState({
-            selectedRace: parseInt(event.target.id, 10)
-        });
-    }
-
     render() {
-        if (this.state.raceMeets.length) {
-            let meet = this.state.raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
-                meetTips = this.state.tips.find(meet => { return meet.meetId === this.state.selectedMeet });
-
-            return (
-                <div className="app">
-                    {/* <h2>Spring Racing Tipping <img src="horse.png" alt="Title logo" /><span className="beta">BETA</span></h2> */}
-                    <RaceMeetSelector meets={this.state.raceMeets} selectedMeetId={this.state.selectedMeet.meetId} onChange={this.handleMeetSelect} />
-                    <RaceMeet meet={meet} selectedRace={this.state.selectedRace} punters={this.state.punters} meetTips={meetTips} onClick={this.handleRaceSelect} />
-                </div>
-            );
-        }
-        else {
-            return <div></div>;
-        }
+        return (
+            <Router>
+                <Switch>
+                    <Route exact path="/tips" component={Tips} />
+                    <Route exact path="/results" render={routeProps => <Results {...routeProps} punters={this.state.punters}/>} />
+                    <Route exact path="/leaderboard" component={Leaderboard} />
+                    <Redirect from='/' to='/results' />
+                </Switch>
+            </Router>
+        );
     }
 }
 
