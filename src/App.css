@@ -2,7 +2,7 @@
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
+    padding: 1rem 1rem 8rem;
 }
 
 .bold {
@@ -70,23 +70,34 @@ h2 img {
 .menu {
     position: fixed;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: #333;
     box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px 2px rgba(0,0,0,0.24);
 }
 
 .menu a {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: #666;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ccc;
     text-decoration: none;
     text-align: center;
 }
 
 .menu a.selected {
-    color: #458fff;
+    color: #27d3ff;
+}
+
+.menu .icon {
+    margin-bottom: .7rem;
+    font-size: 2.8rem;
+}
+
+.menu .icon-info, .menu .icon-leader-board {
+    margin-bottom: 0;
+    font-size: 3.5rem;
 }
 
 .race-meet h3 {
@@ -194,7 +205,6 @@ h2 img {
 
 .tips-heading {
     grid-area: "tips-heading";
-    font-weight: bold;
 }
 
 .tips {

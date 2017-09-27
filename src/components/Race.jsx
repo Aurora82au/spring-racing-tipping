@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Tip from './Tip';
 
 export default class Race extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return !(nextProps === this.props);
+    }
+    
     render() {
         let self = this,
             tips = self.props.tips.punters.map(punterTips => {
@@ -34,7 +38,7 @@ export default class Race extends Component {
                     <div className="mb-5"><span className="placing bold silver">2nd</span>&nbsp;{self.props.race.placings.second}</div>
                     <div><span className="placing bold bronze">3rd</span>&nbsp;{self.props.race.placings.third}</div>
                 </div>
-                <div className="tips-heading">Tips</div>
+                <div className="tips-heading bold">Tips</div>
                 <div className="tips">
                     {tips}
                 </div>

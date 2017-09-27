@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import Information from './components/Information';
 import Tips from './components/Tips';
 import Results from './components/Results';
 import Leaderboard from './components/Leaderboard';
@@ -9,16 +10,24 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            punters: []
+            raceMeets: [],
+            punters: [],
+            tips: []
         }
     }
 
     async getData() {
         try {
-            let punterResponse = await fetch('punters.json'),
-                punters = await punterResponse.json();
+            let raceMeetResponse = await fetch('raceMeets.json'),
+                meets = await raceMeetResponse.json(),
+                punterResponse = await fetch('punters.json'),
+                punters = await punterResponse.json(),
+                tipsResponse = await fetch('tips.json'),
+                tips = await tipsResponse.json();
             this.setState({
-                punters: punters
+                raceMeets: meets,
+                punters: punters,
+                tips: tips
             });
         }
         catch (e) {
@@ -31,16 +40,22 @@ class App extends Component {
     }
 
     render() {
-        return (
-            <Router>
-                <Switch>
-                    <Route exact path="/tips" component={Tips} />
-                    <Route exact path="/results" render={routeProps => <Results {...routeProps} punters={this.state.punters}/>} />
-                    <Route exact path="/leaderboard" component={Leaderboard} />
-                    <Redirect from='/' to='/results' />
-                </Switch>
-            </Router>
-        );
+        if (this.state.raceMeets.length) {
+            return (
+                <Router>
+                    <Switch>
+                        <Route exact path="/information" component={Information} />
+                        <Route exact path="/tips" component={Tips} />
+                        <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
+                        <Route exact path="/leaderboard" component={Leaderboard} />
+                        <Redirect from='/' to='/results' />
+                    </Switch>
+                </Router>
+            );
+        }
+        else {
+            return <div></div>;
+        }
     }
 }
 

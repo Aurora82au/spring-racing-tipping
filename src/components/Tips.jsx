@@ -3,6 +3,10 @@ import Header from './Header';
 import Menu from './Menu';
 
 export default class Tips extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return !(nextProps === this.props);
+    }
+
     render() {
         return (
             <div className="app">

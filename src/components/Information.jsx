@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Menu from './Menu';
 
-export default class Leaderboard extends Component {
+export default class Information extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
@@ -11,7 +11,7 @@ export default class Leaderboard extends Component {
         return (
             <div className="app">
                 {/* <Header /> */}
-                <div>This is the Leaderboard page.</div>
+                <div>This is the Information page.</div>
                 <Menu></Menu>
             </div>
         );

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Race from './Race';
 
 export default class RaceMeet extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return !(nextProps === this.props);
+    }
+    
     render() {
         let self = this,
             raceSelectors = [],

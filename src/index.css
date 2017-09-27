@@ -27,23 +27,26 @@
 .icon-tick:before {
   content: "\e5ca";
 }
-.icon-expand_less:before {
-  content: "\e5ce";
+.icon-leader-board:before {
+  content: "\e01d";
 }
-.icon-expand_more:before {
-  content: "\e5cf";
-}
-.icon-info_outline:before {
+.icon-info:before {
   content: "\e88f";
 }
-.icon-unfold_more:before {
+.icon-select:before {
   content: "\e5d7";
 }
 .icon-pencil:before {
   content: "\e906";
 }
+.icon-user:before {
+  content: "\e971";
+}
 .icon-trophy:before {
   content: "\e99e";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
 }
 
 

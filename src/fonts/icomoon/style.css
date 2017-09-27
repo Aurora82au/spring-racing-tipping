@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ot5voe');
-  src:  url('fonts/icomoon.eot?ot5voe#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ot5voe') format('truetype'),
-    url('fonts/icomoon.woff?ot5voe') format('woff'),
-    url('fonts/icomoon.svg?ot5voe#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?kfzyai');
+  src:  url('fonts/icomoon.eot?kfzyai#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kfzyai') format('truetype'),
+    url('fonts/icomoon.woff?kfzyai') format('woff'),
+    url('fonts/icomoon.svg?kfzyai#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,21 +27,24 @@
 .icon-tick:before {
   content: "\e5ca";
 }
-.icon-expand_less:before {
-  content: "\e5ce";
+.icon-leader-board:before {
+  content: "\e01d";
 }
-.icon-expand_more:before {
-  content: "\e5cf";
-}
-.icon-info_outline:before {
+.icon-info:before {
   content: "\e88f";
 }
-.icon-unfold_more:before {
+.icon-select:before {
   content: "\e5d7";
 }
 .icon-pencil:before {
   content: "\e906";
 }
+.icon-user:before {
+  content: "\e971";
+}
 .icon-trophy:before {
   content: "\e99e";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
 }
