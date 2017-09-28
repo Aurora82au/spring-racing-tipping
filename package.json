@@ -9,12 +9,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "react-fastclick": "^3.0.2"
   },
   "devDependencies": {
-    "react-scripts": "1.0.13"
+    "react-scripts": "^1.0.14"
   }
 }

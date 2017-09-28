@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header';
+// import Header from './Header';
 import Menu from './Menu';
 
 export default class Tips extends Component {
