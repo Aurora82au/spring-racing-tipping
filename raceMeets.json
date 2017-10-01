@@ -1,0 +1,258 @@
+[
+    {
+        "meetId": "CAULCUP",
+        "name": "Caulfield Cup",
+        "location": "Caulfield",
+        "date": "2017-09-18",
+        "races": [
+            {
+                "number": 1,
+                "name": "Gothic Stakes",
+                "time": "10:30am",
+                "distance": "1400m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "1",
+                    "second": "2",
+                    "third": "3"
+                }
+            },
+            {
+                "number": 2,
+                "name": "Caulfield Classic",
+                "time": "11:15am",
+                "distance": "2000m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "4",
+                    "second": "5",
+                    "third": "6"
+                }
+            },
+            {
+                "number": 3,
+                "name": "Super Vobis Three-Years-Old Fillies Plate",
+                "time": "12:00am",
+                "distance": "1400m",
+                "status": "About To Jump",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 4,
+                "name": "Ethereal Stakes",
+                "time": "12:45am",
+                "distance": "1400m",
+                "status": "Racing",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 5,
+                "name": "Caulfield Sprint",
+                "time": "1:30pm",
+                "distance": "1000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 6,
+                "name": "Moonga Stakes",
+                "time": "2:15pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 7,
+                "name": "Priceline Cup",
+                "time": "3:00pm",
+                "distance": "2000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 8,
+                "name": "BMW Caulfield Cup",
+                "time": "3:45pm",
+                "distance": "2400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 9,
+                "name": "Alinghi Stakes",
+                "time": "4:30pm",
+                "distance": "1100m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            },
+            {
+                "number": 10,
+                "name": "Tristarc Stakes",
+                "time": "5:15pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            }
+        ]
+    },
+    {
+        "meetId": "MELBCUP",
+        "name": "Melbourne Cup",
+        "location": "Caulfield",
+        "date": "2017-11-07",
+        "races": [
+            {
+                "number": 1,
+                "name": "Ottawa Stakes",
+                "time": "10:30am",
+                "distance": "1000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "1",
+                    "second": "2",
+                    "third": "3"
+                }
+            },
+            {
+                "number": 2,
+                "name": "Schweppes #FlemingtonFling",
+                "time": "11:15am",
+                "distance": "1000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "4",
+                    "second": "5",
+                    "third": "6"
+                }
+            },
+            {
+                "number": 3,
+                "name": "Lexus Hybrid Plate",
+                "time": "12:00am",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "7",
+                    "second": "8",
+                    "third": "9"
+                }
+            },
+            {
+                "number": 4,
+                "name": "MSS Security Sprint",
+                "time": "12:45am",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "1",
+                    "second": "2",
+                    "third": "3"
+                }
+            },
+            {
+                "number": 5,
+                "name": "Lavazza Prontissimo",
+                "time": "1:30pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "4",
+                    "second": "5",
+                    "third": "6"
+                }
+            },
+            {
+                "number": 6,
+                "name": "James Boag's Premium Stakes",
+                "time": "2:15pm",
+                "distance": "1800m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "7",
+                    "second": "8",
+                    "third": "9"
+                }
+            },
+            {
+                "number": 7,
+                "name": "Emirates Melbourne Cup",
+                "time": "3:00pm",
+                "distance": "3200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "1",
+                    "second": "2",
+                    "third": "3"
+                }
+            },
+            {
+                "number": 8,
+                "name": "Prince of Penzance Handicap",
+                "time": "3:45pm",
+                "distance": "2800m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "4",
+                    "second": "5",
+                    "third": "6"
+                }
+            },
+            {
+                "number": 9,
+                "name": "The Hong Kong Jockey Club Stakes",
+                "time": "4:30pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "7",
+                    "second": "8",
+                    "third": "9"
+                }
+            },
+            {
+                "number": 10,
+                "name": "tab.com.au Trophy",
+                "time": "5:15pm",
+                "distance": "1700m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "1",
+                    "second": "2",
+                    "third": "3"
+                }
+            }
+        ]
+    }
+]
