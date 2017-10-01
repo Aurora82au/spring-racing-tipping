@@ -5,50 +5,11 @@
     padding: 1rem 1rem 8rem;
 }
 
-.bold {
-    font-weight: bold;
-    color: #444;
-}
 
-.mb-5 {
-    margin-bottom: .5rem;
-}
-
-.green {
-    color: green !important;
-}
-
-.orange {
-    color: orange !important;
-}
-
-.red {
-    color: red !important;
-}
-
-.blue {
-    color: #458fff !important;
-}
-
-.bg-green {
-    background-color: green !important;
-}
-
-.bg-orange {
-    background-color: orange !important;
-}
-
-.bg-red {
-    background-color: red !important;
-}
-
-.bg-blue {
-    background-color: #458fff !important;
-}
+/* Header */
 
 h2 {
     margin-top: .5rem;
-    color: #444;
 }
 
 h2 img {
@@ -66,6 +27,25 @@ h2 img {
     background-color: #e029e8;
     vertical-align: top;
 }
+
+.icon-admin {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    padding: .4rem .5rem .6rem;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.icon-admin.selected {
+    color: #27d3ff;
+    border-color: #27d3ff;
+}
+
+
+/* Menu */
 
 .menu {
     position: fixed;
@@ -100,12 +80,15 @@ h2 img {
     font-size: 3.5rem;
 }
 
+/* Results */
+
 .race-meet h3 {
     color: #444;
 }
 
 .race-meet-selector {
     position: relative;
+    margin-top: 2rem;
 }
 
 .race-meet-selector select {
@@ -136,27 +119,58 @@ h2 img {
 }
 
 .race-selector {
+    display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 .race-selector .circle {
-    display: inline-block;
+    position: relative;
+    display: flex;
     width: 2.8rem;
     height: 2.8rem;
+    justify-content: center;
+    align-items: center;
     margin-right: .2rem;
-    padding-top: .8rem;
     border-radius: 100%;
     opacity: .8;
     color: #fff;
     background-color: #458fff;
-    text-align: center;
     cursor: pointer;
 }
 
 .race-selector .circle:last-child {
     margin-right: 0;
+}
+
+.race-selector .circle.selected::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    left: calc(50% - .6rem);
+    bottom: -1rem;
+    width: 0;
+    height: 0;
+    border-left: .6rem solid transparent;
+    border-right: .6rem solid transparent;
+    border-top: .6rem solid;
+    border-bottom: .6rem solid transparent;
+}
+
+.race-selector .circle.selected.bg-green::after {
+    border-top-color: green;
+}
+
+.race-selector .circle.selected.bg-orange::after {
+    border-top-color: orange;
+}
+
+.race-selector .circle.selected.bg-red::after {
+    border-top-color: red;
+}
+
+.race-selector .circle.selected.bg-blue::after {
+    border-top-color: #458fff;
 }
 
 .race {
@@ -192,15 +206,15 @@ h2 img {
 }
 
 .placing.gold:before {
-    background-color: #CFB53B;
+    background-color: #eacb3c;
 }
 
 .placing.silver:before {
-    background-color: #E6E8FA;
+    background-color: #e6e8fa;
 }
 
 .placing.bronze:before {
-    background-color: #8C7853;
+    background-color: #8c7853;
 }
 
 .tips-heading {
@@ -280,7 +294,194 @@ h2 img {
 }
 
 
-/* Media Queries */
+/* Leaderboard */
+
+.lb-heading {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.lb-heading.teal {
+    color: #27d3ff;
+}
+
+.podium {
+    display: flex;
+    justify-content: center;
+    height: 28.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.podium .first, .podium .second, .podium .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33.3333%;
+    max-width: 12rem;
+}
+
+.podium .pic {
+    /* display: block; */
+    /* Used when hiding pic */
+    display: none;
+    width: 8rem;
+    margin-bottom: .5rem;
+    border-radius: 100%;
+}
+
+.podium .name {
+    width: 90%;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.podium .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.podium .first .bar {
+    height: 18rem;
+}
+
+.podium .second .bar {
+    height: 13rem;
+}
+
+.podium .third .bar {
+    height: 8rem;
+}
+
+.podium .icon-trophy {
+    /* Used when hiding pic */
+    display: none;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    color: #eacb3c;
+}
+
+.podium .bar .number {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    color: #444;
+}
+
+.podium .bar sup {
+    font-size: 1.2rem;
+    vertical-align: .6rem;
+}
+
+.podium .bar .points {
+    margin-bottom: 1.8rem;
+}
+
+.loser {
+    width: 27rem;
+    margin: 0 auto 1rem;
+}
+
+.loser .number {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 3rem;
+    vertical-align: -.1rem;
+}
+
+.loser .number sup {
+    font-size: .8rem;
+}
+
+.loser .points {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 5rem;
+    vertical-align: middle;
+}
+
+.loser .pic {
+    /* Used when hiding pic */
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.loser .name {
+    display: inline-block;
+    width: 10.9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+/* Tips */
+
+.raceList {
+    margin-top: 2rem;
+}
+
+.raceList .tip-group {
+    margin-bottom: 2rem;
+}
+
+.raceList .name {
+    display: inline-block;
+    max-width: 15rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+    vertical-align: -1.3rem;
+}
+
+.raceList .selections {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row-gap: 1rem;
+}
+
+.raceList .selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.raceList .selection.selected {
+    background-color: #813aff;
+}
+
+.disabled .bold, .disabled .details {
+    color: #ccc;
+}
+
+.raceList .disabled .selection, .disabled .status {
+    pointer-events: none;
+    opacity: .5;
+}
+
+
+
+/***** Media Queries *****/
 
 @media (min-width: 360px) {
     .race-selector .circle {

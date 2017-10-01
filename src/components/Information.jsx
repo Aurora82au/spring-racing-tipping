@@ -10,8 +10,7 @@ export default class Information extends Component {
     render() {
         return (
             <div className="app">
-                {/* <Header /> */}
-                <div>This is the Information page.</div>
+                {/* <Header page="Information" text="This is where you find out some stuff." /> */}
                 <Menu></Menu>
             </div>
         );

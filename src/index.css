@@ -1,67 +1,115 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3nsrcx');
-  src:  url('fonts/icomoon.eot?3nsrcx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3nsrcx') format('truetype'),
-    url('fonts/icomoon.woff?3nsrcx') format('woff'),
-    url('fonts/icomoon.svg?3nsrcx#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?3nsrcx');
+    src:  url('fonts/icomoon.eot?3nsrcx#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?3nsrcx') format('truetype'),
+        url('fonts/icomoon.woff?3nsrcx') format('woff'),
+        url('fonts/icomoon.svg?3nsrcx#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+/* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-tick:before {
-  content: "\e5ca";
+    content: "\e5ca";
 }
 .icon-leader-board:before {
-  content: "\e01d";
+    content: "\e01d";
 }
 .icon-info:before {
-  content: "\e88f";
+    content: "\e88f";
 }
 .icon-select:before {
-  content: "\e5d7";
+    content: "\e5d7";
 }
 .icon-pencil:before {
-  content: "\e906";
+    content: "\e906";
 }
 .icon-user:before {
-  content: "\e971";
+    content: "\e971";
+}
+.icon-admin:before {
+    content: "\e976";
 }
 .icon-trophy:before {
-  content: "\e99e";
+    content: "\e99e";
 }
 .icon-clipboard:before {
-  content: "\e9b8";
+    content: "\e9b8";
 }
 
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #666;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+}
+
+.bold {
+    font-weight: bold;
+    color: #444;
+}
+
+.mb-5 {
+    margin-bottom: .5rem;
+}
+
+.green {
+    color: green !important;
+}
+
+.orange {
+    color: orange !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.blue {
+    color: #458fff !important;
+}
+
+.bg-green {
+    background-color: green !important;
+}
+
+.bg-orange {
+    background-color: orange !important;
+}
+
+.bg-red {
+    background-color: red !important;
+}
+
+.bg-blue {
+    background-color: #458fff !important;
 }

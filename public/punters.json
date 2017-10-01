@@ -43,5 +43,23 @@
             "display": "Nathan F"
         },
         "pic": "Nathan.jpg"
+    },
+    {
+        "punterId": 6,
+        "name": {
+            "first": "Lauren",
+            "last": "Paini",
+            "display": "Lauren P"
+        },
+        "pic": "Lauren.jpg"
+    },
+    {
+        "punterId": 7,
+        "name": {
+            "first": "Colin",
+            "last": "Quinn",
+            "display": "Colin Q"
+        },
+        "pic": "Colin.jpg"
     }
 ]

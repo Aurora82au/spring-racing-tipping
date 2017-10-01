@@ -1,6 +1,6 @@
 [
     {
-        "meetId": "xvd123",
+        "meetId": "CAULCUP",
         "name": "Caulfield Cup",
         "location": "Caulfield",
         "date": "2017-09-18",
@@ -128,16 +128,16 @@
         ]
     },
     {
-        "meetId": "abc123",
+        "meetId": "MELBCUP",
         "name": "Melbourne Cup",
         "location": "Caulfield",
-        "date": "2017-09-18",
+        "date": "2017-11-07",
         "races": [
             {
                 "number": 1,
-                "name": "Gothic Stakes",
+                "name": "Ottawa Stakes",
                 "time": "10:30am",
-                "distance": "1400m",
+                "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "1",
@@ -147,9 +147,9 @@
             },
             {
                 "number": 2,
-                "name": "Caulfield Classic",
+                "name": "Schweppes #FlemingtonFling",
                 "time": "11:15am",
-                "distance": "2000m",
+                "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "4",
@@ -159,7 +159,7 @@
             },
             {
                 "number": 3,
-                "name": "Super Vobis Three-Years-Old Fillies Plate",
+                "name": "Lexus Hybrid Plate",
                 "time": "12:00am",
                 "distance": "1400m",
                 "status": "Not Run Yet",
@@ -171,9 +171,9 @@
             },
             {
                 "number": 4,
-                "name": "Ethereal Stakes",
+                "name": "MSS Security Sprint",
                 "time": "12:45am",
-                "distance": "1400m",
+                "distance": "1200m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "1",
@@ -183,9 +183,9 @@
             },
             {
                 "number": 5,
-                "name": "Caulfield Sprint",
+                "name": "Lavazza Prontissimo",
                 "time": "1:30pm",
-                "distance": "1000m",
+                "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "4",
@@ -195,9 +195,9 @@
             },
             {
                 "number": 6,
-                "name": "Moonga Stakes",
+                "name": "James Boag's Premium Stakes",
                 "time": "2:15pm",
-                "distance": "1400m",
+                "distance": "1800m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "7",
@@ -207,9 +207,9 @@
             },
             {
                 "number": 7,
-                "name": "Priceline Cup",
+                "name": "Emirates Melbourne Cup",
                 "time": "3:00pm",
-                "distance": "2000m",
+                "distance": "3200m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "1",
@@ -219,9 +219,9 @@
             },
             {
                 "number": 8,
-                "name": "BMW Caulfield Cup",
+                "name": "Prince of Penzance Handicap",
                 "time": "3:45pm",
-                "distance": "2400m",
+                "distance": "2800m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "4",
@@ -231,9 +231,9 @@
             },
             {
                 "number": 9,
-                "name": "Alinghi Stakes",
+                "name": "The Hong Kong Jockey Club Stakes",
                 "time": "4:30pm",
-                "distance": "1100m",
+                "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "7",
@@ -243,9 +243,9 @@
             },
             {
                 "number": 10,
-                "name": "Tristarc Stakes",
+                "name": "tab.com.au Trophy",
                 "time": "5:15pm",
-                "distance": "1400m",
+                "distance": "1700m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "1",

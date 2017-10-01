@@ -8,28 +8,40 @@ export default class Tip extends Component {
     render() {
         let self = this,
             punter = this.props.punters.find(tipPunter => { return tipPunter.punterId === self.props.tips.punterId }),
-            punterPic = '/pics/' + punter.pic,
             score = 0,
+            index,
             firstClass = '',
             secondClass = '',
             thirdClass = '';
 
-        if (self.props.tips.tips.includes(self.props.placings.first)) {
+        // Set the scores and the correct class on punters picks
+        index = self.props.tips.tips.indexOf(self.props.placings.first);
+        if (index > -1) {
             score += 3;
-            firstClass = 'correct';
+            if (index === 0) { firstClass = 'correct' }
+            if (index === 1) { secondClass = 'correct' }
+            if (index === 2) { thirdClass = 'correct' }
         }
-        if (self.props.tips.tips.includes(self.props.placings.second)) {
+
+        index = self.props.tips.tips.indexOf(self.props.placings.second);
+        if (index > -1) {
             score += 2;
-            secondClass = 'correct';
+            if (index === 0) { firstClass = 'correct' }
+            if (index === 1) { secondClass = 'correct' }
+            if (index === 2) { thirdClass = 'correct' }
         }
-        if (self.props.tips.tips.includes(self.props.placings.third)) {
+
+        index = self.props.tips.tips.indexOf(self.props.placings.third);
+        if (index > -1) {
             score ++;
-            thirdClass = 'correct';
+            if (index === 0) { firstClass = 'correct' }
+            if (index === 1) { secondClass = 'correct' }
+            if (index === 2) { thirdClass = 'correct' }
         }
 
         return (
             <div className="tip">
-                <img src={punterPic} alt="Profile pic" className="pic" />
+                <img src={'/pics/' + punter.pic} alt="Profile pic" className="pic" />
                 <span className="name">{punter.name.first} {punter.name.last}</span>
                 <div className="numbers">
                     <div className="group">

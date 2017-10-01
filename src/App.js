@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import Admin from './components/Admin';
 import Information from './components/Information';
 import Tips from './components/Tips';
 import Results from './components/Results';
@@ -44,8 +45,9 @@ class App extends Component {
             return (
                 <Router>
                     <Switch>
+                        <Route exact path="/admin" component={Admin} />
                         <Route exact path="/information" component={Information} />
-                        <Route exact path="/tips" component={Tips} />
+                        <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} />} />
                         <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
                         <Route exact path="/leaderboard" render={routeProps => <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
                         <Redirect from='/' to='/results' />
@@ -70,3 +72,9 @@ export default App;
 // Cup day 7/11/17
 // Oaks day 9/11/17
 // Stakes day 11/11/17
+
+
+
+//var t0 = performance.now();
+//var t1 = performance.now();
+//console.log("While loops took " + (t1 - t0) + " milliseconds.");
