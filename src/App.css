@@ -9,6 +9,8 @@
 /* Header */
 
 h2 {
+    /* Used when hiding pic */
+    display: none;
     margin-top: .5rem;
 }
 
@@ -135,7 +137,6 @@ h2 img {
     border-radius: 100%;
     opacity: .8;
     color: #fff;
-    background-color: #458fff;
     cursor: pointer;
 }
 
@@ -147,14 +148,17 @@ h2 img {
     position: absolute;
     display: block;
     content: " ";
-    left: calc(50% - .6rem);
-    bottom: -1rem;
+    /* Small: .6rem */
+    left: calc(50% - 1rem);
+    /* Small: -1rem */
+    bottom: -1.6rem;
     width: 0;
     height: 0;
-    border-left: .6rem solid transparent;
-    border-right: .6rem solid transparent;
-    border-top: .6rem solid;
-    border-bottom: .6rem solid transparent;
+    /* Small: .6rem */
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid;
+    border-bottom: 1rem solid transparent;
 }
 
 .race-selector .circle.selected.bg-green::after {
@@ -229,7 +233,7 @@ h2 img {
 }
 
 .tip {
-    padding: .5rem;
+    padding: .6rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -266,6 +270,10 @@ h2 img {
 .tip .numbers .group {
     margin-right: .5rem;
     margin-bottom: .5rem;
+}
+
+.tip .numbers .group:last-child {
+    margin-bottom: 0;
 }
 
 .tip .numbers .label {
@@ -436,16 +444,19 @@ h2 img {
     margin-bottom: 2rem;
 }
 
+.raceList .details {
+    margin-bottom: 1rem;
+}
+
 .raceList .name {
     display: inline-block;
-    max-width: 15rem;
+    max-width: 24rem;
     margin-top: .5rem;
-    margin-bottom: 1rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     text-transform: uppercase;
-    vertical-align: -1.3rem;
+    vertical-align: bottom;
 }
 
 .raceList .selections {
@@ -493,6 +504,10 @@ h2 img {
     .tip .name {
         width: 11.5rem;
     }
+
+    .raceList .name {
+        max-width: 28rem;
+    }
 }
 
 @media (min-width: 375px) {
@@ -502,6 +517,10 @@ h2 img {
     
     .tip .name {
         width: 12.2rem;
+    }
+    
+    .raceList .name {
+        max-width: 29rem;
     }
 }
 
@@ -523,6 +542,10 @@ h2 img {
     .tip .name {
         width: 13.5rem;
     }
+    
+    .raceList .name {
+        max-width: 32rem;
+    }
 }
 
 @media (min-width: 410px) {
@@ -532,5 +555,9 @@ h2 img {
     
     .tip .name {
         width: 14rem;
+    }
+    
+    .raceList .name {
+        max-width: 33rem;
     }
 }

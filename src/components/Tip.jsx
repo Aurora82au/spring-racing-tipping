@@ -41,7 +41,7 @@ export default class Tip extends Component {
 
         return (
             <div className="tip">
-                <img src={'/pics/' + punter.pic} alt="Profile pic" className="pic" />
+                <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
                 <span className="name">{punter.name.first} {punter.name.last}</span>
                 <div className="numbers">
                     <div className="group">

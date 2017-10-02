@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Header from './Header';
+import Header from './Header';
 import RaceMeet from './RaceMeet';
 import RaceMeetSelector from './RaceMeetSelector';
 import Menu from './Menu';
@@ -36,7 +36,7 @@ export default class Results extends Component {
 
         return (
             <div className="app">
-                {/* <Header page="Results" text="This is where you can see the results of the hours of peoples research, strategy and rumination....before they just picked a number because they liked the jockey's pink star-spangled uniform." /> */}
+                <Header page="Results" text="This is where you can see the results of the hours of peoples research, strategy and rumination....before they just picked a number because they liked the jockey's pink star-spangled uniform." />
                 <RaceMeetSelector meets={this.props.raceMeets} selectedMeetId={this.state.selectedMeet.meetId} onChange={this.handleMeetSelect} />
                 <RaceMeet meet={meet} selectedRace={this.state.selectedRace} punters={this.props.punters} meetTips={meetTips} onClick={this.handleRaceSelect} />
                 <Menu></Menu>

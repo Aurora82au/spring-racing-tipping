@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Header from './Header';
+import Header from './Header';
 import Podium from './Podium';
 import Menu from './Menu';
 
@@ -96,7 +96,7 @@ export default class Leaderboard extends Component {
         
         return (
             <div className="app">
-                {/* <Header page="Leaderboard" text="To the victors go the spoils, and to the losers....go home." /> */}
+                <Header page="Leaderboard" text="To the victors go the spoils, and to the losers....go home." />
                 <Podium first={first} second={second} third={third} points={points} />
                 <h4 className="lb-heading">BEST OF THE REST</h4>
                 {loserList}

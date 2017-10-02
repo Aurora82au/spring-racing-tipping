@@ -86,9 +86,8 @@ export default class TippingRaceList extends Component {
                 <div key={i} className={tipGroupClass}>
                     <div className="details">
                         <div className="bold">RACE {this.props.meet.races[i].number}</div>
-                        <span className="name">{this.props.meet.races[i].name}&nbsp;-&nbsp;</span>
-                        <span>{this.props.meet.races[i].time}&nbsp;-&nbsp;</span>
-                        <span className={statusClass}>{this.props.meet.races[i].status}</span>
+                        <span>{this.props.meet.races[i].time}</span>
+                        <span className="name">&nbsp;-&nbsp;{this.props.meet.races[i].name}</span>
                     </div>
                     <div className="selections">
                         {selections}

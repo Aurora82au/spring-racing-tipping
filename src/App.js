@@ -50,7 +50,8 @@ class App extends Component {
                         <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} />} />
                         <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
                         <Route exact path="/leaderboard" render={routeProps => <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
-                        <Redirect from='/' to='/results' />
+                        <Redirect from='/' to='/information' />
+                        {/* <Redirect from='/spring-racing-tipping' to='/spring-racing-tipping/information' /> */}
                     </Switch>
                 </Router>
             );

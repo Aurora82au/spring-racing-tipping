@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Header from './Header';
+import Header from './Header';
 import Menu from './Menu';
 
 export default class Information extends Component {
@@ -10,7 +10,7 @@ export default class Information extends Component {
     render() {
         return (
             <div className="app">
-                {/* <Header page="Information" text="This is where you find out some stuff." /> */}
+                <Header page="Information" text="This is where you find out some stuff." />
                 <Menu></Menu>
             </div>
         );
