@@ -82,6 +82,75 @@ h2 img {
     font-size: 3.5rem;
 }
 
+
+/* Admin */
+
+.adminRace {
+    display: grid;
+    grid-template-areas: "heading heading"
+                         "placings status";
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.adminRace .details {
+    grid-area: heading;
+}
+
+.adminRace .placings {
+    grid-area: placings;
+}
+
+.adminRace label {
+    display: inline-block;
+    width: 3rem;
+}
+
+.adminRace input[type="tel"] {
+    width: 6rem;
+    padding: .6rem 1rem;
+    border: 1px solid #aaa;
+}
+
+.adminRace input[type="tel"]:focus {
+    border-color: #27d3ff;
+}
+
+.adminRace .status-selector {
+    grid-area: status;
+}
+
+.adminRace h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.adminRace .status-selector-btn {
+    display: flex;
+    width: 12rem;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: 1px solid #008000cc;
+    color: #fff;
+    background-color: #008000cc;
+    cursor: pointer;
+}
+
+.adminRace .status-selector-btn.active {
+    border-color: #f00c;
+    background-color: #f00c;
+}
+
+.adminRace .status-selector-btn.disabled {
+    border-color: #ddd;
+    color: #aaa;
+    background-color: #eee;
+    pointer-events: none;
+}
+
+
 /* Results */
 
 .race-meet h3 {
@@ -91,6 +160,7 @@ h2 img {
 .race-meet-selector {
     position: relative;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .race-meet-selector select {
@@ -435,10 +505,6 @@ h2 img {
 
 
 /* Tips */
-
-.raceList {
-    margin-top: 2rem;
-}
 
 .raceList .tip-group {
     margin-bottom: 2rem;

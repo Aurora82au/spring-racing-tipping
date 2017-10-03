@@ -10,9 +10,25 @@ export default class Admin extends Component {
 
     render() {
         let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.props.selectedMeet }),
-            raceList = [];
+            raceList = [],
+            classes, btnTxt, dataStatus;
 
         for (let i = 0; i < meet.races.length; i++) {
+            if (meet.races[i].status === 'Not Run Yet' || meet.races[i].status === 'About to jump') {
+                classes = 'status-selector-btn';
+                btnTxt = 'Race Started';
+                dataStatus = 'Racing';
+            }
+            else if (meet.races[i].status === 'Racing') {
+                classes = 'status-selector-btn active';
+                btnTxt = 'Race Finished';
+                dataStatus = 'Has Run';
+            }
+            else {
+                classes = 'status-selector-btn disabled';
+                btnTxt = 'Race Has Run';
+            }
+
             raceList.push(
                 <div key={i} className="adminRace">
                     <div className="details">
@@ -20,9 +36,13 @@ export default class Admin extends Component {
                         <span className="name">&nbsp;-&nbsp;{meet.races[i].name}</span>
                     </div>
                     <div className="placings">
-                        <div className="first"><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="number" value={meet.races[i].placings.first} /></div>
-                        <div className="second"><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="number" value={meet.races[i].placings.second} /></div>
-                        <div className="third"><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="number" value={meet.races[i].placings.second} /></div>
+                        <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="tel" defaultValue={meet.races[i].placings.first} /></div>
+                        <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="tel" defaultValue={meet.races[i].placings.second} /></div>
+                        <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="tel" defaultValue={meet.races[i].placings.third} /></div>
+                    </div>
+                    <div className="status-selector">
+                        <h4>Set Race Status</h4>
+                        <button className={classes} type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status={dataStatus}>{btnTxt}</button>
                     </div>
                 </div>
             );
