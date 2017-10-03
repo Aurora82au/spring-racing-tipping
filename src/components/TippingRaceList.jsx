@@ -52,8 +52,8 @@ export default class TippingRaceList extends Component {
 
     generateList = () => {
         let races = [],
-        selections = [],
-        statusClass, tipGroupClass;
+            selections = [],
+            tipGroupClass;
 
         for (let i = 0; i < this.props.meet.races.length; i++) {
             // Clear selections for each race
@@ -62,23 +62,12 @@ export default class TippingRaceList extends Component {
             // Set the first race to disabled for demo purposes
             tipGroupClass = ((i === 0) && this.props.meet.meetId === 'CAULCUP') ? 'tip-group disabled' : 'tip-group';
 
-            // Set the status colour
-            switch (this.props.meet.races[i].status) {
-                case "Has Run": statusClass = "status green"; break;
-                case "About To Jump": statusClass = "status orange"; break;
-                case "Racing": statusClass = "status red"; break;
-                case "Not Run Yet": statusClass = "status blue"; break;
-                default: statusClass = "status"; break;
-            }
-
-            //race = this.props.tips.races.find((race) => { return race.number === (i + 1) });
-
             for (let j = 0; j < 24; j++) {
                 if (this.state.tips[i].selections.includes((j + 1).toString())) {
-                    selections.push(<div key={j} className="selection test selected" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
+                    selections.push(<div key={j} className="selection selected" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
                 }
                 else {
-                    selections.push(<div key={j} className="selection test" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
+                    selections.push(<div key={j} className="selection" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
                 }
             }
 

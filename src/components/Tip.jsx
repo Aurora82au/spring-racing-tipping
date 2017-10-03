@@ -14,7 +14,7 @@ export default class Tip extends Component {
             secondClass = '',
             thirdClass = '';
 
-        // Set the scores and the correct class on punters picks
+        // Set the scores and the 'correct' class on punters picks
         index = self.props.tips.tips.indexOf(self.props.placings.first);
         if (index > -1) {
             score += 3;

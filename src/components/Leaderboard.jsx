@@ -8,7 +8,7 @@ export default class Leaderboard extends Component {
         return !(nextProps === this.props);
     }
 
-    findMeet = (thisMeetIndex) => {
+    findMeet = thisMeetIndex => {
         return this.props.tips.find(tipsMeet => { return tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId });
     }
 
@@ -88,7 +88,7 @@ export default class Leaderboard extends Component {
                 loserList.push(<div key={i} className="loser">
                                    <span className="number" dangerouslySetInnerHTML={{__html: (i + 1) + position}}></span>
                                    <span className="points">{points[i].points} PTS</span>
-                                   <img src={'/pics/' + punter.pic} alt="Profile pic" className="pic" />
+                                   <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
                                    <span className="name">{punter.name.first} {punter.name.last}</span>
                                </div>);
             }

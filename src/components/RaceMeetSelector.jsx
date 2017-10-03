@@ -7,8 +7,8 @@ export default class RaceMeetSelector extends Component {
     
     render() {
         return (
-            <div  className="race-meet-selector">
-                <select value={this.selectedMeetId} onChange={this.props.onChange}>
+            <div className="race-meet-selector">
+                <select value={this.props.selectedMeetId} onChange={this.props.onChange}>
                     {this.props.meets.map(meet => {
                         return <option key={meet.meetId} value={meet.meetId}>{meet.name}</option>
                     })}
@@ -18,5 +18,3 @@ export default class RaceMeetSelector extends Component {
         );
     }
 }
-
-// TODO: Setting selectedMeetId isn't working at the moment.

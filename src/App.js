@@ -13,8 +13,14 @@ class App extends Component {
         this.state = {
             raceMeets: [],
             punters: [],
-            tips: []
+            tips: [],
+            selectedMeet: 'CAULCUP',
+            selectedRace: 1
         }
+    }
+    
+    shouldComponentUpdate(nextProps, nextState) {
+        return !(nextState === this.state);
     }
 
     async getData() {
@@ -40,15 +46,28 @@ class App extends Component {
         this.getData();
     }
 
+    handleMeetSelect = event => {
+        this.setState({
+            selectedMeet: event.target.value,
+            selectedRace: 1
+        });
+    }
+
+    handleRaceSelect = event => {
+        this.setState({
+            selectedRace: parseInt(event.target.id, 10)
+        });
+    }
+
     render() {
         if (this.state.raceMeets.length) {
             return (
                 <Router>
                     <Switch>
-                        <Route exact path="/admin" component={Admin} />
+                        <Route exact path="/admin" render={routeProps => <Admin {...routeProps} raceMeets={this.state.raceMeets} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} />} />
                         <Route exact path="/information" component={Information} />
-                        <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} />} />
-                        <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
+                        <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} />} />
+                        <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} />} />
                         <Route exact path="/leaderboard" render={routeProps => <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
                         <Redirect from='/' to='/information' />
                         {/* <Redirect from='/spring-racing-tipping' to='/spring-racing-tipping/information' /> */}

@@ -5,40 +5,19 @@ import RaceMeetSelector from './RaceMeetSelector';
 import Menu from './Menu';
 
 export default class Results extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selectedMeet: this.props.raceMeets[0].meetId,
-            selectedRace: 1
-        }
-    }
-    
     shouldComponentUpdate(nextProps, nextState) {
-        return !((nextProps === this.props) && (nextState === this.state));
-    }
-
-    handleMeetSelect = event => {
-        this.setState({
-            selectedMeet: event.target.value,
-            selectedRace: 1
-        });
-    }
-
-    handleRaceSelect = event => {
-        this.setState({
-            selectedRace: parseInt(event.target.id, 10)
-        });
+        return !(nextProps === this.props);
     }
 
     render() {
-        let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
-            meetTips = this.props.tips.find(meet => { return meet.meetId === this.state.selectedMeet });
+        let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.props.selectedMeet }),
+            meetTips = this.props.tips.find(meet => { return meet.meetId === this.props.selectedMeet });
 
         return (
             <div className="app">
                 <Header page="Results" text="This is where you can see the results of the hours of peoples research, strategy and rumination....before they just picked a number because they liked the jockey's pink star-spangled uniform." />
-                <RaceMeetSelector meets={this.props.raceMeets} selectedMeetId={this.state.selectedMeet.meetId} onChange={this.handleMeetSelect} />
-                <RaceMeet meet={meet} selectedRace={this.state.selectedRace} punters={this.props.punters} meetTips={meetTips} onClick={this.handleRaceSelect} />
+                <RaceMeetSelector meets={this.props.raceMeets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
+                <RaceMeet meet={meet} selectedRace={this.props.selectedRace} punters={this.props.punters} meetTips={meetTips} onClick={this.props.onRaceChange} />
                 <Menu></Menu>
             </div>
         );
