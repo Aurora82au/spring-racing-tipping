@@ -7,7 +7,7 @@ export default class RaceMeetSelector extends Component {
     
     render() {
         return (
-            <div className="race-meet-selector">
+            <div className="selector">
                 <select value={this.props.selectedMeetId} onChange={this.props.onChange}>
                     {this.props.meets.map(meet => {
                         return <option key={meet.meetId} value={meet.meetId}>{meet.name}</option>

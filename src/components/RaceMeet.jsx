@@ -14,9 +14,9 @@ export default class RaceMeet extends Component {
             for (let i = 0; i < self.props.meet.races.length; i++) {
                 let className;
                 switch (self.props.meet.races[i].status) {
-                    // case "Has Run": className = 'circle bg-green'; break;
-                    // case "About To Jump": className = 'circle bg-orange'; break;
-                    // case "Racing": className = 'circle bg-red'; break;
+                    case "Has Run": className = 'circle bg-green'; break;
+                    case "About To Jump": className = 'circle bg-orange'; break;
+                    case "Racing": className = 'circle bg-red'; break;
                     default: className = 'circle bg-blue'; break;
                 }
                 if (self.props.meet.races[i].number === self.props.selectedRace) { className += ' selected' }

@@ -15,7 +15,7 @@ export default class Results extends Component {
 
         return (
             <div className="app">
-                <Header page="Results" text="This is where you can see the results of the hours of peoples research, strategy and rumination....before they just picked a number because they liked the jockey's pink star-spangled uniform." />
+                <Header page="Results" isAdmin={this.props.isAdmin} text="This is where you can see the results of the hours of peoples research, strategy and rumination....before they just picked a number because they liked the jockey's pink star-spangled uniform." />
                 <RaceMeetSelector meets={this.props.raceMeets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
                 <RaceMeet meet={meet} selectedRace={this.props.selectedRace} punters={this.props.punters} meetTips={meetTips} onClick={this.props.onRaceChange} />
                 <Menu></Menu>

@@ -15,7 +15,7 @@ export default class Tips extends Component {
 
         return (
             <div className="app">
-                <Header page="Tips" text="You want a tip?.....be good to your mother.  Otherwise, simply select 3 horses for each race.  Don't worry about saving at the end, your tips are saved every time you make a change." />
+                <Header page="Tips" isAdmin={this.props.isAdmin} text="You want a tip?.....be good to your mother.  Otherwise, simply select 3 horses for each race.  Don't worry about saving at the end, your tips are saved every time you make a change." />
                 <RaceMeetSelector meets={this.props.raceMeets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
                 <TippingRaceList meet={meet} tips={tips} />
                 <Menu></Menu>

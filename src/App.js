@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import Login from './components/Login';
 import Admin from './components/Admin';
 import Information from './components/Information';
 import Tips from './components/Tips';
@@ -14,6 +15,8 @@ class App extends Component {
             raceMeets: [],
             punters: [],
             tips: [],
+            user: 1,
+            isAdmin: false,
             selectedMeet: 'CAULCUP',
             selectedRace: 1
         }
@@ -46,6 +49,15 @@ class App extends Component {
         this.getData();
     }
 
+    handleLogin = (user, isAdmin) => {
+        console.log('in handleLogin');
+        this.setState({
+            user: user,
+            isAdmin: isAdmin
+        });
+        window.location.href = '/';
+    }
+
     handleMeetSelect = event => {
         this.setState({
             selectedMeet: event.target.value,
@@ -64,11 +76,12 @@ class App extends Component {
             return (
                 <Router>
                     <Switch>
-                        <Route exact path="/admin" render={routeProps => <Admin {...routeProps} raceMeets={this.state.raceMeets} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} />} />
-                        <Route exact path="/information" component={Information} />
-                        <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} />} />
-                        <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} />} />
-                        <Route exact path="/leaderboard" render={routeProps => <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} />} />
+                        <Route exact path="/login" render={routeProps => <Login {...routeProps} punters={this.state.punters} handleLogin={this.handleLogin} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/admin" render={routeProps => <Admin {...routeProps} raceMeets={this.state.raceMeets} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/information" render={routeProps => <Information {...routeProps} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/leaderboard" render={routeProps => <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} isAdmin={this.state.isAdmin} />} />
                         <Redirect from='/' to='/information' />
                         {/* <Redirect from='/spring-racing-tipping' to='/spring-racing-tipping/information' /> */}
                     </Switch>
