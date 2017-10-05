@@ -164,6 +164,13 @@ h2 img {
 .password-label {
     display: block;
     margin-bottom: .5rem;
+    transform: translate(1rem, 3rem);
+    transition: transform 200ms ease-in-out;
+}
+
+.password-label.focused {
+    transform: translate(0, 0);
+    transition: transform 200ms ease-in-out;
 }
 
 input.password {

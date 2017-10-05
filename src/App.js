@@ -16,7 +16,7 @@ class App extends Component {
             punters: [],
             tips: [],
             authenticated: false,
-            user: 1,
+            user: 0,
             isAdmin: false,
             selectedMeet: 'CAULCUP',
             selectedRace: 1
@@ -47,10 +47,22 @@ class App extends Component {
     }
 
     componentDidMount() {
+        // Load all the data
         this.getData();
+        // Check if the user is already logged in
+        if (sessionStorage.getItem('user')) {
+            this.setState({
+                authenticated: true,
+                user: sessionStorage.getItem('user'),
+                isAdmin: sessionStorage.getItem('isAdmin')
+            });
+        }
     }
 
     handleLogin = (user, isAdmin) => {
+        // Set the sessionStorage for the logged in user
+        sessionStorage.setItem('user', user);
+        sessionStorage.setItem('isAdmin', isAdmin);
         this.setState({
             authenticated: true,
             user: user,
@@ -77,11 +89,11 @@ class App extends Component {
                 <Router>
                     <Switch>
                         <Route exact path="/login" render={routeProps => <Login {...routeProps} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} isAdmin={this.state.isAdmin} />} />
-                        <Route exact path="/admin" render={routeProps => <Admin {...routeProps} raceMeets={this.state.raceMeets} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} />} />
-                        <Route exact path="/information" render={routeProps => <Information {...routeProps} isAdmin={this.state.isAdmin} />} />
-                        <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} />} />
-                        <Route exact path="/results" render={routeProps => <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} isAdmin={this.state.isAdmin} />} />
-                        <Route exact path="/leaderboard" render={routeProps => <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/admin" render={routeProps => this.state.authenticated ? <Admin {...routeProps} raceMeets={this.state.raceMeets} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
+                        <Route exact path="/information" render={routeProps => this.state.authenticated ? <Information {...routeProps} authenticated={this.state.authenticated} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
+                        <Route exact path="/tips" render={routeProps => this.state.authenticated ? <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
+                        <Route exact path="/results" render={routeProps => this.state.authenticated ? <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
+                        <Route exact path="/leaderboard" render={routeProps => this.state.authenticated ? <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
                         <Redirect from='/' to='/information' />
                         {/* <Redirect from='/spring-racing-tipping' to='/spring-racing-tipping/information' /> */}
                     </Switch>

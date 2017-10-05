@@ -8,7 +8,8 @@ export default class Header extends Component {
 
     render() {
         // Show the Admin button only if the user is an admin
-        let adminBtn = this.props.isAdmin ? <NavLink to="/admin" key="a" className="icon-admin" activeClassName="selected"></NavLink> : '';
+        console.log('Header isAdmin: ' + this.props.isAdmin);
+        let adminBtn = (this.props.isAdmin === true) ? <NavLink to="/admin" key="a" className="icon-admin" activeClassName="selected"></NavLink> : '';
 
         return [
             adminBtn,
