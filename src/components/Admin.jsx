@@ -15,17 +15,17 @@ export default class Admin extends Component {
 
         for (let i = 0; i < meet.races.length; i++) {
             if (meet.races[i].status === 'Not Run Yet' || meet.races[i].status === 'About to jump') {
-                classes = 'status-selector-btn';
+                classes = 'btn status-selector-btn';
                 btnTxt = 'Race Started';
                 dataStatus = 'Racing';
             }
             else if (meet.races[i].status === 'Racing') {
-                classes = 'status-selector-btn active';
+                classes = 'btn status-selector-btn active';
                 btnTxt = 'Race Finished';
                 dataStatus = 'Has Run';
             }
             else {
-                classes = 'status-selector-btn disabled';
+                classes = 'btn status-selector-btn disabled';
                 btnTxt = 'Race Has Run';
             }
 

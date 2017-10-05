@@ -15,6 +15,7 @@ class App extends Component {
             raceMeets: [],
             punters: [],
             tips: [],
+            authenticated: false,
             user: 1,
             isAdmin: false,
             selectedMeet: 'CAULCUP',
@@ -50,12 +51,11 @@ class App extends Component {
     }
 
     handleLogin = (user, isAdmin) => {
-        console.log('in handleLogin');
         this.setState({
+            authenticated: true,
             user: user,
             isAdmin: isAdmin
         });
-        window.location.href = '/';
     }
 
     handleMeetSelect = event => {
@@ -76,7 +76,7 @@ class App extends Component {
             return (
                 <Router>
                     <Switch>
-                        <Route exact path="/login" render={routeProps => <Login {...routeProps} punters={this.state.punters} handleLogin={this.handleLogin} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path="/login" render={routeProps => <Login {...routeProps} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} isAdmin={this.state.isAdmin} />} />
                         <Route exact path="/admin" render={routeProps => <Admin {...routeProps} raceMeets={this.state.raceMeets} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} />} />
                         <Route exact path="/information" render={routeProps => <Information {...routeProps} isAdmin={this.state.isAdmin} />} />
                         <Route exact path="/tips" render={routeProps => <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} isAdmin={this.state.isAdmin} />} />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Header from './Header';
 
 export default class RaceMeet extends Component {
@@ -13,6 +14,14 @@ export default class RaceMeet extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         return !((nextProps === this.props) && (nextState === this.state));
+    }
+
+    componentDidMount() {
+        console.log('Login componentDidMount');
+    }
+    
+    componentDidUpdate() {
+        console.log('Login componentDidUpdate');
     }
     
     handlePunterSelect = event => {
@@ -29,7 +38,7 @@ export default class RaceMeet extends Component {
         });
     }
 
-    handleLoginClick = () => {
+    handleLoginClick = history => {
         let punter = this.props.punters.find(punter => { return punter.punterId === this.state.user });
         if (punter.password === this.state.password) {
             this.setState({
@@ -37,6 +46,7 @@ export default class RaceMeet extends Component {
             });
             console.log('correct password');
             this.props.handleLogin(this.state.user, punter.isAdmin);
+            history.push('/information');
         }
         else {
             this.setState({
@@ -59,6 +69,11 @@ export default class RaceMeet extends Component {
         // Show the error message if the password is wrong
         let errorClass = this.state.wrongPassword ? 'error' : 'error hide';
 
+        // Create log in button with router, so it can redirect on successful authentication
+        const LoginButton = withRouter(({history}) => (
+                <button className="btn" type="button" onClick={this.handleLoginClick(history)}>Log In</button>
+            ));
+
         return (
             <div className="app">
                 <Header page="Log In" isAdmin={this.props.isAdmin} text="Please select your name from the drop down, and then enter your password to log in." />
@@ -70,7 +85,7 @@ export default class RaceMeet extends Component {
                 </div>
                 <label htmlFor="password" className="password-label">Password</label>
                 <input id="password" className="password" type="password" defaultValue="" onChange={this.handlePasswordChange} />
-                <button className="btn" type="button" onClick={this.handleLoginClick}>Log In</button>
+                <LoginButton />
                 <div className={errorClass}>The password for the name you selected is incorrect</div>
             </div>
         );
