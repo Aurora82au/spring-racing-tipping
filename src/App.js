@@ -54,7 +54,7 @@ class App extends Component {
             this.setState({
                 authenticated: true,
                 user: sessionStorage.getItem('user'),
-                isAdmin: sessionStorage.getItem('isAdmin')
+                isAdmin: sessionStorage.getItem('isAdmin') === 'true'
             });
         }
     }
