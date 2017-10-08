@@ -78,7 +78,7 @@ export default class RaceMeet extends Component {
 
         return (
             <div className="app">
-                <Header page="Log In" isAdmin={this.props.isAdmin} text="Please select your name from the drop down, and then enter your password to log in." />
+                <Header page="Log In" punters={this.props.punters} user={this.props.user} isAdmin={this.props.isAdmin} text="Please select your name from the drop down, and then enter your password to log in." />
                 <div className="selector">
                     <select onChange={this.handlePunterSelect}>
                         {options}

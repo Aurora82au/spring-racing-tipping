@@ -73,9 +73,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #444;
 }
 
+input[type="text"], input[type="tel"], input[type="password"] {
+    padding: .6rem 1rem;
+    border: 1px solid #aaa;
+}
+
+input[type="tel"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
+    border-color: #27d3ff;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+.hide {
+    display: none !important;
+}
+
 .bold {
     font-weight: bold;
     color: #444;
+}
+
+.mt-20 {
+    margin-top: 2rem;
 }
 
 .mb-5 {

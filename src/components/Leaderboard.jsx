@@ -96,7 +96,7 @@ export default class Leaderboard extends Component {
         
         return (
             <div className="app">
-                <Header page="Leaderboard" isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
+                <Header page="Leaderboard" punters={this.props.punters} user={this.props.user} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
                 <Podium first={first} second={second} third={third} points={points} />
                 <h4 className="lb-heading">BEST OF THE REST</h4>
                 {loserList}

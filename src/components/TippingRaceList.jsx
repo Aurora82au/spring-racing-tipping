@@ -24,12 +24,17 @@ export default class TippingRaceList extends Component {
     }
 
     componentWillMount() {
-        let tips = this.state.tips,
-            meetRace;
-
+        let self = this,
+            tips = this.state.tips,
+            tipsRace, userTips;
+        
+        // Set the current users tips for each race of the chosen race meet
         for (let i = 0; i < this.props.meet.races.length; i++) {
-            meetRace = this.props.tips.races.find(race => { return race.number === (i + 1) });
-            tips[i] = { "race": (i + 1), selections: meetRace.punters[0].tips }
+            tipsRace = this.props.tips.races.find(race => { return race.number === (i + 1) });
+            userTips = tipsRace.punters.find(punter => { 
+                return punter.punterId === self.props.user }
+            );
+            tips[i] = { "race": (i + 1), selections: userTips.tips }
         }
 
         this.setState({
@@ -42,25 +47,32 @@ export default class TippingRaceList extends Component {
         let tips = this.state.tips,
             tip = tips.find(tip => { return tip.race === parseInt(event.target.getAttribute('data-race'), 10) }),
             index = tips.indexOf(tip);
-        tip.selections.pop();
-        tip.selections.push(event.target.innerText);
-        tips[index] = tip;
-        this.setState({
-            tips: tips
-        });
+        // If the selection is already selected, remove it, else if there is less than 3 selected add it
+        if (event.target.classList.contains('selected')) {
+            let index = tip.selections.indexOf(event.target.innerText);
+            if (index > -1) { tip.selections.splice(index, 1); }
+            this.setState({
+                tips: tips
+            });
+            this.props.onSelectionChange(this.state.tips);
+        }
+        else if (tip.selections.length < 3) {
+            tip.selections.push(event.target.innerText);
+            tips[index] = tip;
+            this.setState({
+                tips: tips
+            });
+            this.props.onSelectionChange(this.state.tips);
+        }
     }
 
     generateList = () => {
         let races = [],
-            selections = [],
-            tipGroupClass;
+            selections = [];
 
         for (let i = 0; i < this.props.meet.races.length; i++) {
             // Clear selections for each race
             selections = [];
-
-            // Set the first race to disabled for demo purposes
-            tipGroupClass = ((i === 0) && this.props.meet.meetId === 'CAULCUP') ? 'tip-group disabled' : 'tip-group';
 
             for (let j = 0; j < 24; j++) {
                 if (this.state.tips[i].selections.includes((j + 1).toString())) {
@@ -72,7 +84,7 @@ export default class TippingRaceList extends Component {
             }
 
             races.push(
-                <div key={i} className={tipGroupClass}>
+                <div key={i} className="tip-group">
                     <div className="details">
                         <div className="bold">RACE {this.props.meet.races[i].number}</div>
                         <span>{this.props.meet.races[i].time}</span>
@@ -89,12 +101,31 @@ export default class TippingRaceList extends Component {
     }
 
     render() {
-        let raceList = this.generateList();
+        let raceList = this.generateList(),
+            raceDay = new Date(this.props.meet.date),
+            raceListClass;
+
+        raceDay.setHours(10);
+        raceDay.setMinutes(15);
+
+        // Set the meet to disabled if it is after 10:15am on race day
+        if (new Date() > raceDay) {
+            raceListClass = 'raceList disabled';
+        }
+        else {
+            raceListClass = 'raceList';
+        }
 
         return (
-            <div className="raceList">
+            <div className={raceListClass}>
                 {raceList}
             </div>
         );
     }
 }
+
+
+
+
+// Set the first race to disabled for demo purposes
+//tipGroupClass = ((i === 0) && this.props.meet.meetId === 'CAULCUP') ? 'tip-group disabled' : 'tip-group';
