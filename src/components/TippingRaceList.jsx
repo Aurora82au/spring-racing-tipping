@@ -23,14 +23,22 @@ export default class TippingRaceList extends Component {
         return !((nextProps === this.props) && (nextState === this.state));
     }
 
-    componentWillMount() {
+    componentDidMount() {
+        this.setTips(this.props.tips);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setTips(nextProps.tips);
+    }
+
+    setTips = (propsTips) => {
         let self = this,
             tips = this.state.tips,
             tipsRace, userTips;
-        
+
         // Set the current users tips for each race of the chosen race meet
         for (let i = 0; i < this.props.meet.races.length; i++) {
-            tipsRace = this.props.tips.races.find(race => { return race.number === (i + 1) });
+            tipsRace = propsTips.races.find(race => { return race.number === (i + 1) });
             userTips = tipsRace.punters.find(punter => { 
                 return punter.punterId === self.props.user }
             );
@@ -38,15 +46,15 @@ export default class TippingRaceList extends Component {
         }
 
         this.setState({
-                tips: tips
-            }
-        );
+            tips: tips
+        });
     }
     
     handleSelectionClick = event => {
         let tips = this.state.tips,
             tip = tips.find(tip => { return tip.race === parseInt(event.target.getAttribute('data-race'), 10) }),
             index = tips.indexOf(tip);
+            
         // If the selection is already selected, remove it, else if there is less than 3 selected add it
         if (event.target.classList.contains('selected')) {
             let index = tip.selections.indexOf(event.target.innerText);
@@ -69,7 +77,7 @@ export default class TippingRaceList extends Component {
     generateList = () => {
         let races = [],
             selections = [];
-
+            
         for (let i = 0; i < this.props.meet.races.length; i++) {
             // Clear selections for each race
             selections = [];

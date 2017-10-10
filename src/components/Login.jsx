@@ -51,7 +51,7 @@ export default class RaceMeet extends Component {
             // Call handleLogin from App to set the logged in user and if they are an admin
             this.props.handleLogin(this.state.user, punter.isAdmin);
             // Redirect to the Information page
-            this.props.history.push('/information');
+            this.props.history.push(this.props.path + 'information');
         }
         else {
             this.setState({

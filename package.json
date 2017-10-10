@@ -12,9 +12,6 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.1",
-    "mongoose": "^4.12.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fastclick": "^3.0.2",
@@ -22,7 +19,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "nodemon": "^1.12.1",
     "react-scripts": "^1.0.14"
   }
 }

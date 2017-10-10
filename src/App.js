@@ -21,6 +21,10 @@ class App extends Component {
             selectedMeet: 'CAULCUP',
             selectedRace: 1
         }
+        // Local
+        this.path = '/';
+        // Github
+        //this.path = '/spring-racing-tipping/';
     }
     
     shouldComponentUpdate(nextProps, nextState) {
@@ -29,11 +33,11 @@ class App extends Component {
 
     async getData() {
         try {
-            let raceMeetResponse = await fetch('raceMeets.json'),
+            let raceMeetResponse = await fetch(this.path + 'raceMeets.json'),
                 meets = await raceMeetResponse.json(),
-                punterResponse = await fetch('punters.json'),
+                punterResponse = await fetch(this.path + 'punters.json'),
                 punters = await punterResponse.json(),
-                tipsResponse = await fetch('tips.json'),
+                tipsResponse = await fetch(this.path + 'tips.json'),
                 tips = await tipsResponse.json();
             this.setState({
                 raceMeets: meets,
@@ -93,13 +97,13 @@ class App extends Component {
             return (
                 <Router>
                     <Switch>
-                        <Route exact path="/login" render={routeProps => <Login {...routeProps} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} />} />
-                        <Route exact path="/admin" render={routeProps => (this.state.authenticated && this.state.isAdmin) ? <Admin {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
-                        <Route exact path="/information" render={routeProps => this.state.authenticated ? <Information {...routeProps} punters={this.state.punters} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
-                        <Route exact path="/tips" render={routeProps => this.state.authenticated ? <Tips {...routeProps} raceMeets={this.state.raceMeets} tips={this.state.tips} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} onSelectionChange={this.handleSaveTips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
-                        <Route exact path="/results" render={routeProps => this.state.authenticated ? <Results {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
-                        <Route exact path="/leaderboard" render={routeProps => this.state.authenticated ? <Leaderboard {...routeProps} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to='/login' />} />
-                        <Redirect from='/' to='/information' />
+                        <Route exact path={this.path + 'login'} render={routeProps => <Login {...routeProps} path={this.path} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} />} />
+                        <Route exact path={this.path + 'admin'} render={routeProps => (this.state.authenticated && this.state.isAdmin) ? <Admin {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                        <Route exact path={this.path + 'information'} render={routeProps => this.state.authenticated ? <Information {...routeProps} path={this.path} punters={this.state.punters} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                        <Route exact path={this.path + 'tips'} render={routeProps => this.state.authenticated ? <Tips {...routeProps} path={this.path} raceMeets={this.state.raceMeets} tips={this.state.tips} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onMeetChange={this.handleMeetSelect} onSelectionChange={this.handleSaveTips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                        <Route exact path={this.path + 'results'} render={routeProps => this.state.authenticated ? <Results {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                        <Route exact path={this.path + 'leaderboard'} render={routeProps => this.state.authenticated ? <Leaderboard {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                        <Redirect from='/' to={this.path + 'information'} />
                         {/* <Redirect from='/spring-racing-tipping' to='/spring-racing-tipping/information' /> */}
                     </Switch>
                 </Router>
