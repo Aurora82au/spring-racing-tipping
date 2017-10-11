@@ -7,10 +7,11 @@
         "races": [
             {
                 "number": 1,
-                "name": "Gothic Stakes",
+                "name": "Polytrack Gothic Stakes",
                 "time": "10:30am",
                 "distance": "1400m",
                 "status": "Has Run",
+                "noOfHorses": "",
                 "placings": {
                     "first": "1",
                     "second": "2",
@@ -19,7 +20,7 @@
             },
             {
                 "number": 2,
-                "name": "Caulfield Classic",
+                "name": "Ladbrokes Classic",
                 "time": "11:15am",
                 "distance": "2000m",
                 "status": "Has Run",
@@ -31,7 +32,7 @@
             },
             {
                 "number": 3,
-                "name": "Super Vobis Three-Years-Old Fillies Plate",
+                "name": "Resimax Plate",
                 "time": "12:00am",
                 "distance": "1400m",
                 "status": "About To Jump",
@@ -43,9 +44,9 @@
             },
             {
                 "number": 4,
-                "name": "Ethereal Stakes",
+                "name": "New Zealand Bloodstock Ethereal Stakes",
                 "time": "12:45am",
-                "distance": "1400m",
+                "distance": "2000m",
                 "status": "Racing",
                 "placings": {
                     "first": "",
@@ -55,7 +56,7 @@
             },
             {
                 "number": 5,
-                "name": "Caulfield Sprint",
+                "name": "Harrolds Caulfield Sprint",
                 "time": "1:30pm",
                 "distance": "1000m",
                 "status": "Not Run Yet",
@@ -67,7 +68,7 @@
             },
             {
                 "number": 6,
-                "name": "Moonga Stakes",
+                "name": "Ladbrokes Moonga Stakes",
                 "time": "2:15pm",
                 "distance": "1400m",
                 "status": "Not Run Yet",
@@ -79,7 +80,7 @@
             },
             {
                 "number": 7,
-                "name": "Priceline Cup",
+                "name": "Priceline Pharmacy Coongy Cup",
                 "time": "3:00pm",
                 "distance": "2000m",
                 "status": "Not Run Yet",
@@ -103,7 +104,7 @@
             },
             {
                 "number": 9,
-                "name": "Alinghi Stakes",
+                "name": "Carlton Draught Alinghi Stakes",
                 "time": "4:30pm",
                 "distance": "1100m",
                 "status": "Not Run Yet",
@@ -115,7 +116,7 @@
             },
             {
                 "number": 10,
-                "name": "Tristarc Stakes",
+                "name": "Schweppes Tristarc Stakes",
                 "time": "5:15pm",
                 "distance": "1400m",
                 "status": "Not Run Yet",
