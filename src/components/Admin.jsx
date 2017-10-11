@@ -39,6 +39,7 @@ export default class Admin extends Component {
                         <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="tel" defaultValue={meet.races[i].placings.first} /></div>
                         <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="tel" defaultValue={meet.races[i].placings.second} /></div>
                         <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="tel" defaultValue={meet.races[i].placings.third} /></div>
+                        <button className="save-btn" type="button">Save</button>
                     </div>
                     <div className="status-selector">
                         <h4>Set Race Status</h4>

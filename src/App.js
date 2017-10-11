@@ -24,7 +24,7 @@ class App extends Component {
         // Local
         this.path = '/';
         // Github
-        //this.path = '/spring-racing-tipping/';
+        // this.path = '/spring-racing-tipping/';
     }
     
     shouldComponentUpdate(nextProps, nextState) {

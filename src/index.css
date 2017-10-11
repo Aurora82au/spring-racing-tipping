@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 input[type="text"], input[type="tel"], input[type="password"] {
-    padding: .6rem 1rem;
+    padding: .7rem 1rem;
     border: 1px solid #aaa;
 }
 
@@ -88,6 +88,29 @@ ul {
 
 li {
     list-style: none;
+    margin-bottom: .5rem;
+}
+
+.marked-list li {
+    list-style: disc;
+    line-height: 1.6rem;
+}
+
+.marked-list li ul {
+    margin-top: .5rem;
+}
+
+.marked-list li ul li {
+    position: relative;
+    list-style: none;
+}
+
+.marked-list li ul li:before {
+    position: absolute;
+    display: inline-block;
+    content: "-";
+    top: 0;
+    left: -1rem;
 }
 
 p {

@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
+/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
     display: none !important;
 }
 .icon-admin {
@@ -15,7 +15,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 .browser {
     background: none !important;
-}
+} */
 /* Used when hiding things - END */
 
 .app {
@@ -33,8 +33,8 @@ div.bg-green, div.bg-orange, div.bg-red {
 .btn {
     display: flex;
     width: 12rem;
-    height: 4rem;
     justify-content: center;
+    line-height: 4rem;
     cursor: pointer;
     border: 1px solid #aaa;
     color: #444;
@@ -106,6 +106,50 @@ h2 img {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
+}
+
+.profile-popup {
+    display: none;
+    position: absolute;
+    top: 1.4rem;
+    right: 5.5rem;
+    width: 14rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.profile-popup:before {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    width: 0;
+    height: 0;
+    top: 1rem;
+    right: -2rem;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid #ccc;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+}
+
+.profile-popup:after {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    width: 0;
+    height: 0;
+    top: 1rem;
+    right: -1.9rem;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid #fff;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+}
+
+.profile-popup .btn {
+    width: 100%;
+    height: auto;
 }
 
 .icon-admin {
@@ -211,6 +255,24 @@ input.password {
     width: 6rem;
 }
 
+.save-btn {
+    display: flex;
+    width: 6rem;
+    height: 3rem;
+    margin-left: 3rem;
+    justify-content: center;
+    line-height: 3rem;
+    border: none;
+    color: #fff;
+    background-color: #666;
+    outline: 0;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #000;
+}
+
 .adminRace .status-selector {
     grid-area: status;
 }
@@ -279,8 +341,20 @@ input.password {
     background-position: -60px 0;
 }
 
-.future-plans li {
-    list-style: disc;
+.demo-square {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+    vertical-align: -.1rem;
+}
+
+.icon-admin.demo {
+    position: relative;
+    top: auto;
+    right: auto;
+    padding: .2rem .3rem .3rem;
+    font-size: 1rem;
 }
 
 
