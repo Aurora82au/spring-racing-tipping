@@ -32,7 +32,7 @@ export default class Leaderboard extends Component {
 
         // Load each punter into the points array with a score of 0
         while (a--) {
-            points.push({ "punterId": this.props.punters[a].punterId, "points": 0 });
+            points.push({ "punterId": this.props.punters[a].punterId, "points": 0, "firsts": 0, "seconds": 0, "thirds": 0 });
         }
 
         // For each race meet
@@ -49,9 +49,9 @@ export default class Leaderboard extends Component {
                 // For each punters tips
                 while (d--) {
                     puntersPoints = this.findPuntersPoints(points, tips.punters[d].punterId);
-                    if (tips.punters[d].tips.includes(placings.first)) { puntersPoints.points += 3; }
-                    if (tips.punters[d].tips.includes(placings.second)) { puntersPoints.points += 2; }
-                    if (tips.punters[d].tips.includes(placings.third)) { puntersPoints.points += 1; }
+                    if (tips.punters[d].tips.includes(placings.first)) { puntersPoints.points += 3; puntersPoints.firsts++; }
+                    if (tips.punters[d].tips.includes(placings.second)) { puntersPoints.points += 2; puntersPoints.seconds++; }
+                    if (tips.punters[d].tips.includes(placings.third)) { puntersPoints.points += 1; puntersPoints.thirds++; }
                 }
             }
         }
@@ -64,8 +64,8 @@ export default class Leaderboard extends Component {
             loserList = [],
             first, second, third, punter, position;
 
-        // Sort points in descending order
-        points.sort((a, b) => { return b.points - a.points });
+        // Sort points in descending order by total points, then by first places, then by second places
+        points.sort((a, b) => { return b.points - a.points || b.firsts - a.firsts || b.seconds - a.seconds });
         
         // Set winners
         first = this.findPunter(points[0].punterId);
@@ -74,6 +74,7 @@ export default class Leaderboard extends Component {
 
         // Generate list of losers
         for (let i = 0; i < points.length; i++) {
+            console.log('Punter ' + points[i].punterId + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
             if (i !== 0 && i !== 1 && i !== 2) {
                 // Get the punter details
                 punter = this.findPunter(points[i].punterId);
