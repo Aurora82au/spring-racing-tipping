@@ -35,7 +35,8 @@ export default class Information extends Component {
                 <p>5 minutes before a race is due to run its status will automatically change to 'About To Jump'.  An admin will then have to manually set it to 'Racing' and 'Has Run' on the Admin page, as they can tend to run late.</p>
                 <p>When you select a race you can see its details and placings appear, and below that will be a list of everybody's tips for that race.  Each person's tips shows each of their 3 picks and the calculated score.  Any correct tips will be shown in teal with a tick next to it.</p>
                 <div className="bold mt-20">Leaderboard</div>
-                <p>On the Leaderboard page you can see the current rank of all the punters according to their overall score.  The top three will appear on the podium, everybody else will be listed in order under 'Best of the Rest'.</p>
+                <p>On the Leaderboard page you can see the current rank of all the punters.  The rank is determined first by people's overall score, then how many trifectas (first, second, third) they have, then how many quinellas (first, second) they have, then by number of first places, then finally second places.</p>
+                <p>The top three will appear on the podium, everybody else will be listed in order under 'Best of the Rest'.</p>
                 <div className="bold mt-20">Admin</div>
                 <p>Anybody who is marked as an admin will see an admin icon appear in the top right of the screen, below the profile picture <span className="icon-admin demo"></span></p>
                 <p>When you click the admin link it will take you to the Admin page.  Currently on the Admin page you can set the placings and the status for each race. Click the green 'Race Started' button to change the status to Racing.  Then click the red 'Race Finished' button to change the status to Has Run, which will disable the button.</p>

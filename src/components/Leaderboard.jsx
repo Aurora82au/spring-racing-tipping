@@ -28,17 +28,25 @@ export default class Leaderboard extends Component {
         let points = [],
             a = this.props.punters.length,
             b = this.props.raceMeets.length,
-            c, d, placings, tipMeet, tips, puntersPoints;
+            c, d, placings, tipMeet, tips, puntersPoints, raceScore;
 
         // Load each punter into the points array with a score of 0
         while (a--) {
-            points.push({ "punterId": this.props.punters[a].punterId, "points": 0, "firsts": 0, "seconds": 0, "thirds": 0 });
+            points.push({
+                "punterId": this.props.punters[a].punterId,
+                "points": 0,
+                "trifectas": 0,
+                "quinellas": 0,
+                "firsts": 0,
+                "seconds": 0,
+                "thirds": 0
+            });
         }
 
-        // For each race meet
+        // For each meet
         while (b--) {
             c = this.props.raceMeets[b].races.length;
-            // For each meet race
+            // For each race in meet
             while (c--) {
                 // Set placings to the placings for this race
                 placings = this.props.raceMeets[b].races[c].placings;
@@ -48,10 +56,13 @@ export default class Leaderboard extends Component {
                 d = tips.punters.length;
                 // For each punters tips
                 while (d--) {
+                    raceScore = 0;
                     puntersPoints = this.findPuntersPoints(points, tips.punters[d].punterId);
-                    if (tips.punters[d].tips.includes(placings.first)) { puntersPoints.points += 3; puntersPoints.firsts++; }
-                    if (tips.punters[d].tips.includes(placings.second)) { puntersPoints.points += 2; puntersPoints.seconds++; }
-                    if (tips.punters[d].tips.includes(placings.third)) { puntersPoints.points += 1; puntersPoints.thirds++; }
+                    if (tips.punters[d].tips.includes(placings.first)) { puntersPoints.points += 3; raceScore += 3; puntersPoints.firsts++; }
+                    if (tips.punters[d].tips.includes(placings.second)) { puntersPoints.points += 2; raceScore += 2; puntersPoints.seconds++; }
+                    if (tips.punters[d].tips.includes(placings.third)) { puntersPoints.points += 1; raceScore += 1; puntersPoints.thirds++; }
+                    if (raceScore === 6) { puntersPoints.trifectas++; }
+                    if (raceScore === 5) { puntersPoints.quinellas++; }
                 }
             }
         }
@@ -64,8 +75,10 @@ export default class Leaderboard extends Component {
             loserList = [],
             first, second, third, punter, position;
 
-        // Sort points in descending order by total points, then by first places, then by second places
-        points.sort((a, b) => { return b.points - a.points || b.firsts - a.firsts || b.seconds - a.seconds });
+        // Sort points in descending order by total points, then trifectas, then quinellas, then first places, then second places
+        points.sort((a, b) => {
+            return b.points - a.points || b.trifectas - a.trifectas || b.quinellas - a.quinellas || b.firsts - a.firsts || b.seconds - a.seconds
+        });
         
         // Set winners
         first = this.findPunter(points[0].punterId);
@@ -74,7 +87,7 @@ export default class Leaderboard extends Component {
 
         // Generate list of losers
         for (let i = 0; i < points.length; i++) {
-            console.log('Punter ' + points[i].punterId + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
+            console.log('Punter ' + points[i].punterId + ' - trifectas: ' + points[i].trifectas + ' - quinellas: ' + points[i].quinellas + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
             if (i !== 0 && i !== 1 && i !== 2) {
                 // Get the punter details
                 punter = this.findPunter(points[i].punterId);

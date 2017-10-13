@@ -83,7 +83,10 @@ export default class TippingRaceList extends Component {
             selections = [];
 
             for (let j = 0; j < 24; j++) {
-                if (this.state.tips[i].selections.includes((j + 1).toString())) {
+                if (this.props.meet.races[i].scratchings.includes(j + 1)) {
+                    selections.push(<div key={j} className="selection scratched" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
+                }
+                else if (this.state.tips[i].selections.includes((j + 1).toString())) {
                     selections.push(<div key={j} className="selection selected" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
                 }
                 else {
