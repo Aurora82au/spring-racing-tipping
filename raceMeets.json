@@ -16,7 +16,8 @@
                     "first": "1",
                     "second": "2",
                     "third": "3"
-                }
+                },
+                "scratchings": [5, 17, 23]
             },
             {
                 "number": 2,
@@ -28,7 +29,8 @@
                     "first": "4",
                     "second": "5",
                     "third": "6"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 3,
@@ -40,7 +42,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 4,
@@ -52,7 +55,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 5,
@@ -64,7 +68,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 6,
@@ -76,7 +81,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 7,
@@ -88,7 +94,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 8,
@@ -100,7 +107,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 9,
@@ -112,7 +120,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 10,
@@ -124,7 +133,8 @@
                     "first": "",
                     "second": "",
                     "third": ""
-                }
+                },
+                "scratchings": []
             }
         ]
     },
@@ -144,7 +154,8 @@
                     "first": "1",
                     "second": "2",
                     "third": "3"
-                }
+                },
+                "scratchings": [8, 14, 22]
             },
             {
                 "number": 2,
@@ -156,7 +167,8 @@
                     "first": "4",
                     "second": "5",
                     "third": "6"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 3,
@@ -168,7 +180,8 @@
                     "first": "7",
                     "second": "8",
                     "third": "9"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 4,
@@ -180,7 +193,8 @@
                     "first": "1",
                     "second": "2",
                     "third": "3"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 5,
@@ -192,7 +206,8 @@
                     "first": "4",
                     "second": "5",
                     "third": "6"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 6,
@@ -204,7 +219,8 @@
                     "first": "7",
                     "second": "8",
                     "third": "9"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 7,
@@ -216,7 +232,8 @@
                     "first": "1",
                     "second": "2",
                     "third": "3"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 8,
@@ -228,7 +245,8 @@
                     "first": "4",
                     "second": "5",
                     "third": "6"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 9,
@@ -240,7 +258,8 @@
                     "first": "7",
                     "second": "8",
                     "third": "9"
-                }
+                },
+                "scratchings": []
             },
             {
                 "number": 10,
@@ -252,7 +271,8 @@
                     "first": "1",
                     "second": "2",
                     "third": "3"
-                }
+                },
+                "scratchings": []
             }
         ]
     }
