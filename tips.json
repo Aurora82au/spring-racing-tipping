@@ -1,5 +1,660 @@
 [
     {
+        "meetId": "CAULGUINEAS",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["3", "9", "12"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["12", "5", "3"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["2", "13", "12"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["12", "2", "7"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["5", "9", "12"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["3", "5", "9"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["13", "9", "12"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["2", "8", "12"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["2", "5", "13"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["13", "2", "5"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["5", "7", "9"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["2", "8", "9"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["9", "13", "4"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["4", "3", "12"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["3", "12", "9"]
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["3", "13", "5"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["2", "3", "8"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["2", "3", "9"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["13", "15", "5"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["2", "3", "8"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["3", "8", "18"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["2", "3", "8"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["4", "15", "18"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["5", "10", "17"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["2", "1", "18"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["2", "3", "9"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["4", "14", "13"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["3", "12", "4"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["3", "2", "10"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["3", "2", "9"]
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["3", "8", "9"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["1", "3", "8"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["1", "2", "3"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["1", "2", "3"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["1", "2", "3"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["1", "2", "8"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["1", "2", "8"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["1", "5", "7"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["2", "7", "11"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["11", "2", "7"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["1", "2", "8"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["4", "11", "3"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["1", "2", "8"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["1", "2", "9"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["1", "2", "3"]
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["3", "5", "7"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["2", "5", "11"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["2", "7", "5"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["1", "2", "9"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["1", "3", "5"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["5", "7", "11"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["5", "4", "3"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["2", "5", "9"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["2", "5", "9"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["2", "10", "1"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["2", "5", "8"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["9", "11", "2"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["8", "5", "1"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["5", "8", "11"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["5", "8", "3"]
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["2", "8", "10"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["2", "5", "8"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["4", "8", "13"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["2", "10", "8"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["2", "5", "10"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["2", "5", "9"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["2", "5", "4"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["5", "8", "12"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["1", "9", "14"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["1", "8", "13"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["2", "4", "5"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["2", "4", "5"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["13", "4", "8"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["2", "4", "5"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["2", "8", "10"]
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["1", "2", "6"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["2", "5", "3"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["2", "6", "8"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["6", "1", "2"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["1", "2", "7"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["2", "6", "8"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["2", "3", "7"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["1", "5", "8"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["3", "6", "8"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["3", "6", "8"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["1", "2", "5"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["8", "3", "2"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["1", "3", "8"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["1", "2", "3"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["2", "1", "3"]
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["1", "6", "11"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["1", "6", "11"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["6", "1", "8"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["11", "2", "1"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["1", "6", "11"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["6", "10", "11"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["11", "5", "6"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["1", "5", "10"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["1", "6", "10"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["6", "7", "8"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["1", "8", "11"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["1", "11", "4"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["11", "8", "1"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["1", "6", "11"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["11", "1", "6"]
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["6", "7", "16"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["3", "6", "16"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["5", "16", "7"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["11", "16", "6"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["5", "6", "7"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["5", "7", "16"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["6", "16", "7"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["3", "5", "10"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["7", "15", "16"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["1", "5", "9"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["6", "7", "16"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["16", "11", "6"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["6", "16", "8"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["6", "11", "16"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["6", "16", "11"]
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["4", "9", "10"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["4", "9", "10"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["4", "9", "15"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["15", "1", "10"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["4", "9", "10"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["4", "9", "10"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["10", "4", "9"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["4", "10", "16"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["5", "7", "10"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["6", "9", "14"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["1", "6", "9"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["4", "9", "10"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["9", "11", "3"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["4", "9", "15"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["9", "15", "4"]
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": ["2", "4", "9"]
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": ["5", "6", "9"]
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": ["2", "5", "6"]
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": ["4", "9", "11"]
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": ["2", "9", "11"]
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": ["2", "6", "9"]
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": ["9", "6", "11"]
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": ["1", "6", "9"]
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": ["4", "6", "11"]
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": ["4", "2", "11"]
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": ["1", "2", "9"]
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": ["11", "9", "2"]
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": ["9", "6", "1"]
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": ["2", "9", "11"]
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": ["9", "11", "2"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "meetId": "CAULCUP",
         "races": [
             {
@@ -7,7 +662,7 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": ["10", "2", "13"]
+                        "tips": ["10", "2", "5"]
                     },
                     {
                         "punterId": 2,

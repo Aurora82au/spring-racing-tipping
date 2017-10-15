@@ -75,5 +75,93 @@
         },
         "pic": "Colin.jpg",
         "isAdmin": true
+    },
+    {
+        "punterId": 8,
+        "password": "mb5792",
+        "name": {
+            "first": "Melanie",
+            "last": "Budge",
+            "display": "Melanie B"
+        },
+        "pic": "Melanie.jpg",
+        "isAdmin": false
+    },
+    {
+        "punterId": 9,
+        "password": "ck4618",
+        "name": {
+            "first": "Chris",
+            "last": "Kelly",
+            "display": "Chris K"
+        },
+        "pic": "Chris.jpg",
+        "isAdmin": false
+    },
+    {
+        "punterId": 10,
+        "password": "ns3775",
+        "name": {
+            "first": "Nicole",
+            "last": "Selakovic",
+            "display": "Nicole S"
+        },
+        "pic": "Default.png",
+        "isAdmin": false
+    },
+    {
+        "punterId": 11,
+        "password": "bf9169",
+        "name": {
+            "first": "Bernie",
+            "last": "Farrow",
+            "display": "Bernie F"
+        },
+        "pic": "Bernie.jpg",
+        "isAdmin": false
+    },
+    {
+        "punterId": 12,
+        "password": "ka8395",
+        "name": {
+            "first": "Kristy-Anne",
+            "last": "Quinn",
+            "display": "Kristy-Anne Q"
+        },
+        "pic": "KA.jpg",
+        "isAdmin": false
+    },
+    {
+        "punterId": 13,
+        "password": "ep5947",
+        "name": {
+            "first": "Emma",
+            "last": "Papantoniou",
+            "display": "Emma P"
+        },
+        "pic": "EmmaP.jpg",
+        "isAdmin": false
+    },
+    {
+        "punterId": 14,
+        "password": "ls7157",
+        "name": {
+            "first": "Leigh",
+            "last": "Sullivan",
+            "display": "Leigh S"
+        },
+        "pic": "Leigh.jpg",
+        "isAdmin": false
+    },
+    {
+        "punterId": 15,
+        "password": "ts8015",
+        "name": {
+            "first": "Tara",
+            "last": "Smith",
+            "display": "Tara S"
+        },
+        "pic": "Default.png",
+        "isAdmin": false
     }
 ]
