@@ -76,22 +76,19 @@ export default class TippingRaceList extends Component {
 
     generateList = () => {
         let races = [],
-            selections = [];
+            selections = [],
+            className;
             
         for (let i = 0; i < this.props.meet.races.length; i++) {
             // Clear selections for each race
             selections = [];
 
             for (let j = 0; j < 24; j++) {
-                if (this.props.meet.races[i].scratchings.includes(j + 1)) {
-                    selections.push(<div key={j} className="selection scratched" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
-                }
-                else if (this.state.tips[i].selections.includes((j + 1).toString())) {
-                    selections.push(<div key={j} className="selection selected" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
-                }
-                else {
-                    selections.push(<div key={j} className="selection" data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
-                }
+                className = 'selection';
+                if (this.props.meet.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
+                if (this.state.tips[i].selections.includes((j + 1).toString())) { className += ' selected'; }
+                
+                selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
             }
 
             races.push(

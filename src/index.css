@@ -134,6 +134,10 @@ p {
     margin-bottom: .5rem;
 }
 
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
 .green {
     color: green !important;
 }

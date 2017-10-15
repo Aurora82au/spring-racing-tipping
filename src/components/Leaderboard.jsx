@@ -87,15 +87,15 @@ export default class Leaderboard extends Component {
 
         // Generate list of losers
         for (let i = 0; i < points.length; i++) {
-            console.log('Punter ' + points[i].punterId + ' - trifectas: ' + points[i].trifectas + ' - quinellas: ' + points[i].quinellas + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
+            //console.log('Punter ' + points[i].punterId + ' - trifectas: ' + points[i].trifectas + ' - quinellas: ' + points[i].quinellas + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
             if (i !== 0 && i !== 1 && i !== 2) {
                 // Get the punter details
                 punter = this.findPunter(points[i].punterId);
 
                 // Get positon ending name (adding 1 to index to account for array starting from 0)
-                if ((i + 1) % 10 === 1) { position = '<sup>ST</sup>' }
-                else if ((i + 1) % 10 === 2) { position = '<sup>ND</sup>' }
-                else if ((i + 1) % 10 === 3) { position = '<sup>RD</sup>' }
+                if (((i + 1) !== 11) && ((i + 1) % 10 === 1)) { position = '<sup>ST</sup>' }
+                else if (((i + 1) !== 12) && (i + 1) % 10 === 2) { position = '<sup>ND</sup>' }
+                else if (((i + 1) !== 13) && (i + 1) % 10 === 3) { position = '<sup>RD</sup>' }
                 else { position = '<sup>TH</sup>' }
                 
                 // Add them to the losers array

@@ -1,5 +1,143 @@
 [
     {
+        "meetId": "CAULGUINEAS",
+        "name": "Caulfield Guineas",
+        "location": "Caulfield",
+        "date": "2017-10-14",
+        "races": [
+            {
+                "number": 1,
+                "name": "Inglis Debutant Stakes",
+                "time": "12:20pm",
+                "distance": "1000m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "12",
+                    "second": "9",
+                    "third": "5"
+                },
+                "scratchings": [1, 6]
+            },
+            {
+                "number": 2,
+                "name": "Thoroughbred Club Stakes",
+                "time": "12:55pm",
+                "distance": "1200m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "1",
+                    "second": "10",
+                    "third": "3"
+                },
+                "scratchings": [6, 11, 19]
+            },
+            {
+                "number": 3,
+                "name": "Cape Grim Beef Steaks",
+                "time": "1:30pm",
+                "distance": "1200m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "4",
+                    "second": "8",
+                    "third": "9"
+                },
+                "scratchings": [6]
+            },
+            {
+                "number": 4,
+                "name": "Ladbrokes Herbert Power Stakes",
+                "time": "2:05pm",
+                "distance": "2400m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "11",
+                    "second": "1",
+                    "third": "8"
+                },
+                "scratchings": [4]
+            },
+            {
+                "number": 5,
+                "name": "Keno Weekend Hussler Stakes",
+                "time": "2:40pm",
+                "distance": "1400m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "4",
+                    "second": "2",
+                    "third": "3"
+                },
+                "scratchings": [6]
+            },
+            {
+                "number": 6,
+                "name": "Schweppes Thousand Guineas",
+                "time": "3:15pm",
+                "distance": "1600m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "5",
+                    "second": "1",
+                    "third": "2"
+                },
+                "scratchings": []
+            },
+            {
+                "number": 7,
+                "name": "Ladbrokes Stakes",
+                "time": "3:50pm",
+                "distance": "2000m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "2",
+                    "second": "3",
+                    "third": "6"
+                },
+                "scratchings": []
+            },
+            {
+                "number": 8,
+                "name": "Ladbrokes Caulfield Guineas",
+                "time": "4:30pm",
+                "distance": "1600m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "17",
+                    "second": "11",
+                    "third": "16"
+                },
+                "scratchings": [2, 12]
+            },
+            {
+                "number": 9,
+                "name": "United Petroleum Toorak Handicap",
+                "time": "5:10pm",
+                "distance": "1600m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "1",
+                    "second": "14",
+                    "third": "16"
+                },
+                "scratchings": [13]
+            },
+            {
+                "number": 10,
+                "name": "Keno Kwikpik Schillaci Stakes",
+                "time": "5:45pm",
+                "distance": "1100m",
+                "status": "Has Run",
+                "placings": {
+                    "first": "11",
+                    "second": "5",
+                    "third": "2"
+                },
+                "scratchings": [3, 8, 10]
+            }
+        ]
+    },
+    {
         "meetId": "CAULCUP",
         "name": "Caulfield Cup",
         "location": "Caulfield",
@@ -11,13 +149,12 @@
                 "time": "10:30am",
                 "distance": "1400m",
                 "status": "Has Run",
-                "noOfHorses": "",
                 "placings": {
                     "first": "1",
                     "second": "2",
                     "third": "3"
                 },
-                "scratchings": []
+                "scratchings": [5, 17, 23]
             },
             {
                 "number": 2,

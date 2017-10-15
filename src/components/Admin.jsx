@@ -8,25 +8,24 @@ export default class Admin extends Component {
         return !(nextProps === this.props);
     }
 
+    handleSelectionClick = () => {
+        console.log('Selection clicked');
+    }
+
     render() {
         let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.props.selectedMeet }),
             raceList = [],
-            classes, btnTxt, dataStatus;
+            selections = [],
+            className;
 
         for (let i = 0; i < meet.races.length; i++) {
-            if (meet.races[i].status === 'Not Run Yet' || meet.races[i].status === 'About to jump') {
-                classes = 'btn status-selector-btn';
-                btnTxt = 'Race Started';
-                dataStatus = 'Racing';
-            }
-            else if (meet.races[i].status === 'Racing') {
-                classes = 'btn status-selector-btn active';
-                btnTxt = 'Race Finished';
-                dataStatus = 'Has Run';
-            }
-            else {
-                classes = 'btn status-selector-btn disabled';
-                btnTxt = 'Race Has Run';
+            selections = [];
+
+            for (let j = 0; j < 24; j++) {
+                className = 'selection';
+                if (meet.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
+                
+                selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
             }
 
             raceList.push(
@@ -36,14 +35,27 @@ export default class Admin extends Component {
                         <span className="name">&nbsp;-&nbsp;{meet.races[i].name}</span>
                     </div>
                     <div className="placings">
-                        <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="tel" defaultValue={meet.races[i].placings.first} /></div>
-                        <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="tel" defaultValue={meet.races[i].placings.second} /></div>
-                        <div className="mb-5"><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="tel" defaultValue={meet.races[i].placings.third} /></div>
+                        <div><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="tel" defaultValue={meet.races[i].placings.first} /></div>
+                        <div><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="tel" defaultValue={meet.races[i].placings.second} /></div>
+                        <div><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="tel" defaultValue={meet.races[i].placings.third} /></div>
                         <button className="save-btn" type="button">Save</button>
                     </div>
+                    <div className="mb-10 bold">Set Race Status</div>
                     <div className="status-selector">
-                        <h4>Set Race Status</h4>
-                        <button className={classes} type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status={dataStatus}>{btnTxt}</button>
+                        <button className={(meet.races[i].status === 'Not Run Yet') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Not Run Yet">Not Run Yet</button>
+                        <button className={(meet.races[i].status === 'About To Jump') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="About To Jump">About To Jump</button>
+                        <button className={(meet.races[i].status === 'Racing') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Racing">Racing</button>
+                        <button className={(meet.races[i].status === 'Has Run') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Has Run">Has Run</button>
+                    </div>
+                    <div className="scratching-list">
+                        <div className="mb-10 bold">Scratchings</div>
+                        <div className="selections">
+                            {selections}
+                        </div>
                     </div>
                 </div>
             );

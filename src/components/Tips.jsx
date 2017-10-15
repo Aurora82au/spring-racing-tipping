@@ -19,6 +19,11 @@ export default class Tips extends Component {
                 <p><b>* Tips must be in by 10:00am AEDT on race day.</b></p>
                 <p>The tips will be disabled after this time.</p>
                 <RaceMeetSelector meets={this.props.raceMeets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
+                <div className="tip-examples">
+                    <span className="selection selected">18</span><span>Selected</span>
+                    <span className="selection scratched">18</span><span>Scratched</span>
+                    <span className="selection selected scratched">18</span><span>Both</span>
+                </div>
                 <TippingRaceList meet={meet} tips={tips} user={this.props.user} onSelectionChange={this.props.onSelectionChange} />
                 <Menu path={this.props.path}></Menu>
             </div>

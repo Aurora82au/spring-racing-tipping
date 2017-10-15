@@ -231,19 +231,20 @@ input.password {
 /* Admin */
 
 .adminRace {
-    display: grid;
-    grid-template-areas: "heading heading"
-                         "placings status";
-    grid-gap: 1rem;
     margin-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #27d3ff;
 }
 
-.adminRace .details {
-    grid-area: heading;
+.adminRace:first-child {
+    padding-top: 0;
+    border-top: none;
 }
 
 .adminRace .placings {
-    grid-area: placings;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .adminRace label {
@@ -252,14 +253,14 @@ input.password {
 }
 
 .adminRace input[type="tel"] {
-    width: 6rem;
+    width: 4rem;
+    margin-right: 1rem;
 }
 
 .save-btn {
     display: flex;
     width: 6rem;
-    height: 3rem;
-    margin-left: 3rem;
+    height: 3.3rem;
     justify-content: center;
     line-height: 3rem;
     border: none;
@@ -273,26 +274,46 @@ input.password {
     background-color: #000;
 }
 
-.adminRace .status-selector {
-    grid-area: status;
+.scratching-list {
+    margin-top: 2rem;
 }
 
-.adminRace h4 {
-    margin-top: 0;
-    text-align: center;
+.scratching-list .selections {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row-gap: 1rem;
+}
+
+.scratching-list .selection {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #aaa;
+    cursor: pointer;
+}
+.scratching-list .selection.scratched {
+    background: repeating-linear-gradient(-45deg, transparent 46%, #ff0000 49%, #ff0000 52%, transparent 55%);
+}
+
+.adminRace .status-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 .adminRace .status-selector-btn {
-    margin-left: auto;
-    margin-right: auto;
-    border-color: #43ae43;
-    color: #fff;
-    background-color: #43ae43;
+    width: 100%;
 }
 
-.adminRace .status-selector-btn.active {
-    border-color: #ff2626;
-    background-color: #ff2626;
+.adminRace .status-selector-btn.selected {
+    border-color: #813aff;
+    color: #fff;
+    background-color: #813aff;
+    pointer-events: none;
 }
 
 .adminRace .status-selector-btn.disabled {
@@ -360,6 +381,12 @@ input.password {
 
 /* Tips */
 
+.tip-examples {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 .raceList .tip-group {
     margin-bottom: 2rem;
 }
@@ -385,25 +412,38 @@ input.password {
     grid-row-gap: 1rem;
 }
 
-.raceList .selection {
+.raceList .selection, .tip-examples .selection {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 3rem;
     height: 3rem;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
     color: #fff;
     background-color: #aaa;
     cursor: pointer;
 }
 
-.raceList .selection.selected {
+.tip-examples .selection {
+    margin-left: 3rem;
+    margin-right: .4rem;
+    cursor: default;
+}
+
+.tip-examples .selection:first-child {
+    margin-left: 0;
+}
+
+.raceList .selection.selected, .tip-examples .selection.selected {
     background-color: #813aff;
 }
 
-.raceList .selection.scratched {
+.raceList .selection.scratched, .tip-examples .selection.scratched {
     background: repeating-linear-gradient(-45deg, transparent 46%, #ff0000 49%, #ff0000 52%, transparent 55%);
-    pointer-events: none;
+}
+
+.raceList .selection.selected.scratched, .tip-examples .selection.selected.scratched {
+    background: repeating-linear-gradient(-45deg, #813aff 46%, #813aff 49%, #fff 52%, #813aff 55%);
 }
 
 .disabled .bold, .disabled .details {
@@ -737,9 +777,13 @@ input.password {
         height: 3rem;
         margin-right: .4rem;
     }
+    
+    .adminRace input[type="tel"] {
+        margin-right: 2rem;
+    }
 
     .tip .name {
-        width: 11.5rem;
+        width: 11.3rem;
     }
 
     .raceList .name {
@@ -753,7 +797,7 @@ input.password {
     }
     
     .tip .name {
-        width: 12.2rem;
+        width: 12rem;
     }
     
     .raceList .name {
@@ -767,7 +811,7 @@ input.password {
     }
     
     .tip .name {
-        width: 12.7rem;
+        width: 12.5rem;
     }
 }
 
@@ -777,7 +821,7 @@ input.password {
     }
     
     .tip .name {
-        width: 13.5rem;
+        width: 13.3rem;
     }
     
     .raceList .name {
@@ -791,7 +835,7 @@ input.password {
     }
     
     .tip .name {
-        width: 14rem;
+        width: 13.8rem;
     }
     
     .raceList .name {
