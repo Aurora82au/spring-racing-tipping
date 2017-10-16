@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fastclick": "^3.0.2",

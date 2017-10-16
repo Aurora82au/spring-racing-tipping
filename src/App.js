@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import axios from 'axios';
 import ScrollToTop from './components/ScrollToTop';
 import Login from './components/Login';
 import Admin from './components/Admin';
@@ -33,17 +34,35 @@ class App extends Component {
     }
 
     async getData() {
+        var self = this;
         try {
-            let raceMeetResponse = await fetch(this.path + 'raceMeets.json'),
-                meets = await raceMeetResponse.json(),
-                punterResponse = await fetch(this.path + 'punters.json'),
-                punters = await punterResponse.json(),
-                tipsResponse = await fetch(this.path + 'tips.json'),
-                tips = await tipsResponse.json();
-            this.setState({
-                raceMeets: meets,
-                punters: punters,
-                tips: tips
+            // Used for local JSON files
+            // let raceMeetResponse = await fetch(this.path + 'raceMeets.json'),
+            //     meets = await raceMeetResponse.json(),
+            //     punterResponse = await fetch(this.path + 'punters.json'),
+            //     punters = await punterResponse.json(),
+            //     tipsResponse = await fetch(this.path + 'tips.json'),
+            //     tips = await tipsResponse.json();
+            // self.setState({
+            //     raceMeets: meets,
+            //     punters: punters,
+            //     tips: tips
+            // });
+
+            // Used for data coming from database
+            axios.all([
+                axios.get('http://localhost:3001/racemeets'),
+                axios.get('http://localhost:3001/punters'),
+                axios.get('http://localhost:3001/tips')
+            ]).then(axios.spread(function (meets, punters, tips) {
+                    self.setState({
+                        raceMeets: meets.data,
+                        punters: punters.data,
+                        tips: tips.data
+                    });
+                })
+            ).catch(function (e) {
+               console.log('An Axios error occurred: ' + e);
             });
         }
         catch (e) {
