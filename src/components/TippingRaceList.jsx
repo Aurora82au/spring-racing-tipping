@@ -52,7 +52,8 @@ export default class TippingRaceList extends Component {
     
     handleSelectionClick = event => {
         let tips = this.state.tips,
-            tip = tips.find(tip => { return tip.race === parseInt(event.target.getAttribute('data-race'), 10) }),
+            modifiedRace = parseInt(event.target.getAttribute('data-race'), 10),
+            tip = tips.find(tip => { return tip.race === modifiedRace }),
             index = tips.indexOf(tip);
             
         // If the selection is already selected, remove it, else if there is less than 3 selected add it
@@ -62,7 +63,7 @@ export default class TippingRaceList extends Component {
             this.setState({
                 tips: tips
             });
-            this.props.onSelectionChange(this.state.tips);
+            this.props.onSelectionChange(modifiedRace, tip);
         }
         else if (tip.selections.length < 3) {
             tip.selections.push(event.target.innerText);
@@ -70,7 +71,7 @@ export default class TippingRaceList extends Component {
             this.setState({
                 tips: tips
             });
-            this.props.onSelectionChange(this.state.tips);
+            this.props.onSelectionChange(modifiedRace, tip);
         }
     }
 

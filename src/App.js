@@ -23,6 +23,7 @@ class App extends Component {
             selectedMeet: 'CAULGUINEAS',
             selectedRace: 1
         }
+        this.databaseURL = 'http://localhost:3001';
         // Local
         this.path = '/';
         // Github
@@ -51,9 +52,9 @@ class App extends Component {
 
             // Used for data coming from database
             axios.all([
-                axios.get('http://localhost:3001/racemeets'),
-                axios.get('http://localhost:3001/punters'),
-                axios.get('http://localhost:3001/tips')
+                axios.get(this.databaseURL + '/racemeets'),
+                axios.get(this.databaseURL + '/punters'),
+                axios.get(this.databaseURL + '/tips')
             ]).then(axios.spread(function (meets, punters, tips) {
                     self.setState({
                         raceMeets: meets.data,
@@ -107,9 +108,26 @@ class App extends Component {
         });
     }
 
-    handleSaveTips = tips => {
-        //console.log('handleSaveTips - tips received');
-        //console.log(tips);
+    handleSaveTips = (modifiedRace, modifiedTips) => {
+        let tips = this.state.tips,
+            tipsMeet = tips.find(meet => { return meet.meetId === this.state.selectedMeet }),
+            punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => { return punter.punterId === this.state.user }),
+            meetIndex = tips.indexOf(tipsMeet),
+            punterIndex = tips[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
+
+        // Update the tips for the selected meet
+        tipsMeet.races[modifiedRace - 1].punters[punterIndex].tips = modifiedTips.selections;
+
+        // Insert updated meet back into tips array
+        tips[meetIndex] = tipsMeet;
+
+        // Send updated selected meet to the database
+        axios.put(this.databaseURL + '/tips/' + this.state.selectedMeet, tipsMeet);
+
+        // Update local state with updated tips array
+        this.setState({
+            tips: tips
+        });
     }
 
     render() {

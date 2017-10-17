@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 input[type="text"], input[type="tel"], input[type="password"] {
+    height: 3.3rem;
     padding: .7rem 1rem;
     border: 1px solid #aaa;
 }

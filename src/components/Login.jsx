@@ -62,7 +62,7 @@ export default class RaceMeet extends Component {
     
     render() {
         // Sort names in ascending order by first name, then create an <option> for each of them
-        let sorted = this.props.punters.sort((a, b) => { return a.name.first > b.name.first }),
+        let sorted = this.props.punters.sort((a, b) => { return a.name.first.localeCompare(b.name.first) }),
             options = sorted.map(punter => {
                 return <option key={punter.punterId} value={punter.punterId}>{punter.name.first} {punter.name.last}</option>
             });

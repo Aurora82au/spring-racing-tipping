@@ -225,6 +225,7 @@ input.password {
     padding-top: .9rem;
     padding-bottom: .9rem;
     margin-bottom: 2rem;
+    outline: 0;
 }
 
 
