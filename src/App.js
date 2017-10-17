@@ -23,11 +23,11 @@ class App extends Component {
             selectedMeet: 'CAULGUINEAS',
             selectedRace: 1
         }
-        this.databaseURL = 'http://localhost:3001';
-        // Local
-        this.path = '/';
-        // Github
-        // this.path = '/spring-racing-tipping/';
+        // this.databaseURL = 'http://localhost:3001'; // Local
+        this.databaseURL = 'https://sleepy-harbor-88560.herokuapp.com'; // Heroku
+        
+        this.path = '/'; // Local
+        // this.path = '/spring-racing-tipping/'; // Github
     }
     
     shouldComponentUpdate(nextProps, nextState) {
