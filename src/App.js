@@ -150,12 +150,44 @@ class App extends Component {
         });
     }
 
-    handleSaveStatus = () => {
-        console.log('handleSaveStatus called');
+    handleSaveStatus = event => {
+        let raceMeets = this.state.raceMeets,
+            meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
+            meetIndex = raceMeets.indexOf(meet);
+
+        // Update the placings for the selected meet/race
+        meet.races[event.target.getAttribute('data-race') - 1].status = event.target.getAttribute('data-status');
+        
+        // Insert the updated meet back into the raceMeets array
+        raceMeets[meetIndex] = meet;
+
+        // Send the updated meet to the database
+        axios.put(this.databaseURL + '/racemeets/' + this.state.selectedMeet, meet);
+
+        // Update the local state with the updated raceMeets array
+        this.setState({
+            raceMeets: raceMeets
+        });
     }
 
-    handleSaveScratchings = () => {
-        console.log('handleSaveScratchings called');
+    handleSaveScratchings = (modifiedRace, modifiedScratchings) => {
+        let raceMeets = this.state.raceMeets,
+            meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
+            meetIndex = raceMeets.indexOf(meet);
+
+        // Update the placings for the selected meet/race
+        meet.races[modifiedRace - 1].scratchings = modifiedScratchings;
+        
+        // Insert the updated meet back into the raceMeets array
+        raceMeets[meetIndex] = meet;
+
+        // Send the updated meet to the database
+        axios.put(this.databaseURL + '/racemeets/' + this.state.selectedMeet, meet);
+
+        // Update the local state with the updated raceMeets array
+        this.setState({
+            raceMeets: raceMeets
+        });
     }
 
     render() {

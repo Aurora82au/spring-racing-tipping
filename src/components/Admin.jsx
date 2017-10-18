@@ -161,11 +161,11 @@ export default class Admin extends Component {
         this.props.onPlacingsChange(modifiedRace, placings);
     }
     
-    handleStatusChange = event => {
-        console.log('handleStatusChange called: ' + event.target.getAttribute('data-status'));
-    }
+    // handleStatusChange = event => {
+    //     console.log('handleStatusChange called: ' + event.target.getAttribute('data-status'));
+    // }
 
-    handleSelectionClick = event => {
+    handleScratchingClick = event => {
         console.log('Selection clicked');
     }
 
@@ -182,7 +182,7 @@ export default class Admin extends Component {
                 className = 'selection';
                 if (this.state.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
                 
-                selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
+                selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleScratchingClick}>{j + 1}</div>);
             }
 
             raceList.push(
@@ -200,13 +200,13 @@ export default class Admin extends Component {
                     <div className="mb-10 bold">Set Race Status</div>
                     <div className="status-selector">
                         <button className={(meet.races[i].status === 'Not Run Yet') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Not Run Yet" onClick={this.handleStatusChange}>Not Run Yet</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Not Run Yet" onClick={this.props.onStatusChange}>Not Run Yet</button>
                         <button className={(meet.races[i].status === 'About To Jump') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="About To Jump" onClick={this.handleStatusChange}>About To Jump</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="About To Jump" onClick={this.props.onStatusChange}>About To Jump</button>
                         <button className={(meet.races[i].status === 'Racing') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Racing" onClick={this.handleStatusChange}>Racing</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Racing" onClick={this.props.onStatusChange}>Racing</button>
                         <button className={(meet.races[i].status === 'Has Run') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Has Run" onClick={this.handleStatusChange}>Has Run</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Has Run" onClick={this.props.onStatusChange}>Has Run</button>
                     </div>
                     <div className="scratching-list">
                         <div className="mb-10 bold">Scratchings</div>
