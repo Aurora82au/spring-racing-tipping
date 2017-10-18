@@ -77,6 +77,7 @@ input[type="text"], input[type="tel"], input[type="password"] {
     height: 3.3rem;
     padding: .7rem 1rem;
     border: 1px solid #aaa;
+    outline: 0;
 }
 
 input[type="tel"]:focus, input[type="tel"]:focus, input[type="password"]:focus {

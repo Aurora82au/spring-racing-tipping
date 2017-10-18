@@ -4,11 +4,168 @@ import RaceMeetSelector from './RaceMeetSelector';
 import Menu from './Menu';
 
 export default class Admin extends Component {
-    shouldComponentUpdate(nextProps, nextState) {
-        return !(nextProps === this.props);
+    constructor(props) {
+        super(props);
+        this.state = {
+            races: [
+                {
+                    number: 1,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 2,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 3,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 4,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 5,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 6,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 7,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 8,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 9,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                },
+                {
+                    number: 10,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    status: '',
+                    scratchings: []
+                }
+            ]
+        }
     }
 
-    handleSelectionClick = () => {
+    shouldComponentUpdate(nextProps, nextState) {
+        return !((nextProps === this.props) && (nextState === this.state));
+    }
+    
+    componentDidMount() {
+        this.setStateData(this.props.raceMeets, this.props.selectedMeet);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setStateData(nextProps.raceMeets, nextProps.selectedMeet);
+    }
+
+    setStateData = (propsRaceMeets, propsSelectedMeet) => {
+        let races = this.state.races,
+            meet = propsRaceMeets.find(meet => { return meet.meetId === propsSelectedMeet });
+
+        for (let i = 0; i < meet.races.length; i++) {
+            races[i].placings = meet.races[i].placings;
+            races[i].status = meet.races[i].status;
+            races[i].scratchings = meet.races[i].scratchings;
+        }
+
+        this.setState({
+            races: races
+        });
+        console.log(this.state.races);
+    }
+
+    handlePlacingChange = event => {
+        let races = this.state.races,
+            raceChanged = event.target.id.split('-')[1],
+            placingChanged = event.target.id.split('-')[2],
+            placings = races[raceChanged - 1].placings;
+
+        if (placingChanged === 'first') { placings.first = event.target.value }
+        if (placingChanged === 'second') { placings.second = event.target.value }
+        if (placingChanged === 'third') { placings.third = event.target.value }
+
+        this.setState({
+            races: races
+        });
+    }
+    
+    handleSaveClick = event => {
+        let modifiedRace = event.target.getAttribute('data-race'),
+            placings = this.state.races[modifiedRace - 1].placings;
+        this.props.onPlacingsChange(modifiedRace, placings);
+    }
+    
+    handleStatusChange = event => {
+        console.log('handleStatusChange called: ' + event.target.getAttribute('data-status'));
+    }
+
+    handleSelectionClick = event => {
         console.log('Selection clicked');
     }
 
@@ -23,7 +180,7 @@ export default class Admin extends Component {
 
             for (let j = 0; j < 24; j++) {
                 className = 'selection';
-                if (meet.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
+                if (this.state.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
                 
                 selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
             }
@@ -35,21 +192,21 @@ export default class Admin extends Component {
                         <span className="name">&nbsp;-&nbsp;{meet.races[i].name}</span>
                     </div>
                     <div className="placings">
-                        <div><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="tel" defaultValue={meet.races[i].placings.first} /></div>
-                        <div><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="tel" defaultValue={meet.races[i].placings.second} /></div>
-                        <div><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="tel" defaultValue={meet.races[i].placings.third} /></div>
-                        <button className="save-btn" type="button">Save</button>
+                        <div><label htmlFor={"race-" + (i + 1) + "-first"}>1st</label><input id={"race-" + (i + 1) + "-first"} type="tel" value={this.state.races[i].placings.first} onChange={this.handlePlacingChange} /></div>
+                        <div><label htmlFor={"race-" + (i + 1) + "-second"}>2nd</label><input id={"race-" + (i + 1) + "-second"} type="tel" value={this.state.races[i].placings.second} onChange={this.handlePlacingChange} /></div>
+                        <div><label htmlFor={"race-" + (i + 1) + "-third"}>3rd</label><input id={"race-" + (i + 1) + "-third"} type="tel" value={this.state.races[i].placings.third} onChange={this.handlePlacingChange} /></div>
+                        <button className="save-btn" type="button" data-race={i + 1} onClick={this.handleSaveClick}>Save</button>
                     </div>
                     <div className="mb-10 bold">Set Race Status</div>
                     <div className="status-selector">
                         <button className={(meet.races[i].status === 'Not Run Yet') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Not Run Yet">Not Run Yet</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Not Run Yet" onClick={this.handleStatusChange}>Not Run Yet</button>
                         <button className={(meet.races[i].status === 'About To Jump') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="About To Jump">About To Jump</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="About To Jump" onClick={this.handleStatusChange}>About To Jump</button>
                         <button className={(meet.races[i].status === 'Racing') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Racing">Racing</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Racing" onClick={this.handleStatusChange}>Racing</button>
                         <button className={(meet.races[i].status === 'Has Run') ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Has Run">Has Run</button>
+                                type="button" data-meet={meet.meetId} data-race={(i + 1)} data-status="Has Run" onClick={this.handleStatusChange}>Has Run</button>
                     </div>
                     <div className="scratching-list">
                         <div className="mb-10 bold">Scratchings</div>
