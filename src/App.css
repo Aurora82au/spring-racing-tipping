@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
+/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
     display: none !important;
 }
 .icon-admin {
@@ -15,7 +15,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 .browser {
     background: none !important;
-}
+} */
 /* Used when hiding things - END */
 
 .app {
@@ -108,48 +108,8 @@ h2 img {
     border-radius: 100%;
 }
 
-.profile-popup {
-    display: none;
-    position: absolute;
-    top: 1.4rem;
-    right: 5.5rem;
-    width: 14rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #fff;
-}
-
-.profile-popup:before {
-    position: absolute;
-    display: inline-block;
-    content: " ";
-    width: 0;
-    height: 0;
-    top: 1rem;
-    right: -2rem;
-    border-top: 1rem solid transparent;
-    border-left: 1rem solid #ccc;
-    border-right: 1rem solid transparent;
-    border-bottom: 1rem solid transparent;
-}
-
-.profile-popup:after {
-    position: absolute;
-    display: inline-block;
-    content: " ";
-    width: 0;
-    height: 0;
-    top: 1rem;
-    right: -1.9rem;
-    border-top: 1rem solid transparent;
-    border-left: 1rem solid #fff;
-    border-right: 1rem solid transparent;
-    border-bottom: 1rem solid transparent;
-}
-
-.profile-popup .btn {
-    width: 100%;
-    height: auto;
+.overlay .btn {
+    margin: 50% auto 0;
 }
 
 .icon-admin {
