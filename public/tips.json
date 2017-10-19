@@ -662,31 +662,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": ["10", "2", "5"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips": ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips": ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["14", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -695,31 +727,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["4", "8", "12"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["9", "3", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["12", "6", "8"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "8", "10"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -728,31 +792,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["11", "5", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "6", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "3", "2"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -761,31 +857,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["10", "2", "13"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -794,31 +922,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["4", "8", "12"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["9", "3", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["12", "6", "8"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["9", "4", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -827,31 +987,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["11", "5", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "6", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "3", "2"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -860,31 +1052,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["10", "2", "13"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -893,31 +1117,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["4", "8", "12"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["9", "3", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["12", "6", "8"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -926,31 +1182,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["11", "5", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "6", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "3", "2"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -959,31 +1247,1243 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["10", "2", "13"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meetId": "COXPLATE",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meetId": "DERBYDAY",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             }
@@ -997,31 +2497,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": ["4", "2", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips": ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips": ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["8", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1030,31 +2562,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["4", "9", "5"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["9", "3", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["12", "6", "8"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "5"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "12", "1"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1063,31 +2627,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["11", "5", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "6", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "3", "2"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1096,31 +2692,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["10", "2", "13"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1129,31 +2757,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["4", "8", "12"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["9", "3", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["12", "6", "8"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "6"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1162,31 +2822,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["11", "5", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "6", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "3", "2"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1195,31 +2887,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["10", "2", "13"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1228,31 +2952,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["4", "8", "12"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["9", "3", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["12", "6", "8"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "6"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1261,31 +3017,63 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["11", "5", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "6", "7"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "3", "2"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             },
@@ -1294,31 +3082,1243 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips":  ["10", "2", "13"]
+                        "tips": []
                     },
                     {
                         "punterId": 2,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 3,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 4,
-                        "tips":  ["1", "2", "4"]
+                        "tips": []
                     },
                     {
                         "punterId": 5,
-                        "tips":  ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 6,
-                        "tips": ["9", "2", "3"]
+                        "tips": []
                     },
                     {
                         "punterId": 7,
-                        "tips": ["4", "2", "3"]
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meetId": "OAKSDAY",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meetId": "STAKESDAY",
+        "races": [
+            {
+                "number": 1,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "punters": [
+                    {
+                        "punterId": 1,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 2,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 3,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 4,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 5,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 6,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 7,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 8,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 9,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 10,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 11,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 12,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 13,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 14,
+                        "tips": []
+                    },
+                    {
+                        "punterId": 15,
+                        "tips": []
                     }
                 ]
             }

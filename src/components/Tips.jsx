@@ -12,7 +12,7 @@ export default class Tips extends Component {
     render() {
         let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.props.selectedMeet }),
             tips = this.props.tips.find(tips => { return tips.meetId === this.props.selectedMeet });
-            
+        
         return (
             <div className="app">
                 <Header page="Tips" path={this.props.path} punters={this.props.punters} user={this.props.user} isAdmin={this.props.isAdmin} text="You want a tip?.....be good to your mother.  Otherwise, simply select 3 horses for each race.  If you already have 3 selected and want to change one, simply unselect one of them. Don't worry about saving at the end, your tips are saved every time you make a change." />

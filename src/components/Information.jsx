@@ -10,7 +10,7 @@ export default class Information extends Component {
     render() {
         return (
             <div className="app">
-                <Header page="Information" path={this.props.path} punters={this.props.punters} user={this.props.user} isAdmin={this.props.isAdmin} text="This is where you can find a run down of how each of the pages of this app work, as well as the browser support and what some of the ideas for v2.0 are." />
+                <Header page="Information" path={this.props.path} punters={this.props.punters} user={this.props.user} isAdmin={this.props.isAdmin} text="This is where you can find a run down of how each of the pages of this app work, as well as the browser support and what some of the ideas for the future are." />
                 <div className="bold mt-20">Browser Support</div>
                 <p>While this app will work fine on tablets and desktop, it was designed for mobile screen size, and to run in the latest version of the following browsers:</p>
                 <ul className="browser-list">
@@ -39,15 +39,14 @@ export default class Information extends Component {
                 <p>The top three will appear on the podium, everybody else will be listed in order under 'Best of the Rest'.</p>
                 <div className="bold mt-20">Admin</div>
                 <p>Anybody who is marked as an admin will see an admin icon appear in the top right of the screen, below the profile picture <span className="icon-admin demo"></span></p>
-                <p>When you click the admin link it will take you to the Admin page.  Currently on the Admin page you can set the placings and the status for each race. Click the green 'Race Started' button to change the status to Racing.  Then click the red 'Race Finished' button to change the status to Has Run, which will disable the button.</p>
-                <p>In v2.0 I'd like to add more functionality here, like the ability to add scratchings and the ability to disable people from getting points, etc.</p>
-                <div className="bold mt-20">Plans for v2.0</div>
+                <p>When you click the admin link it will take you to the Admin page.  Currently on the Admin page you can set the placings, status and scratchings for each race.</p>
+                <p>In the future I'd like to add more functionality here, like for example the ability to disable people from getting points, etc.</p>
+                <div className="bold mt-20">Future Plans</div>
                 <ul className="marked-list">
+                    <li>After the Caulfield Cup I would like to replace this information page on the menu with a Statistics section that shows various statistics, like who won each race meet, most number of trifectas, quinellas, 1st, 2nds, 3rds, etc.</li>
                     <li>People can create accounts and it has proper authentication.</li>
                     <li>Introduce groups, so different groups of people can have their own tipping competitions.</li>
                     <li>To improve the design for tablet and desktop screen sizes.</li>
-                    <li>Include scratchings.</li>
-                    <li>Have a Statistics section that shows various statistics, like who won each race meet, most number of 1st, 2nds, 3rds, etc.</li>
                     <li>Use a service worker to allow people to pin the page to their Home screens with an icon, and cache all the files so that the page will start up instantly like a native app.</li>
                     <li>
                         Make a different version of the same app, but introduce some game-type elements.  So it would be more for fun than serious tipping.  It could also be modified to be for the greyhounds.
@@ -102,7 +101,7 @@ export default class Information extends Component {
                         </ul>
                     </li>
                 </ul>
-                <p>If you have any ideas for things to add or improve, let me know via message or email - sanmerah@gmail.com</p>
+                <p>If you come across any issues, or you have any ideas for things to add or improve, let me know via Facebook Messager or email - sanmerah@gmail.com</p>
                 <Menu path={this.props.path}></Menu>
             </div>
         );

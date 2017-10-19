@@ -141,40 +141,40 @@
         "meetId": "CAULCUP",
         "name": "Caulfield Cup",
         "location": "Caulfield",
-        "date": "2017-10-06",
+        "date": "2017-10-21",
         "races": [
             {
                 "number": 1,
-                "name": "Polytrack Gothic Stakes",
-                "time": "10:30am",
+                "name": "Resimax Group Plate",
+                "time": "12:15pm",
                 "distance": "1400m",
-                "status": "Has Run",
+                "status": "Not Run Yet",
                 "placings": {
-                    "first": "1",
-                    "second": "2",
-                    "third": "3"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
-                "scratchings": [5, 17, 23]
+                "scratchings": []
             },
             {
                 "number": 2,
-                "name": "Ladbrokes Classic",
-                "time": "11:15am",
-                "distance": "2000m",
-                "status": "Has Run",
+                "name": "Polytrack Gothic Stakes",
+                "time": "12:50pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
                 "placings": {
-                    "first": "4",
-                    "second": "5",
-                    "third": "6"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 3,
-                "name": "Resimax Plate",
-                "time": "12:00am",
-                "distance": "1400m",
-                "status": "About To Jump",
+                "name": "New Zealand Bloodstock Ethereal Stakes",
+                "time": "1:25pm",
+                "distance": "2000m",
+                "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
@@ -184,10 +184,10 @@
             },
             {
                 "number": 4,
-                "name": "New Zealand Bloodstock Ethereal Stakes",
-                "time": "12:45am",
+                "name": "Ladbrokes Classic",
+                "time": "2:00pm",
                 "distance": "2000m",
-                "status": "Racing",
+                "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
@@ -197,9 +197,9 @@
             },
             {
                 "number": 5,
-                "name": "Harrolds Caulfield Sprint",
-                "time": "1:30pm",
-                "distance": "1000m",
+                "name": "Priceline Pharmacy Coongy Cup",
+                "time": "2:35pm",
+                "distance": "2000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -211,7 +211,7 @@
             {
                 "number": 6,
                 "name": "Ladbrokes Moonga Stakes",
-                "time": "2:15pm",
+                "time": "3:10pm",
                 "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -223,9 +223,9 @@
             },
             {
                 "number": 7,
-                "name": "Priceline Pharmacy Coongy Cup",
-                "time": "3:00pm",
-                "distance": "2000m",
+                "name": "Harrolds Caulfield Sprint",
+                "time": "3:45pm",
+                "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -237,7 +237,7 @@
             {
                 "number": 8,
                 "name": "BMW Caulfield Cup",
-                "time": "3:45pm",
+                "time": "4:30pm",
                 "distance": "2400m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -249,9 +249,9 @@
             },
             {
                 "number": 9,
-                "name": "Carlton Draught Alinghi Stakes",
-                "time": "4:30pm",
-                "distance": "1100m",
+                "name": "Schweppes Tristarc Stakes",
+                "time": "5:10pm",
+                "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -262,9 +262,259 @@
             },
             {
                 "number": 10,
-                "name": "Schweppes Tristarc Stakes",
-                "time": "5:15pm",
-                "distance": "1400m",
+                "name": "Carlton Draught Alinghi Stakes",
+                "time": "5:45pm",
+                "distance": "1100m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            }
+        ]
+    },
+    {
+        "meetId": "COXPLATE",
+        "name": "Cox Plate",
+        "location": "Moonee Valley",
+        "date": "2017-10-28",
+        "races": [
+            {
+                "number": 1,
+                "name": "Inglis Banner",
+                "time": "TBC",
+                "distance": "1000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 2,
+                "name": "Telstra Phonewords Stakes",
+                "time": "TBC",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 3,
+                "name": "Drummond Golf Vase",
+                "time": "TBC",
+                "distance": "2040m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 4,
+                "name": "William Crockett Stakes",
+                "time": "TBC",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 5,
+                "name": "P.W. Glass Fillies Classic",
+                "time": "TBC",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 6,
+                "name": "Strathmore Community Bendigo Bank Handicap",
+                "time": "TBC",
+                "distance": "955m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 7,
+                "name": "Schweppes Crystal Mile",
+                "time": "TBC",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 8,
+                "name": "Ladbrokes Cox Plate",
+                "time": "TBC",
+                "distance": "2040m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 9,
+                "name": "Moonee Valley Gold Cup",
+                "time": "TBC",
+                "distance": "2500m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 10,
+                "name": "Powerflo Solutions Stakes",
+                "time": "TBC",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            }
+        ]
+    },
+    {
+        "meetId": "DERBYDAY",
+        "name": "Derby Day",
+        "location": "Flemington",
+        "date": "2017-11-04",
+        "races": [
+            {
+                "number": 1,
+                "name": "Coolmore Stud Stakes",
+                "time": "TBC",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 2,
+                "name": "Carbine Club Stakes",
+                "time": "TBC",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 3,
+                "name": "AAMI Victoria Derby",
+                "time": "TBC",
+                "distance": "2500m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 4,
+                "name": "Mumm Wakeful Stakes",
+                "time": "TBC",
+                "distance": "2000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 5,
+                "name": "tab.com.au Stakes",
+                "time": "TBC",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 6,
+                "name": "Lexus Stakes",
+                "time": "TBC",
+                "distance": "2500m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 7,
+                "name": "Begonia Belle Stakes",
+                "time": "TBC",
+                "distance": "1100m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 8,
+                "name": "Myer Classic",
+                "time": "TBC",
+                "distance": "1600m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -278,136 +528,386 @@
     {
         "meetId": "MELBCUP",
         "name": "Melbourne Cup",
-        "location": "Caulfield",
+        "location": "Flemington",
         "date": "2017-11-07",
         "races": [
             {
                 "number": 1,
                 "name": "Ottawa Stakes",
-                "time": "10:30am",
+                "time": "TBC",
                 "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "1",
-                    "second": "2",
-                    "third": "3"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
-                "scratchings": [8, 14, 22]
+                "scratchings": []
             },
             {
                 "number": 2,
                 "name": "Schweppes #FlemingtonFling",
-                "time": "11:15am",
+                "time": "TBC",
                 "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "4",
-                    "second": "5",
-                    "third": "6"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 3,
                 "name": "Lexus Hybrid Plate",
-                "time": "12:00am",
+                "time": "TBC",
                 "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "7",
-                    "second": "8",
-                    "third": "9"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 4,
                 "name": "MSS Security Sprint",
-                "time": "12:45am",
+                "time": "TBC",
                 "distance": "1200m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "1",
-                    "second": "2",
-                    "third": "3"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 5,
                 "name": "Lavazza Prontissimo",
-                "time": "1:30pm",
+                "time": "TBC",
                 "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "4",
-                    "second": "5",
-                    "third": "6"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 6,
                 "name": "James Boag's Premium Stakes",
-                "time": "2:15pm",
+                "time": "TBC",
                 "distance": "1800m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "7",
-                    "second": "8",
-                    "third": "9"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 7,
                 "name": "Emirates Melbourne Cup",
-                "time": "3:00pm",
+                "time": "TBC",
                 "distance": "3200m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "1",
-                    "second": "2",
-                    "third": "3"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 8,
                 "name": "Prince of Penzance Handicap",
-                "time": "3:45pm",
+                "time": "TBC",
                 "distance": "2800m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "4",
-                    "second": "5",
-                    "third": "6"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 9,
                 "name": "The Hong Kong Jockey Club Stakes",
-                "time": "4:30pm",
+                "time": "TBC",
                 "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "7",
-                    "second": "8",
-                    "third": "9"
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             },
             {
                 "number": 10,
                 "name": "tab.com.au Trophy",
-                "time": "5:15pm",
+                "time": "TBC",
                 "distance": "1700m",
                 "status": "Not Run Yet",
                 "placings": {
-                    "first": "1",
-                    "second": "2",
-                    "third": "3"
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            }
+        ]
+    },
+    {
+        "meetId": "OAKSDAY",
+        "name": "Oaks Day",
+        "location": "Flemington",
+        "date": "2017-11-09",
+        "races": [
+            {
+                "number": 1,
+                "name": "TCL Curved TV Stakes",
+                "time": "TBC",
+                "distance": "1800m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 2,
+                "name": "Crown Resorts Plate",
+                "time": "TBC",
+                "distance": "1100m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 3,
+                "name": "Red Rock Deli Plate",
+                "time": "TBC",
+                "distance": "1700m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 4,
+                "name": "Kennedy Oaks",
+                "time": "TBC",
+                "distance": "2500m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 5,
+                "name": "Off the Track Subzero Challenge",
+                "time": "TBC",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 6,
+                "name": "G.H. Mumm Stakes",
+                "time": "TBC",
+                "distance": "1000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 7,
+                "name": "The Melbourne Cup Carnival Country Series Final",
+                "time": "TBC",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 8,
+                "name": "Four-Years-Old and Five-Years-Old BM90 Handicap",
+                "time": "TBC",
+                "distance": "1800m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 9,
+                "name": "Chatham Stakes",
+                "time": "TBC",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            }
+        ]
+    },
+    {
+        "meetId": "STAKESDAY",
+        "name": "Stakes Day",
+        "location": "Flemington",
+        "date": "2017-11-11",
+        "races": [
+            {
+                "number": 1,
+                "name": "Maribyrnong Plate",
+                "time": "TBC",
+                "distance": "1000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 2,
+                "name": "Hilton Stakes",
+                "time": "TBC",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 3,
+                "name": "Starlight Children's Foundation Plate",
+                "time": "TBC",
+                "distance": "2000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 4,
+                "name": "Antler Luggage Handicap",
+                "time": "TBC",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 5,
+                "name": "Darley Classic",
+                "time": "TBC",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 6,
+                "name": "Emirates Airline Handicap",
+                "time": "TBC",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 7,
+                "name": "Emirates Stakes",
+                "time": "TBC",
+                "distance": "2000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 8,
+                "name": "Queen Elizabeth Stakes",
+                "time": "TBC",
+                "distance": "2600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 9,
+                "name": "Matriarch Stakes",
+                "time": "TBC",
+                "distance": "2000m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
                 },
                 "scratchings": []
             }

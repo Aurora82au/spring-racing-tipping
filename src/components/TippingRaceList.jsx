@@ -24,21 +24,21 @@ export default class TippingRaceList extends Component {
     }
 
     componentDidMount() {
-        this.setTips(this.props.tips);
+        this.setTips(this.props);
     }
 
     componentWillReceiveProps(nextProps) {
-        this.setTips(nextProps.tips);
+        this.setTips(nextProps);
     }
 
-    setTips = (propsTips) => {
+    setTips = (passedProps) => {
         let self = this,
             tips = this.state.tips,
             tipsRace, userTips;
-
+            
         // Set the current users tips for each race of the chosen race meet
-        for (let i = 0; i < this.props.meet.races.length; i++) {
-            tipsRace = propsTips.races.find(race => { return race.number === (i + 1) });
+        for (let i = 0; i < passedProps.meet.races.length; i++) {
+            tipsRace = passedProps.tips.races.find(race => { return race.number === (i + 1) });
             userTips = tipsRace.punters.find(punter => { 
                 return punter.punterId === self.props.user }
             );

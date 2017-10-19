@@ -6,10 +6,12 @@ export default class RaceMeetSelector extends Component {
     }
     
     render() {
+        let meets = this.props.meets.sort((a, b) => { return a.date.localeCompare(b.date) });
+
         return (
             <div className="selector">
                 <select value={this.props.selectedMeetId} onChange={this.props.onChange}>
-                    {this.props.meets.map(meet => {
+                    {meets.map(meet => {
                         return <option key={meet.meetId} value={meet.meetId}>{meet.name}</option>
                     })}
                 </select>

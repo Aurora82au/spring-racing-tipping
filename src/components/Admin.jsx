@@ -137,7 +137,6 @@ export default class Admin extends Component {
         this.setState({
             races: races
         });
-        console.log(this.state.races);
     }
 
     handlePlacingChange = event => {
