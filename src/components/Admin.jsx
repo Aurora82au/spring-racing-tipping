@@ -15,7 +15,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -25,7 +24,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -35,7 +33,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -45,7 +42,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -55,7 +51,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -65,7 +60,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -75,7 +69,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -85,7 +78,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -95,7 +87,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 },
                 {
@@ -105,7 +96,6 @@ export default class Admin extends Component {
                         second: '',
                         third: ''
                     },
-                    status: '',
                     scratchings: []
                 }
             ]
@@ -130,7 +120,6 @@ export default class Admin extends Component {
 
         for (let i = 0; i < meet.races.length; i++) {
             races[i].placings = meet.races[i].placings;
-            races[i].status = meet.races[i].status;
             races[i].scratchings = meet.races[i].scratchings;
         }
 
@@ -159,13 +148,30 @@ export default class Admin extends Component {
             placings = this.state.races[modifiedRace - 1].placings;
         this.props.onPlacingsChange(modifiedRace, placings);
     }
-    
-    // handleStatusChange = event => {
-    //     console.log('handleStatusChange called: ' + event.target.getAttribute('data-status'));
-    // }
 
     handleScratchingClick = event => {
-        console.log('Selection clicked');
+        let races = this.state.races,
+            modifiedRace = parseInt(event.target.getAttribute('data-race'), 10),
+            modifiedScratchings = races[modifiedRace - 1].scratchings;
+
+        // If the selection is already selected, remove it, else if there is less than 3 selected add it
+        if (event.target.classList.contains('scratched')) {
+            let index = modifiedScratchings.indexOf(parseInt(event.target.innerText, 10));
+            if (index > -1) { modifiedScratchings.splice(index, 1); }
+            races[modifiedRace - 1].scratchings = modifiedScratchings;
+            this.setState({
+                races: races
+            });
+            this.props.onScratchingChange(modifiedRace, modifiedScratchings);
+        }
+        else if (modifiedScratchings.length < 3) {
+            modifiedScratchings.push(parseInt(event.target.innerText, 10));
+            races[modifiedRace - 1].scratchings = modifiedScratchings;
+            this.setState({
+                races: races
+            });
+            this.props.onScratchingChange(modifiedRace, modifiedScratchings);
+        }
     }
 
     render() {

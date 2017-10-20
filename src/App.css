@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
+/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
     display: none !important;
 }
 .icon-admin {
@@ -15,7 +15,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 .browser {
     background: none !important;
-}
+} */
 /* Used when hiding things - END */
 
 .app {
