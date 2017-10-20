@@ -51,6 +51,9 @@
 .icon-clipboard:before {
     content: "\e9b8";
 }
+.icon-reload:before {
+    content: "\ea2e";
+}
 
 
 * {

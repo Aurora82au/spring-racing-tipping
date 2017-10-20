@@ -113,15 +113,34 @@ h2 img {
     margin: 50% auto 0;
 }
 
-.icon-admin {
+.reload-btn, .icon-admin {
     position: absolute;
     top: 6rem;
     right: 1rem;
-    padding: .5rem .6rem .7rem;
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem .6rem .2rem;
     border: 1px solid #ccc;
     border-radius: 100%;
     font-size: 1.6rem;
     color: #333;
+    background-color: #eee;
+    cursor: pointer;
+    outline: 0;
+}
+
+.reload-btn:active {
+    background-color: #aaa;
+}
+
+.icon-reload {
+    vertical-align: 1px;
+}
+
+.icon-admin {
+    right: 5rem;
+    padding: .5rem .6rem .7rem;
+    background-color: #fff;
 }
 
 .icon-admin.selected {

@@ -10,7 +10,7 @@ export default class Information extends Component {
     render() {
         return (
             <div className="app">
-                <Header page="Information" path={this.props.path} punters={this.props.punters} user={this.props.user} isAdmin={this.props.isAdmin} text="This is where you can find a run down of how each of the pages of this app work, as well as the browser support and what some of the ideas for the future are." />
+                <Header page="Information" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="This is where you can find a run down of how each of the pages of this app work, as well as the browser support and what some of the ideas for the future are." />
                 <div className="bold mt-20">Browser Support</div>
                 <p>While this app will work fine on tablets and desktop, it was designed for mobile screen size, and to run in the latest version of the following browsers:</p>
                 <ul className="browser-list">

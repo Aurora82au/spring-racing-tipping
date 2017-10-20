@@ -39,13 +39,17 @@ export default class Header extends Component {
         // Show the Admin button only if the user is an admin and it's not the log in page
         let adminBtn = ((this.props.isAdmin === true) && (this.props.page !== 'Log In')) ? <NavLink to={this.props.path + 'admin'} key="d" className="icon-admin" activeClassName="selected"></NavLink> : '';
 
+        // Show the reload button on every page but the login page
+        let reloadBtn = (this.props.page !== 'Log In') ? <button key="e" className="reload-btn" onClick={this.props.onReloadData}><span className="icon-reload"></span></button> : '';
+
         return [
             LogOutOverlay,
             profilePic,
             adminBtn,
-            <h2 key="e">Spring Racing Tipping <img src="horse.png" alt="Title logo" /><span className="beta">BETA</span></h2>,
-            <h3 key="f">{this.props.page}</h3>,
-            <p key="g">{this.props.text}</p>
+            reloadBtn,
+            <h2 key="f">Spring Racing Tipping <img src="horse.png" alt="Title logo" /><span className="beta">BETA</span></h2>,
+            <h3 key="g">{this.props.page}</h3>,
+            <p key="h">{this.props.text}</p>
         ];
     }
 }
