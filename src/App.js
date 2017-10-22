@@ -114,25 +114,28 @@ class App extends Component {
     }
 
     handleSaveTips = (modifiedRace, modifiedTips) => {
-        let tips = this.state.tips,
-            tipsMeet = tips.find(meet => { return meet.meetId === this.state.selectedMeet }),
-            punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => { return punter.punterId === this.state.user }),
-            meetIndex = tips.indexOf(tipsMeet),
-            punterIndex = tips[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
-
-        // Update the tips for the selected meet/race
-        tipsMeet.races[modifiedRace - 1].punters[punterIndex].tips = modifiedTips.selections;
-
-        // Insert the updated meet back into the tips array
-        tips[meetIndex] = tipsMeet;
-
-        // Send the updated tips to the database
-        axios.put(this.databaseURL + '/tips/' + this.state.selectedMeet, tipsMeet);
-
-        // Update the local state with the updated tips array
-        this.setState({
-            tips: tips
-        });
+        axios.get(this.databaseURL + '/tips')
+            .then(returnedTips => {
+                let tips = this.state.tips,
+                    tipsMeet = returnedTips.data.find(meet => { return meet.meetId === this.state.selectedMeet }),
+                    punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => { return punter.punterId === this.state.user }),
+                    meetIndex = returnedTips.data.indexOf(tipsMeet),
+                    punterIndex = returnedTips.data[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
+    
+                // Update the tips for the selected meet/race
+                tipsMeet.races[modifiedRace - 1].punters[punterIndex].tips = modifiedTips.selections;
+        
+                // Insert the updated meet back into the tips array
+                tips[meetIndex] = tipsMeet;
+        
+                // Send the updated tips to the database
+                axios.put(this.databaseURL + '/tips/' + this.state.selectedMeet, tipsMeet);
+        
+                // Update the local state with the updated tips array
+                this.setState({
+                    tips: tips
+                });
+            });
     }
 
     handleSavePlacings = (modifiedRace, modifiedPlacings) => {

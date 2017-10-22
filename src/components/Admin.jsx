@@ -164,7 +164,7 @@ export default class Admin extends Component {
             });
             this.props.onScratchingChange(modifiedRace, modifiedScratchings);
         }
-        else if (modifiedScratchings.length < 3) {
+        else {
             modifiedScratchings.push(parseInt(event.target.innerText, 10));
             races[modifiedRace - 1].scratchings = modifiedScratchings;
             this.setState({
