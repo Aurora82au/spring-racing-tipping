@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ieh5nr');
-  src:  url('fonts/icomoon.eot?ieh5nr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ieh5nr') format('truetype'),
-    url('fonts/icomoon.woff?ieh5nr') format('woff'),
-    url('fonts/icomoon.svg?ieh5nr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jjmcqw');
+  src:  url('fonts/icomoon.eot?jjmcqw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jjmcqw') format('truetype'),
+    url('fonts/icomoon.woff?jjmcqw') format('woff'),
+    url('fonts/icomoon.svg?jjmcqw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,6 +44,9 @@
 }
 .icon-admin:before {
   content: "\e976";
+}
+.icon-pie-chart:before {
+  content: "\e99a";
 }
 .icon-trophy:before {
   content: "\e99e";

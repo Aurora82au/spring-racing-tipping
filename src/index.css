@@ -45,6 +45,9 @@
 .icon-admin:before {
     content: "\e976";
 }
+.icon-pie-chart:before {
+  content: "\e99a";
+}
 .icon-trophy:before {
     content: "\e99e";
 }
@@ -85,6 +88,10 @@ input[type="text"], input[type="tel"], input[type="password"] {
 
 input[type="tel"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
     border-color: #27d3ff;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {

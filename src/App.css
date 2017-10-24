@@ -113,6 +113,18 @@ h2 img {
     margin: 50% auto 0;
 }
 
+.icon-info {
+    position: absolute;
+    top: 1.8rem;
+    right: 4.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 3.5rem;
+    color: #333;
+    cursor: pointer;
+    outline: 0;
+}
+
 .reload-btn, .icon-admin {
     position: absolute;
     top: 6rem;
@@ -143,7 +155,7 @@ h2 img {
     background-color: #fff;
 }
 
-.icon-admin.selected {
+.icon-info.selected, .icon-admin.selected {
     color: #27d3ff;
     border-color: #27d3ff;
 }
