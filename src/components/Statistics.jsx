@@ -32,7 +32,7 @@ export default class App extends Component {
             a = this.props.punters.length,
             b = this.props.raceMeets.length,
             meetsArray = [],
-            c, d, placings, tipMeet, tips, puntersStats, puntersStatsMeet, raceScore, index;
+            c, d, placings, tipMeet, tips, puntersStats, puntersStatsMeet, raceScore;
 
         // Create a meets array to hold the score for each meet.  This will be added to each punters stats.
         while (b--) {
@@ -48,11 +48,13 @@ export default class App extends Component {
                 "firsts": 0,
                 "seconds": 0,
                 "thirds": 0,
-                "meets": meetsArray
+                "meets": meetsArray.map(a => ({...a})) // Use map and the spread operator to clone the array with cloned values, instead of references
             });
         }
 
+        // Reset the length of the race meets after the first while loop
         b = this.props.raceMeets.length
+
         // For each meet
         while (b--) {
             c = this.props.raceMeets[b].races.length;
@@ -72,17 +74,14 @@ export default class App extends Component {
                     puntersStats = this.findPuntersStats(stats, tips.punters[d].punterId);
                     // Get the current race meet from the current punter's stats
                     puntersStatsMeet = this.findPuntersStatsMeet(puntersStats, this.props.raceMeets[b].meetId);
-                    index = puntersStats.meets.indexOf(puntersStatsMeet);
                     // Update the stats of that punter
                     if (tips.punters[d].tips.includes(placings.first)) { puntersStats.firsts++; raceScore += 3; }
                     if (tips.punters[d].tips.includes(placings.second)) { puntersStats.seconds++; raceScore += 2; }
                     if (tips.punters[d].tips.includes(placings.third)) { puntersStats.thirds++; raceScore += 1; }
                     if (raceScore === 6) { puntersStats.trifectas++; }
                     if (raceScore === 5) { puntersStats.quinellas++; }
+                    // Add the race score to this meets score
                     puntersStatsMeet.score += raceScore;
-                    //if (tips.punters[d].punterId === 1) {
-                        console.log(puntersStatsMeet);
-                    //}
                 }
             }
         }
