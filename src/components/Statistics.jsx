@@ -89,23 +89,31 @@ export default class App extends Component {
         return stats;
     }
 
-    // calculateTopThree() {
-
-    // }
-
-    // calculateBottomThree() {
-        
-    // }
-
     render() {
-        let stats = this.calculateStats();
+        let stats = this.calculateStats(),
+            trifectas = [], //quinellas = [], firsts = [], seconds = [], thirds = [],
+            punter;
         console.log(stats);
+
+        // Sort punters in descending order by trifectas
+        stats.sort((a, b) => { return b.trifectas - a.trifectas; });
+
+        // Create list of punters in order of trifectas
+        for (let i = 0, len = stats.length; i < len; i++) {
+            punter = this.findPunter(stats[i].punterId);
+            trifectas.push(<div key={i} className="stat-item">
+                               <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                               <div className="name">{punter.name.first} {punter.name.last}</div>
+                               <div className="stat">{stats[i].trifectas}</div>
+                           </div>);
+        }
 
         return (
             <div className="app">
-                {/* <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." />
-                <div>This is the Statistics page.</div>
-                <Menu path={this.props.path}></Menu> */}
+                {/* <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." /> */}
+                <h3>Trifectas</h3>
+                <div className="stat-container">{trifectas}</div>
+                {/* <Menu path={this.props.path}></Menu> */}
             </div>
         );
     }
