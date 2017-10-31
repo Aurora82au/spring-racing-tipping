@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
+h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
 .icon-admin {
@@ -753,6 +753,32 @@ input.password {
     text-overflow: ellipsis;
     overflow: hidden;
     vertical-align: middle;
+}
+
+
+/* Statistics */
+
+.stat-container {
+    display: flex;
+    padding-bottom: 2rem;
+    overflow-x: auto;
+}
+
+.stat-item {
+    width: 6rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.stat-item .pic {
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.stat-item .name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 

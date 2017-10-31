@@ -89,30 +89,78 @@ export default class App extends Component {
         return stats;
     }
 
+    createStatArray = (stats, arrayToUpdate, arrayToUpdateName) => {
+        let stat, punter;
+        
+        for (let i = 0, len = stats.length; i < len; i++) {
+            // Set the correct stat data according to the array to update
+            switch (arrayToUpdateName) {
+                case 'trifectas': stat = stats[i].trifectas; break;
+                case 'quinellas': stat = stats[i].quinellas; break;
+                case 'firsts': stat = stats[i].firsts; break;
+                case 'seconds': stat = stats[i].seconds; break;
+                case 'thirds': stat = stats[i].thirds; break;
+                default: break;
+            }
+            // Get the current punters details
+            punter = this.findPunter(stats[i].punterId);
+            // Create the stat item and add to the array to update
+            arrayToUpdate.push(<div key={i} className="stat-item">
+                               <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                               <div className="name">{punter.name.first} {punter.name.last}</div>
+                               <div className="stat">{stat}</div>
+                           </div>);
+        }
+    }
+
     render() {
         let stats = this.calculateStats(),
-            trifectas = [], //quinellas = [], firsts = [], seconds = [], thirds = [],
-            punter;
+            trifectas = [], quinellas = [], firsts = [], seconds = [], thirds = [];
         console.log(stats);
 
         // Sort punters in descending order by trifectas
         stats.sort((a, b) => { return b.trifectas - a.trifectas; });
 
         // Create list of punters in order of trifectas
-        for (let i = 0, len = stats.length; i < len; i++) {
-            punter = this.findPunter(stats[i].punterId);
-            trifectas.push(<div key={i} className="stat-item">
-                               <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
-                               <div className="name">{punter.name.first} {punter.name.last}</div>
-                               <div className="stat">{stats[i].trifectas}</div>
-                           </div>);
-        }
+        this.createStatArray(stats, trifectas, 'trifectas');
+
+        // Sort punters in descending order by quinellas
+        stats.sort((a, b) => { return b.quinellas - a.quinellas; });
+
+        // Create list of punters in order of quinellas
+        this.createStatArray(stats, quinellas, 'quinellas');
+
+        // Sort punters in descending order by firsts
+        stats.sort((a, b) => { return b.firsts - a.firsts; });
+
+        // Create list of punters in order of firsts
+        this.createStatArray(stats, firsts, 'firsts');
+
+        // Sort punters in descending order by seconds
+        stats.sort((a, b) => { return b.seconds - a.seconds; });
+
+        // Create list of punters in order of firsts
+        this.createStatArray(stats, seconds, 'seconds');
+
+        // Sort punters in descending order by thirds
+        stats.sort((a, b) => { return b.thirds - a.thirds; });
+
+        // Create list of punters in order of firsts
+        this.createStatArray(stats, thirds, 'thirds');
 
         return (
             <div className="app">
                 {/* <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." /> */}
-                <h3>Trifectas</h3>
+                <div className="bold mt-20 mb-10">Trifectas</div>
                 <div className="stat-container">{trifectas}</div>
+                <div className="bold mt-20 mb-10">Quinellas</div>
+                <div className="stat-container">{quinellas}</div>
+                <div className="bold mt-20 mb-10">Firsts</div>
+                <div className="stat-container">{firsts}</div>
+                <div className="bold mt-20 mb-10">Seconds</div>
+                <div className="stat-container">{seconds}</div>
+                <div className="bold mt-20 mb-10">Thirds</div>
+                <div className="stat-container">{thirds}</div>
                 {/* <Menu path={this.props.path}></Menu> */}
             </div>
         );

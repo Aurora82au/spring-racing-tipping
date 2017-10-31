@@ -232,7 +232,7 @@ export default App;
 // Caulfield Guineas day 14/10/17
 // Caulfield cup 21/10/17
 // Cox plate 28/10/17
-// Darby day 4/11/17
+// Derby day 4/11/17
 // Cup day 7/11/17
 // Oaks day 9/11/17
 // Stakes day 11/11/17
