@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Header from './Header';
+import Header from './Header';
 import Menu from './Menu';
 
 export default class App extends Component {
@@ -122,6 +122,7 @@ export default class App extends Component {
                 case 'firsts': stat = stats[i].firsts; break;
                 case 'seconds': stat = stats[i].seconds; break;
                 case 'thirds': stat = stats[i].thirds; break;
+                case 'meet': stat = stats[i].score; break;
                 default: break;
             }
             // Get the current punters details
@@ -137,9 +138,82 @@ export default class App extends Component {
 
     render() {
         let stats = this.calculateStats(),
+            caulGuineasTemp = [], caulCupTemp = [], coxPlateTemp = [], derbyDayTemp = [], melbCupTemp = [], oaksDayTemp = [], stakesDayTemp = [],
+            caulGuineas = [], caulCup = [], coxPlate = [], derbyDay = [], melbCup = [], oaksDay = [], stakesDay = [],
             trifectas = [], quinellas = [], firsts = [], seconds = [], thirds = [],
             tabBtn1Class, tabBtn2Class, tab1Class, tab2Class;
-        console.log(stats);
+        //console.log(stats);
+
+        // Set the tab status and hide/show the tabs
+        if (this.state.tabSelected === 1) {
+            tabBtn1Class = 'btn tab-btn one selected';
+            tabBtn2Class = 'btn tab-btn two';
+            tab1Class = '';
+            tab2Class = 'hide';
+        }
+        else {
+            tabBtn1Class = 'btn tab-btn one';
+            tabBtn2Class = 'btn tab-btn two selected';
+            tab1Class = 'hide';
+            tab2Class = '';
+        }
+
+        // Populate each of the temporary meet arrays with each punters score for that meet
+        for (let i = 0, len = stats.length; i < len; i++) {
+            for (let j = 0, leng = stats[i].meets.length; j < leng; j++) {
+                if (stats[i].meets[j].meetId === 'CAULGUINEAS') { caulGuineasTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+                if (stats[i].meets[j].meetId === 'CAULCUP') { caulCupTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+                if (stats[i].meets[j].meetId === 'COXPLATE') { coxPlateTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+                if (stats[i].meets[j].meetId === 'DERBYDAY') { derbyDayTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+                if (stats[i].meets[j].meetId === 'MELBCUP') { melbCupTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+                if (stats[i].meets[j].meetId === 'OAKSDAY') { oaksDayTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+                if (stats[i].meets[j].meetId === 'STAKESDAY') { stakesDayTemp.push({ "punterId": stats[i].punterId, "score": stats[i].meets[j].score }); }
+            }
+        }
+        
+        // Sort punters in descending order by their score in the Caulfield Guineas
+        caulGuineasTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Caulfield Guineas
+        this.createStatArray(caulGuineasTemp, caulGuineas, 'meet');
+        
+        // Sort punters in descending order by their score in the Caulfield Cup
+        caulCupTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Caulfield Cup
+        this.createStatArray(caulCupTemp, caulCup, 'meet');
+        
+        // Sort punters in descending order by their score in the Cox Plate
+        coxPlateTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Cox Plate
+        this.createStatArray(coxPlateTemp, coxPlate, 'meet');
+        
+        // Sort punters in descending order by their score in the Derby Day
+        derbyDayTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Derby Day
+        this.createStatArray(derbyDayTemp, derbyDay, 'meet');
+        
+        // Sort punters in descending order by their score in the Melbourne Cup
+        melbCupTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Melbourne Cup
+        this.createStatArray(melbCupTemp, melbCup, 'meet');
+        
+        // Sort punters in descending order by their score in the Oaks Day
+        oaksDayTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Oaks Day
+        this.createStatArray(oaksDayTemp, oaksDay, 'meet');
+        
+        // Sort punters in descending order by their score in the Stakes Day
+        stakesDayTemp.sort((a, b) => { return b.score - a.score; });
+
+        // Create list of punters for the Stakes Day
+        this.createStatArray(stakesDayTemp, stakesDay, 'meet');
+
+
 
         // Sort punters in descending order by trifectas
         stats.sort((a, b) => { return b.trifectas - a.trifectas; });
@@ -171,29 +245,30 @@ export default class App extends Component {
         // Create list of punters in order of firsts
         this.createStatArray(stats, thirds, 'thirds');
 
-        // Set the tab status and hide/show the tabs
-        if (this.state.tabSelected === 1) {
-            tabBtn1Class = 'btn tab-btn one selected';
-            tabBtn2Class = 'btn tab-btn two';
-            tab1Class = '';
-            tab2Class = 'hide';
-        }
-        else {
-            tabBtn1Class = 'btn tab-btn one';
-            tabBtn2Class = 'btn tab-btn two selected';
-            tab1Class = 'hide';
-            tab2Class = '';
-        }
+
 
         return (
             <div className="app">
-                {/* <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." /> */}
+                <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." />
                 <div className="tab-btns">
                     <button className={tabBtn1Class} onClick={this.handleTabClick}>Meets</button>
                     <button className={tabBtn2Class} onClick={this.handleTabClick}>Other</button>
                 </div>
                 <div className={tab1Class}>
-                    <div>This is the Meets tab.</div>
+                    <div className="bold mt-20 mb-10">Caulfield Guineas</div>
+                    <div className="stat-container">{caulGuineas}</div>
+                    <div className="bold mt-20 mb-10">Caulfield Cup</div>
+                    <div className="stat-container">{caulCup}</div>
+                    <div className="bold mt-20 mb-10">Cox Plate</div>
+                    <div className="stat-container">{coxPlate}</div>
+                    <div className="bold mt-20 mb-10">Derby Day</div>
+                    <div className="stat-container">{derbyDay}</div>
+                    <div className="bold mt-20 mb-10">Melbourne Cup</div>
+                    <div className="stat-container">{melbCup}</div>
+                    <div className="bold mt-20 mb-10">Oaks Day</div>
+                    <div className="stat-container">{oaksDay}</div>
+                    <div className="bold mt-20 mb-10">Stakes Day</div>
+                    <div className="stat-container">{stakesDay}</div>
                 </div>
                 <div className={tab2Class}>
                     <div className="bold mt-20 mb-10">Trifectas</div>
