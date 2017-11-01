@@ -758,6 +758,21 @@ input.password {
 
 /* Statistics */
 
+.tab-btns {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    flex-basis: 50%;
+}
+
+.tab-btn.selected {
+    color: #fff;
+    background-color: #813aff;
+    border-color: #813aff;
+}
+
 .stat-container {
     display: flex;
     padding-bottom: 2rem;

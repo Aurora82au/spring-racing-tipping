@@ -1,10 +1,32 @@
 import React, { Component } from 'react';
 // import Header from './Header';
-// import Menu from './Menu';
+import Menu from './Menu';
 
 export default class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            tabSelected: 1
+        }
+    }
+
     shouldComponentUpdate(nextProps, nextState) {
-        return !(nextProps === this.props);
+        return !((nextProps === this.props) && (nextState === this.state));
+    }
+
+    componentDidMount() {
+        this.setState({
+            tabSelected: this.props.selectedTab
+        });
+    }
+
+    handleTabClick = event => {
+        let tab = 1;
+        if (event.target.classList.contains('two')) { tab = 2; }
+        this.setState({
+            tabSelected: tab
+        });
+        this.props.onTabSelect(tab);
     }
     
     findMeet = thisMeetIndex => {
@@ -106,16 +128,17 @@ export default class App extends Component {
             punter = this.findPunter(stats[i].punterId);
             // Create the stat item and add to the array to update
             arrayToUpdate.push(<div key={i} className="stat-item">
-                               <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
-                               <div className="name">{punter.name.first} {punter.name.last}</div>
-                               <div className="stat">{stat}</div>
-                           </div>);
+                                   <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                                   <div className="name">{punter.name.first}</div>
+                                   <div className="stat">{stat}</div>
+                               </div>);
         }
     }
 
     render() {
         let stats = this.calculateStats(),
-            trifectas = [], quinellas = [], firsts = [], seconds = [], thirds = [];
+            trifectas = [], quinellas = [], firsts = [], seconds = [], thirds = [],
+            tabBtn1Class, tabBtn2Class, tab1Class, tab2Class;
         console.log(stats);
 
         // Sort punters in descending order by trifectas
@@ -148,20 +171,43 @@ export default class App extends Component {
         // Create list of punters in order of firsts
         this.createStatArray(stats, thirds, 'thirds');
 
+        // Set the tab status and hide/show the tabs
+        if (this.state.tabSelected === 1) {
+            tabBtn1Class = 'btn tab-btn one selected';
+            tabBtn2Class = 'btn tab-btn two';
+            tab1Class = '';
+            tab2Class = 'hide';
+        }
+        else {
+            tabBtn1Class = 'btn tab-btn one';
+            tabBtn2Class = 'btn tab-btn two selected';
+            tab1Class = 'hide';
+            tab2Class = '';
+        }
+
         return (
             <div className="app">
                 {/* <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." /> */}
-                <div className="bold mt-20 mb-10">Trifectas</div>
-                <div className="stat-container">{trifectas}</div>
-                <div className="bold mt-20 mb-10">Quinellas</div>
-                <div className="stat-container">{quinellas}</div>
-                <div className="bold mt-20 mb-10">Firsts</div>
-                <div className="stat-container">{firsts}</div>
-                <div className="bold mt-20 mb-10">Seconds</div>
-                <div className="stat-container">{seconds}</div>
-                <div className="bold mt-20 mb-10">Thirds</div>
-                <div className="stat-container">{thirds}</div>
-                {/* <Menu path={this.props.path}></Menu> */}
+                <div className="tab-btns">
+                    <button className={tabBtn1Class} onClick={this.handleTabClick}>Meets</button>
+                    <button className={tabBtn2Class} onClick={this.handleTabClick}>Other</button>
+                </div>
+                <div className={tab1Class}>
+                    <div>This is the Meets tab.</div>
+                </div>
+                <div className={tab2Class}>
+                    <div className="bold mt-20 mb-10">Trifectas</div>
+                    <div className="stat-container">{trifectas}</div>
+                    <div className="bold mt-20 mb-10">Quinellas</div>
+                    <div className="stat-container">{quinellas}</div>
+                    <div className="bold mt-20 mb-10">Firsts</div>
+                    <div className="stat-container">{firsts}</div>
+                    <div className="bold mt-20 mb-10">Seconds</div>
+                    <div className="stat-container">{seconds}</div>
+                    <div className="bold mt-20 mb-10">Thirds</div>
+                    <div className="stat-container">{thirds}</div>
+                </div>
+                <Menu path={this.props.path}></Menu>
             </div>
         );
     }
