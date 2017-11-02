@@ -421,21 +421,8 @@
         "races": [
             {
                 "number": 1,
-                "name": "Coolmore Stud Stakes",
-                "time": "TBC",
-                "distance": "1200m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 2,
                 "name": "Carbine Club Stakes",
-                "time": "TBC",
+                "time": "11:45am",
                 "distance": "1600m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -443,25 +430,12 @@
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [6]
             },
             {
-                "number": 3,
-                "name": "AAMI Victoria Derby",
-                "time": "TBC",
-                "distance": "2500m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 4,
-                "name": "Mumm Wakeful Stakes",
-                "time": "TBC",
+                "number": 2,
+                "name": "G.H.Mumm Wakeful Stakes",
+                "time": "12:20pm",
                 "distance": "2000m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -472,9 +446,35 @@
                 "scratchings": []
             },
             {
+                "number": 3,
+                "name": "Skip Sprint ",
+                "time": "1:00pm",
+                "distance": "1100m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 4,
+                "name": "Lexus Stakes",
+                "time": "1:40pm",
+                "distance": "2500m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
                 "number": 5,
-                "name": "tab.com.au Stakes",
-                "time": "TBC",
+                "name": "Coolmore Stud Stakes",
+                "time": "2:25pm",
                 "distance": "1200m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -486,9 +486,9 @@
             },
             {
                 "number": 6,
-                "name": "Lexus Stakes",
-                "time": "TBC",
-                "distance": "2500m",
+                "name": "Myer Classic",
+                "time": "3:05pm",
+                "distance": "1600m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -499,9 +499,9 @@
             },
             {
                 "number": 7,
-                "name": "Begonia Belle Stakes",
-                "time": "TBC",
-                "distance": "1100m",
+                "name": "AAMI Victoria Derby",
+                "time": "3:50pm",
+                "distance": "2500m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -512,9 +512,22 @@
             },
             {
                 "number": 8,
-                "name": "Myer Classic",
-                "time": "TBC",
+                "name": "Kennedy Mile",
+                "time": "4:35pm",
                 "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": []
+            },
+            {
+                "number": 9,
+                "name": "TAB Multiplier Stakes",
+                "time": "5:20pm",
+                "distance": "1200m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
