@@ -35,7 +35,7 @@ export default class TippingRaceList extends Component {
         let self = this,
             tips = this.state.tips,
             tipsRace, userTips;
-            
+
         // Set the current users tips for each race of the chosen race meet
         for (let i = 0; i < passedProps.meet.races.length; i++) {
             tipsRace = passedProps.tips.races.find(race => { return race.number === (i + 1) });

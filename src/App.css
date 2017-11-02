@@ -90,7 +90,7 @@ h2 img {
 }
 
 .beta {
-    display: inline-block;
+    display: none;
     padding: .1rem .3rem;
     margin-left: .5rem;
     font-size: .8rem;
@@ -783,6 +783,10 @@ input.password {
     width: 6rem;
     margin-right: 2rem;
     text-align: center;
+}
+
+.stat-item .number {
+    margin-bottom: .5rem;
 }
 
 .stat-item .pic {

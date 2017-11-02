@@ -112,7 +112,7 @@ export default class App extends Component {
     }
 
     createStatArray = (stats, arrayToUpdate, arrayToUpdateName) => {
-        let stat, punter;
+        let stat, punter, position;
         
         for (let i = 0, len = stats.length; i < len; i++) {
             // Set the correct stat data according to the array to update
@@ -127,8 +127,16 @@ export default class App extends Component {
             }
             // Get the current punters details
             punter = this.findPunter(stats[i].punterId);
+
+            // Get positon ending name (adding 1 to index to account for array starting from 0)
+            if (((i + 1) !== 11) && ((i + 1) % 10 === 1)) { position = '<sup>ST</sup>' }
+            else if (((i + 1) !== 12) && (i + 1) % 10 === 2) { position = '<sup>ND</sup>' }
+            else if (((i + 1) !== 13) && (i + 1) % 10 === 3) { position = '<sup>RD</sup>' }
+            else { position = '<sup>TH</sup>' }
+
             // Create the stat item and add to the array to update
             arrayToUpdate.push(<div key={i} className="stat-item">
+                                   <div className="number" dangerouslySetInnerHTML={{__html: (i + 1) + position}}></div>
                                    <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
                                    <div className="name">{punter.name.first}</div>
                                    <div className="stat">{stat}</div>
@@ -251,7 +259,7 @@ export default class App extends Component {
             <div className="app">
                 <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." />
                 <div className="tab-btns">
-                    <button className={tabBtn1Class} onClick={this.handleTabClick}>Meets</button>
+                    <button className={tabBtn1Class} onClick={this.handleTabClick}>Meet Scores</button>
                     <button className={tabBtn2Class} onClick={this.handleTabClick}>Other</button>
                 </div>
                 <div className={tab1Class}>
