@@ -150,7 +150,6 @@ export default class App extends Component {
             caulGuineas = [], caulCup = [], coxPlate = [], derbyDay = [], melbCup = [], oaksDay = [], stakesDay = [],
             trifectas = [], quinellas = [], firsts = [], seconds = [], thirds = [],
             tabBtn1Class, tabBtn2Class, tab1Class, tab2Class;
-        //console.log(stats);
 
         // Set the tab status and hide/show the tabs
         if (this.state.tabSelected === 1) {
