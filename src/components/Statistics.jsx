@@ -265,28 +265,38 @@ export default class App extends Component {
                 <div className={tab1Class}>
                     <div className="bold mt-20 mb-10">Caulfield Guineas</div>
                     <div className="stat-container">{caulGuineas}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Caulfield Cup</div>
                     <div className="stat-container">{caulCup}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Cox Plate</div>
                     <div className="stat-container">{coxPlate}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Derby Day</div>
                     <div className="stat-container">{derbyDay}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Melbourne Cup</div>
-                    <div className="stat-container">{melbCup}</div>
+                    <div className="stat-container">Coming Soon...</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Oaks Day</div>
-                    <div className="stat-container">{oaksDay}</div>
+                    <div className="stat-container">Coming Soon...</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Stakes Day</div>
-                    <div className="stat-container">{stakesDay}</div>
+                    <div className="stat-container">Coming Soon...</div>
                 </div>
                 <div className={tab2Class}>
                     <div className="bold mt-20 mb-10">Trifectas</div>
                     <div className="stat-container">{trifectas}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Quinellas</div>
                     <div className="stat-container">{quinellas}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Firsts</div>
                     <div className="stat-container">{firsts}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Seconds</div>
                     <div className="stat-container">{seconds}</div>
+                    <hr />
                     <div className="bold mt-20 mb-10">Thirds</div>
                     <div className="stat-container">{thirds}</div>
                 </div>

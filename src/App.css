@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
+/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
 .icon-admin {
@@ -15,7 +15,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 .browser {
     background: none !important;
-}
+} */
 /* Used when hiding things - END */
 
 .app {
@@ -81,6 +81,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 h2 {
     margin-top: .5rem;
+    font-size: 1.6rem;
 }
 
 h2 img {
@@ -113,14 +114,18 @@ h2 img {
     margin: 50% auto 0;
 }
 
-.icon-info {
+.info-icon {
     position: absolute;
-    top: 1.8rem;
-    right: 4.8rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 3.5rem;
+    top: 2rem;
+    right: 5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
     color: #333;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    text-align: center;
     cursor: pointer;
     outline: 0;
 }
@@ -155,7 +160,7 @@ h2 img {
     background-color: #fff;
 }
 
-.icon-info.selected, .icon-admin.selected {
+.info-icon.selected, .icon-admin.selected {
     color: #27d3ff;
     border-color: #27d3ff;
 }
@@ -591,7 +596,7 @@ input.password {
 
 .tip .numbers {
     display: inline-block;
-    width: 60%;
+    width: 62%;
     margin-top: .5rem;
 }
 
@@ -805,6 +810,10 @@ input.password {
 /***** Media Queries *****/
 
 @media (min-width: 360px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
     .race-selector .circle {
         width: 3rem;
         height: 3rem;

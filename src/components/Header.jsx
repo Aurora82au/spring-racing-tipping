@@ -32,7 +32,7 @@ export default class Header extends Component {
 
     render() {
         // Show the user profile pic for every page except log in
-        let informationBtn = (this.props.page === 'Log In') ? '' : <NavLink to={this.props.path + 'information'} key="a" className="icon-info" activeClassName="selected"></NavLink>,
+        let informationBtn = (this.props.page === 'Log In') ? '' : <NavLink to={this.props.path + 'information'} key="a" className="info-icon" activeClassName="selected">i</NavLink>,
             logOutOverlay = this.state.showLogOut ? <div key="b" className="overlay" onClick={this.handleHideLogOutOverlay}><button className="btn" type="button" onClick={this.handleLogOut}>Log Out</button></div> : '',
             user = this.props.punters.find(user => { return user.punterId === this.props.user }),
             profilePic = (this.props.page === 'Log In') ? '' : <img key="c" className="profile-pic" src={'pics/' + user.pic} alt="profile-pic" onClick={this.handleShowLogOutOverlay} />;

@@ -129,6 +129,11 @@ p {
     line-height: 1.6rem;
 }
 
+hr {
+    border-top: 1px solid #27d3ff;
+    border-bottom: none;
+}
+
 .hide {
     display: none !important;
 }
