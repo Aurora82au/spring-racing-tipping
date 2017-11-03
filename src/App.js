@@ -40,33 +40,33 @@ class App extends Component {
         var self = this;
         try {
             // Used for local JSON files
-            // let raceMeetResponse = await fetch(this.path + 'raceMeets.json'),
-            //     meets = await raceMeetResponse.json(),
-            //     punterResponse = await fetch(this.path + 'punters.json'),
-            //     punters = await punterResponse.json(),
-            //     tipsResponse = await fetch(this.path + 'tips.json'),
-            //     tips = await tipsResponse.json();
-            // self.setState({
-            //     raceMeets: meets,
-            //     punters: punters,
-            //     tips: tips
-            // });
+            let raceMeetResponse = await fetch(this.path + 'raceMeets.json'),
+                meets = await raceMeetResponse.json(),
+                punterResponse = await fetch(this.path + 'punters.json'),
+                punters = await punterResponse.json(),
+                tipsResponse = await fetch(this.path + 'tips.json'),
+                tips = await tipsResponse.json();
+            self.setState({
+                raceMeets: meets,
+                punters: punters,
+                tips: tips
+            });
 
             // Used for data coming from database
-            axios.all([
-                axios.get(this.databaseURL + '/racemeets'),
-                axios.get(this.databaseURL + '/punters'),
-                axios.get(this.databaseURL + '/tips')
-            ]).then(axios.spread(function (meets, punters, tips) {
-                    self.setState({
-                        raceMeets: meets.data,
-                        punters: punters.data,
-                        tips: tips.data
-                    });
-                })
-            ).catch(function (e) {
-               console.log('An Axios error occurred: ' + e);
-            });
+            // axios.all([
+            //     axios.get(this.databaseURL + '/racemeets'),
+            //     axios.get(this.databaseURL + '/punters'),
+            //     axios.get(this.databaseURL + '/tips')
+            // ]).then(axios.spread(function (meets, punters, tips) {
+            //         self.setState({
+            //             raceMeets: meets.data,
+            //             punters: punters.data,
+            //             tips: tips.data
+            //         });
+            //     })
+            // ).catch(function (e) {
+            //    console.log('An Axios error occurred: ' + e);
+            // });
         }
         catch (e) {
             console.log('An error occurred: ' + e);
