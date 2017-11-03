@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic {
+/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
 .icon-admin {
@@ -81,6 +81,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 h2 {
     margin-top: .5rem;
+    font-size: 1.6rem;
 }
 
 h2 img {
@@ -90,7 +91,7 @@ h2 img {
 }
 
 .beta {
-    display: inline-block;
+    display: none;
     padding: .1rem .3rem;
     margin-left: .5rem;
     font-size: .8rem;
@@ -111,6 +112,22 @@ h2 img {
 
 .overlay .btn {
     margin: 50% auto 0;
+}
+
+.info-icon {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
 }
 
 .reload-btn, .icon-admin {
@@ -143,7 +160,7 @@ h2 img {
     background-color: #fff;
 }
 
-.icon-admin.selected {
+.info-icon.selected, .icon-admin.selected {
     color: #27d3ff;
     border-color: #27d3ff;
 }
@@ -438,10 +455,6 @@ input.password {
 
 /* Results */
 
-.race-meet h3 {
-    color: #444;
-}
-
 .race-selector {
     display: flex;
     margin-top: 2rem;
@@ -583,7 +596,7 @@ input.password {
 
 .tip .numbers {
     display: inline-block;
-    width: 60%;
+    width: 62%;
     margin-top: .5rem;
 }
 
@@ -748,10 +761,59 @@ input.password {
 }
 
 
+/* Statistics */
+
+.tab-btns {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    flex-basis: 50%;
+}
+
+.tab-btn.selected {
+    color: #fff;
+    background-color: #813aff;
+    border-color: #813aff;
+}
+
+.stat-container {
+    display: flex;
+    padding-bottom: 2rem;
+    overflow-x: auto;
+}
+
+.stat-item {
+    width: 6rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.stat-item .number {
+    margin-bottom: .5rem;
+}
+
+.stat-item .pic {
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.stat-item .name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
 
 /***** Media Queries *****/
 
 @media (min-width: 360px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
     .race-selector .circle {
         width: 3rem;
         height: 3rem;
