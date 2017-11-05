@@ -77,19 +77,22 @@ class App extends Component {
         // Load all the data
         this.getData();
         // Check if the user is already logged in
-        if (sessionStorage.getItem('user')) {
+        if (localStorage.getItem('user')) {
+            console.log('componentDidMount');
+            console.log(localStorage.getItem('selectedMeet'));
             this.setState({
                 authenticated: true,
-                user: parseInt(sessionStorage.getItem('user'), 10),
-                isAdmin: sessionStorage.getItem('isAdmin') === 'true'
+                user: parseInt(localStorage.getItem('user'), 10),
+                isAdmin: localStorage.getItem('isAdmin') === 'true',
+                selectedMeet: localStorage.getItem('selectedMeet') || 'CAULGUINEAS'
             });
         }
     }
 
     handleLogin = (user, isAdmin) => {
-        // Set the sessionStorage for the logged in user
-        sessionStorage.setItem('user', user);
-        sessionStorage.setItem('isAdmin', isAdmin);
+        // Set the localStorage for the logged in user
+        localStorage.setItem('user', user);
+        localStorage.setItem('isAdmin', isAdmin);
         this.setState({
             authenticated: true,
             user: user,
@@ -103,6 +106,7 @@ class App extends Component {
     }
 
     handleMeetSelect = event => {
+        localStorage.setItem('selectedMeet', event.target.value);
         this.setState({
             selectedMeet: event.target.value,
             selectedRace: 1

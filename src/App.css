@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
+h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
 .icon-admin {
@@ -15,10 +15,11 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 .browser {
     background: none !important;
-} */
+}
 /* Used when hiding things - END */
 
 .app {
+    position: relative;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -111,7 +112,7 @@ h2 img {
 }
 
 .overlay .btn {
-    margin: 50% auto 0;
+    align-self: center;
 }
 
 .info-icon {
@@ -514,7 +515,7 @@ input.password {
 
 .race {
     display: grid;
-    grid-template-columns: 1fr 8rem;
+    grid-template-columns: minmax(auto, 20rem) 1fr;
     grid-template-areas: "details      placings"
                          "tips-heading tips-heading"
                          "tips         tips";
@@ -582,7 +583,7 @@ input.password {
 
 .tip .name {
     display: inline-block;
-    width: 9rem;
+    width: calc(100% - 3.5rem);;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -824,12 +825,12 @@ input.password {
         margin-right: 2rem;
     }
 
-    .tip .name {
-        width: 11.3rem;
-    }
-
     .raceList .name {
         max-width: 28rem;
+    }
+
+    .race {
+        grid-template-columns: minmax(auto, 24rem) 1fr;
     }
 }
 
@@ -838,22 +839,18 @@ input.password {
         margin-right: .6rem;
     }
     
-    .tip .name {
-        width: 12rem;
-    }
-    
     .raceList .name {
         max-width: 29rem;
+    }
+    
+    .race {
+        grid-template-columns: minmax(auto, 26rem) 1fr;
     }
 }
 
 @media (min-width: 384px) {
     .race-selector .circle {
         margin-right: .7rem;
-    }
-    
-    .tip .name {
-        width: 12.5rem;
     }
 }
 
@@ -862,25 +859,56 @@ input.password {
         margin-right: .8rem;
     }
     
-    .tip .name {
-        width: 13.3rem;
-    }
-    
     .raceList .name {
         max-width: 32rem;
+    }
+    
+    .race {
+        grid-template-columns: minmax(auto, 28rem) 1fr;
     }
 }
 
 @media (min-width: 410px) {
+    .icon-admin {
+        top: 2rem;
+        right: 9rem;
+    }
+
     .race-selector .circle {
         margin-right: 1rem;
     }
     
-    .tip .name {
-        width: 13.8rem;
-    }
-    
     .raceList .name {
         max-width: 33rem;
+    }
+}
+
+/* To cater to phones in landscape */
+
+@media (min-width: 500px) {
+    .selector, input.password {
+        max-width: 39rem;
+    }
+
+    .tips {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .raceList .selections, .scratching-list .selections {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .race {
+        grid-template-columns: minmax(auto, 30rem) 1fr;
+    }
+
+    .adminRace .status-selector {
+        max-width: 39rem;
+    }
+}
+
+@media (min-width: 660px) {
+    .tips {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

@@ -26,7 +26,7 @@ export default class Header extends Component {
     }
 
     handleLogOut = () => {
-        sessionStorage.clear();
+        localStorage.clear();
         window.location.href = '/';
     }
 

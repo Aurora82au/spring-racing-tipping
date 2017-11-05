@@ -89,7 +89,7 @@ export default class TippingRaceList extends Component {
                 if (this.props.meet.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
                 if (this.state.tips[i].selections.includes((j + 1).toString())) { className += ' selected'; }
                 
-                selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
+                selections.push(<div key={j} className={className} data-race={(i + 1)} onDoubleClick={this.handleSelectionClick}>{j + 1}</div>);
             }
 
             races.push(
@@ -114,10 +114,10 @@ export default class TippingRaceList extends Component {
             raceDay = new Date(this.props.meet.date),
             raceListClass;
 
+        // Set the meet to disabled if it is after 10:15am on race day
         raceDay.setHours(10);
         raceDay.setMinutes(15);
 
-        // Set the meet to disabled if it is after 10:15am on race day
         if (new Date() > raceDay) {
             raceListClass = 'raceList disabled';
         }
@@ -132,9 +132,3 @@ export default class TippingRaceList extends Component {
         );
     }
 }
-
-
-
-
-// Set the first race to disabled for demo purposes
-//tipGroupClass = ((i === 0) && this.props.meet.meetId === 'CAULCUP') ? 'tip-group disabled' : 'tip-group';
