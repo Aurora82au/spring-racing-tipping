@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
+/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
 .icon-admin {
@@ -15,7 +15,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 .browser {
     background: none !important;
-}
+} */
 /* Used when hiding things - END */
 
 .app {
@@ -649,6 +649,9 @@ input.password {
 
 .odds-totals {
     display: flex;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 2rem;
 }
 
@@ -931,5 +934,15 @@ input.password {
 @media (min-width: 660px) {
     .tips {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .tips {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .raceList .selections, .scratching-list .selections {
+        grid-template-columns: repeat(24, 1fr);
     }
 }
