@@ -647,6 +647,27 @@ input.password {
     color: #27d3ff;
 }
 
+.odds-totals {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.odds-totals .total {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.odds-totals img {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: .5rem;
+    border-radius: 100%;
+}
+
+.odds-totals .name {
+    margin-bottom: .5rem;
+}
+
 .podium {
     display: flex;
     justify-content: center;

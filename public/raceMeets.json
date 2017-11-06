@@ -424,11 +424,11 @@
                 "name": "Carbine Club Stakes",
                 "time": "11:45am",
                 "distance": "1600m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "7",
+                    "second": "5",
+                    "third": "16"
                 },
                 "scratchings": [6]
             },
@@ -437,11 +437,11 @@
                 "name": "G.H.Mumm Wakeful Stakes",
                 "time": "12:20pm",
                 "distance": "2000m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "7",
+                    "second": "3",
+                    "third": "6"
                 },
                 "scratchings": []
             },
@@ -450,24 +450,24 @@
                 "name": "Skip Sprint",
                 "time": "1:00pm",
                 "distance": "1100m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "6",
+                    "second": "2",
+                    "third": "10"
                 },
-                "scratchings": []
+                "scratchings": [9]
             },
             {
                 "number": 4,
                 "name": "Lexus Stakes",
                 "time": "1:40pm",
                 "distance": "2500m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "7",
+                    "second": "6",
+                    "third": "8"
                 },
                 "scratchings": []
             },
@@ -476,11 +476,11 @@
                 "name": "Coolmore Stud Stakes",
                 "time": "2:25pm",
                 "distance": "1200m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "8",
+                    "second": "19",
+                    "third": "18"
                 },
                 "scratchings": []
             },
@@ -489,37 +489,37 @@
                 "name": "Myer Classic",
                 "time": "3:05pm",
                 "distance": "1600m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "16",
+                    "second": "13",
+                    "third": "8"
                 },
-                "scratchings": []
+                "scratchings": [15, 18, 19, 20]
             },
             {
                 "number": 7,
                 "name": "AAMI Victoria Derby",
                 "time": "3:50pm",
                 "distance": "2500m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "1",
+                    "second": "6",
+                    "third": "3"
                 },
-                "scratchings": []
+                "scratchings": [17]
             },
             {
                 "number": 8,
                 "name": "Kennedy Mile",
                 "time": "4:35pm",
                 "distance": "1600m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "9",
+                    "second": "5",
+                    "third": "14"
                 },
                 "scratchings": []
             },
@@ -528,13 +528,13 @@
                 "name": "TAB Multiplier Stakes",
                 "time": "5:20pm",
                 "distance": "1200m",
-                "status": "Not Run Yet",
+                "status": "Has Run",
                 "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "11",
+                    "second": "7",
+                    "third": "3"
                 },
-                "scratchings": []
+                "scratchings": [4]
             }
         ]
     },
@@ -546,8 +546,8 @@
         "races": [
             {
                 "number": 1,
-                "name": "Ottawa Stakes",
-                "time": "TBC",
+                "name": "Emirates 100th A380 Stakes",
+                "time": "11:00am",
                 "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -559,8 +559,47 @@
             },
             {
                 "number": 2,
-                "name": "Schweppes #FlemingtonFling",
-                "time": "TBC",
+                "name": "TAB.com.au Trophy",
+                "time": "11:40am",
+                "distance": "1700m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [12, 16]
+            },
+            {
+                "number": 3,
+                "name": "Lavazza Short Black",
+                "time": "12:15pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [10]
+            },
+            {
+                "number": 4,
+                "name": "Ronald McDonald House Charities Plate",
+                "time": "12:50pm",
+                "distance": "2800m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [19, 22]
+            },
+            {
+                "number": 5,
+                "name": "Schweppes Flemington Fling",
+                "time": "1:25pm",
                 "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -571,61 +610,22 @@
                 "scratchings": []
             },
             {
-                "number": 3,
-                "name": "Lexus Hybrid Plate",
-                "time": "TBC",
-                "distance": "1400m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 4,
-                "name": "MSS Security Sprint",
-                "time": "TBC",
-                "distance": "1200m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 5,
-                "name": "Lavazza Prontissimo",
-                "time": "TBC",
-                "distance": "1400m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
                 "number": 6,
-                "name": "James Boag's Premium Stakes",
-                "time": "TBC",
-                "distance": "1800m",
+                "name": "Lexus Hybrid Plate",
+                "time": "2:00pm",
+                "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [11]
             },
             {
                 "number": 7,
                 "name": "Emirates Melbourne Cup",
-                "time": "TBC",
+                "time": "3:00pm",
                 "distance": "3200m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -633,25 +633,38 @@
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [11]
             },
             {
                 "number": 8,
-                "name": "Prince of Penzance Handicap",
-                "time": "TBC",
-                "distance": "2800m",
+                "name": "James Boag's Premium Stakes",
+                "time": "4:05pm",
+                "distance": "1800m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [3, 14, 21]
             },
             {
                 "number": 9,
+                "name": "MSS Security Sprint",
+                "time": "4:45pm",
+                "distance": "1200m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [4, 18]
+            },
+            {
+                "number": 10,
                 "name": "The Hong Kong Jockey Club Stakes",
-                "time": "TBC",
+                "time": "5:20pm",
                 "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -659,20 +672,7 @@
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
-            },
-            {
-                "number": 10,
-                "name": "tab.com.au Trophy",
-                "time": "TBC",
-                "distance": "1700m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
+                "scratchings": [2, 7]
             }
         ]
     },

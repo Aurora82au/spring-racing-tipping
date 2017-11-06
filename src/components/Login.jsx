@@ -62,10 +62,19 @@ export default class Login extends Component {
     
     render() {
         // Sort names in ascending order by first name, then create an <option> for each of them
-        let sorted = this.props.punters.sort((a, b) => { return a.name.first.localeCompare(b.name.first) }),
-            options = sorted.map(punter => {
-                return <option key={punter.punterId} value={punter.punterId}>{punter.name.first} {punter.name.last}</option>
-            });
+        let sorted = this.props.punters.sort((a, b) => { return a.name.first.localeCompare(b.name.first) });
+
+        // Move Top odds, Bottom Odds and 1, 2, 3 to the end of the array
+        for (let i = 0, len = sorted.length; i < len; i++) {
+            if (sorted[i].name.first === "Top" || sorted[i].name.first === "Bottom" || sorted[i].name.first === "1, 2, 3") {
+                sorted.push(sorted.splice(i, 1)[0])
+            }
+        }
+
+        // Create an array of option elements for each punter
+        let options = sorted.map(punter => {
+            return <option key={punter.punterId} value={punter.punterId}>{punter.name.first} {punter.name.last}</option>
+        });
         
         // Add a default <option> at the beginning
         options.unshift(<option key="a" value="">-- Select Name --</option>);

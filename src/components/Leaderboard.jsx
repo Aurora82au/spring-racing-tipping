@@ -72,8 +72,36 @@ export default class Leaderboard extends Component {
     
     render() {
         let points = this.calculatePoints(),
+            oddsList = [],
             loserList = [],
-            first, second, third, punter, position;
+            firstThree, topOdds, bottomOdds, first, second, third, punter, position;
+        
+        // Set '1, 2, 3', Top Odds and Bottom Odds
+        firstThree = this.findPunter(points[2].punterId);
+        topOdds = this.findPunter(points[1].punterId);
+        bottomOdds = this.findPunter(points[0].punterId);
+
+        // Populate the oddsList array
+        oddsList.push(<div key="a" className="total">
+                          <img src={'pics/' + firstThree.pic} alt="Profile pic" className="pic" />
+                          <div className="name">{firstThree.name.first} {firstThree.name.last}</div>
+                          <div className="points">{points[2].points} PTS</div>
+                      </div>);
+        oddsList.push(<div key="b" className="total">
+                          <img src={'pics/' + topOdds.pic} alt="Profile pic" className="pic" />
+                          <div className="name">{topOdds.name.first} {topOdds.name.last}</div>
+                          <div className="points">{points[1].points} PTS</div>
+                      </div>);
+        oddsList.push(<div key="c" className="total">
+                          <img src={'pics/' + bottomOdds.pic} alt="Profile pic" className="pic" />
+                          <div className="name">{bottomOdds.name.first} {bottomOdds.name.last}</div>
+                          <div className="points">{points[0].points} PTS</div>
+                      </div>);
+        
+        // Remove odds totals from the points
+        points.shift();
+        points.shift();
+        points.shift();
 
         // Sort points in descending order by total points, then trifectas, then quinellas, then first places, then second places
         points.sort((a, b) => {
@@ -88,6 +116,7 @@ export default class Leaderboard extends Component {
         // Generate list of losers
         for (let i = 0; i < points.length; i++) {
             //console.log('Punter ' + points[i].punterId + ' - trifectas: ' + points[i].trifectas + ' - quinellas: ' + points[i].quinellas + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
+            // If not the winners
             if (i !== 0 && i !== 1 && i !== 2) {
                 // Get the punter details
                 punter = this.findPunter(points[i].punterId);
@@ -111,6 +140,9 @@ export default class Leaderboard extends Component {
         return (
             <div className="app">
                 <Header page="Leaderboard" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
+                <div className="odds-totals">
+                    {oddsList}
+                </div>
                 <Podium first={first} second={second} third={third} points={points} />
                 <h4 className="lb-heading">BEST OF THE REST</h4>
                 {loserList}

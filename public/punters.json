@@ -163,5 +163,38 @@
         },
         "pic": "Tara.jpg",
         "isAdmin": false
+    },
+    {
+        "punterId": 16,
+        "password": "ft1111",
+        "name": {
+            "first": "1, 2, 3",
+            "last": "",
+            "display": "Horse 1, 2, 3"
+        },
+        "pic": "default.png",
+        "isAdmin": false
+    },
+    {
+        "punterId": 17,
+        "password": "to1111",
+        "name": {
+            "first": "Top",
+            "last": "Odds",
+            "display": "Top Odds"
+        },
+        "pic": "default.png",
+        "isAdmin": false
+    },
+    {
+        "punterId": 18,
+        "password": "bo1111",
+        "name": {
+            "first": "Bottom",
+            "last": "Odds",
+            "display": "Bottom Odds"
+        },
+        "pic": "default.png",
+        "isAdmin": false
     }
 ]
