@@ -20,7 +20,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 .app {
     position: relative;
-    max-width: 1170px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 1rem 8rem;
@@ -938,6 +938,14 @@ input.password {
 }
 
 @media (min-width: 992px) {
+    .menu {
+        grid-template-columns: 1fr 1fr repeat(4, 25rem) 1fr 1fr;
+    }
+
+    .menu a:first-child {
+        grid-column-start: 3;
+    }
+
     .tips {
         grid-template-columns: repeat(5, 1fr);
     }

@@ -140,6 +140,7 @@ export default class Leaderboard extends Component {
         return (
             <div className="app">
                 <Header page="Leaderboard" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
+                <h4 className="lb-heading">GAME ACCOUNTS</h4>
                 <div className="odds-totals">
                     {oddsList}
                 </div>

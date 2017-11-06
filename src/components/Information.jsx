@@ -19,6 +19,25 @@ export default class Information extends Component {
                     <li><span className="browser firefox"></span>Firefox</li>
                     <li><span className="browser opera"></span>Opera</li>
                 </ul>
+                <div className="bold mt-20">Game Accounts</div>
+                <p>There are three game accounts which appear in lists like regular people (excluding the leaderboard).  These three accounts are:</p>
+                <div className="odds-totals">
+                    <div className="total">
+                        <img src={'pics/default.png'} alt="Profile pic" className="pic" />
+                        <div className="name">1, 2, 3</div>
+                    </div>
+                    <div className="total">
+                        <img src={'pics/default.png'} alt="Profile pic" className="pic" />
+                        <div className="name">Top Odds</div>
+                    </div>
+                    <div className="total">
+                        <img src={'pics/default.png'} alt="Profile pic" className="pic" />
+                        <div className="name">Bottom Odds</div>
+                    </div>
+                </div>
+                <p>1, 2, 3 = Always picks horses 1, 2 and 3.</p>
+                <p>Top Odds = Always picks the horses with the top three odds. Decided on form if more than one horse have the same odds.</p>
+                <p>Bottom Odds = Always picks the horses with the bottom three odds. Decided on form if more than one horse have the same odds.</p>
                 <div className="bold mt-20">Tips</div>
                 <p>On the Tips page you can select a race meet from the drop down menu to view the list of races and their associated tips. You can submit 3 tips for each race of every race meet.  If you have selected 3 horses already, but want to change a selection, then you will have to unselect a horse before you can select a new one.  If you select less than 3 horses, then you simply miss out on the opprtunity to get those points.</p>
                 <p>The tips for each race meet must be submitted by 10:00am AEDT on the day of the race meet.</p>
