@@ -172,7 +172,7 @@
             "last": "",
             "display": "Horse 1, 2, 3"
         },
-        "pic": "default.png",
+        "pic": "Default.png",
         "isAdmin": false
     },
     {
@@ -183,7 +183,7 @@
             "last": "Odds",
             "display": "Top Odds"
         },
-        "pic": "default.png",
+        "pic": "Default.png",
         "isAdmin": false
     },
     {
@@ -194,7 +194,7 @@
             "last": "Odds",
             "display": "Bottom Odds"
         },
-        "pic": "default.png",
+        "pic": "Default.png",
         "isAdmin": false
     }
 ]

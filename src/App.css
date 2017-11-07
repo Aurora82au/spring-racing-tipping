@@ -652,7 +652,6 @@ input.password {
     max-width: 36rem;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2rem;
 }
 
 .odds-totals .total {
@@ -817,6 +816,10 @@ input.password {
 
 .stat-item .number {
     margin-bottom: .5rem;
+}
+
+.stat-item .number sup {
+    font-size: .8rem;
 }
 
 .stat-item .pic {

@@ -187,7 +187,7 @@ export default class Admin extends Component {
                 className = 'selection';
                 if (this.state.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
                 
-                selections.push(<div key={j} className={className} data-race={(i + 1)} onDoubleClick={this.handleScratchingClick}>{j + 1}</div>);
+                selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleScratchingClick}>{j + 1}</div>);
             }
 
             raceList.push(

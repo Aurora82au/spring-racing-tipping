@@ -23,15 +23,15 @@ export default class Information extends Component {
                 <p>There are three game accounts which appear in lists like regular people (excluding the leaderboard).  These three accounts are:</p>
                 <div className="odds-totals">
                     <div className="total">
-                        <img src={'pics/default.png'} alt="Profile pic" className="pic" />
+                        <img src={'pics/Default.png'} alt="Profile pic" className="pic" />
                         <div className="name">1, 2, 3</div>
                     </div>
                     <div className="total">
-                        <img src={'pics/default.png'} alt="Profile pic" className="pic" />
+                        <img src={'pics/Default.png'} alt="Profile pic" className="pic" />
                         <div className="name">Top Odds</div>
                     </div>
                     <div className="total">
-                        <img src={'pics/default.png'} alt="Profile pic" className="pic" />
+                        <img src={'pics/Default.png'} alt="Profile pic" className="pic" />
                         <div className="name">Bottom Odds</div>
                     </div>
                 </div>
@@ -40,6 +40,7 @@ export default class Information extends Component {
                 <p>Bottom Odds = Always picks the horses with the bottom three odds. Decided on form if more than one horse have the same odds.</p>
                 <div className="bold mt-20">Tips</div>
                 <p>On the Tips page you can select a race meet from the drop down menu to view the list of races and their associated tips. You can submit 3 tips for each race of every race meet.  If you have selected 3 horses already, but want to change a selection, then you will have to unselect a horse before you can select a new one.  If you select less than 3 horses, then you simply miss out on the opprtunity to get those points.</p>
+                <p>To select or unselect a number, you must double-click/double-tap on it.  This is to help prevent people accidently selecting or unselecting things while they are just scrolling the page.</p>
                 <p>The tips for each race meet must be submitted by 10:00am AEDT on the day of the race meet.</p>
                 <p>The tips for all the races of a race meet will be disabled after 10:00am on the day of the meet.</p>
                 <div className="bold mt-20">Results</div>

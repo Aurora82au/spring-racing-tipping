@@ -275,7 +275,7 @@ export default class App extends Component {
                     <div className="stat-container">{derbyDay}</div>
                     <hr />
                     <div className="bold mt-20 mb-10">Melbourne Cup</div>
-                    <div className="stat-container">Coming Soon...</div>
+                    <div className="stat-container">{melbCup}</div>
                     <hr />
                     <div className="bold mt-20 mb-10">Oaks Day</div>
                     <div className="stat-container">Coming Soon...</div>
