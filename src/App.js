@@ -234,8 +234,12 @@ class App extends Component {
                         </Router>
                     </div>
                     <div className="back">
-                        <div>This is the back face</div>
-                        <button className="btn" type="button" onClick={this.handleLogoBack}>Back</button>
+                        <img className="you-got" src='rickrolled.jpg' alt="You've been Rick Rolled" />
+                        <img src='rick.gif' alt="Rick Roll" />
+                        <div>Click the button below to return</div>
+                        <button className="btn" type="button" onClick={this.handleLogoBack}>
+                            <img src='rickrolled2.jpg' alt="Go back" />
+                        </button>
                     </div>
                 </div>
             </div>

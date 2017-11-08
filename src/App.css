@@ -29,6 +29,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 .flipper {
     position: relative;
+    height: 100%;
     transition: 0.6s;
     transform-style: preserve-3d;
 }
@@ -47,14 +48,37 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 .back {
     transform: rotateY(180deg);
+    text-align: center;
+}
+
+.back img {
+    display: block;
+    margin: 2rem auto;
+}
+
+.back .btn {
+    width: calc(100% - 4rem);
+    margin: 2rem auto 0;
+    background-color: #bbd4f3;
+}
+
+.you-got {
+    width: 15rem;
+}
+
+.back .btn img {
+    width: 10rem;
+    margin: 0;
 }
 
 .app {
     position: relative;
     max-width: 1000px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 1rem 8rem;
+    overflow-y: auto;
 }
 
 .error {
@@ -120,6 +144,7 @@ h2 img {
     width: 4rem;
     height: 4rem;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .beta {
@@ -486,6 +511,10 @@ input.password {
 
 
 /* Results */
+
+.race-meet {
+    margin-bottom: 8rem;
+}
 
 .race-selector {
     display: flex;
