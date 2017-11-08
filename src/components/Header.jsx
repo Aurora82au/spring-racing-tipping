@@ -30,6 +30,10 @@ export default class Header extends Component {
         window.location.href = '/';
     }
 
+    handleLogoClick = event => {
+        document.querySelector('.flip-container').classList.toggle('flipped');
+    }
+
     render() {
         // Show the user profile pic for every page except log in
         let informationBtn = (this.props.page === 'Log In') ? '' : <NavLink to={this.props.path + 'information'} key="a" className="info-icon" activeClassName="selected">i</NavLink>,
@@ -49,7 +53,7 @@ export default class Header extends Component {
             profilePic,
             adminBtn,
             reloadBtn,
-            <h2 key="f">Spring Racing Tipping <img src="horse.png" alt="Title logo" /><span className="beta">BETA</span></h2>,
+            <h2 key="f">Spring Racing Tipping <img src="horse.png" alt="Title logo" onClick={this.handleLogoClick} /><span className="beta">BETA</span></h2>,
             <h3 key="g">{this.props.page}</h3>,
             <p key="h">{this.props.text}</p>
         ];

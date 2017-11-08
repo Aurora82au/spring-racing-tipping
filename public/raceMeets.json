@@ -684,34 +684,8 @@
         "races": [
             {
                 "number": 1,
-                "name": "TCL Curved TV Stakes",
-                "time": "TBC",
-                "distance": "1800m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 2,
-                "name": "Crown Resorts Plate",
-                "time": "TBC",
-                "distance": "1100m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 3,
-                "name": "Red Rock Deli Plate",
-                "time": "TBC",
+                "name": "DrinkWise Plate",
+                "time": "12:15pm",
                 "distance": "1700m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -722,10 +696,10 @@
                 "scratchings": []
             },
             {
-                "number": 4,
-                "name": "Kennedy Oaks",
-                "time": "TBC",
-                "distance": "2500m",
+                "number": 2,
+                "name": "Twitter Trophy",
+                "time": "12:55pm",
+                "distance": "1800m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -735,9 +709,9 @@
                 "scratchings": []
             },
             {
-                "number": 5,
-                "name": "Off the Track Subzero Challenge",
-                "time": "TBC",
+                "number": 3,
+                "name": "Off the Track Subzero Handicap",
+                "time": "1:35pm",
                 "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -745,12 +719,38 @@
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [2]
+            },
+            {
+                "number": 4,
+                "name": "Melbourne Cup Carnival Country Final",
+                "time": "2:15pm",
+                "distance": "1600m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [8]
+            },
+            {
+                "number": 5,
+                "name": "TCL TV Stakes",
+                "time": "2:55pm",
+                "distance": "1400m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [3, 6]
             },
             {
                 "number": 6,
-                "name": "G.H. Mumm Stakes",
-                "time": "TBC",
+                "name": "Absolut Stakes",
+                "time": "3:35pm",
                 "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -762,21 +762,8 @@
             },
             {
                 "number": 7,
-                "name": "The Melbourne Cup Carnival Country Series Final",
-                "time": "TBC",
-                "distance": "1600m",
-                "status": "Not Run Yet",
-                "placings": {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                },
-                "scratchings": []
-            },
-            {
-                "number": 8,
-                "name": "Four-Years-Old and Five-Years-Old BM90 Handicap",
-                "time": "TBC",
+                "name": "Seppelt Wines Stakes",
+                "time": "4:15pm",
                 "distance": "1800m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -787,10 +774,10 @@
                 "scratchings": []
             },
             {
-                "number": 9,
-                "name": "Chatham Stakes",
-                "time": "TBC",
-                "distance": "1400m",
+                "number": 8,
+                "name": "Kennedy Oaks",
+                "time": "5:00pm",
+                "distance": "2500m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -798,6 +785,19 @@
                     "third": ""
                 },
                 "scratchings": []
+            },
+            {
+                "number": 9,
+                "name": "Kennedy Plate",
+                "time": "5:45pm",
+                "distance": "1100m",
+                "status": "Not Run Yet",
+                "placings": {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                },
+                "scratchings": [10]
             }
         ]
     },

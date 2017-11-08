@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things - START */
-/* h2, .profile-pic, .tip .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
+/* h2, .profile-pic, .tip .pic, .odds-totals .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
 .icon-admin {
@@ -17,6 +17,37 @@ div.bg-green, div.bg-orange, div.bg-red {
     background: none !important;
 } */
 /* Used when hiding things - END */
+
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flipper {
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
 
 .app {
     position: relative;
