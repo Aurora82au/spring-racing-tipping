@@ -115,7 +115,7 @@ export default class TippingRaceList extends Component {
             raceListClass;
 
         // Set the meet to disabled if it is after 10:15am on race day
-        raceDay.setHours(15);
+        raceDay.setHours(10);
         raceDay.setMinutes(15);
 
         if (new Date() > raceDay) {
