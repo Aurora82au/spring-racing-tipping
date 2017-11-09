@@ -207,42 +207,24 @@ class App extends Component {
             raceMeets: raceMeets
         });
     }
-    
-    handleLogoBack = event => {
-        document.querySelector('.flip-container').classList.toggle('flipped');
-    }
 
     render() {
         if (this.state.raceMeets.length) {
             return (
-            <div className="flip-container">
-                <div className="flipper">
-                    <div className="front">
-                        <Router>
-                            <ScrollToTop>
-                                <Switch>
-                                    <Route exact path={this.path + 'login'} render={routeProps => <Login {...routeProps} path={this.path} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} />} />
-                                    <Route exact path={this.path + 'admin'} render={routeProps => (this.state.authenticated && this.state.isAdmin) ? <Admin {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onPlacingsChange={this.handleSavePlacings} onStatusChange={this.handleSaveStatus} onScratchingChange={this.handleSaveScratchings} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                                    <Route exact path={this.path + 'information'} render={routeProps => this.state.authenticated ? <Information {...routeProps} path={this.path} punters={this.state.punters} onReloadData={this.handleReloadData} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                                    <Route exact path={this.path + 'statistics'} render={routeProps => this.state.authenticated ? <Statistics {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedTab={this.state.selectedTab} onTabSelect={this.handleTabSelect} onReloadData={this.handleReloadData} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                                    <Route exact path={this.path + 'tips'} render={routeProps => this.state.authenticated ? <Tips {...routeProps} path={this.path} raceMeets={this.state.raceMeets} tips={this.state.tips} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onSelectionChange={this.handleSaveTips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                                    <Route exact path={this.path + 'results'} render={routeProps => this.state.authenticated ? <Results {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                                    <Route exact path={this.path + 'leaderboard'} render={routeProps => this.state.authenticated ? <Leaderboard {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} user={this.state.user} onReloadData={this.handleReloadData} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                                    <Redirect from='/' to={this.path + 'results'} />
-                                </Switch>
-                            </ScrollToTop>
-                        </Router>
-                    </div>
-                    <div className="back">
-                        <img className="you-got" src='rickrolled.jpg' alt="You've been Rick Rolled" />
-                        <img src='rick.gif' alt="Rick Roll" />
-                        <div>Click the button below to return</div>
-                        <button className="btn" type="button" onClick={this.handleLogoBack}>
-                            <img src='rickrolled2.jpg' alt="Go back" />
-                        </button>
-                    </div>
-                </div>
-            </div>
+                <Router>
+                    <ScrollToTop>
+                        <Switch>
+                            <Route exact path={this.path + 'login'} render={routeProps => <Login {...routeProps} path={this.path} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} />} />
+                            <Route exact path={this.path + 'admin'} render={routeProps => (this.state.authenticated && this.state.isAdmin) ? <Admin {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onPlacingsChange={this.handleSavePlacings} onStatusChange={this.handleSaveStatus} onScratchingChange={this.handleSaveScratchings} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                            <Route exact path={this.path + 'information'} render={routeProps => this.state.authenticated ? <Information {...routeProps} path={this.path} punters={this.state.punters} onReloadData={this.handleReloadData} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                            <Route exact path={this.path + 'statistics'} render={routeProps => this.state.authenticated ? <Statistics {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedTab={this.state.selectedTab} onTabSelect={this.handleTabSelect} onReloadData={this.handleReloadData} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                            <Route exact path={this.path + 'tips'} render={routeProps => this.state.authenticated ? <Tips {...routeProps} path={this.path} raceMeets={this.state.raceMeets} tips={this.state.tips} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onSelectionChange={this.handleSaveTips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                            <Route exact path={this.path + 'results'} render={routeProps => this.state.authenticated ? <Results {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                            <Route exact path={this.path + 'leaderboard'} render={routeProps => this.state.authenticated ? <Leaderboard {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} user={this.state.user} onReloadData={this.handleReloadData} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
+                            <Redirect from='/' to={this.path + 'results'} />
+                        </Switch>
+                    </ScrollToTop>
+                </Router>
             );
         }
         else {
