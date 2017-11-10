@@ -61,7 +61,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 }
 
 .back .btn {
-    width: calc(100% - 4rem);
+    width: 26.7rem;
     margin: 2rem auto 0;
     background-color: #bbd4f3;
 }
