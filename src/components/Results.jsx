@@ -10,7 +10,9 @@ export default class Results extends Component {
     }
     
     handleLogoBack = event => {
-        document.querySelector('.flip-container').classList.toggle('flipped');
+        let container = document.querySelector('.flip-container');
+        container.classList.remove('flipped');
+        setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
     render() {

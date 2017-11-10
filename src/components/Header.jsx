@@ -31,7 +31,7 @@ export default class Header extends Component {
     }
 
     handleLogoClick = event => {
-        document.querySelector('.flip-container').classList.toggle('flipped');
+        document.querySelector('.flip-container').classList.add('flipped', 'preserve-3d');
     }
 
     render() {

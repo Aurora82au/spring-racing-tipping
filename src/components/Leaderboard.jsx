@@ -7,6 +7,12 @@ export default class Leaderboard extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
+    
+    handleLogoBack = event => {
+        let container = document.querySelector('.flip-container');
+        container.classList.remove('flipped');
+        setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
+    }
 
     findMeet = thisMeetIndex => {
         return this.props.tips.find(tipsMeet => { return tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId });
@@ -139,15 +145,29 @@ export default class Leaderboard extends Component {
         
         return (
             <div className="app">
-                <Header page="Leaderboard" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
-                <h4 className="lb-heading">GAME ACCOUNTS</h4>
-                <div className="odds-totals">
-                    {oddsList}
+                <div className="flip-container">
+                    <div className="flipper">
+                        <div className="front">
+                            <Header page="Leaderboard" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
+                            <h4 className="lb-heading">GAME ACCOUNTS</h4>
+                            <div className="odds-totals">
+                                {oddsList}
+                            </div>
+                            <Podium first={first} second={second} third={third} points={points} />
+                            <h4 className="lb-heading">BEST OF THE REST</h4>
+                            {loserList}
+                            <Menu path={this.props.path}></Menu>
+                        </div>
+                        <div className="back">
+                            <img className="you-got" src='rickrolled.jpg' alt="You've been Rick Rolled" />
+                            <img src='rick.gif' alt="Rick Roll" />
+                            <div>Click the button below to return</div>
+                            <button className="btn" type="button" onClick={this.handleLogoBack}>
+                                <img src='rickrolled2.jpg' alt="Go back" />
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <Podium first={first} second={second} third={third} points={points} />
-                <h4 className="lb-heading">BEST OF THE REST</h4>
-                {loserList}
-                <Menu path={this.props.path}></Menu>
             </div>
         );
     }

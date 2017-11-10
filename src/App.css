@@ -20,17 +20,15 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 .flip-container.flipped .flipper {
     transform: rotateY(180deg);
-    transform-style: preserve-3d;
 }
 
 .flip-container.flipped .flipper .front {
     transform: rotateY(0deg);
 }
 
-/* .flip-container, .back {
-    width: 100vw;
-    height: 100vh;
-} */
+.flip-container.preserve-3d .flipper {
+    transform-style: preserve-3d;
+}
 
 .flipper {
     position: relative;
@@ -42,6 +40,7 @@ div.bg-green, div.bg-orange, div.bg-red {
     top: 0;
     left: 0;
     right: 0;
+    background-color: #fff;
     backface-visibility: hidden;
 }
 
@@ -66,7 +65,8 @@ div.bg-green, div.bg-orange, div.bg-red {
     background-color: #bbd4f3;
 }
 
-.you-got {
+.back .you-got {
+    margin-top: 0;
     width: 15rem;
 }
 
@@ -163,8 +163,8 @@ h2 img {
 
 .profile-pic {
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: .5rem;
+    right: 0;
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -177,8 +177,8 @@ h2 img {
 
 .info-icon {
     position: absolute;
-    top: 2rem;
-    right: 5rem;
+    top: .5rem;
+    right: 4rem;
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
@@ -193,8 +193,8 @@ h2 img {
 
 .reload-btn, .icon-admin {
     position: absolute;
-    top: 6rem;
-    right: 1rem;
+    top: 4.5rem;
+    right: 0;
     width: 3rem;
     height: 3rem;
     padding: .5rem .6rem .2rem;
@@ -216,7 +216,7 @@ h2 img {
 }
 
 .icon-admin {
-    right: 5rem;
+    right: 4rem;
     padding: .5rem .6rem .7rem;
     background-color: #fff;
 }
