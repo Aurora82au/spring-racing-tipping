@@ -3030,27 +3030,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["1", "2", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["1", "2", "11"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["1", "3", "11"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["2", "6", "13"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["2", "13", "11"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["1", "2", "6"]
                     },
                     {
                         "punterId": 7,
@@ -3058,35 +3058,35 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["1", "2", "6"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["2", "12", "17"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["9", "2", "1"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["1", "11", "6"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["2", "1", "11"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["11", "13", "10"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["2", "13", "6"]
                     },
                     {
                         "punterId": 15,
-                        "tips": ["2", "11", "1"]
+                        "tips": ["2", "1", "7"]
                     },
                     {
                         "punterId": 16,
@@ -3094,11 +3094,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["1", "2", "11"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["4", "9", "10"]
                     }
                 ]
             },
@@ -3107,27 +3107,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["1", "2", "3"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["3", "8", "4"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["3", "1", "5"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["3", "5", "6"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["3", "1", "8"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["2", "3", "5"]
                     },
                     {
                         "punterId": 7,
@@ -3135,31 +3135,31 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["3", "5", "8"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["3", "10", "14"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["7", "3", "8"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["2", "10", "9"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["3", "5", "1"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["1", "3", "5"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["3", "1", "6"]
                     },
                     {
                         "punterId": 15,
@@ -3171,11 +3171,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["3", "5", "8"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["7", "14", "15"]
                     }
                 ]
             },
@@ -3184,27 +3184,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["6", "12", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["3", "9", "12"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["4", "3", "6"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["4", "6", "12"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["3", "6", "9"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["4", "6", "7"]
                     },
                     {
                         "punterId": 7,
@@ -3212,7 +3212,7 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["6", "9", "12"]
                     },
                     {
                         "punterId": 9,
@@ -3220,27 +3220,27 @@
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["3", "6", "4"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["1", "3", "7"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["12", "3", "4"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["2", "9", "7"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["4", "6", "9"]
                     },
                     {
                         "punterId": 15,
-                        "tips": ["6", "12", "3"]
+                        "tips": ["6", "4", "9"]
                     },
                     {
                         "punterId": 16,
@@ -3248,11 +3248,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["3", "6", "12"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["11", "15", "16"]
                     }
                 ]
             },
@@ -3261,27 +3261,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["3", "6", "9"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["3", "16", "6"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["3", "6", "16"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["6", "9", "16"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["3", "6", "16"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["3", "6", "9"]
                     },
                     {
                         "punterId": 7,
@@ -3289,35 +3289,35 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["6", "9", "15"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["11", "2", "10"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["16", "3", "6"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["13", "6", "9"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["6", "3", "16"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["16", "6", "3"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["3", "9", "16"]
                     },
                     {
                         "punterId": 15,
-                        "tips": ["3", "6", "15"]
+                        "tips": ["3", "6", "16"]
                     },
                     {
                         "punterId": 16,
@@ -3325,11 +3325,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["3", "6", "15"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["13", "14", "18"]
                     }
                 ]
             },
@@ -3338,59 +3338,59 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["2", "5", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["1", "4", "9"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["5", "1", "4"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["1", "5", "2"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["1", "9", "2"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["1", "5", "7"]
                     },
                     {
                         "punterId": 7,
-                        "tips": ["6", "7", "8"]
+                        "tips": ["6", "7", "3"]
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["3", "6", "9"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["9", "4", "2"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["1", "3", "5"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["4", "11", "2"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["1", "9"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["5", "12", "7"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["1", "9", "5"]
                     },
                     {
                         "punterId": 15,
@@ -3402,11 +3402,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["1", "8", "9"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["3", "11", "13"]
                     }
                 ]
             },
@@ -3415,27 +3415,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["1", "2", "3"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["2", "6", "12"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["2", "12", "3"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["1", "2", "7"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["2", "3", "12"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["1", "2", "5"]
                     },
                     {
                         "punterId": 7,
@@ -3443,35 +3443,35 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["2", "4", "12"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["14", "21"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["2", "3", "6"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["5", "1", "7"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["2", "3", "6"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["12", "2", "6"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["1", "3", "7"]
                     },
                     {
                         "punterId": 15,
-                        "tips": ["2", "3", "12"]
+                        "tips": ["2", "3", "6"]
                     },
                     {
                         "punterId": 16,
@@ -3479,11 +3479,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["2", "3", "12"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["5", "10", "13"]
                     }
                 ]
             },
@@ -3492,27 +3492,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["2", "3", "7"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["2", "3", "5"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["5", "3", "15"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["2", "9", "20"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["2", "6", "5"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["2", "20", "3"]
                     },
                     {
                         "punterId": 7,
@@ -3520,35 +3520,35 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["2", "6", "18"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["14", "4", "17"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["5", "2", "3"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["13", "6", "2"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["2", "3", "5"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["14", "9", "5"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["2", "6", "20"]
                     },
                     {
                         "punterId": 15,
-                        "tips": ["5", "2", "3"]
+                        "tips": ["2", "5", "7"]
                     },
                     {
                         "punterId": 16,
@@ -3556,11 +3556,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["2", "3", "5"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["8", "14", "16"]
                     }
                 ]
             },
@@ -3569,27 +3569,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["7", "11", "19"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["11", "12", "19"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["11", "10", "7"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["9", "12", "19"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["19", "11", "4"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["10", "11", "19"]
                     },
                     {
                         "punterId": 7,
@@ -3597,31 +3597,31 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["10", "11", "13"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["19", "15", "10"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["19", "11", "10"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["13", "6", "1"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["11", "4", "10"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["13", "10", "19"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["13", "6", "1"]
                     },
                     {
                         "punterId": 15,
@@ -3633,11 +3633,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["10", "11", "19"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["2", "17", "18"]
                     }
                 ]
             },
@@ -3646,27 +3646,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["12", "15", "16"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["3", "6", "15"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["3", "8", "15"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["15", "16", "20"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["3", "6", "15"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["3", "17", "12"]
                     },
                     {
                         "punterId": 7,
@@ -3674,31 +3674,31 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["3", "8", "12"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["14", "12", "13"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["15", "5", "6"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["12", "7", "16"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["15", "3", "6"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["15", "16", "8"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["15", "6", "20"]
                     },
                     {
                         "punterId": 15,
@@ -3710,11 +3710,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["3", "6", "15"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["14", "19", "20"]
                     }
                 ]
             },
@@ -3723,27 +3723,27 @@
                 "punters": [
                     {
                         "punterId": 1,
-                        "tips": []
+                        "tips": ["5", "11", "13"]
                     },
                     {
                         "punterId": 2,
-                        "tips": []
+                        "tips": ["1", "5", "6"]
                     },
                     {
                         "punterId": 3,
-                        "tips": []
+                        "tips": ["3", "5", "6"]
                     },
                     {
                         "punterId": 4,
-                        "tips": []
+                        "tips": ["6", "9", "13"]
                     },
                     {
                         "punterId": 5,
-                        "tips": []
+                        "tips": ["13", "11", "5"]
                     },
                     {
                         "punterId": 6,
-                        "tips": []
+                        "tips": ["1", "5", "13"]
                     },
                     {
                         "punterId": 7,
@@ -3751,31 +3751,31 @@
                     },
                     {
                         "punterId": 8,
-                        "tips": []
+                        "tips": ["1", "13", "5"]
                     },
                     {
                         "punterId": 9,
-                        "tips": ["1", "9", "17"]
+                        "tips": ["13", "24", "1"]
                     },
                     {
                         "punterId": 10,
-                        "tips": []
+                        "tips": ["3", "5", "6"]
                     },
                     {
                         "punterId": 11,
-                        "tips": []
+                        "tips": ["9", "5", "3"]
                     },
                     {
                         "punterId": 12,
-                        "tips": []
+                        "tips": ["1", "5", "13"]
                     },
                     {
                         "punterId": 13,
-                        "tips": []
+                        "tips": ["3", "11", "6"]
                     },
                     {
                         "punterId": 14,
-                        "tips": []
+                        "tips": ["6", "11", "13"]
                     },
                     {
                         "punterId": 15,
@@ -3787,11 +3787,11 @@
                     },
                     {
                         "punterId": 17,
-                        "tips": []
+                        "tips": ["1", "5", "13"]
                     },
                     {
                         "punterId": 18,
-                        "tips": []
+                        "tips": ["8", "12", "14"]
                     }
                 ]
             }
