@@ -50,6 +50,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 .back {
     position: absolute;
+    height: 100%;
     transform: rotateY(180deg);
     text-align: center;
 }
