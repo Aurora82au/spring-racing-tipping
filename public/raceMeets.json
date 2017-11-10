@@ -809,8 +809,8 @@
         "races": [
             {
                 "number": 1,
-                "name": "Maribyrnong Plate",
-                "time": "TBC",
+                "name": "AAMI Maribyrnong Plate",
+                "time": "12:15pm",
                 "distance": "1000m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -818,13 +818,13 @@
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [2, 9]
             },
             {
                 "number": 2,
-                "name": "Hilton Stakes",
-                "time": "TBC",
-                "distance": "1400m",
+                "name": "Juvenile Diabetes Research Foundation Plate",
+                "time": "12:50pm",
+                "distance": "2000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -835,8 +835,8 @@
             },
             {
                 "number": 3,
-                "name": "Starlight Children's Foundation Plate",
-                "time": "TBC",
+                "name": "Melbourne’s Own 3AW Trophy",
+                "time": "1:30pm",
                 "distance": "2000m",
                 "status": "Not Run Yet",
                 "placings": {
@@ -844,39 +844,39 @@
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [7, 9]
             },
             {
                 "number": 4,
-                "name": "Antler Luggage Handicap",
-                "time": "TBC",
-                "distance": "1600m",
+                "name": "Sensis Digital Trophy",
+                "time": "2:10pm",
+                "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [13]
             },
             {
                 "number": 5,
-                "name": "Darley Classic",
-                "time": "TBC",
-                "distance": "1200m",
+                "name": "Queen Elizabeth Stakes",
+                "time": "2:50pm",
+                "distance": "2600m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [2]
             },
             {
                 "number": 6,
-                "name": "Emirates Airline Handicap",
-                "time": "TBC",
-                "distance": "1400m",
+                "name": "7News Matriarch Stakes",
+                "time": "3:30pm",
+                "distance": "2000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -887,9 +887,9 @@
             },
             {
                 "number": 7,
-                "name": "Emirates Stakes",
-                "time": "TBC",
-                "distance": "2000m",
+                "name": "Darley Classic",
+                "time": "4:10pm",
+                "distance": "1200m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
@@ -900,22 +900,22 @@
             },
             {
                 "number": 8,
-                "name": "Queen Elizabeth Stakes",
-                "time": "TBC",
-                "distance": "2600m",
+                "name": "Emirates Stakes",
+                "time": "4:55pm",
+                "distance": "2000m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
                     "second": "",
                     "third": ""
                 },
-                "scratchings": []
+                "scratchings": [6, 8]
             },
             {
                 "number": 9,
-                "name": "Matriarch Stakes",
-                "time": "TBC",
-                "distance": "2000m",
+                "name": "Emirates Airline Handicap",
+                "time": "5:45pm",
+                "distance": "1400m",
                 "status": "Not Run Yet",
                 "placings": {
                     "first": "",
