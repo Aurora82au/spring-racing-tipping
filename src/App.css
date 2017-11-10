@@ -957,8 +957,8 @@ input.password {
 
 @media (min-width: 410px) {
     .icon-admin {
-        top: 2rem;
-        right: 9rem;
+        top: .5rem;
+        right: 8rem;
     }
 
     .race-selector .circle {
