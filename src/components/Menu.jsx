@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default class Menu extends Component {
+    /* Determines whether React should re-render the component, in this case it never should */
     shouldComponentUpdate(nextProps, nextState) {
         return false;
     }

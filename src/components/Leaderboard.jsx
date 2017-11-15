@@ -4,32 +4,39 @@ import Podium from './Podium';
 import Menu from './Menu';
 
 export default class Leaderboard extends Component {
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
     
+    /* When the user clicks to go back from the Rick Roll screen, flip it back to the normal screen */
     handleLogoBack = event => {
         let container = document.querySelector('.flip-container');
         container.classList.remove('flipped');
         setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
+    /* Find the particular meet from the tips data */
     findMeet = thisMeetIndex => {
         return this.props.tips.find(tipsMeet => { return tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId });
     }
 
+    /* Find the particular race from the tips data  */
     findRace = (tipMeet, thisMeetIndex, thisRaceIndex) => {
         return tipMeet.races.find(tipsRace => { return tipsRace.number === this.props.raceMeets[thisMeetIndex].races[thisRaceIndex].number });
     }
 
+    /* Find the particular punter from the punters data */
     findPunter = punterId => {
         return this.props.punters.find(punter => { return punter.punterId === punterId });
     }
 
+    /* Get the particular punters data from the points array */
     findPuntersPoints = (points, punterId) => {
         return points.find(punter => { return punter.punterId === punterId });
     }
 
+    /* Function to calculate each users points, trifectas, quinellas, firsts, seconds and thirds */
     calculatePoints = () => {
         let points = [],
             a = this.props.punters.length,
@@ -76,6 +83,7 @@ export default class Leaderboard extends Component {
         return points;
     }
     
+    /* Function to render the component */
     render() {
         let points = this.calculatePoints(),
             oddsList = [],
@@ -121,7 +129,6 @@ export default class Leaderboard extends Component {
 
         // Generate list of losers
         for (let i = 0; i < points.length; i++) {
-            //console.log('Punter ' + points[i].punterId + ' - trifectas: ' + points[i].trifectas + ' - quinellas: ' + points[i].quinellas + ' - 1sts: ' + points[i].firsts + ' - 2nds: ' + points[i].seconds + ' - 3rds: ' + points[i].thirds + ' - points: ' + points[i].points);
             // If not the winners
             if (i !== 0 && i !== 1 && i !== 2) {
                 // Get the punter details
@@ -143,6 +150,7 @@ export default class Leaderboard extends Component {
             }
         }
         
+        // The code for this page is within the 'front' <div>, the rest is the scaffolding to do the page flip for the Rick Roll
         return (
             <div className="app">
                 <div className="flip-container">

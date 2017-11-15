@@ -11,7 +11,7 @@ import Results from './components/Results';
 import Leaderboard from './components/Leaderboard';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,10 +32,12 @@ class App extends Component {
         // this.path = '/spring-racing-tipping/'; // Github
     }
     
+    /* Determines whether React should re-render the component, in this case if the new state is different from the current state */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextState === this.state);
     }
 
+    /* Asyncronously get all the data, either from local JSON files while in development, or the database */
     async getData() {
         var self = this;
         try {
@@ -73,10 +75,11 @@ class App extends Component {
         }
     }
 
+    /* Runs when the component first mounts and calls getData and checks for and sets state that was stored in localStorage */
     componentDidMount() {
         // Load all the data
         this.getData();
-        // Check if the user is already logged in
+        // Check the localStorage to see if the user is already logged in
         if (localStorage.getItem('user')) {
             this.setState({
                 authenticated: true,
@@ -87,42 +90,49 @@ class App extends Component {
         }
     }
 
+    /* When the user logs in set the state and store them in localStorage */
     handleLogin = (user, isAdmin) => {
-        // Set the localStorage for the logged in user
-        localStorage.setItem('user', user);
-        localStorage.setItem('isAdmin', isAdmin);
+        // Update the state with the user, and whether they are an admin
         this.setState({
             authenticated: true,
             user: user,
             isAdmin: isAdmin
         });
+        // Set the localStorage for the logged in user
+        localStorage.setItem('user', user);
+        localStorage.setItem('isAdmin', isAdmin);
     }
 
+    /* When the user clicks the reload button, request the data again */
     handleReloadData = () => {
-        // Reload all the data
         this.getData();
     }
 
+    /* When the user selects a race meet, update the state and save to localStorage */
     handleMeetSelect = event => {
-        localStorage.setItem('selectedMeet', event.target.value);
         this.setState({
             selectedMeet: event.target.value,
             selectedRace: 1
         });
+        localStorage.setItem('selectedMeet', event.target.value);
     }
 
+    /* When the user selects a race on the Results page, update the state */
     handleRaceSelect = event => {
         this.setState({
             selectedRace: parseInt(event.target.id, 10)
         });
     }
 
+    /* When the user selects a tab on the Statistics page, update the state */
     handleTabSelect = tab => {
         this.setState({
             selectedTab: tab
         });
     }
 
+    /* When the user selects a tip on the Tips page, get an updated copy of the tips from the database
+       then update it, save back to the database and update the state */
     handleSaveTips = (modifiedRace, modifiedTips) => {
         axios.get(this.databaseURL + '/tips')
             .then(returnedTips => {
@@ -148,6 +158,7 @@ class App extends Component {
             });
     }
 
+    /* When the user clicks Save for placings on the Admin page, save to the database and update the state */
     handleSavePlacings = (modifiedRace, modifiedPlacings) => {
         let raceMeets = this.state.raceMeets,
             meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
@@ -168,6 +179,7 @@ class App extends Component {
         });
     }
 
+    /* When the user selects a race status on the Admin page, save to the database and update the state */
     handleSaveStatus = event => {
         let raceMeets = this.state.raceMeets,
             meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
@@ -188,6 +200,7 @@ class App extends Component {
         });
     }
 
+    /* When the user selects a scratching on the Admin page, save to the database and update the state */
     handleSaveScratchings = (modifiedRace, modifiedScratchings) => {
         let raceMeets = this.state.raceMeets,
             meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
@@ -208,9 +221,11 @@ class App extends Component {
         });
     }
 
+    /* Function to render the component */
     render() {
         if (this.state.raceMeets.length) {
             return (
+                // React Router routes to a particular component based on the URL path
                 <Router>
                     <ScrollToTop>
                         <Switch>
@@ -233,23 +248,13 @@ class App extends Component {
     }
 }
 
-export default App;
 
 
-// Racing days
-
-// Caulfield Guineas day 14/10/17
-// Caulfield cup 21/10/17
-// Cox plate 28/10/17
-// Derby day 4/11/17
-// Cup day 7/11/17
-// Oaks day 9/11/17
-// Stakes day 11/11/17
 
 
 
 // Use to time functions
 
-//var t0 = performance.now();
-//var t1 = performance.now();
+//var t0 = performance.now(); <- Put before code to be timed
+//var t1 = performance.now(); <- Put after code to be timed
 //console.log("While loops took " + (t1 - t0) + " milliseconds.");

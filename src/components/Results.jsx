@@ -5,20 +5,24 @@ import RaceMeetSelector from './RaceMeetSelector';
 import Menu from './Menu';
 
 export default class Results extends Component {
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
     
+    /* When the user clicks to go back from the Rick Roll screen, flip it back to the normal screen */
     handleLogoBack = event => {
         let container = document.querySelector('.flip-container');
         container.classList.remove('flipped');
         setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
+    /* Function to render the component */
     render() {
         let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.props.selectedMeet }),
             meetTips = this.props.tips.find(meet => { return meet.meetId === this.props.selectedMeet });
 
+        // The code for this page is within the 'front' <div>, the rest is the scaffolding to do the page flip for the Rick Roll
         return (
             <div className="app">
                 <div className="flip-container">

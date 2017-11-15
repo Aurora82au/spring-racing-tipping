@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
 export default class Tip extends Component {
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
     
+    /* Function to render the component */
     render() {
         let self = this,
             punter = this.props.punters.find(tipPunter => { return tipPunter.punterId === self.props.tips.punterId }),

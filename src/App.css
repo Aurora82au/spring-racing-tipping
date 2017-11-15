@@ -1,6 +1,6 @@
 /* General */
 
-/* Used when hiding things - START */
+/* Used when hiding things like profile pics while at work - START */
 /* h2, .profile-pic, .tip .pic, .odds-totals .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
     display: none !important;
 }
@@ -16,7 +16,7 @@ div.bg-green, div.bg-orange, div.bg-red {
 .browser {
     background: none !important;
 } */
-/* Used when hiding things - END */
+/* Used when hiding things like profile pics while at work - END */
 
 .flip-container.flipped .flipper {
     transform: rotateY(180deg);
@@ -354,6 +354,7 @@ input.password {
     background-color: #aaa;
     cursor: pointer;
 }
+
 .scratching-list .selection.scratched {
     background: repeating-linear-gradient(-45deg, transparent 46%, #ff0000 49%, #ff0000 52%, transparent 55%);
 }
@@ -545,13 +546,10 @@ input.password {
     position: absolute;
     display: block;
     content: " ";
-    /* Small: .6rem */
     left: calc(50% - 1rem);
-    /* Small: -1rem */
     bottom: -1.6rem;
     width: 0;
     height: 0;
-    /* Small: .6rem */
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
     border-top: 1rem solid;
@@ -971,6 +969,7 @@ input.password {
     }
 }
 
+
 /* To cater to phones in landscape */
 
 @media (min-width: 500px) {
@@ -1000,6 +999,9 @@ input.password {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+
+/* To cater to tablets in landscape, and desktop */
 
 @media (min-width: 992px) {
     .menu {

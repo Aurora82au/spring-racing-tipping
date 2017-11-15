@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Podium(props) {
+    // Returns the HTML for the podium, inserting the details for first, second and third from the passed props
     return [
         <h4 key="a" className="lb-heading teal">PODIUM</h4>,
         <div key="b" className="podium">

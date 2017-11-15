@@ -19,18 +19,23 @@ export default class TippingRaceList extends Component {
         }
     }
 
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props,
+       or if the new state is different from the current state */
     shouldComponentUpdate(nextProps, nextState) {
         return !((nextProps === this.props) && (nextState === this.state));
     }
 
+    /* When the component mounts, call setTips and pass it the props */
     componentDidMount() {
         this.setTips(this.props);
     }
 
+    /* When the component is updating and is receiving the new props, call setTips passing it the new props */
     componentWillReceiveProps(nextProps) {
         this.setTips(nextProps);
     }
 
+    /* Function to take the passed props and set the currently selected tips */
     setTips = (passedProps) => {
         let self = this,
             tips = this.state.tips,
@@ -50,6 +55,8 @@ export default class TippingRaceList extends Component {
         });
     }
     
+    /* When the user selects a number, either add or remove it from the local state and pass it to the onSelectionChange function
+       passed in via props from App.js */
     handleSelectionClick = event => {
         let tips = this.state.tips,
             modifiedRace = parseInt(event.target.getAttribute('data-race'), 10),
@@ -75,15 +82,18 @@ export default class TippingRaceList extends Component {
         }
     }
 
+    /* Generate the HTML for the tips for each race */
     generateList = () => {
         let races = [],
             selections = [],
             className;
             
+        // For each race in the selected meet
         for (let i = 0; i < this.props.meet.races.length; i++) {
             // Clear selections for each race
             selections = [];
 
+            // Generate 24 selections for the tips
             for (let j = 0; j < 24; j++) {
                 className = 'selection';
                 if (this.props.meet.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
@@ -92,6 +102,7 @@ export default class TippingRaceList extends Component {
                 selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleSelectionClick}>{j + 1}</div>);
             }
 
+            // Create the HTML for each race and insert into the races array
             races.push(
                 <div key={i} className="tip-group">
                     <div className="details">
@@ -109,6 +120,7 @@ export default class TippingRaceList extends Component {
         return races;
     }
 
+    /* Function to render the component */
     render() {
         let raceList = this.generateList(),
             raceDay = new Date(this.props.meet.date),

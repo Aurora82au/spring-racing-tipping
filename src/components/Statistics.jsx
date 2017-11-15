@@ -10,22 +10,28 @@ export default class App extends Component {
         }
     }
 
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props,
+       or if the new state is different from the current state */
     shouldComponentUpdate(nextProps, nextState) {
         return !((nextProps === this.props) && (nextState === this.state));
     }
 
+    /* When the component mounts, set the selected tab in the state based off the selected tab passed via props */
     componentDidMount() {
         this.setState({
             tabSelected: this.props.selectedTab
         });
     }
-    
+
+    /* When the user clicks to go back from the Rick Roll screen, flip it back to the normal screen */
     handleLogoBack = event => {
         let container = document.querySelector('.flip-container');
         container.classList.remove('flipped');
         setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
+    /* When the user clicks a tab, set it as the selected tab in local state, and pass it to the onTabSelect function in App.js
+       passed via props */
     handleTabClick = event => {
         let tab = 1;
         if (event.target.classList.contains('two')) { tab = 2; }
@@ -35,26 +41,32 @@ export default class App extends Component {
         this.props.onTabSelect(tab);
     }
     
+    /* Find the particular meet from the tips data */
     findMeet = thisMeetIndex => {
         return this.props.tips.find(tipsMeet => { return tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId });
     }
 
+    /* Find the particular race from the tips data  */
     findRace = (tipMeet, thisMeetIndex, thisRaceIndex) => {
         return tipMeet.races.find(tipsRace => { return tipsRace.number === this.props.raceMeets[thisMeetIndex].races[thisRaceIndex].number });
     }
 
+    /* Find the particular punter from the punters data */
     findPunter = punterId => {
         return this.props.punters.find(punter => { return punter.punterId === punterId });
     }
 
+    /* Find the current punter's stats from the stats array */
     findPuntersStats = (stats, punterId) => {
         return stats.find(punter => { return punter.punterId === punterId });
     }
 
+    /* Find the current race meet from the current punter's stats */
     findPuntersStatsMeet = (puntersStats, meetId) => {
         return puntersStats.meets.find(meet => { return meet.meetId === meetId });
     }
 
+    /* Function to calculate each users points, trifectas, quinellas, firsts, seconds and thirds and score for each meet */
     calculateStats = () => {
         let stats = [],
             a = this.props.punters.length,
@@ -117,6 +129,7 @@ export default class App extends Component {
         return stats;
     }
 
+    /* Function create the stat item HTML for each punter and adding to the arrayToUpdate */
     createStatArray = (stats, arrayToUpdate, arrayToUpdateName) => {
         let stat, punter, position;
         
@@ -150,6 +163,7 @@ export default class App extends Component {
         }
     }
 
+    /* Function to render the component */
     render() {
         let stats = this.calculateStats(),
             caulGuineasTemp = [], caulCupTemp = [], coxPlateTemp = [], derbyDayTemp = [], melbCupTemp = [], oaksDayTemp = [], stakesDayTemp = [],
@@ -249,17 +263,17 @@ export default class App extends Component {
         // Sort punters in descending order by seconds
         stats.sort((a, b) => { return b.seconds - a.seconds; });
 
-        // Create list of punters in order of firsts
+        // Create list of punters in order of seconds
         this.createStatArray(stats, seconds, 'seconds');
 
         // Sort punters in descending order by thirds
         stats.sort((a, b) => { return b.thirds - a.thirds; });
 
-        // Create list of punters in order of firsts
+        // Create list of punters in order of thirds
         this.createStatArray(stats, thirds, 'thirds');
 
 
-
+        // The code for this page is within the 'front' <div>, the rest is the scaffolding to do the page flip for the Rick Roll
         return (
             <div className="app">
                 <div className="flip-container">

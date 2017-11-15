@@ -102,18 +102,24 @@ export default class Admin extends Component {
         }
     }
 
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props,
+       or if the new state is different from the current state */
     shouldComponentUpdate(nextProps, nextState) {
         return !((nextProps === this.props) && (nextState === this.state));
     }
     
+    /* Runs when the component first mounts and calls setStateData with the passed race meet and selected meet props */
     componentDidMount() {
         this.setStateData(this.props.raceMeets, this.props.selectedMeet);
     }
 
+    /* Runs when the component receives new props, but before it renders, and calls setStateData with the next props race meet 
+       and selected meet */
     componentWillReceiveProps(nextProps) {
         this.setStateData(nextProps.raceMeets, nextProps.selectedMeet);
     }
 
+    /* Takes the passed race meets and selected meet and updates the state */
     setStateData = (propsRaceMeets, propsSelectedMeet) => {
         let races = this.state.races,
             meet = propsRaceMeets.find(meet => { return meet.meetId === propsSelectedMeet });
@@ -128,12 +134,14 @@ export default class Admin extends Component {
         });
     }
     
+    /* When the user clicks to go back from the Rick Roll screen, flip it back to the normal screen */
     handleLogoBack = event => {
         let container = document.querySelector('.flip-container');
         container.classList.remove('flipped');
         setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
+    /* When the user enters a value in one of the placing fields, update it in the state */
     handlePlacingChange = event => {
         let races = this.state.races,
             raceChanged = event.target.id.split('-')[1],
@@ -149,18 +157,22 @@ export default class Admin extends Component {
         });
     }
     
+    /* When the user clicks a Save button, pass the modified placings to the onPlacingsChange function
+       passed in via props from App.js */
     handleSaveClick = event => {
         let modifiedRace = event.target.getAttribute('data-race'),
             placings = this.state.races[modifiedRace - 1].placings;
         this.props.onPlacingsChange(modifiedRace, placings);
     }
 
+    /* When the user selects a scratching, add or remove it from the state and pass the modified scratchings to the
+       onScratchingChange function passed in via props from App.js */
     handleScratchingClick = event => {
         let races = this.state.races,
             modifiedRace = parseInt(event.target.getAttribute('data-race'), 10),
             modifiedScratchings = races[modifiedRace - 1].scratchings;
 
-        // If the selection is already selected, remove it, else if there is less than 3 selected add it
+        // If the selection is already selected, remove it, else add it
         if (event.target.classList.contains('scratched')) {
             let index = modifiedScratchings.indexOf(parseInt(event.target.innerText, 10));
             if (index > -1) { modifiedScratchings.splice(index, 1); }
@@ -180,15 +192,18 @@ export default class Admin extends Component {
         }
     }
 
+    /* Function to render the component */
     render() {
         let meet = this.props.raceMeets.find(meet => { return meet.meetId === this.props.selectedMeet }),
             raceList = [],
             selections = [],
             className;
 
+        // For each race in the selected meet
         for (let i = 0; i < meet.races.length; i++) {
             selections = [];
 
+            // Generate 24 selections for the scratchings
             for (let j = 0; j < 24; j++) {
                 className = 'selection';
                 if (this.state.races[i].scratchings.includes(j + 1)) { className += ' scratched'; }
@@ -196,6 +211,7 @@ export default class Admin extends Component {
                 selections.push(<div key={j} className={className} data-race={(i + 1)} onClick={this.handleScratchingClick}>{j + 1}</div>);
             }
 
+            // Create the HTML for each race and insert into the raceList array
             raceList.push(
                 <div key={i} className="adminRace">
                     <div className="details">
@@ -229,6 +245,7 @@ export default class Admin extends Component {
             );
         }
 
+        // The code for this page is within the 'front' <div>, the rest is the scaffolding to do the page flip for the Rick Roll
         return (
             <div className="app">
                 <div className="flip-container">

@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?3nsrcx');
@@ -58,6 +60,8 @@
     content: "\ea2e";
 }
 
+
+/* General */
 
 * {
     box-sizing: border-box;
@@ -134,15 +138,6 @@ hr {
     border-bottom: none;
 }
 
-.hide {
-    display: none !important;
-}
-
-.bold {
-    font-weight: bold;
-    color: #444;
-}
-
 .overlay {
     position: fixed;
     display: flex;
@@ -153,6 +148,18 @@ hr {
     justify-content: center;
     background-color: rgba(0, 0, 0, .8);
     z-index: 1000;
+}
+
+
+/* Helper Rules */
+
+.hide {
+    display: none !important;
+}
+
+.bold {
+    font-weight: bold;
+    color: #444;
 }
 
 .mt-20 {

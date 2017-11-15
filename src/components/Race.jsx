@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import Tip from './Tip';
 
 export default class Race extends Component {
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
     
+    /* Function to render the component */
     render() {
         let self = this,
             tips = self.props.tips.punters.map(punterTips => {
                 return <Tip key={punterTips.punterId} tips={punterTips} punters={self.props.punters} placings={self.props.race.placings}  />
             }),
             statusClass;
+        // Set the statusClass based on race's status
         switch (self.props.race.status) {
             case "Has Run": statusClass = "status green"; break;
             case "About To Jump": statusClass = "status orange"; break;
