@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import axios from 'axios';
 import ScrollToTop from './components/ScrollToTop';
-import Login from './components/Login';
-import Admin from './components/Admin';
-import Statistics from './components/Statistics';
-import Information from './components/Information';
-import Tips from './components/Tips';
-import Results from './components/Results';
-import Leaderboard from './components/Leaderboard';
+import Login from './pages/Login';
+import Admin from './pages/Admin';
+import Statistics from './pages/Statistics';
+import Information from './pages/Information';
+import Tips from './pages/Tips';
+import Results from './pages/Results';
+import Leaderboard from './pages/Leaderboard';
 import './App.css';
 
 export default class App extends Component {

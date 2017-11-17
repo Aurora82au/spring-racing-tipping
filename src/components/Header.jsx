@@ -35,11 +35,6 @@ export default class Header extends Component {
         window.location.href = '/login';
     }
 
-    /* When the user clicks on the horse icon, flip the page to show the Rick Roll screen */
-    handleLogoClick = event => {
-        document.querySelector('.flip-container').classList.add('flipped', 'preserve-3d');
-    }
-
     /* Function to render the component */
     render() {
         // Show the user profile pic on every page but the Login page
@@ -60,7 +55,7 @@ export default class Header extends Component {
             profilePic,
             adminBtn,
             reloadBtn,
-            <h2 key="f">Spring Racing Tipping <img src="horse.png" alt="Title logo" onClick={this.handleLogoClick} /><span className="beta">BETA</span></h2>,
+            <h2 key="f">Spring Racing Tipping <img src="horse.png" alt="Title logo" /><span className="beta">BETA</span></h2>,
             <h3 key="g">{this.props.page}</h3>,
             <p key="h">{this.props.text}</p>
         ];

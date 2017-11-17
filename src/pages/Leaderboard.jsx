@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Podium from './Podium';
-import Menu from './Menu';
+import Header from '../components/Header';
+import Podium from '../components/Podium';
+import Menu from '../components/Menu';
 
 export default class Leaderboard extends Component {
     /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
-    }
-    
-    /* When the user clicks to go back from the Rick Roll screen, flip it back to the normal screen */
-    handleLogoBack = event => {
-        let container = document.querySelector('.flip-container');
-        container.classList.remove('flipped');
-        setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
     /* Find the particular meet from the tips data */
@@ -150,32 +143,17 @@ export default class Leaderboard extends Component {
             }
         }
         
-        // The code for this page is within the 'front' <div>, the rest is the scaffolding to do the page flip for the Rick Roll
         return (
             <div className="app">
-                <div className="flip-container">
-                    <div className="flipper">
-                        <div className="front">
-                            <Header page="Leaderboard" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
-                            <h4 className="lb-heading">GAME ACCOUNTS</h4>
-                            <div className="odds-totals">
-                                {oddsList}
-                            </div>
-                            <Podium first={first} second={second} third={third} points={points} />
-                            <h4 className="lb-heading">BEST OF THE REST</h4>
-                            {loserList}
-                            <Menu path={this.props.path}></Menu>
-                        </div>
-                        <div className="back">
-                            <img className="you-got" src='rickrolled.jpg' alt="You've been Rick Rolled" />
-                            <img src='rick.gif' alt="Rick Roll" />
-                            <div>Click the button below to return</div>
-                            <button className="btn" type="button" onClick={this.handleLogoBack}>
-                                <img src='rickrolled2.jpg' alt="Go back" />
-                            </button>
-                        </div>
-                    </div>
+                <Header page="Leaderboard" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="To the victors go the spoils, and to the losers....go home." />
+                <h4 className="lb-heading">GAME ACCOUNTS</h4>
+                <div className="odds-totals">
+                    {oddsList}
                 </div>
+                <Podium first={first} second={second} third={third} points={points} />
+                <h4 className="lb-heading">BEST OF THE REST</h4>
+                {loserList}
+                <Menu path={this.props.path}></Menu>
             </div>
         );
     }

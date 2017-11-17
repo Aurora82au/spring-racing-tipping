@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Menu from './Menu';
+import Header from '../components/Header';
+import Menu from '../components/Menu';
 
 export default class App extends Component {
     constructor(props) {
@@ -21,13 +21,6 @@ export default class App extends Component {
         this.setState({
             tabSelected: this.props.selectedTab
         });
-    }
-
-    /* When the user clicks to go back from the Rick Roll screen, flip it back to the normal screen */
-    handleLogoBack = event => {
-        let container = document.querySelector('.flip-container');
-        container.classList.remove('flipped');
-        setTimeout(() => { container.classList.remove('preserve-3d'); }, 600);
     }
 
     /* When the user clicks a tab, set it as the selected tab in local state, and pass it to the onTabSelect function in App.js
@@ -273,67 +266,52 @@ export default class App extends Component {
         this.createStatArray(stats, thirds, 'thirds');
 
 
-        // The code for this page is within the 'front' <div>, the rest is the scaffolding to do the page flip for the Rick Roll
         return (
             <div className="app">
-                <div className="flip-container">
-                    <div className="flipper">
-                        <div className="front">
-                            <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." />
-                            <div className="tab-btns">
-                                <button className={tabBtn1Class} onClick={this.handleTabClick}>Meet Scores</button>
-                                <button className={tabBtn2Class} onClick={this.handleTabClick}>Other</button>
-                            </div>
-                            <div className={tab1Class}>
-                                <div className="bold mt-20 mb-10">Caulfield Guineas</div>
-                                <div className="stat-container">{caulGuineas}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Caulfield Cup</div>
-                                <div className="stat-container">{caulCup}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Cox Plate</div>
-                                <div className="stat-container">{coxPlate}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Derby Day</div>
-                                <div className="stat-container">{derbyDay}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Melbourne Cup</div>
-                                <div className="stat-container">{melbCup}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Oaks Day</div>
-                                <div className="stat-container">{oaksDay}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Stakes Day</div>
-                                <div className="stat-container">{stakesDay}</div>
-                            </div>
-                            <div className={tab2Class}>
-                                <div className="bold mt-20 mb-10">Trifectas</div>
-                                <div className="stat-container">{trifectas}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Quinellas</div>
-                                <div className="stat-container">{quinellas}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Firsts</div>
-                                <div className="stat-container">{firsts}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Seconds</div>
-                                <div className="stat-container">{seconds}</div>
-                                <hr />
-                                <div className="bold mt-20 mb-10">Thirds</div>
-                                <div className="stat-container">{thirds}</div>
-                            </div>
-                            <Menu path={this.props.path}></Menu>
-                        </div>
-                        <div className="back">
-                            <img className="you-got" src='rickrolled.jpg' alt="You've been Rick Rolled" />
-                            <img src='rick.gif' alt="Rick Roll" />
-                            <div>Click the button below to return</div>
-                            <button className="btn" type="button" onClick={this.handleLogoBack}>
-                                <img src='rickrolled2.jpg' alt="Go back" />
-                            </button>
-                        </div>
-                    </div>
+                <Header page="Statistics" path={this.props.path} punters={this.props.punters} user={this.props.user} onReloadData={this.props.onReloadData} isAdmin={this.props.isAdmin} text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc." />
+                <div className="tab-btns">
+                    <button className={tabBtn1Class} onClick={this.handleTabClick}>Meet Scores</button>
+                    <button className={tabBtn2Class} onClick={this.handleTabClick}>Other</button>
                 </div>
+                <div className={tab1Class}>
+                    <div className="bold mt-20 mb-10">Caulfield Guineas</div>
+                    <div className="stat-container">{caulGuineas}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Caulfield Cup</div>
+                    <div className="stat-container">{caulCup}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Cox Plate</div>
+                    <div className="stat-container">{coxPlate}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Derby Day</div>
+                    <div className="stat-container">{derbyDay}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Melbourne Cup</div>
+                    <div className="stat-container">{melbCup}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Oaks Day</div>
+                    <div className="stat-container">{oaksDay}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Stakes Day</div>
+                    <div className="stat-container">{stakesDay}</div>
+                </div>
+                <div className={tab2Class}>
+                    <div className="bold mt-20 mb-10">Trifectas</div>
+                    <div className="stat-container">{trifectas}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Quinellas</div>
+                    <div className="stat-container">{quinellas}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Firsts</div>
+                    <div className="stat-container">{firsts}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Seconds</div>
+                    <div className="stat-container">{seconds}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Thirds</div>
+                    <div className="stat-container">{thirds}</div>
+                </div>
+                <Menu path={this.props.path}></Menu>
             </div>
         );
     }
