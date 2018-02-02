@@ -6,6 +6,9 @@
                 "number": 1,
                 "punters": [
                     {
+                        "competitionId": 12345678,
+                        "meetId": 64662494,
+                        "raceId": 68880275,
                         "punterId": 1,
                         "tips": ["3", "9", "12"]
                     },
