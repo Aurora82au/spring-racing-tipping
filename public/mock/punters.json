@@ -1,200 +1,182 @@
 [
     {
-        "punterId": 1,
+        "_id": 1,
         "password": "dw9410",
         "name": {
             "first": "Dave",
             "last": "Williams",
             "display": "Dave W"
         },
-        "pic": "Dave.jpg",
-        "isAdmin": true
+        "pic": "Dave.jpg"
     },
     {
-        "punterId": 2,
+        "_id": 2,
         "password": "az9410",
         "name": {
             "first": "Alaina",
             "last": "Zorzi",
             "display": "Alaina Z"
         },
-        "pic": "Alaina.jpg",
-        "isAdmin": false
+        "pic": "Alaina.jpg"
     },
     {
-        "punterId": 3,
+        "_id": 3,
         "password": "kz9874",
         "name": {
             "first": "Kate",
             "last": "Zorzi",
             "display": "Kate Z"
         },
-        "pic": "Kate.jpg",
-        "isAdmin": false
+        "pic": "Kate.jpg"
     },
     {
-        "punterId": 4,
+        "_id": 4,
         "password": "sp1312",
         "name": {
             "first": "Simon",
             "last": "Paini",
             "display": "Simon P"
         },
-        "pic": "Simon.jpg",
-        "isAdmin": false
+        "pic": "Simon.jpg"
     },
     {
-        "punterId": 5,
+        "_id": 5,
         "password": "nf4835",
         "name": {
             "first": "Nathan",
             "last": "Farrow",
             "display": "Nathan F"
         },
-        "pic": "Nathan.jpg",
-        "isAdmin": false
+        "pic": "Nathan.jpg"
     },
     {
-        "punterId": 6,
+        "_id": 6,
         "password": "lp8820",
         "name": {
             "first": "Lauren",
             "last": "Paini",
             "display": "Lauren P"
         },
-        "pic": "Lauren.jpg",
-        "isAdmin": false
+        "pic": "Lauren.jpg"
     },
     {
-        "punterId": 7,
+        "_id": 7,
         "password": "cq5814",
         "name": {
             "first": "Colin",
             "last": "Quinn",
             "display": "Colin Q"
         },
-        "pic": "Colin.jpg",
-        "isAdmin": true
+        "pic": "Colin.jpg"
     },
     {
-        "punterId": 8,
+        "_id": 8,
         "password": "mb5792",
         "name": {
             "first": "Melanie",
             "last": "Budge",
             "display": "Melanie B"
         },
-        "pic": "Melanie.jpg",
-        "isAdmin": false
+        "pic": "Melanie.jpg"
     },
     {
-        "punterId": 9,
+        "_id": 9,
         "password": "ck4618",
         "name": {
             "first": "Chris",
             "last": "Kelly",
             "display": "Chris K"
         },
-        "pic": "Chris.jpg",
-        "isAdmin": false
+        "pic": "Chris.jpg"
     },
     {
-        "punterId": 10,
+        "_id": 10,
         "password": "ns3775",
         "name": {
             "first": "Nicole",
             "last": "Selakovic",
             "display": "Nicole S"
         },
-        "pic": "Nicole.jpg",
-        "isAdmin": false
+        "pic": "Nicole.jpg"
     },
     {
-        "punterId": 11,
+        "_id": 11,
         "password": "bf9169",
         "name": {
             "first": "Bernie",
             "last": "Farrow",
             "display": "Bernie F"
         },
-        "pic": "Bernie.jpg",
-        "isAdmin": false
+        "pic": "Bernie.jpg"
     },
     {
-        "punterId": 12,
+        "_id": 12,
         "password": "ka8395",
         "name": {
             "first": "Kristy-Anne",
             "last": "Quinn",
             "display": "Kristy-Anne Q"
         },
-        "pic": "KA.jpg",
-        "isAdmin": false
+        "pic": "KA.jpg"
     },
     {
-        "punterId": 13,
+        "_id": 13,
         "password": "ep5947",
         "name": {
             "first": "Emma",
             "last": "Parnell",
             "display": "Emma P"
         },
-        "pic": "EmmaP.jpg",
-        "isAdmin": false
+        "pic": "EmmaP.jpg"
     },
     {
-        "punterId": 14,
+        "_id": 14,
         "password": "ls7157",
         "name": {
             "first": "Leigh",
             "last": "Sullivan",
             "display": "Leigh S"
         },
-        "pic": "Leigh.jpg",
-        "isAdmin": false
+        "pic": "Leigh.jpg"
     },
     {
-        "punterId": 15,
+        "_id": 15,
         "password": "ts8015",
         "name": {
             "first": "Tara",
             "last": "Smith",
             "display": "Tara S"
         },
-        "pic": "Tara.jpg",
-        "isAdmin": false
+        "pic": "Tara.jpg"
     },
     {
-        "punterId": 16,
+        "_id": 16,
         "password": "ft1111",
         "name": {
             "first": "1, 2, 3",
             "last": "",
             "display": "Horse 1, 2, 3"
         },
-        "pic": "Default.png",
-        "isAdmin": false
+        "pic": "Default.png"
     },
     {
-        "punterId": 17,
+        "_id": 17,
         "password": "to1111",
         "name": {
             "first": "Top",
             "last": "Odds",
             "display": "Top Odds"
         },
-        "pic": "Default.png",
-        "isAdmin": false
+        "pic": "Default.png"
     },
     {
-        "punterId": 18,
+        "_id": 18,
         "password": "bo1111",
         "name": {
             "first": "Bottom",
             "last": "Odds",
             "display": "Bottom Odds"
         },
-        "pic": "Default.png",
-        "isAdmin": false
+        "pic": "Default.png"
     }
 ]
