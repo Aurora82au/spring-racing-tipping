@@ -8215,782 +8215,1436 @@
         "punterId": 1,
         "tips": [1, 5, 7]
     },
-    
-    
     {
-        "meetId": "OAKSDAY",
-        "races": [
-            {
-                "number": 9,
-                "punters": [
-                    {
-                        "punterId": 2,
-                        "tips": ["1", "5", "13"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["2", "6", "1"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["1", "6", "16"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["1", "4", "7"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["1", "6", "16"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["1", "4", "2"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["1", "5", "6"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["15", "16", "7"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["5", "8", "3"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": ["1", "5", "7"]
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["2", "5", "6"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["4", "5", "7"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["1", "5", "7"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["5", "1", "7"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["1", "5", "7"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["12", "14", "17"]
-                    }
-                ]
-            }
-        ]
+        "_id": 1059346963,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 2,
+        "tips": [1, 5, 13]
     },
     {
-        "meetId": "STAKESDAY",
-        "races": [
-            {
-                "number": 1,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["1", "6", "8"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["1", "6", "10"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["6", "10", "1"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["4", "6", "7"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["1", "4", "6"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["3", "6", "7"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["6", "1", "10"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["10", "8", "6"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["1", "4", "11"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["3", "7", "6"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["6", "1", "10"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["1", "4", "6"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["6", "4", "7"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["6", "1", "4"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["1", "4", "6"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["3", "5", "12"]
-                    }
-                ]
-            },
-            {
-                "number": 2,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["2", "5", "7"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["1", "2", "7"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["1", "2", "6"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["1", "2", "6"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["2", "5", "8"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["1", "5", "6"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["2", "8", "9"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["2", "6", "7"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["5", "8", "9"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["2", "8", "5"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["2", "6"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["2", "8", "3"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["2", "1", "8"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["1", "2", "8"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["3", "4", "10"]
-                    }
-                ]
-            },
-            {
-                "number": 3,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["1", "2", "4"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["1", "4", "6"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["1", "6", "2"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["1", "2", "4"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["1", "2", "4"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["1", "4", "6"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["1", "2", "6"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["1", "4", "6"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["1", "6", "3"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["1", "2", "4"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["1", "5", "6"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["1", "2", "4"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["1", "2", "4"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["3", "5", "8"]
-                    }
-                ]
-            },
-            {
-                "number": 4,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["2", "7", "10"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["2", "7", "5"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["7", "2", "6"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["2", "7", "10"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["2", "3", "7"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["2", "7", "9"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["7", "3", "6"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["2", "6", "7"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["4", "6", "8"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["7", "11", "2"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["7", "2", "10"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["3", "7", "10"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["7", "10", "5"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["2", "7", "10"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["2", "7", "10"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["4", "12", "16"]
-                    }
-                ]
-            },
-            {
-                "number": 5,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["1", "3", "4"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["1", "3", "5"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["1", "3", "4"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["1", "5", "3"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["1", "5", "7"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["7", "8", "9"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["1", "8", "6"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["1", "3", "7"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["1", "3", "10"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["8", "9", "11"]
-                    }
-                ]
-            },
-            {
-                "number": 6,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["1", "9", "2"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["6", "10", "9"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["2", "3", "7"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["2", "10", "12"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["1", "5", "6"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["2", "9", "10"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["6", "1", "3"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["13", "7", "3"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["5", "8", "11"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["2", "7", "5"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["6", "2", "10"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["2", "3", "5"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["10", "4", "7"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["6", "1", "2"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["2", "6", "10"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["11", "12", "13"]
-                    }
-                ]
-            },
-            {
-                "number": 7,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["1", "2", "7"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["2", "3", "6"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["2", "1", "3"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["1", "3", "6"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["2", "8", "13"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["1", "6", "7"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["2", "3", "7"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["8", "9", "11"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["6", "2", "3"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["2", "3", "12"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["1", "2", "5"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["3", "2", "6"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["2", "3", "1"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["4", "11", "14"]
-                    }
-                ]
-            },
-            {
-                "number": 8,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["1", "7", "15"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["15", "3", "7"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["1", "10", "15"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["1", "4", "7"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["7", "3", "4"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["7", "10", "14"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["10", "7", "3"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["1", "7", "11"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["1", "5", "11"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["10", "7", "15"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["7", "10", "15"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["1", "4", "10"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["10", "1", "7"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["7", "15", "10"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["7", "10", "15"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["5", "9", "12"]
-                    }
-                ]
-            },
-            {
-                "number": 9,
-                "punters": [
-                    {
-                        "punterId": 1,
-                        "tips": ["4", "5", "6"]
-                    },
-                    {
-                        "punterId": 2,
-                        "tips": ["4", "3", "11"]
-                    },
-                    {
-                        "punterId": 3,
-                        "tips": ["4", "6", "2"]
-                    },
-                    {
-                        "punterId": 4,
-                        "tips": ["4", "8", "6"]
-                    },
-                    {
-                        "punterId": 5,
-                        "tips": ["3", "4", "2"]
-                    },
-                    {
-                        "punterId": 6,
-                        "tips": ["5", "4", "11"]
-                    },
-                    {
-                        "punterId": 7,
-                        "tips": ["4", "2", "7"]
-                    },
-                    {
-                        "punterId": 8,
-                        "tips": ["5", "6", "11"]
-                    },
-                    {
-                        "punterId": 9,
-                        "tips": ["7", "10", "11"]
-                    },
-                    {
-                        "punterId": 10,
-                        "tips": ["4", "5", "11"]
-                    },
-                    {
-                        "punterId": 11,
-                        "tips": []
-                    },
-                    {
-                        "punterId": 12,
-                        "tips": ["4", "3", "9"]
-                    },
-                    {
-                        "punterId": 13,
-                        "tips": ["2", "3", "4"]
-                    },
-                    {
-                        "punterId": 14,
-                        "tips": ["4", "3", "6"]
-                    },
-                    {
-                        "punterId": 15,
-                        "tips": ["4", "2", "3"]
-                    },
-                    {
-                        "punterId": 16,
-                        "tips": ["1", "2", "3"]
-                    },
-                    {
-                        "punterId": 17,
-                        "tips": ["2", "3", "4"]
-                    },
-                    {
-                        "punterId": 18,
-                        "tips": ["8", "10", "12"]
-                    }
-                ]
-            }
-        ]
+        "_id": 1091667880,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 3,
+        "tips": [2, 6, 1]
+    },
+    {
+        "_id": 1022988035,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 4,
+        "tips": [1, 6, 16]
+    },
+    {
+        "_id": 1070977383,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 5,
+        "tips": [1, 4, 7]
+    },
+    {
+        "_id": 1023585221,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 6,
+        "tips": [1, 6, 16]
+    },
+    {
+        "_id": 1038717108,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 7,
+        "tips": [1, 4, 2]
+    },
+    {
+        "_id": 1035836103,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 8,
+        "tips": [1, 5, 6]
+    },
+    {
+        "_id": 1036106006,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 9,
+        "tips": [15, 16, 7]
+    },
+    {
+        "_id": 1022579401,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 10,
+        "tips": [5, 8, 3]
+    },
+    {
+        "_id": 1056441802,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 11,
+        "tips": [1, 5, 7]
+    },
+    {
+        "_id": 1085143089,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 12,
+        "tips": [2, 5, 6]
+    },
+    {
+        "_id": 1091559535,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 13,
+        "tips": [4, 5, 7]
+    },
+    {
+        "_id": 1016355242,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 14,
+        "tips": [1, 5, 7]
+    },
+    {
+        "_id": 1039036360,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 15,
+        "tips": [5, 1, 7]
+    },
+    {
+        "_id": 1067448572,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1012020850,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 17,
+        "tips": [1, 5, 7]
+    },
+    {
+        "_id": 1033197122,
+        "competitionId": 12345678,
+        "meetId": 53213865,
+        "raceId": 54044535,
+        "punterId": 18,
+        "tips": [12, 14, 17]
+    },
+    {
+        "_id": 1049424714,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 1,
+        "tips": [1, 6, 8]
+    },
+    {
+        "_id": 1097711502,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 2,
+        "tips": [1, 6, 10]
+    },
+    {
+        "_id": 1036473625,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 3,
+        "tips": [6, 10, 1]
+    },
+    {
+        "_id": 1022740052,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 4,
+        "tips": [4, 6, 7]
+    },
+    {
+        "_id": 1040217544,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 5,
+        "tips": [1, 4, 6]
+    },
+    {
+        "_id": 1078828632,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 6,
+        "tips": [3, 6, 7]
+    },
+    {
+        "_id": 1071882914,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 7,
+        "tips": [6, 1, 10]
+    },
+    {
+        "_id": 1072174333,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 8,
+        "tips": [10, 8, 6]
+    },
+    {
+        "_id": 1082265102,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 9,
+        "tips": [1, 4, 11]
+    },
+    {
+        "_id": 1023556200,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 10,
+        "tips": [3, 7, 6]
+    },
+    {
+        "_id": 1051248908,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1073665285,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 12,
+        "tips": [6, 1, 10]
+    },
+    {
+        "_id": 1077836548,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 13,
+        "tips": [1, 4, 6]
+    },
+    {
+        "_id": 1016989717,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 14,
+        "tips": [6, 4, 7]
+    },
+    {
+        "_id": 1074304296,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 15,
+        "tips": [6, 1, 4]
+    },
+    {
+        "_id": 1050634823,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1036337355,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 17,
+        "tips": [1, 4, 6]
+    },
+    {
+        "_id": 1097245460,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 71499149,
+        "punterId": 18,
+        "tips": [3, 5, 12]
+    },
+    {
+        "_id": 1088213863,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 1,
+        "tips": [2, 5, 7]
+    },
+    {
+        "_id": 1097568498,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 2,
+        "tips": [1, 2, 7]
+    },
+    {
+        "_id": 1083098292,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 3,
+        "tips": [1, 2, 6]
+    },
+    {
+        "_id": 1094194212,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 4,
+        "tips": [1, 2, 6]
+    },
+    {
+        "_id": 1010156421,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 5,
+        "tips": [2, 5, 8]
+    },
+    {
+        "_id": 1094472413,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 6,
+        "tips": [1, 5, 6]
+    },
+    {
+        "_id": 1068052573,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 7,
+        "tips": [2, 8, 9]
+    },
+    {
+        "_id": 1065290307,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 8,
+        "tips": [2, 6, 7]
+    },
+    {
+        "_id": 1085881936,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 9,
+        "tips": [5, 8, 9]
+    },
+    {
+        "_id": 1063694597,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 10,
+        "tips": [2, 8, 5]
+    },
+    {
+        "_id": 1076124488,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1080390684,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 12,
+        "tips": [2, 6]
+    },
+    {
+        "_id": 1027317095,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 13,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1026319994,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 14,
+        "tips": [2, 8, 3]
+    },
+    {
+        "_id": 1086543700,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 15,
+        "tips": [2, 1, 8]
+    },
+    {
+        "_id": 1017719351,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1016242551,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 17,
+        "tips": [1, 2, 8]
+    },
+    {
+        "_id": 1044583347,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 29299229,
+        "punterId": 18,
+        "tips": [3, 4, 10]
+    },
+    {
+        "_id": 1069713120,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 1,
+        "tips": [1, 2, 4]
+    },
+    {
+        "_id": 1053855447,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 2,
+        "tips": [1, 4, 6]
+    },
+    {
+        "_id": 1087697199,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 3,
+        "tips": [1, 6, 2]
+    },
+    {
+        "_id": 1036818936,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 4,
+        "tips": [1, 2, 4]
+    },
+    {
+        "_id": 1021630830,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 5,
+        "tips": [1, 2, 4]
+    },
+    {
+        "_id": 1074669125,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 6,
+        "tips": [1, 4, 6]
+    },
+    {
+        "_id": 1024018015,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 7,
+        "tips": [1, 2, 6]
+    },
+    {
+        "_id": 1017496763,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 8,
+        "tips": [1, 4, 6]
+    },
+    {
+        "_id": 1063786123,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 9,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1031583572,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 10,
+        "tips": [1, 6, 3]
+    },
+    {
+        "_id": 1066571115,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1030499106,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 12,
+        "tips": [1, 2, 4]
+    },
+    {
+        "_id": 1060041836,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 13,
+        "tips": [1, 5, 6]
+    },
+    {
+        "_id": 1052266846,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 14,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1028218861,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 15,
+        "tips": [1, 2, 4]
+    },
+    {
+        "_id": 1055245344,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1024253980,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 17,
+        "tips": [1, 2, 4]
+    },
+    {
+        "_id": 1024262771,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 26282281,
+        "punterId": 18,
+        "tips": [3, 5, 8]
+    },
+    {
+        "_id": 1025259163,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 1,
+        "tips": [2, 7, 10]
+    },
+    {
+        "_id": 1035693088,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 2,
+        "tips": [2, 7, 5]
+    },
+    {
+        "_id": 1048466477,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 3,
+        "tips": [7, 2, 6]
+    },
+    {
+        "_id": 1011892685,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 4,
+        "tips": [2, 7, 10]
+    },
+    {
+        "_id": 1056314394,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 5,
+        "tips": [2, 3, 7]
+    },
+    {
+        "_id": 1016167513,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 6,
+        "tips": [2, 7, 9]
+    },
+    {
+        "_id": 1038971695,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 7,
+        "tips": [7, 3, 6]
+    },
+    {
+        "_id": 1043962163,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 8,
+        "tips": [2, 6, 7]
+    },
+    {
+        "_id": 1090977586,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 9,
+        "tips": [4, 6, 8]
+    },
+    {
+        "_id": 1037185272,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 10,
+        "tips": [7, 11, 2]
+    },
+    {
+        "_id": 1064208585,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1024173927,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 12,
+        "tips": [7, 2, 10]
+    },
+    {
+        "_id": 1063288692,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 13,
+        "tips": [3, 7, 10]
+    },
+    {
+        "_id": 1046335650,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 14,
+        "tips": [7, 10, 5]
+    },
+    {
+        "_id": 1010976174,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 15,
+        "tips": [2, 7, 10]
+    },
+    {
+        "_id": 1074513929,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1040492775,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 17,
+        "tips": [2, 7, 10]
+    },
+    {
+        "_id": 1090635938,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 99779429,
+        "punterId": 18,
+        "tips": [4, 12, 16]
+    },
+    {
+        "_id": 1035529679,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 1,
+        "tips": [1, 3, 4]
+    },
+    {
+        "_id": 1024324087,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 2,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1095814389,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 3,
+        "tips": [1, 3, 5]
+    },
+    {
+        "_id": 1082205353,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 4,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1070939522,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 5,
+        "tips": [1, 3, 4]
+    },
+    {
+        "_id": 1023742168,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 6,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1061085245,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 7,
+        "tips": [1, 5, 3]
+    },
+    {
+        "_id": 1047317102,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 8,
+        "tips": [1, 5, 7]
+    },
+    {
+        "_id": 1099971701,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 9,
+        "tips": [7, 8, 9]
+    },
+    {
+        "_id": 1080627939,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 10,
+        "tips": [1, 8, 6]
+    },
+    {
+        "_id": 1041160932,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1079607386,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 12,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1030238060,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 13,
+        "tips": [1, 3, 7]
+    },
+    {
+        "_id": 1070448601,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 14,
+        "tips": [1, 3, 10]
+    },
+    {
+        "_id": 1030931001,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 15,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1061818993,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1083389725,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 17,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1029057216,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 97476799,
+        "punterId": 18,
+        "tips": [8, 9, 11]
+    },
+    {
+        "_id": 1043907488,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 1,
+        "tips": [1, 9, 2]
+    },
+    {
+        "_id": 1015249875,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 2,
+        "tips": [6, 10, 9]
+    },
+    {
+        "_id": 1095573076,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 3,
+        "tips": [2, 3, 7]
+    },
+    {
+        "_id": 1022698663,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 4,
+        "tips": [2, 10, 12]
+    },
+    {
+        "_id": 1048143044,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 5,
+        "tips": [1, 5, 6]
+    },
+    {
+        "_id": 1044671722,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 6,
+        "tips": [2, 9, 10]
+    },
+    {
+        "_id": 1054921891,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 7,
+        "tips": [6, 1, 3]
+    },
+    {
+        "_id": 1064760019,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 8,
+        "tips": [13, 7, 3]
+    },
+    {
+        "_id": 1099308729,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 9,
+        "tips": [5, 8, 11]
+    },
+    {
+        "_id": 1089574562,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 10,
+        "tips": [2, 7, 5]
+    },
+    {
+        "_id": 1051268826,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1040317834,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 12,
+        "tips": [6, 2, 10]
+    },
+    {
+        "_id": 1097898441,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 13,
+        "tips": [2, 3, 5]
+    },
+    {
+        "_id": 1055201718,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 14,
+        "tips": [10, 4, 7]
+    },
+    {
+        "_id": 1041112059,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 15,
+        "tips": [6, 1, 2]
+    },
+    {
+        "_id": 1075442065,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1017342888,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 17,
+        "tips": [2, 6, 10]
+    },
+    {
+        "_id": 1034240679,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 53933817,
+        "punterId": 18,
+        "tips": [11, 12, 13]
+    },
+    {
+        "_id": 1011833344,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 1,
+        "tips": [1, 2, 7]
+    },
+    {
+        "_id": 1076981082,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 2,
+        "tips": [2, 3, 6]
+    },
+    {
+        "_id": 1061493660,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 3,
+        "tips": [2, 1, 3]
+    },
+    {
+        "_id": 1037809858,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 4,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1063211419,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 5,
+        "tips": [1, 3, 6]
+    },
+    {
+        "_id": 1096033260,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 6,
+        "tips": [2, 8, 13]
+    },
+    {
+        "_id": 1037510810,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 7,
+        "tips": [1, 6, 7]
+    },
+    {
+        "_id": 1034778689,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 8,
+        "tips": [2, 3, 7]
+    },
+    {
+        "_id": 1054794225,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 9,
+        "tips": [8, 9, 11]
+    },
+    {
+        "_id": 1061988141,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 10,
+        "tips": [6, 2, 3]
+    },
+    {
+        "_id": 1047423255,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1072860039,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 12,
+        "tips": [2, 3, 12]
+    },
+    {
+        "_id": 1035310538,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 13,
+        "tips": [1, 2, 5]
+    },
+    {
+        "_id": 1081367271,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 14,
+        "tips": [3, 2, 6]
+    },
+    {
+        "_id": 1022060763,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 15,
+        "tips": [2, 3, 1]
+    },
+    {
+        "_id": 1016098579,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1070771489,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 17,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1010034742,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 30394656,
+        "punterId": 18,
+        "tips": [4, 11, 14]
+    },
+    {
+        "_id": 1035423614,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 1,
+        "tips": [1, 7, 15]
+    },
+    {
+        "_id": 1082574022,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 2,
+        "tips": [15, 3, 7]
+    },
+    {
+        "_id": 1051819133,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 3,
+        "tips": [1, 10, 15]
+    },
+    {
+        "_id": 1062977012,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 4,
+        "tips": [1, 4, 7]
+    },
+    {
+        "_id": 1026299929,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 5,
+        "tips": [7, 3, 4]
+    },
+    {
+        "_id": 1074480895,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 6,
+        "tips": [7, 10, 14]
+    },
+    {
+        "_id": 1029254498,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 7,
+        "tips": [10, 7, 3]
+    },
+    {
+        "_id": 1046638873,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 8,
+        "tips": [1, 7, 11]
+    },
+    {
+        "_id": 1061006346,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 9,
+        "tips": [1, 5, 11]
+    },
+    {
+        "_id": 1079354848,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 10,
+        "tips": [10, 7, 15]
+    },
+    {
+        "_id": 1019411132,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1086484547,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 12,
+        "tips": [7, 10, 15]
+    },
+    {
+        "_id": 1063678128,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 13,
+        "tips": [1, 4, 10]
+    },
+    {
+        "_id": 1072619305,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 14,
+        "tips": [10, 1, 7]
+    },
+    {
+        "_id": 1031112656,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 15,
+        "tips": [7, 15, 10]
+    },
+    {
+        "_id": 1056987718,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1055475610,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 17,
+        "tips": [7, 10, 15]
+    },
+    {
+        "_id": 1031272582,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19031252,
+        "punterId": 18,
+        "tips": [5, 9, 12]
+    },
+    {
+        "_id": 1071462435,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 1,
+        "tips": [4, 5, 6]
+    },
+    {
+        "_id": 1043313746,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 2,
+        "tips": [4, 3, 11]
+    },
+    {
+        "_id": 1049436324,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 3,
+        "tips": [4, 6, 2]
+    },
+    {
+        "_id": 1035437169,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 4,
+        "tips": [4, 8, 6]
+    },
+    {
+        "_id": 1038263535,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 5,
+        "tips": [3, 4, 2]
+    },
+    {
+        "_id": 1025815948,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 6,
+        "tips": [5, 4, 11]
+    },
+    {
+        "_id": 1064887160,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 7,
+        "tips": [4, 2, 7]
+    },
+    {
+        "_id": 1085072473,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 8,
+        "tips": [5, 6, 11]
+    },
+    {
+        "_id": 1096715812,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 9,
+        "tips": [7, 10, 11]
+    },
+    {
+        "_id": 1015776292,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 10,
+        "tips": [4, 5, 11]
+    },
+    {
+        "_id": 1087645502,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 11,
+        "tips": []
+    },
+    {
+        "_id": 1094726277,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 12,
+        "tips": [4, 3, 9]
+    },
+    {
+        "_id": 1051437776,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 13,
+        "tips": [2, 3, 4]
+    },
+    {
+        "_id": 1011005755,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 14,
+        "tips": [4, 3, 6]
+    },
+    {
+        "_id": 1064474034,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 15,
+        "tips": [4, 2, 3]
+    },
+    {
+        "_id": 1035078694,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 16,
+        "tips": [1, 2, 3]
+    },
+    {
+        "_id": 1060747876,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 17,
+        "tips": [2, 3, 4]
+    },
+    {
+        "_id": 1013263635,
+        "competitionId": 12345678,
+        "meetId": 47229849,
+        "raceId": 19731914,
+        "punterId": 18,
+        "tips": [8, 10, 12]
     }
 ]
