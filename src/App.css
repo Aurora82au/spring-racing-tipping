@@ -1,16 +1,27 @@
 /* General */
 
 /* Used when hiding things like profile pics while at work - START */
-/* h2, .profile-pic, .tip .pic, .odds-totals .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
+/* h2,
+.profile-pic,
+.tip .pic,
+.odds-totals .pic,
+.podium .pic,
+.podium .icon-trophy,
+.loser .pic,
+.stat-item .pic {
     display: none !important;
 }
 .icon-admin {
     top: 2rem !important;
 }
-div.bg-green, div.bg-orange, div.bg-red {
+div.bg-green,
+div.bg-orange,
+div.bg-red {
     background-color: #458fff !important;
 }
-.race-selector .circle.selected.bg-green::after, .race-selector .circle.selected.bg-orange::after, .race-selector .circle.selected.bg-red::after {
+.race-selector .circle.selected.bg-green::after,
+.race-selector .circle.selected.bg-orange::after,
+.race-selector .circle.selected.bg-red::after {
     border-top-color: #458fff !important;
 }
 .browser {
@@ -118,6 +129,7 @@ div.bg-green, div.bg-orange, div.bg-red {
     outline: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
 }
 
 .selector select::-ms-expand {
@@ -356,13 +368,7 @@ input.password {
 }
 
 .scratching-list .selection.scratched {
-    background: repeating-linear-gradient(
-        -45deg,
-        transparent 46%,
-        #ff0000 49%,
-        #ff0000 52%,
-        transparent 55%
-    );
+    background: repeating-linear-gradient(-45deg, transparent 46%, #ff0000 49%, #ff0000 52%, transparent 55%);
 }
 .adminRace .status-selector {
     display: grid;
@@ -481,23 +487,11 @@ input.password {
 }
 .raceList .selection.scratched,
 .tip-examples .selection.scratched {
-    background: repeating-linear-gradient(
-        -45deg,
-        transparent 46%,
-        #ff0000 49%,
-        #ff0000 52%,
-        transparent 55%
-    );
+    background: repeating-linear-gradient(-45deg, transparent 46%, #ff0000 49%, #ff0000 52%, transparent 55%);
 }
 .raceList .selection.selected.scratched,
 .tip-examples .selection.selected.scratched {
-    background: repeating-linear-gradient(
-        -45deg,
-        #813aff 46%,
-        #813aff 49%,
-        #fff 52%,
-        #813aff 55%
-    );
+    background: repeating-linear-gradient(-45deg, #813aff 46%, #813aff 49%, #fff 52%, #813aff 55%);
 }
 .disabled .bold,
 .disabled .details {

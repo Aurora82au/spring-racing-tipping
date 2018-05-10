@@ -5,11 +5,14 @@ export default class RaceMeetSelector extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
-    
+
     /* Function to render the component */
     render() {
-        let meets = this.props.meets.sort((a, b) => { return a.date.localeCompare(b.date) }), // Sort the race meets by date
-            split, date;
+        let meets = this.props.meets.sort((a, b) => {
+                return a.date.localeCompare(b.date);
+            }), // Sort the race meets by date
+            split,
+            date;
 
         return (
             <div className="selector">
@@ -17,10 +20,14 @@ export default class RaceMeetSelector extends Component {
                     {meets.map(meet => {
                         split = meet.date.split('-');
                         date = `${split[2]}/${split[1]}`;
-                        return <option key={meet.meetId} value={meet.meetId}>{meet.name} ({date})</option>
+                        return (
+                            <option key={meet._id} value={meet._id}>
+                                {meet.name} ({date})
+                            </option>
+                        );
                     })}
                 </select>
-                <span className="icon-select"></span>
+                <span className="icon-select" />
             </div>
         );
     }

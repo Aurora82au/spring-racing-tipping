@@ -2,7 +2,7 @@
     {
         "_id": 68880275,
         "name": "Inglis Debutant Stakes",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 1,
         "time": "12:20pm",
         "distance": "1000m",
@@ -18,7 +18,7 @@
     {
         "_id": 29717197,
         "name": "Thoroughbred Club Stakes",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 2,
         "time": "12:55pm",
         "distance": "1200m",
@@ -34,7 +34,7 @@
     {
         "_id": 42583070,
         "name": "Cape Grim Beef Steaks",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 3,
         "time": "1:30pm",
         "distance": "1200m",
@@ -50,7 +50,7 @@
     {
         "_id": 46082385,
         "name": "Ladbrokes Herbert Power Stakes",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 4,
         "time": "2:05pm",
         "distance": "2400m",
@@ -66,7 +66,7 @@
     {
         "_id": 44611563,
         "name": "Keno Weekend Hussler Stakes",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 5,
         "time": "2:40pm",
         "distance": "1400m",
@@ -82,7 +82,7 @@
     {
         "_id": 70726011,
         "name": "Schweppes Thousand Guineas",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 6,
         "time": "3:15pm",
         "distance": "1600m",
@@ -98,7 +98,7 @@
     {
         "_id": 79404799,
         "name": "Ladbrokes Stakes",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 7,
         "time": "3:50pm",
         "distance": "2000m",
@@ -114,7 +114,7 @@
     {
         "_id": 64054969,
         "name": "Ladbrokes Caulfield Guineas",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 8,
         "time": "4:30pm",
         "distance": "1600m",
@@ -130,7 +130,7 @@
     {
         "_id": 55927791,
         "name": "United Petroleum Toorak Handicap",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 9,
         "time": "5:10pm",
         "distance": "1600m",
@@ -146,7 +146,7 @@
     {
         "_id": 81035158,
         "name": "Keno Kwikpik Schillaci Stakes",
-        "raceMeetId": 64662494,
+        "meetId": 64662494,
         "number": 10,
         "time": "5:45pm",
         "distance": "1100m",
@@ -162,7 +162,7 @@
     {
         "_id": 70975294,
         "name": "Resimax Group Plate",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 1,
         "time": "12:15pm",
         "distance": "1400m",
@@ -178,7 +178,7 @@
     {
         "_id": 25500728,
         "name": "Polytrack Gothic Stakes",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 2,
         "time": "12:50pm",
         "distance": "1400m",
@@ -194,7 +194,7 @@
     {
         "_id": 56382743,
         "name": "New Zealand Bloodstock Ethereal Stakes",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 3,
         "time": "1:25pm",
         "distance": "2000m",
@@ -210,7 +210,7 @@
     {
         "_id": 90001309,
         "name": "Ladbrokes Classic",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 4,
         "time": "2:00pm",
         "distance": "2000m",
@@ -226,7 +226,7 @@
     {
         "_id": 63612360,
         "name": "Priceline Pharmacy Coongy Cup",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 5,
         "time": "2:35pm",
         "distance": "2000m",
@@ -242,7 +242,7 @@
     {
         "_id": 99293557,
         "name": "Ladbrokes Moonga Stakes",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 6,
         "time": "3:10pm",
         "distance": "1400m",
@@ -258,7 +258,7 @@
     {
         "_id": 96821509,
         "name": "Harrolds Caulfield Sprint",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 7,
         "time": "3:45pm",
         "distance": "1000m",
@@ -274,7 +274,7 @@
     {
         "_id": 67166348,
         "name": "BMW Caulfield Cup",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 8,
         "time": "4:30pm",
         "distance": "2400m",
@@ -290,7 +290,7 @@
     {
         "_id": 88514958,
         "name": "Schweppes Tristarc Stakes",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 9,
         "time": "5:10pm",
         "distance": "1400m",
@@ -306,7 +306,7 @@
     {
         "_id": 50750462,
         "name": "Carlton Draught Alinghi Stakes",
-        "raceMeetId": 82146934,
+        "meetId": 82146934,
         "number": 10,
         "time": "5:45pm",
         "distance": "1100m",
@@ -322,7 +322,7 @@
     {
         "_id": 76098779,
         "name": "Inglis Banner",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 1,
         "time": "12:10pm",
         "distance": "1000m",
@@ -338,7 +338,7 @@
     {
         "_id": 14188185,
         "name": "Strathmore Community Bendigo Bank Handicap",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 2,
         "time": "12:40pm",
         "distance": "955m",
@@ -354,7 +354,7 @@
     {
         "_id": 61906864,
         "name": "Telstra Phonewords Stakes",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 3,
         "time": "1:15pm",
         "distance": "1200m",
@@ -370,7 +370,7 @@
     {
         "_id": 31570361,
         "name": "Ladbrokes Crockett Stakes",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 4,
         "time": "1:50pm",
         "distance": "1200m",
@@ -386,7 +386,7 @@
     {
         "_id": 43216002,
         "name": "Powerflo Solutions Stakes",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 5,
         "time": "2:25pm",
         "distance": "1600m",
@@ -402,7 +402,7 @@
     {
         "_id": 15447134,
         "name": "Moonee Valley Gold Cup",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 6,
         "time": "3:00pm",
         "distance": "2500m",
@@ -418,7 +418,7 @@
     {
         "_id": 35538136,
         "name": "italktravel Fillies Classic",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 7,
         "time": "3:35pm",
         "distance": "1600m",
@@ -434,7 +434,7 @@
     {
         "_id": 54798487,
         "name": "Schweppes Crystal Mile",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 8,
         "time": "4:10pm",
         "distance": "1600m",
@@ -450,7 +450,7 @@
     {
         "_id": 21707141,
         "name": "Ladbrokes Cox Plate",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 9,
         "time": "5:00pm",
         "distance": "2040m",
@@ -466,7 +466,7 @@
     {
         "_id": 46674846,
         "name": "Drummond Golf Vase",
-        "raceMeetId": 27856148,
+        "meetId": 27856148,
         "number": 10,
         "time": "5:45pm",
         "distance": "2040m",
@@ -482,7 +482,7 @@
     {
         "_id": 33500792,
         "name": "Carbine Club Stakes",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 1,
         "time": "11:45am",
         "distance": "1600m",
@@ -498,7 +498,7 @@
     {
         "_id": 85896183,
         "name": "G.H.Mumm Wakeful Stakes",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 2,
         "time": "12:20pm",
         "distance": "2000m",
@@ -514,7 +514,7 @@
     {
         "_id": 59111029,
         "name": "Skip Sprint",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 3,
         "time": "1:00pm",
         "distance": "1100m",
@@ -530,7 +530,7 @@
     {
         "_id": 45617985,
         "name": "Lexus Stakes",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 4,
         "time": "1:40pm",
         "distance": "2500m",
@@ -546,7 +546,7 @@
     {
         "_id": 58703524,
         "name": "Coolmore Stud Stakes",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 5,
         "time": "2:25pm",
         "distance": "1200m",
@@ -562,7 +562,7 @@
     {
         "_id": 58193565,
         "name": "Myer Classic",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 6,
         "time": "3:05pm",
         "distance": "1600m",
@@ -578,7 +578,7 @@
     {
         "_id": 51493137,
         "name": "AAMI Victoria Derby",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 7,
         "time": "3:50pm",
         "distance": "2500m",
@@ -594,7 +594,7 @@
     {
         "_id": 50397414,
         "name": "Kennedy Mile",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 8,
         "time": "4:35pm",
         "distance": "1600m",
@@ -610,7 +610,7 @@
     {
         "_id": 13617103,
         "name": "TAB Multiplier Stakes",
-        "raceMeetId": 38088702,
+        "meetId": 38088702,
         "number": 9,
         "time": "5:20pm",
         "distance": "1200m",
@@ -626,7 +626,7 @@
     {
         "_id": 46606900,
         "name": "Emirates 100th A380 Stakes",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 1,
         "time": "11:00am",
         "distance": "1000m",
@@ -642,7 +642,7 @@
     {
         "_id": 14909235,
         "name": "TAB.com.au Trophy",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 2,
         "time": "11:40am",
         "distance": "1700m",
@@ -658,7 +658,7 @@
     {
         "_id": 59818515,
         "name": "Lavazza Short Black",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 3,
         "time": "12:15pm",
         "distance": "1400m",
@@ -674,7 +674,7 @@
     {
         "_id": 38891604,
         "name": "Ronald McDonald House Charities Plate",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 4,
         "time": "12:50pm",
         "distance": "2800m",
@@ -690,7 +690,7 @@
     {
         "_id": 32063987,
         "name": "Schweppes Flemington Fling",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 5,
         "time": "1:25pm",
         "distance": "1000m",
@@ -706,7 +706,7 @@
     {
         "_id": 45375688,
         "name": "Lexus Hybrid Plate",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 6,
         "time": "2:00pm",
         "distance": "1400m",
@@ -722,7 +722,7 @@
     {
         "_id": 55459582,
         "name": "Emirates Melbourne Cup",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 7,
         "time": "3:00pm",
         "distance": "3200m",
@@ -738,7 +738,7 @@
     {
         "_id": 71165484,
         "name": "James Boag's Premium Stakes",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 8,
         "time": "4:05pm",
         "distance": "1800m",
@@ -754,7 +754,7 @@
     {
         "_id": 36741004,
         "name": "MSS Security Sprint",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 9,
         "time": "4:45pm",
         "distance": "1200m",
@@ -770,7 +770,7 @@
     {
         "_id": 90373186,
         "name": "The Hong Kong Jockey Club Stakes",
-        "raceMeetId": 76965904,
+        "meetId": 76965904,
         "number": 10,
         "time": "5:20pm",
         "distance": "1400m",
@@ -786,7 +786,7 @@
     {
         "_id": 68881561,
         "name": "DrinkWise Plate",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 1,
         "time": "12:15pm",
         "distance": "1700m",
@@ -802,7 +802,7 @@
     {
         "_id": 80350163,
         "name": "Twitter Trophy",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 2,
         "time": "12:55pm",
         "distance": "1800m",
@@ -818,7 +818,7 @@
     {
         "_id": 42511591,
         "name": "Off the Track Subzero Handicap",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 3,
         "time": "1:35pm",
         "distance": "1400m",
@@ -834,7 +834,7 @@
     {
         "_id": 94009970,
         "name": "Melbourne Cup Carnival Country Final",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 4,
         "time": "2:15pm",
         "distance": "1600m",
@@ -850,7 +850,7 @@
     {
         "_id": 23015396,
         "name": "TCL TV Stakes",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 5,
         "time": "2:55pm",
         "distance": "1400m",
@@ -866,7 +866,7 @@
     {
         "_id": 43302899,
         "name": "Absolut Stakes",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 6,
         "time": "3:35pm",
         "distance": "1000m",
@@ -882,7 +882,7 @@
     {
         "_id": 43709944,
         "name": "Seppelt Wines Stakes",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 7,
         "time": "4:15pm",
         "distance": "1800m",
@@ -898,7 +898,7 @@
     {
         "_id": 89030190,
         "name": "Kennedy Oaks",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 8,
         "time": "5:00pm",
         "distance": "2500m",
@@ -914,7 +914,7 @@
     {
         "_id": 54044535,
         "name": "Kennedy Plate",
-        "raceMeetId": 53213865,
+        "meetId": 53213865,
         "number": 9,
         "time": "5:45pm",
         "distance": "1100m",
@@ -930,7 +930,7 @@
     {
         "_id": 71499149,
         "name": "AAMI Maribyrnong Plate",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 1,
         "time": "12:15pm",
         "distance": "1000m",
@@ -946,7 +946,7 @@
     {
         "_id": 29299229,
         "name": "Juvenile Diabetes Research Foundation Plate",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 2,
         "time": "12:50pm",
         "distance": "2000m",
@@ -962,7 +962,7 @@
     {
         "_id": 26282281,
         "name": "Melbourne’s Own 3AW Trophy",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 3,
         "time": "1:30pm",
         "distance": "2000m",
@@ -978,7 +978,7 @@
     {
         "_id": 99779429,
         "name": "Sensis Digital Trophy",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 4,
         "time": "2:10pm",
         "distance": "1400m",
@@ -994,7 +994,7 @@
     {
         "_id": 97476799,
         "name": "Queen Elizabeth Stakes",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 5,
         "time": "2:50pm",
         "distance": "2600m",
@@ -1010,7 +1010,7 @@
     {
         "_id": 53933817,
         "name": "7News Matriarch Stakes",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 6,
         "time": "3:30pm",
         "distance": "2000m",
@@ -1026,7 +1026,7 @@
     {
         "_id": 30394656,
         "name": "Darley Classic",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 7,
         "time": "4:10pm",
         "distance": "1200m",
@@ -1042,7 +1042,7 @@
     {
         "_id": 19031252,
         "name": "Emirates Stakes",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 8,
         "time": "4:55pm",
         "distance": "2000m",
@@ -1058,7 +1058,7 @@
     {
         "_id": 19731914,
         "name": "Emirates Airline Handicap",
-        "raceMeetId": 47229849,
+        "meetId": 47229849,
         "number": 9,
         "time": "5:45pm",
         "distance": "1400m",

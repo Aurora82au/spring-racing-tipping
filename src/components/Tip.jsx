@@ -5,11 +5,13 @@ export default class Tip extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
-    
+
     /* Function to render the component */
     render() {
         let self = this,
-            punter = this.props.punters.find(tipPunter => { return tipPunter.punterId === self.props.tips.punterId }),
+            punter = this.props.punters.find(tipPunter => {
+                return tipPunter._id === self.props.tips.punterId;
+            }),
             score = 0,
             index,
             firstClass = '',
@@ -20,31 +22,51 @@ export default class Tip extends Component {
         index = self.props.tips.tips.indexOf(self.props.placings.first);
         if (index > -1) {
             score += 3;
-            if (index === 0) { firstClass = 'correct' }
-            if (index === 1) { secondClass = 'correct' }
-            if (index === 2) { thirdClass = 'correct' }
+            if (index === 0) {
+                firstClass = 'correct';
+            }
+            if (index === 1) {
+                secondClass = 'correct';
+            }
+            if (index === 2) {
+                thirdClass = 'correct';
+            }
         }
 
         index = self.props.tips.tips.indexOf(self.props.placings.second);
         if (index > -1) {
             score += 2;
-            if (index === 0) { firstClass = 'correct' }
-            if (index === 1) { secondClass = 'correct' }
-            if (index === 2) { thirdClass = 'correct' }
+            if (index === 0) {
+                firstClass = 'correct';
+            }
+            if (index === 1) {
+                secondClass = 'correct';
+            }
+            if (index === 2) {
+                thirdClass = 'correct';
+            }
         }
 
         index = self.props.tips.tips.indexOf(self.props.placings.third);
         if (index > -1) {
-            score ++;
-            if (index === 0) { firstClass = 'correct' }
-            if (index === 1) { secondClass = 'correct' }
-            if (index === 2) { thirdClass = 'correct' }
+            score++;
+            if (index === 0) {
+                firstClass = 'correct';
+            }
+            if (index === 1) {
+                secondClass = 'correct';
+            }
+            if (index === 2) {
+                thirdClass = 'correct';
+            }
         }
 
         return (
             <div className="tip">
                 <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
-                <span className="name">{punter.name.first} {punter.name.last}</span>
+                <span className="name">
+                    {punter.name.first} {punter.name.last}
+                </span>
                 <div className="numbers">
                     <div className="group">
                         <span className="label">Pick 1</span>&nbsp;-&nbsp;
