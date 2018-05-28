@@ -19,7 +19,7 @@ export default class App extends Component {
         super(props);
         this.state = {
             competitions: [],
-            raceMeets: [],
+            meets: [],
             races: [],
             punters: [],
             tips: [],
@@ -55,42 +55,46 @@ export default class App extends Component {
         const self = this;
         try {
             // Used for local JSON files
-            const competitionsResponse = await fetch(this.path + 'mock/competitions.json'),
-                competitions = await competitionsResponse.json(),
-                raceMeetResponse = await fetch(this.path + 'mock/raceMeets.json'),
-                meets = await raceMeetResponse.json(),
-                racesResponse = await fetch(this.path + 'mock/races.json'),
-                races = await racesResponse.json(),
-                punterResponse = await fetch(this.path + 'mock/punters.json'),
-                punters = await punterResponse.json(),
-                tipsResponse = await fetch(this.path + 'mock/tips.json'),
-                tips = await tipsResponse.json();
+            const competitionsResponse = await fetch(this.path + 'mock/competitions.json');
+            const competitions = await competitionsResponse.json();
+            const meetsResponse = await fetch(this.path + 'mock/meets.json');
+            const meets = await meetsResponse.json();
+            const racesResponse = await fetch(this.path + 'mock/races.json');
+            const races = await racesResponse.json();
+            const puntersResponse = await fetch(this.path + 'mock/punters.json');
+            const punters = await puntersResponse.json();
+            const tipsResponse = await fetch(this.path + 'mock/tips.json');
+            const tips = await tipsResponse.json();
+            let selectedMeet = this.state.selectedMeet;
+            let selectedRace = this.state.selectedRace;
 
-            // If no selected meet, set to the first meet, and set first race
-            if (this.state.selectedMeet === null) {
-                var firstMeet = meets.length ? meets[0]._id : null;
-                var firstRace;
+            // If no selected meet, set to the first meet
+            if (!selectedMeet) {
+                selectedMeet = meets.length ? meets[0]._id : null;
+            }
+            // If no selected race, set to the first race of the race meet
+            if (!selectedRace) {
                 for (let i = 0, j = races.length; i < j; i++) {
-                    if (races[i].meetId === firstMeet && races[i].number === 1) {
-                        firstRace = races[i]._id;
+                    if (races[i].meetId === selectedMeet && races[i].number === 1) {
+                        selectedRace = races[i]._id;
                     }
                 }
             }
 
             self.setState({
                 competitions: competitions,
-                raceMeets: meets,
+                meets: meets,
                 races: races,
                 punters: punters,
                 tips: tips,
-                selectedMeet: firstMeet,
-                selectedRace: firstRace
+                selectedMeet: selectedMeet,
+                selectedRace: selectedRace
             });
 
             // Used for data coming from database
             // axios.all([
             //     axios.get(this.databaseURL + '/competitions'),
-            //     axios.get(this.databaseURL + '/racemeets'),
+            //     axios.get(this.databaseURL + '/meets'),
             //     axios.get(this.databaseURL + '/races'),
             //     axios.get(this.databaseURL + '/punters'),
             //     axios.get(this.databaseURL + '/tips')
@@ -108,7 +112,7 @@ export default class App extends Component {
 
             //     self.setState({
             //         competitions: competitions.data,
-            //         raceMeets: meets.data,
+            //         meets: meets.data,
             //         races: races.data,
             //         punters: punters.data,
             //         tips: tips.data,
@@ -134,20 +138,11 @@ export default class App extends Component {
                 authenticated: true,
                 user: parseInt(localStorage.getItem('user'), 10),
                 isAdmin: localStorage.getItem('isAdmin') === 'true',
-                selectedMeet: parseInt(localStorage.getItem('selectedMeet'), 10) || null
+                selectedMeet: parseInt(localStorage.getItem('selectedMeet'), 10) || null,
+                selectedRace: parseInt(localStorage.getItem('selectedRace'), 10) || null
             });
         }
     }
-
-    // componentDidUpdate(prevProps, prevState) {
-    //     console.log('ComponentDidUpdate');
-    //     console.log('Updated: ' + this.test);
-    //     console.log(this.state.raceMeets);
-    //     console.log(this.state.selectedMeet);
-    //     console.log(this.state.selectedRace);
-    //     console.log('---------------------');
-    //     this.test++;
-    // }
 
     /* When the user logs in set the state and store them in localStorage */
     handleLogin = user => {
@@ -203,15 +198,15 @@ export default class App extends Component {
        then update it, save back to the database and update the state */
     handleSaveTips = (modifiedRace, modifiedTips) => {
         axios.get(this.databaseURL + '/tips').then(returnedTips => {
-            let tips = this.state.tips,
-                tipsMeet = returnedTips.data.find(meet => {
-                    return meet.meetId === this.state.selectedMeet;
-                }),
-                punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => {
-                    return punter._id === this.state.user;
-                }),
-                meetIndex = returnedTips.data.indexOf(tipsMeet),
-                punterIndex = returnedTips.data[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
+            let tips = this.state.tips;
+            let tipsMeet = returnedTips.data.find(meet => {
+                return meet.meetId === this.state.selectedMeet;
+            });
+            const punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => {
+                return punter._id === this.state.user;
+            });
+            const meetIndex = returnedTips.data.indexOf(tipsMeet);
+            const punterIndex = returnedTips.data[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
 
             // Update the tips for the selected meet/race
             tipsMeet.races[modifiedRace - 1].punters[punterIndex].tips = modifiedTips.selections;
@@ -231,76 +226,76 @@ export default class App extends Component {
 
     /* When the user clicks Save for placings on the Admin page, save to the database and update the state */
     handleSavePlacings = (modifiedRace, modifiedPlacings) => {
-        let raceMeets = this.state.raceMeets,
-            meet = raceMeets.find(meet => {
-                return meet.meetId === this.state.selectedMeet;
-            }),
-            meetIndex = raceMeets.indexOf(meet);
+        let meets = this.state.meets;
+        let meet = meets.find(meet => {
+            return meet.meetId === this.state.selectedMeet;
+        });
+        const meetIndex = meets.indexOf(meet);
 
         // Update the placings for the selected meet/race
         meet.races[modifiedRace - 1].placings = modifiedPlacings;
 
-        // Insert the updated meet back into the raceMeets array
-        raceMeets[meetIndex] = meet;
+        // Insert the updated meet back into the meets array
+        meets[meetIndex] = meet;
 
         // Send the updated meet to the database
-        axios.put(this.databaseURL + '/racemeets/' + this.state.selectedMeet, meet);
+        axios.put(this.databaseURL + '/meets/' + this.state.selectedMeet, meet);
 
-        // Update the local state with the updated raceMeets array
+        // Update the local state with the updated meets array
         this.setState({
-            raceMeets: raceMeets
+            meets: meets
         });
     };
 
     /* When the user selects a race status on the Admin page, save to the database and update the state */
     handleSaveStatus = event => {
-        let raceMeets = this.state.raceMeets,
-            meet = raceMeets.find(meet => {
-                return meet.meetId === this.state.selectedMeet;
-            }),
-            meetIndex = raceMeets.indexOf(meet);
+        let meets = this.state.meets;
+        let meet = meets.find(meet => {
+            return meet.meetId === this.state.selectedMeet;
+        });
+        const meetIndex = meets.indexOf(meet);
 
         // Update the placings for the selected meet/race
         meet.races[event.target.getAttribute('data-race') - 1].status = event.target.getAttribute('data-status');
 
-        // Insert the updated meet back into the raceMeets array
-        raceMeets[meetIndex] = meet;
+        // Insert the updated meet back into the meets array
+        meets[meetIndex] = meet;
 
         // Send the updated meet to the database
-        axios.put(this.databaseURL + '/racemeets/' + this.state.selectedMeet, meet);
+        axios.put(this.databaseURL + '/meets/' + this.state.selectedMeet, meet);
 
-        // Update the local state with the updated raceMeets array
+        // Update the local state with the updated meets array
         this.setState({
-            raceMeets: raceMeets
+            meets: meets
         });
     };
 
     /* When the user selects a scratching on the Admin page, save to the database and update the state */
     handleSaveScratchings = (modifiedRace, modifiedScratchings) => {
-        let raceMeets = this.state.raceMeets,
-            meet = raceMeets.find(meet => {
-                return meet.meetId === this.state.selectedMeet;
-            }),
-            meetIndex = raceMeets.indexOf(meet);
+        let meets = this.state.meets;
+        let meet = meets.find(meet => {
+            return meet.meetId === this.state.selectedMeet;
+        });
+        const meetIndex = meets.indexOf(meet);
 
         // Update the placings for the selected meet/race
         meet.races[modifiedRace - 1].scratchings = modifiedScratchings;
 
-        // Insert the updated meet back into the raceMeets array
-        raceMeets[meetIndex] = meet;
+        // Insert the updated meet back into the meets array
+        meets[meetIndex] = meet;
 
         // Send the updated meet to the database
-        axios.put(this.databaseURL + '/racemeets/' + this.state.selectedMeet, meet);
+        axios.put(this.databaseURL + '/meets/' + this.state.selectedMeet, meet);
 
-        // Update the local state with the updated raceMeets array
+        // Update the local state with the updated meets array
         this.setState({
-            raceMeets: raceMeets
+            meets: meets
         });
     };
 
     /* Function to render the component */
     render() {
-        if (this.state.raceMeets.length) {
+        if (this.state.meets.length) {
             return (
                 // React Router routes to a particular component based on the URL path
                 <Router>
@@ -330,7 +325,7 @@ export default class App extends Component {
                                             <Admin
                                                 {...routeProps}
                                                 path={this.path}
-                                                raceMeets={this.state.raceMeets}
+                                                meets={this.state.meets}
                                                 races={this.state.races}
                                                 punters={this.state.punters}
                                                 selectedMeet={this.state.selectedMeet}
@@ -374,7 +369,8 @@ export default class App extends Component {
                                             <Statistics
                                                 {...routeProps}
                                                 path={this.path}
-                                                raceMeets={this.state.raceMeets}
+                                                meets={this.state.meets}
+                                                races={this.state.races}
                                                 punters={this.state.punters}
                                                 tips={this.state.tips}
                                                 selectedTab={this.state.selectedTab}
@@ -397,10 +393,12 @@ export default class App extends Component {
                                             <Tips
                                                 {...routeProps}
                                                 path={this.path}
-                                                raceMeets={this.state.raceMeets}
+                                                meets={this.state.meets}
+                                                races={this.state.races}
                                                 tips={this.state.tips}
                                                 punters={this.state.punters}
                                                 selectedMeet={this.state.selectedMeet}
+                                                selectedRace={this.state.selectedRace}
                                                 onReloadData={this.handleReloadData}
                                                 onMeetChange={this.handleMeetSelect}
                                                 onSelectionChange={this.handleSaveTips}
@@ -420,7 +418,7 @@ export default class App extends Component {
                                             <Results
                                                 {...routeProps}
                                                 path={this.path}
-                                                raceMeets={this.state.raceMeets}
+                                                meets={this.state.meets}
                                                 races={this.state.races}
                                                 punters={this.state.punters}
                                                 tips={this.state.tips}
@@ -445,7 +443,8 @@ export default class App extends Component {
                                             <Leaderboard
                                                 {...routeProps}
                                                 path={this.path}
-                                                raceMeets={this.state.raceMeets}
+                                                meets={this.state.meets}
+                                                races={this.state.races}
                                                 punters={this.state.punters}
                                                 tips={this.state.tips}
                                                 user={this.state.user}
@@ -471,6 +470,6 @@ export default class App extends Component {
 
 // Use to time functions
 
-//var t0 = performance.now(); <- Put before code to be timed
-//var t1 = performance.now(); <- Put after code to be timed
-//console.log("While loops took " + (t1 - t0) + " milliseconds.");
+//const t0 = performance.now(); <- Put before code to be timed
+//const t1 = performance.now(); <- Put after code to be timed
+//console.log("Code took " + (t1 - t0) + " milliseconds.");

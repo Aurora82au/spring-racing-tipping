@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Tip from './Tip';
+import Tip from './ResultsTip';
 
-export default class Race extends Component {
+export default class ResultsRace extends Component {
     /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
@@ -9,12 +9,12 @@ export default class Race extends Component {
 
     /* Function to render the component */
     render() {
-        let self = this,
-            tips = self.props.tips.map(punterTips => {
-                return <Tip key={punterTips._id} tips={punterTips} punters={self.props.punters} placings={self.props.race.placings} />;
-            }),
-            statusClass,
-            statusName;
+        const self = this;
+        const tips = self.props.tips.map(punterTips => {
+            return <Tip key={punterTips._id} tips={punterTips} punters={self.props.punters} placings={self.props.race.placings} />;
+        });
+        let statusClass;
+        let statusName;
         // Set the statusClass based on race's status
         switch (self.props.race.status) {
             case 1:

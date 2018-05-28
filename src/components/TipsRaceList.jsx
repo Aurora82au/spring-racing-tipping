@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class TippingRaceList extends Component {
+export default class TipsRaceList extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,20 +37,27 @@ export default class TippingRaceList extends Component {
 
     /* Function to take the passed props and set the currently selected tips */
     setTips = passedProps => {
-        let self = this,
-            tips = this.state.tips,
-            tipsRace,
-            userTips;
+        const noOfRaces = passedProps.races.length;
+        let tips = this.state.tips;
+        let count = 0;
 
         // Set the current users tips for each race of the chosen race meet
-        for (let i = 0; i < passedProps.meet.races.length; i++) {
-            tipsRace = passedProps.tips.races.find(race => {
-                return race.number === i + 1;
-            });
-            userTips = tipsRace.punters.find(punter => {
-                return punter._id === self.props.user;
-            });
-            tips[i] = { race: i + 1, selections: userTips.tips };
+        for (let i = 0, l = passedProps.tips.length; i < l; i++) {
+            if (count === noOfRaces) {
+                break;
+            }
+            if (passedProps.tips[i].punterId === passedProps.user) {
+                for (let j = 0; j < noOfRaces; j++) {
+                    if (passedProps.races[j]._id === passedProps.tips[i].raceId) {
+                        tips[passedProps.races[j].number - 1] = {
+                            race: passedProps.races[j].number,
+                            selections: passedProps.tips[i].tips
+                        };
+                        break;
+                    }
+                }
+                count++;
+            }
         }
 
         this.setState({
@@ -61,16 +68,16 @@ export default class TippingRaceList extends Component {
     /* When the user selects a number, either add or remove it from the local state and pass it to the onSelectionChange function
        passed in via props from App.js */
     handleSelectionClick = event => {
-        let tips = this.state.tips,
-            modifiedRace = parseInt(event.target.getAttribute('data-race'), 10),
-            tip = tips.find(tip => {
-                return tip.race === modifiedRace;
-            }),
-            index = tips.indexOf(tip);
+        const tips = this.state.tips;
+        const modifiedRace = parseInt(event.target.getAttribute('data-race'), 10);
+        const tip = tips.find(tip => {
+            return tip.race === modifiedRace;
+        });
+        let index = tips.indexOf(tip);
 
         // If the selection is already selected, remove it, else if there is less than 3 selected add it
         if (event.target.classList.contains('selected')) {
-            let index = tip.selections.indexOf(event.target.innerText);
+            index = tip.selections.indexOf(event.target.innerText);
             if (index > -1) {
                 tip.selections.splice(index, 1);
             }
@@ -90,33 +97,27 @@ export default class TippingRaceList extends Component {
 
     /* Generate the HTML for the tips for each race */
     generateList = () => {
-        let races = [],
-            selections = [],
-            className;
+        let races = [];
+        let selections = [];
+        let className;
 
         // For each race in the selected meet
-        for (let i = 0; i < this.props.meet.races.length; i++) {
+        for (let i = 0, l = this.props.races.length; i < l; i++) {
             // Clear selections for each race
             selections = [];
 
             // Generate 24 selections for the tips
             for (let j = 0; j < 24; j++) {
                 className = 'selection';
-                if (this.props.meet.races[i].scratchings.includes(j + 1)) {
+                if (this.props.races[i].scratchings.includes(j + 1)) {
                     className += ' scratched';
                 }
-                if (
-                    this.state.tips[i].selections.includes((j + 1).toString())
-                ) {
+                if (this.state.tips[i].selections.includes(j + 1)) {
                     className += ' selected';
                 }
 
                 selections.push(
-                    <div
-                        key={j}
-                        className={className}
-                        data-race={i + 1}
-                        onClick={this.handleSelectionClick}>
+                    <div key={j} className={className} data-race={i + 1} onClick={this.handleSelectionClick}>
                         {j + 1}
                     </div>
                 );
@@ -126,13 +127,9 @@ export default class TippingRaceList extends Component {
             races.push(
                 <div key={i} className="tip-group">
                     <div className="details">
-                        <div className="bold">
-                            RACE {this.props.meet.races[i].number}
-                        </div>
-                        <span>{this.props.meet.races[i].time}</span>
-                        <span className="name">
-                            &nbsp;-&nbsp;{this.props.meet.races[i].name}
-                        </span>
+                        <div className="bold">RACE {this.props.races[i].number}</div>
+                        <span>{this.props.races[i].time}</span>
+                        <span className="name">&nbsp;-&nbsp;{this.props.races[i].name}</span>
                     </div>
                     <div className="selections">{selections}</div>
                 </div>
@@ -144,9 +141,9 @@ export default class TippingRaceList extends Component {
 
     /* Function to render the component */
     render() {
-        let raceList = this.generateList(),
-            raceDay = new Date(this.props.meet.date),
-            raceListClass;
+        const raceList = this.generateList();
+        let raceDay = new Date(this.props.meet.date);
+        let raceListClass;
 
         // Set the meet to disabled if it is after 10:15am on race day
         raceDay.setHours(10);

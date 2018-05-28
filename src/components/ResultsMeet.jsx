@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Race from './Race';
+import Race from './ResultsRace';
 
-export default class RaceMeet extends Component {
+export default class ResultsMeet extends Component {
     /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
@@ -17,9 +17,10 @@ export default class RaceMeet extends Component {
         const raceTips = self.props.meetTips.filter(raceTip => {
             return raceTip.raceId === self.props.selectedRace;
         });
+        let className;
+
         // For each race of the meet passed in via props
-        for (let i = 0; i < self.props.races.length; i++) {
-            let className;
+        for (let i = 0, l = self.props.races.length; i < l; i++) {
             // Select the colour class for the race circles based on the status of the race
             switch (self.props.races[i].status) {
                 case 2: // About To Jump

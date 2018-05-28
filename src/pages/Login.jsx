@@ -51,9 +51,10 @@ export default class Login extends Component {
     /* When the user clicks the 'Log In' button, if the password stored in the state matches the selected users password then call the
        handleLogin function passed from App.js and redirect the user to the Results page, else display the wrong password error */
     handleLoginClick = () => {
-        let punter = this.props.punters.find(punter => {
+        const punter = this.props.punters.find(punter => {
             return punter._id === this.state.user;
         });
+
         if (punter.password === this.state.password) {
             this.setState({
                 wrongPassword: false
@@ -100,10 +101,10 @@ export default class Login extends Component {
         );
 
         // Show the error message if the password is wrong
-        let errorClass = this.state.wrongPassword ? 'error' : 'error hide';
+        const errorClass = this.state.wrongPassword ? 'error' : 'error hide';
 
         // Set focused class on the password label to have it move out of the input, but not go back in if there is a value
-        let labelClass = this.state.focused || this.state.password !== '' ? 'password-label focused' : 'password-label';
+        const labelClass = this.state.focused || this.state.password !== '' ? 'password-label focused' : 'password-label';
 
         return (
             <div className="app">

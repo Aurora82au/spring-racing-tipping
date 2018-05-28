@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import RaceMeetSelector from '../components/RaceMeetSelector';
+import MeetSelector from '../components/MeetSelector';
 import Menu from '../components/Menu';
 
 export default class Admin extends Component {
@@ -199,9 +199,9 @@ export default class Admin extends Component {
         const meetRaces = this.props.races.filter(race => {
             return race.meetId === this.props.selectedMeet;
         });
-        let raceList = [],
-            selections = [],
-            className;
+        let raceList = [];
+        let selections = [];
+        let className;
 
         // For each race in the selected meet
         for (let i = 0, l = meetRaces.length; i < l; i++) {
@@ -318,11 +318,7 @@ export default class Admin extends Component {
                     isAdmin={this.props.isAdmin}
                     text="This is the Administration page used to set placings and race statuses.  In the future you will also be able to set scratchings."
                 />
-                <RaceMeetSelector
-                    meets={this.props.raceMeets}
-                    selectedMeetId={this.props.selectedMeet}
-                    onChange={this.props.onMeetChange}
-                />
+                <MeetSelector meets={this.props.meets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
                 <div className="adminRaceList">{raceList}</div>
                 <Menu path={this.props.path} />
             </div>

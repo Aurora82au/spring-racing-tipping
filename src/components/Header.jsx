@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default class Header extends Component {
@@ -38,87 +38,65 @@ export default class Header extends Component {
     /* Function to render the component */
     render() {
         // Show the user profile pic on every page but the Login page
-        let informationBtn =
-                this.props.page === 'Log In' ? (
-                    ''
-                ) : (
-                    <NavLink
-                        to={this.props.path + 'information'}
-                        key="a"
-                        className="info-icon"
-                        activeClassName="selected">
-                        i
-                    </NavLink>
-                ),
-            logOutOverlay = this.state.showLogOut ? (
-                <div
-                    key="b"
-                    className="overlay"
-                    onClick={this.handleHideLogOutOverlay}>
-                    <button
-                        className="btn"
-                        type="button"
-                        onClick={this.handleLogOut}>
-                        Log Out
-                    </button>
-                </div>
-            ) : (
+        const informationBtn =
+            this.props.page === 'Log In' ? (
                 ''
-            ),
-            user = this.props.punters.find(user => {
-                return user._id === this.props.user;
-            }),
-            profilePic =
-                this.props.page === 'Log In' ? (
-                    ''
-                ) : (
-                    <img
-                        key="c"
-                        className="profile-pic"
-                        src={'pics/' + user.pic}
-                        alt="profile-pic"
-                        onClick={this.handleShowLogOutOverlay}
-                    />
-                );
+            ) : (
+                <NavLink to={this.props.path + 'information'} className="info-icon" activeClassName="selected">
+                    i
+                </NavLink>
+            );
+        const logOutOverlay = this.state.showLogOut ? (
+            <div className="overlay" onClick={this.handleHideLogOutOverlay}>
+                <button className="btn" type="button" onClick={this.handleLogOut}>
+                    Log Out
+                </button>
+            </div>
+        ) : (
+            ''
+        );
+        const user = this.props.punters.find(user => {
+            return user._id === this.props.user;
+        });
+        const profilePic =
+            this.props.page === 'Log In' ? (
+                ''
+            ) : (
+                <img className="profile-pic" src={'pics/' + user.pic} alt="profile-pic" onClick={this.handleShowLogOutOverlay} />
+            );
 
         // Show the admin button only if the user is an admin and it's not the Login page
-        let adminBtn =
+        const adminBtn =
             this.props.isAdmin === true && this.props.page !== 'Log In' ? (
-                <NavLink
-                    to={this.props.path + 'admin'}
-                    key="d"
-                    className="icon-admin"
-                    activeClassName="selected"
-                />
+                <NavLink to={this.props.path + 'admin'} className="icon-admin" activeClassName="selected" />
             ) : (
                 ''
             );
 
         // Show the reload button on every page but the Login page
-        let reloadBtn =
+        const reloadBtn =
             this.props.page !== 'Log In' ? (
-                <button
-                    key="e"
-                    className="reload-btn"
-                    onClick={this.props.onReloadData}>
+                <button className="reload-btn" onClick={this.props.onReloadData}>
                     <span className="icon-reload" />
                 </button>
             ) : (
                 ''
             );
 
-        return [
-            informationBtn,
-            logOutOverlay,
-            profilePic,
-            adminBtn,
-            reloadBtn,
-            <h2 key="f">
-                Spring Racing Tipping <img src="horse.png" alt="Title logo" />
-                <span className="beta">BETA</span>
-            </h2>,
-            <h3 key="g">{this.props.page}</h3>,
-            <p key="h">{this.props.text}</p>
-        ];
+        return (
+            <Fragment>
+                {informationBtn}
+                {logOutOverlay}
+                {profilePic}
+                {adminBtn}
+                {reloadBtn}
+                <h2>
+                    Spring Racing Tipping <img src="horse.png" alt="Title logo" />
+                    <span className="beta">BETA</span>
+                </h2>
+                <h3>{this.props.page}</h3>
+                <p>{this.props.text}</p>
+            </Fragment>
+        );
     }
 }

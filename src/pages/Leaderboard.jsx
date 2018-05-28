@@ -9,22 +9,10 @@ export default class Leaderboard extends Component {
         return !(nextProps === this.props);
     }
 
-    /* Find the particular meet from the tips data */
-    findMeet = thisMeetIndex => {
-        return this.props.tips.find(tipsMeet => {
-            return (
-                tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId
-            );
-        });
-    };
-
-    /* Find the particular race from the tips data  */
-    findRace = (tipMeet, thisMeetIndex, thisRaceIndex) => {
-        return tipMeet.races.find(tipsRace => {
-            return (
-                tipsRace.number ===
-                this.props.raceMeets[thisMeetIndex].races[thisRaceIndex].number
-            );
+    /* Find the tips that belong to the associated punter and race */
+    findTips = (punterId, raceId) => {
+        return this.props.tips.find(tips => {
+            return tips.punterId === punterId && tips.raceId === raceId;
         });
     };
 
@@ -44,16 +32,13 @@ export default class Leaderboard extends Component {
 
     /* Function to calculate each users points, trifectas, quinellas, firsts, seconds and thirds */
     calculatePoints = () => {
-        let points = [],
-            a = this.props.punters.length,
-            b = this.props.raceMeets.length,
-            c,
-            d,
-            placings,
-            tipMeet,
-            tips,
-            puntersPoints,
-            raceScore;
+        let points = [];
+        let a = this.props.punters.length;
+        let b;
+        let placings;
+        let tips;
+        let puntersPoints;
+        let raceScore;
 
         // Load each punter into the points array with a score of 0
         while (a--) {
@@ -68,45 +53,42 @@ export default class Leaderboard extends Component {
             });
         }
 
-        // For each meet
-        while (b--) {
-            c = this.props.raceMeets[b].races.length;
-            // For each race in meet
-            while (c--) {
+        // Reset the length of the punters after the first while loop
+        a = this.props.punters.length;
+
+        // For each punter
+        while (a--) {
+            // Reset the length of the races
+            b = this.props.races.length;
+            // Loop through each race
+            while (b--) {
                 // Set placings to the placings for this race
-                placings = this.props.raceMeets[b].races[c].placings;
-                // Find race meet in tips, and then get the associated tips
-                tipMeet = this.findMeet(b);
-                tips = this.findRace(tipMeet, b, c);
-                d = tips.punters.length;
-                // For each punters tips
-                while (d--) {
-                    raceScore = 0;
-                    puntersPoints = this.findPuntersPoints(
-                        points,
-                        tips.punters[d].punterId
-                    );
-                    if (tips.punters[d].tips.includes(placings.first)) {
-                        puntersPoints.points += 3;
-                        raceScore += 3;
-                        puntersPoints.firsts++;
-                    }
-                    if (tips.punters[d].tips.includes(placings.second)) {
-                        puntersPoints.points += 2;
-                        raceScore += 2;
-                        puntersPoints.seconds++;
-                    }
-                    if (tips.punters[d].tips.includes(placings.third)) {
-                        puntersPoints.points += 1;
-                        raceScore += 1;
-                        puntersPoints.thirds++;
-                    }
-                    if (raceScore === 6) {
-                        puntersPoints.trifectas++;
-                    }
-                    if (raceScore === 5) {
-                        puntersPoints.quinellas++;
-                    }
+                placings = this.props.races[b].placings;
+                // Find the associated tips for this user and race
+                tips = this.findTips(this.props.punters[a]._id, this.props.races[b]._id);
+
+                raceScore = 0;
+                puntersPoints = this.findPuntersPoints(points, this.props.punters[a]._id);
+                if (tips.tips.includes(placings.first)) {
+                    puntersPoints.points += 3;
+                    raceScore += 3;
+                    puntersPoints.firsts++;
+                }
+                if (tips.tips.includes(placings.second)) {
+                    puntersPoints.points += 2;
+                    raceScore += 2;
+                    puntersPoints.seconds++;
+                }
+                if (tips.tips.includes(placings.third)) {
+                    puntersPoints.points += 1;
+                    raceScore += 1;
+                    puntersPoints.thirds++;
+                }
+                if (raceScore === 6) {
+                    puntersPoints.trifectas++;
+                }
+                if (raceScore === 5) {
+                    puntersPoints.quinellas++;
                 }
             }
         }
@@ -116,17 +98,17 @@ export default class Leaderboard extends Component {
 
     /* Function to render the component */
     render() {
-        let points = this.calculatePoints(),
-            oddsList = [],
-            loserList = [],
-            firstThree,
-            topOdds,
-            bottomOdds,
-            first,
-            second,
-            third,
-            punter,
-            position;
+        const points = this.calculatePoints();
+        let oddsList = [];
+        let loserList = [];
+        let firstThree;
+        let topOdds;
+        let bottomOdds;
+        let first;
+        let second;
+        let third;
+        let punter;
+        let position;
 
         // Set '1, 2, 3', Top Odds and Bottom Odds
         firstThree = this.findPunter(points[2].punterId);
@@ -136,11 +118,7 @@ export default class Leaderboard extends Component {
         // Populate the oddsList array
         oddsList.push(
             <div key="a" className="total">
-                <img
-                    src={'pics/' + firstThree.pic}
-                    alt="Profile pic"
-                    className="pic"
-                />
+                <img src={'pics/' + firstThree.pic} alt="Profile pic" className="pic" />
                 <div className="name">
                     {firstThree.name.first} {firstThree.name.last}
                 </div>
@@ -149,11 +127,7 @@ export default class Leaderboard extends Component {
         );
         oddsList.push(
             <div key="b" className="total">
-                <img
-                    src={'pics/' + topOdds.pic}
-                    alt="Profile pic"
-                    className="pic"
-                />
+                <img src={'pics/' + topOdds.pic} alt="Profile pic" className="pic" />
                 <div className="name">
                     {topOdds.name.first} {topOdds.name.last}
                 </div>
@@ -162,11 +136,7 @@ export default class Leaderboard extends Component {
         );
         oddsList.push(
             <div key="c" className="total">
-                <img
-                    src={'pics/' + bottomOdds.pic}
-                    alt="Profile pic"
-                    className="pic"
-                />
+                <img src={'pics/' + bottomOdds.pic} alt="Profile pic" className="pic" />
                 <div className="name">
                     {bottomOdds.name.first} {bottomOdds.name.last}
                 </div>
@@ -196,7 +166,7 @@ export default class Leaderboard extends Component {
         third = this.findPunter(points[2].punterId);
 
         // Generate list of losers
-        for (let i = 0; i < points.length; i++) {
+        for (let i = 0, l = points.length; i < l; i++) {
             // If not the winners
             if (i !== 0 && i !== 1 && i !== 2) {
                 // Get the punter details
@@ -223,11 +193,7 @@ export default class Leaderboard extends Component {
                             }}
                         />
                         <span className="points">{points[i].points} PTS</span>
-                        <img
-                            src={'pics/' + punter.pic}
-                            alt="Profile pic"
-                            className="pic"
-                        />
+                        <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
                         <span className="name">
                             {punter.name.first} {punter.name.last}
                         </span>
@@ -249,12 +215,7 @@ export default class Leaderboard extends Component {
                 />
                 <h4 className="lb-heading">GAME ACCOUNTS</h4>
                 <div className="odds-totals">{oddsList}</div>
-                <Podium
-                    first={first}
-                    second={second}
-                    third={third}
-                    points={points}
-                />
+                <Podium first={first} second={second} third={third} points={points} />
                 <h4 className="lb-heading">BEST OF THE REST</h4>
                 {loserList}
                 <Menu path={this.props.path} />

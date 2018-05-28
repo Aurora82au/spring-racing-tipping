@@ -791,6 +791,9 @@ input.password {
     background-color: #813aff;
     border-color: #813aff;
 }
+.tab-panel hr:first-child {
+    display: none;
+}
 .stat-container {
     display: flex;
     padding-bottom: 2rem;

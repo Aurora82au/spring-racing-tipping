@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class RaceMeetSelector extends Component {
+export default class MeetSelector extends Component {
     /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
@@ -8,11 +8,12 @@ export default class RaceMeetSelector extends Component {
 
     /* Function to render the component */
     render() {
-        let meets = this.props.meets.sort((a, b) => {
-                return a.date.localeCompare(b.date);
-            }), // Sort the race meets by date
-            split,
-            date;
+        // Sort the race meets by date
+        const meets = this.props.meets.sort((a, b) => {
+            return a.date.localeCompare(b.date);
+        });
+        let split;
+        let date;
 
         return (
             <div className="selector">
