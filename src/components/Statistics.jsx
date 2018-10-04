@@ -39,19 +39,14 @@ export default class App extends Component {
     /* Find the particular meet from the tips data */
     findMeet = thisMeetIndex => {
         return this.props.tips.find(tipsMeet => {
-            return (
-                tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId
-            );
+            return tipsMeet.meetId === this.props.raceMeets[thisMeetIndex].meetId;
         });
     };
 
     /* Find the particular race from the tips data  */
     findRace = (tipMeet, thisMeetIndex, thisRaceIndex) => {
         return tipMeet.races.find(tipsRace => {
-            return (
-                tipsRace.number ===
-                this.props.raceMeets[thisMeetIndex].races[thisRaceIndex].number
-            );
+            return tipsRace.number === this.props.raceMeets[thisMeetIndex].races[thisRaceIndex].number;
         });
     };
 
@@ -131,15 +126,9 @@ export default class App extends Component {
                     // Reset the race score
                     raceScore = 0;
                     // Get the current punter's stats from the stats array
-                    puntersStats = this.findPuntersStats(
-                        stats,
-                        tips.punters[d].punterId
-                    );
+                    puntersStats = this.findPuntersStats(stats, tips.punters[d].punterId);
                     // Get the current race meet from the current punter's stats
-                    puntersStatsMeet = this.findPuntersStatsMeet(
-                        puntersStats,
-                        this.props.raceMeets[b].meetId
-                    );
+                    puntersStatsMeet = this.findPuntersStatsMeet(puntersStats, this.props.raceMeets[b].meetId);
                     // Update the stats of that punter
                     if (tips.punters[d].tips.includes(placings.first)) {
                         puntersStats.firsts++;
@@ -213,15 +202,8 @@ export default class App extends Component {
             // Create the stat item and add to the array to update
             arrayToUpdate.push(
                 <div key={i} className="stat-item">
-                    <div
-                        className="number"
-                        dangerouslySetInnerHTML={{ __html: i + 1 + position }}
-                    />
-                    <img
-                        src={'pics/' + punter.pic}
-                        alt="Profile pic"
-                        className="pic"
-                    />
+                    <div className="number" dangerouslySetInnerHTML={{ __html: i + 1 + position }} />
+                    <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
                     <div className="name">{punter.name.first}</div>
                     <div className="stat">{stat}</div>
                 </div>
@@ -232,20 +214,20 @@ export default class App extends Component {
     /* Function to render the component */
     render() {
         let stats = this.calculateStats(),
-            caulGuineasTemp = [],
-            caulCupTemp = [],
-            coxPlateTemp = [],
-            derbyDayTemp = [],
-            melbCupTemp = [],
-            oaksDayTemp = [],
-            stakesDayTemp = [],
-            caulGuineas = [],
-            caulCup = [],
-            coxPlate = [],
-            derbyDay = [],
-            melbCup = [],
-            oaksDay = [],
-            stakesDay = [],
+            turnbullTemp = [],
+            // caulCupTemp = [],
+            // coxPlateTemp = [],
+            // derbyDayTemp = [],
+            // melbCupTemp = [],
+            // oaksDayTemp = [],
+            // stakesDayTemp = [],
+            turnbull = [],
+            // caulCup = [],
+            // coxPlate = [],
+            // derbyDay = [],
+            // melbCup = [],
+            // oaksDay = [],
+            // stakesDay = [],
             trifectas = [],
             quinellas = [],
             firsts = [],
@@ -272,106 +254,106 @@ export default class App extends Component {
         // Populate each of the temporary meet arrays with each punters score for that meet
         for (let i = 0, len = stats.length; i < len; i++) {
             for (let j = 0, leng = stats[i].meets.length; j < leng; j++) {
-                if (stats[i].meets[j].meetId === 'CAULGUINEAS') {
-                    caulGuineasTemp.push({
+                if (stats[i].meets[j].meetId === 'TURNBULL') {
+                    turnbullTemp.push({
                         punterId: stats[i].punterId,
                         score: stats[i].meets[j].score
                     });
                 }
-                if (stats[i].meets[j].meetId === 'CAULCUP') {
-                    caulCupTemp.push({
-                        punterId: stats[i].punterId,
-                        score: stats[i].meets[j].score
-                    });
-                }
-                if (stats[i].meets[j].meetId === 'COXPLATE') {
-                    coxPlateTemp.push({
-                        punterId: stats[i].punterId,
-                        score: stats[i].meets[j].score
-                    });
-                }
-                if (stats[i].meets[j].meetId === 'DERBYDAY') {
-                    derbyDayTemp.push({
-                        punterId: stats[i].punterId,
-                        score: stats[i].meets[j].score
-                    });
-                }
-                if (stats[i].meets[j].meetId === 'MELBCUP') {
-                    melbCupTemp.push({
-                        punterId: stats[i].punterId,
-                        score: stats[i].meets[j].score
-                    });
-                }
-                if (stats[i].meets[j].meetId === 'OAKSDAY') {
-                    oaksDayTemp.push({
-                        punterId: stats[i].punterId,
-                        score: stats[i].meets[j].score
-                    });
-                }
-                if (stats[i].meets[j].meetId === 'STAKESDAY') {
-                    stakesDayTemp.push({
-                        punterId: stats[i].punterId,
-                        score: stats[i].meets[j].score
-                    });
-                }
+                // if (stats[i].meets[j].meetId === 'CAULCUP') {
+                //     caulCupTemp.push({
+                //         punterId: stats[i].punterId,
+                //         score: stats[i].meets[j].score
+                //     });
+                // }
+                // if (stats[i].meets[j].meetId === 'COXPLATE') {
+                //     coxPlateTemp.push({
+                //         punterId: stats[i].punterId,
+                //         score: stats[i].meets[j].score
+                //     });
+                // }
+                // if (stats[i].meets[j].meetId === 'DERBYDAY') {
+                //     derbyDayTemp.push({
+                //         punterId: stats[i].punterId,
+                //         score: stats[i].meets[j].score
+                //     });
+                // }
+                // if (stats[i].meets[j].meetId === 'MELBCUP') {
+                //     melbCupTemp.push({
+                //         punterId: stats[i].punterId,
+                //         score: stats[i].meets[j].score
+                //     });
+                // }
+                // if (stats[i].meets[j].meetId === 'OAKSDAY') {
+                //     oaksDayTemp.push({
+                //         punterId: stats[i].punterId,
+                //         score: stats[i].meets[j].score
+                //     });
+                // }
+                // if (stats[i].meets[j].meetId === 'STAKESDAY') {
+                //     stakesDayTemp.push({
+                //         punterId: stats[i].punterId,
+                //         score: stats[i].meets[j].score
+                //     });
+                // }
             }
         }
 
         // Sort punters in descending order by their score in the Caulfield Guineas
-        caulGuineasTemp.sort((a, b) => {
+        turnbullTemp.sort((a, b) => {
             return b.score - a.score;
         });
 
         // Create list of punters for the Caulfield Guineas
-        this.createStatArray(caulGuineasTemp, caulGuineas, 'meet');
+        this.createStatArray(turnbullTemp, turnbull, 'meet');
 
         // Sort punters in descending order by their score in the Caulfield Cup
-        caulCupTemp.sort((a, b) => {
-            return b.score - a.score;
-        });
+        // caulCupTemp.sort((a, b) => {
+        //     return b.score - a.score;
+        // });
 
         // Create list of punters for the Caulfield Cup
-        this.createStatArray(caulCupTemp, caulCup, 'meet');
+        // this.createStatArray(caulCupTemp, caulCup, 'meet');
 
         // Sort punters in descending order by their score in the Cox Plate
-        coxPlateTemp.sort((a, b) => {
-            return b.score - a.score;
-        });
+        // coxPlateTemp.sort((a, b) => {
+        //     return b.score - a.score;
+        // });
 
         // Create list of punters for the Cox Plate
-        this.createStatArray(coxPlateTemp, coxPlate, 'meet');
+        // this.createStatArray(coxPlateTemp, coxPlate, 'meet');
 
         // Sort punters in descending order by their score in the Derby Day
-        derbyDayTemp.sort((a, b) => {
-            return b.score - a.score;
-        });
+        // derbyDayTemp.sort((a, b) => {
+        //     return b.score - a.score;
+        // });
 
         // Create list of punters for the Derby Day
-        this.createStatArray(derbyDayTemp, derbyDay, 'meet');
+        // this.createStatArray(derbyDayTemp, derbyDay, 'meet');
 
         // Sort punters in descending order by their score in the Melbourne Cup
-        melbCupTemp.sort((a, b) => {
-            return b.score - a.score;
-        });
+        // melbCupTemp.sort((a, b) => {
+        //     return b.score - a.score;
+        // });
 
         // Create list of punters for the Melbourne Cup
-        this.createStatArray(melbCupTemp, melbCup, 'meet');
+        // this.createStatArray(melbCupTemp, melbCup, 'meet');
 
         // Sort punters in descending order by their score in the Oaks Day
-        oaksDayTemp.sort((a, b) => {
-            return b.score - a.score;
-        });
+        // oaksDayTemp.sort((a, b) => {
+        //     return b.score - a.score;
+        // });
 
         // Create list of punters for the Oaks Day
-        this.createStatArray(oaksDayTemp, oaksDay, 'meet');
+        // this.createStatArray(oaksDayTemp, oaksDay, 'meet');
 
         // Sort punters in descending order by their score in the Stakes Day
-        stakesDayTemp.sort((a, b) => {
-            return b.score - a.score;
-        });
+        // stakesDayTemp.sort((a, b) => {
+        //     return b.score - a.score;
+        // });
 
         // Create list of punters for the Stakes Day
-        this.createStatArray(stakesDayTemp, stakesDay, 'meet');
+        // this.createStatArray(stakesDayTemp, stakesDay, 'meet');
 
         // Sort punters in descending order by trifectas
         stats.sort((a, b) => {
@@ -425,21 +407,17 @@ export default class App extends Component {
                     text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc."
                 />
                 <div className="tab-btns">
-                    <button
-                        className={tabBtn1Class}
-                        onClick={this.handleTabClick}>
+                    <button className={tabBtn1Class} onClick={this.handleTabClick}>
                         Meet Scores
                     </button>
-                    <button
-                        className={tabBtn2Class}
-                        onClick={this.handleTabClick}>
+                    <button className={tabBtn2Class} onClick={this.handleTabClick}>
                         Other
                     </button>
                 </div>
                 <div className={tab1Class}>
-                    <div className="bold mt-20 mb-10">Caulfield Guineas</div>
-                    <div className="stat-container">{caulGuineas}</div>
-                    <hr />
+                    <div className="bold mt-20 mb-10">Turnbull Stakes</div>
+                    <div className="stat-container">{turnbull}</div>
+                    {/* <hr />
                     <div className="bold mt-20 mb-10">Caulfield Cup</div>
                     <div className="stat-container">{caulCup}</div>
                     <hr />
@@ -456,7 +434,7 @@ export default class App extends Component {
                     <div className="stat-container">{oaksDay}</div>
                     <hr />
                     <div className="bold mt-20 mb-10">Stakes Day</div>
-                    <div className="stat-container">{stakesDay}</div>
+                    <div className="stat-container">{stakesDay}</div> */}
                 </div>
                 <div className={tab2Class}>
                     <div className="bold mt-20 mb-10">Trifectas</div>

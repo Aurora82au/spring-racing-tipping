@@ -21,17 +21,17 @@ export default class App extends Component {
             authenticated: false,
             user: 0,
             isAdmin: false,
-            selectedMeet: 'CAULGUINEAS',
+            selectedMeet: 'TURNBULL',
             selectedRace: 1,
             selectedTab: 1
-        }
+        };
         // this.databaseURL = 'http://localhost:3001'; // Local
         this.databaseURL = 'https://sleepy-harbor-88560.herokuapp.com'; // Heroku
-        
+
         this.path = '/'; // Local
-        // this.path = '/spring-racing-tipping/'; // Github
+        //this.path = '/spring-racing-tipping/'; // Github
     }
-    
+
     /* Determines whether React should re-render the component, in this case if the new state is different from the current state */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextState === this.state);
@@ -55,22 +55,25 @@ export default class App extends Component {
             // });
 
             // Used for data coming from database
-            axios.all([
-                axios.get(this.databaseURL + '/racemeets'),
-                axios.get(this.databaseURL + '/punters'),
-                axios.get(this.databaseURL + '/tips')
-            ]).then(axios.spread(function (meets, punters, tips) {
-                    self.setState({
-                        raceMeets: meets.data,
-                        punters: punters.data,
-                        tips: tips.data
-                    });
-                })
-            ).catch(function (e) {
-               console.log('An Axios error occurred: ' + e);
-            });
-        }
-        catch (e) {
+            axios
+                .all([
+                    axios.get(this.databaseURL + '/racemeets'),
+                    axios.get(this.databaseURL + '/punters'),
+                    axios.get(this.databaseURL + '/tips')
+                ])
+                .then(
+                    axios.spread(function(meets, punters, tips) {
+                        self.setState({
+                            raceMeets: meets.data,
+                            punters: punters.data,
+                            tips: tips.data
+                        });
+                    })
+                )
+                .catch(function(e) {
+                    console.log('An Axios error occurred: ' + e);
+                });
+        } catch (e) {
             console.log('An error occurred: ' + e);
         }
     }
@@ -85,7 +88,7 @@ export default class App extends Component {
                 authenticated: true,
                 user: parseInt(localStorage.getItem('user'), 10),
                 isAdmin: localStorage.getItem('isAdmin') === 'true',
-                selectedMeet: localStorage.getItem('selectedMeet') || 'CAULGUINEAS'
+                selectedMeet: localStorage.getItem('selectedMeet') || 'TURNBULL'
             });
         }
     }
@@ -101,12 +104,12 @@ export default class App extends Component {
         // Set the localStorage for the logged in user
         localStorage.setItem('user', user);
         localStorage.setItem('isAdmin', isAdmin);
-    }
+    };
 
     /* When the user clicks the reload button, request the data again */
     handleReloadData = () => {
         this.getData();
-    }
+    };
 
     /* When the user selects a race meet, update the state and save to localStorage */
     handleMeetSelect = event => {
@@ -115,53 +118,58 @@ export default class App extends Component {
             selectedRace: 1
         });
         localStorage.setItem('selectedMeet', event.target.value);
-    }
+    };
 
     /* When the user selects a race on the Results page, update the state */
     handleRaceSelect = event => {
         this.setState({
             selectedRace: parseInt(event.target.id, 10)
         });
-    }
+    };
 
     /* When the user selects a tab on the Statistics page, update the state */
     handleTabSelect = tab => {
         this.setState({
             selectedTab: tab
         });
-    }
+    };
 
     /* When the user selects a tip on the Tips page, get an updated copy of the tips from the database
        then update it, save back to the database and update the state */
     handleSaveTips = (modifiedRace, modifiedTips) => {
-        axios.get(this.databaseURL + '/tips')
-            .then(returnedTips => {
-                let tips = this.state.tips,
-                    tipsMeet = returnedTips.data.find(meet => { return meet.meetId === this.state.selectedMeet }),
-                    punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => { return punter.punterId === this.state.user }),
-                    meetIndex = returnedTips.data.indexOf(tipsMeet),
-                    punterIndex = returnedTips.data[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
-    
-                // Update the tips for the selected meet/race
-                tipsMeet.races[modifiedRace - 1].punters[punterIndex].tips = modifiedTips.selections;
-        
-                // Insert the updated meet back into the tips array
-                tips[meetIndex] = tipsMeet;
-        
-                // Send the updated tips to the database
-                axios.put(this.databaseURL + '/tips/' + this.state.selectedMeet, tipsMeet);
-        
-                // Update the local state with the updated tips array
-                this.setState({
-                    tips: tips
-                });
+        axios.get(this.databaseURL + '/tips').then(returnedTips => {
+            let tips = this.state.tips,
+                tipsMeet = returnedTips.data.find(meet => {
+                    return meet.meetId === this.state.selectedMeet;
+                }),
+                punter = tipsMeet.races[modifiedRace - 1].punters.find(punter => {
+                    return punter.punterId === this.state.user;
+                }),
+                meetIndex = returnedTips.data.indexOf(tipsMeet),
+                punterIndex = returnedTips.data[meetIndex].races[modifiedRace - 1].punters.indexOf(punter);
+
+            // Update the tips for the selected meet/race
+            tipsMeet.races[modifiedRace - 1].punters[punterIndex].tips = modifiedTips.selections;
+
+            // Insert the updated meet back into the tips array
+            tips[meetIndex] = tipsMeet;
+
+            // Send the updated tips to the database
+            axios.put(this.databaseURL + '/tips/' + this.state.selectedMeet, tipsMeet);
+
+            // Update the local state with the updated tips array
+            this.setState({
+                tips: tips
             });
-    }
+        });
+    };
 
     /* When the user clicks Save for placings on the Admin page, save to the database and update the state */
     handleSavePlacings = (modifiedRace, modifiedPlacings) => {
         let raceMeets = this.state.raceMeets,
-            meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
+            meet = raceMeets.find(meet => {
+                return meet.meetId === this.state.selectedMeet;
+            }),
             meetIndex = raceMeets.indexOf(meet);
 
         // Update the placings for the selected meet/race
@@ -177,17 +185,19 @@ export default class App extends Component {
         this.setState({
             raceMeets: raceMeets
         });
-    }
+    };
 
     /* When the user selects a race status on the Admin page, save to the database and update the state */
     handleSaveStatus = event => {
         let raceMeets = this.state.raceMeets,
-            meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
+            meet = raceMeets.find(meet => {
+                return meet.meetId === this.state.selectedMeet;
+            }),
             meetIndex = raceMeets.indexOf(meet);
 
         // Update the placings for the selected meet/race
         meet.races[event.target.getAttribute('data-race') - 1].status = event.target.getAttribute('data-status');
-        
+
         // Insert the updated meet back into the raceMeets array
         raceMeets[meetIndex] = meet;
 
@@ -198,17 +208,19 @@ export default class App extends Component {
         this.setState({
             raceMeets: raceMeets
         });
-    }
+    };
 
     /* When the user selects a scratching on the Admin page, save to the database and update the state */
     handleSaveScratchings = (modifiedRace, modifiedScratchings) => {
         let raceMeets = this.state.raceMeets,
-            meet = raceMeets.find(meet => { return meet.meetId === this.state.selectedMeet }),
+            meet = raceMeets.find(meet => {
+                return meet.meetId === this.state.selectedMeet;
+            }),
             meetIndex = raceMeets.indexOf(meet);
 
         // Update the placings for the selected meet/race
         meet.races[modifiedRace - 1].scratchings = modifiedScratchings;
-        
+
         // Insert the updated meet back into the raceMeets array
         raceMeets[meetIndex] = meet;
 
@@ -219,7 +231,7 @@ export default class App extends Component {
         this.setState({
             raceMeets: raceMeets
         });
-    }
+    };
 
     /* Function to render the component */
     render() {
@@ -229,29 +241,164 @@ export default class App extends Component {
                 <Router>
                     <ScrollToTop>
                         <Switch>
-                            <Route exact path={this.path + 'login'} render={routeProps => <Login {...routeProps} path={this.path} punters={this.state.punters} handleLogin={this.handleLogin} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} />} />
-                            <Route exact path={this.path + 'admin'} render={routeProps => (this.state.authenticated && this.state.isAdmin) ? <Admin {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onPlacingsChange={this.handleSavePlacings} onStatusChange={this.handleSaveStatus} onScratchingChange={this.handleSaveScratchings} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                            <Route exact path={this.path + 'information'} render={routeProps => this.state.authenticated ? <Information {...routeProps} path={this.path} punters={this.state.punters} onReloadData={this.handleReloadData} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                            <Route exact path={this.path + 'statistics'} render={routeProps => this.state.authenticated ? <Statistics {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedTab={this.state.selectedTab} onTabSelect={this.handleTabSelect} onReloadData={this.handleReloadData} authenticated={this.state.authenticated} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                            <Route exact path={this.path + 'tips'} render={routeProps => this.state.authenticated ? <Tips {...routeProps} path={this.path} raceMeets={this.state.raceMeets} tips={this.state.tips} punters={this.state.punters} selectedMeet={this.state.selectedMeet} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onSelectionChange={this.handleSaveTips} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                            <Route exact path={this.path + 'results'} render={routeProps => this.state.authenticated ? <Results {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} selectedMeet={this.state.selectedMeet} selectedRace={this.state.selectedRace} onReloadData={this.handleReloadData} onMeetChange={this.handleMeetSelect} onRaceChange={this.handleRaceSelect} user={this.state.user} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                            <Route exact path={this.path + 'leaderboard'} render={routeProps => this.state.authenticated ? <Leaderboard {...routeProps} path={this.path} raceMeets={this.state.raceMeets} punters={this.state.punters} tips={this.state.tips} user={this.state.user} onReloadData={this.handleReloadData} isAdmin={this.state.isAdmin} /> : <Redirect to={this.path + 'login'} />} />
-                            <Redirect from='/' to={this.path + 'results'} />
+                            <Route
+                                exact
+                                path={this.path + 'login'}
+                                render={routeProps => (
+                                    <Login
+                                        {...routeProps}
+                                        path={this.path}
+                                        punters={this.state.punters}
+                                        handleLogin={this.handleLogin}
+                                        authenticated={this.state.authenticated}
+                                        user={this.state.user}
+                                        isAdmin={this.state.isAdmin}
+                                    />
+                                )}
+                            />
+                            <Route
+                                exact
+                                path={this.path + 'admin'}
+                                render={routeProps =>
+                                    this.state.authenticated && this.state.isAdmin ? (
+                                        <Admin
+                                            {...routeProps}
+                                            path={this.path}
+                                            raceMeets={this.state.raceMeets}
+                                            punters={this.state.punters}
+                                            selectedMeet={this.state.selectedMeet}
+                                            onReloadData={this.handleReloadData}
+                                            onMeetChange={this.handleMeetSelect}
+                                            onPlacingsChange={this.handleSavePlacings}
+                                            onStatusChange={this.handleSaveStatus}
+                                            onScratchingChange={this.handleSaveScratchings}
+                                            user={this.state.user}
+                                            isAdmin={this.state.isAdmin}
+                                        />
+                                    ) : (
+                                        <Redirect to={this.path + 'login'} />
+                                    )
+                                }
+                            />
+                            <Route
+                                exact
+                                path={this.path + 'information'}
+                                render={routeProps =>
+                                    this.state.authenticated ? (
+                                        <Information
+                                            {...routeProps}
+                                            path={this.path}
+                                            punters={this.state.punters}
+                                            onReloadData={this.handleReloadData}
+                                            authenticated={this.state.authenticated}
+                                            user={this.state.user}
+                                            isAdmin={this.state.isAdmin}
+                                        />
+                                    ) : (
+                                        <Redirect to={this.path + 'login'} />
+                                    )
+                                }
+                            />
+                            <Route
+                                exact
+                                path={this.path + 'statistics'}
+                                render={routeProps =>
+                                    this.state.authenticated ? (
+                                        <Statistics
+                                            {...routeProps}
+                                            path={this.path}
+                                            raceMeets={this.state.raceMeets}
+                                            punters={this.state.punters}
+                                            tips={this.state.tips}
+                                            selectedTab={this.state.selectedTab}
+                                            onTabSelect={this.handleTabSelect}
+                                            onReloadData={this.handleReloadData}
+                                            authenticated={this.state.authenticated}
+                                            user={this.state.user}
+                                            isAdmin={this.state.isAdmin}
+                                        />
+                                    ) : (
+                                        <Redirect to={this.path + 'login'} />
+                                    )
+                                }
+                            />
+                            <Route
+                                exact
+                                path={this.path + 'tips'}
+                                render={routeProps =>
+                                    this.state.authenticated ? (
+                                        <Tips
+                                            {...routeProps}
+                                            path={this.path}
+                                            raceMeets={this.state.raceMeets}
+                                            tips={this.state.tips}
+                                            punters={this.state.punters}
+                                            selectedMeet={this.state.selectedMeet}
+                                            onReloadData={this.handleReloadData}
+                                            onMeetChange={this.handleMeetSelect}
+                                            onSelectionChange={this.handleSaveTips}
+                                            user={this.state.user}
+                                            isAdmin={this.state.isAdmin}
+                                        />
+                                    ) : (
+                                        <Redirect to={this.path + 'login'} />
+                                    )
+                                }
+                            />
+                            <Route
+                                exact
+                                path={this.path + 'results'}
+                                render={routeProps =>
+                                    this.state.authenticated ? (
+                                        <Results
+                                            {...routeProps}
+                                            path={this.path}
+                                            raceMeets={this.state.raceMeets}
+                                            punters={this.state.punters}
+                                            tips={this.state.tips}
+                                            selectedMeet={this.state.selectedMeet}
+                                            selectedRace={this.state.selectedRace}
+                                            onReloadData={this.handleReloadData}
+                                            onMeetChange={this.handleMeetSelect}
+                                            onRaceChange={this.handleRaceSelect}
+                                            user={this.state.user}
+                                            isAdmin={this.state.isAdmin}
+                                        />
+                                    ) : (
+                                        <Redirect to={this.path + 'login'} />
+                                    )
+                                }
+                            />
+                            <Route
+                                exact
+                                path={this.path + 'leaderboard'}
+                                render={routeProps =>
+                                    this.state.authenticated ? (
+                                        <Leaderboard
+                                            {...routeProps}
+                                            path={this.path}
+                                            raceMeets={this.state.raceMeets}
+                                            punters={this.state.punters}
+                                            tips={this.state.tips}
+                                            user={this.state.user}
+                                            onReloadData={this.handleReloadData}
+                                            isAdmin={this.state.isAdmin}
+                                        />
+                                    ) : (
+                                        <Redirect to={this.path + 'login'} />
+                                    )
+                                }
+                            />
+                            <Redirect from="/" to={this.path + 'results'} />
                         </Switch>
                     </ScrollToTop>
                 </Router>
             );
-        }
-        else {
-            return <div></div>;
+        } else {
+            return <div />;
         }
     }
 }
-
-
-
-
-
 
 // Use to time functions
 
