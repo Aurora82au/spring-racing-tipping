@@ -23,13 +23,17 @@ export default class App extends Component {
             isAdmin: false,
             selectedMeet: 'TURNBULL',
             selectedRace: 1,
-            selectedTab: 1
+            selectedTab: 1,
+            appLoadFailed: false,
+            counter: 0
         };
         // this.databaseURL = 'http://localhost:3001'; // Local
         this.databaseURL = 'https://sleepy-harbor-88560.herokuapp.com'; // Heroku
 
         this.path = '/'; // Local
         //this.path = '/spring-racing-tipping/'; // Github
+
+        this.counterInterval = null;
     }
 
     /* Determines whether React should re-render the component, in this case if the new state is different from the current state */
@@ -91,6 +95,26 @@ export default class App extends Component {
                 selectedMeet: localStorage.getItem('selectedMeet') || 'TURNBULL'
             });
         }
+        // Start 30sec timer to check if app loaded
+        setTimeout(() => {
+            if (!this.state.punters.length) {
+                this.setState({
+                    appLoadFailed: true
+                });
+            }
+        }, 30000);
+        this.counterInterval = setInterval(() => {
+            if (!this.state.punters.length) {
+                const count = this.state.counter;
+                const newCount = count + 1;
+                this.setState({
+                    counter: newCount
+                });
+            }
+            else {
+                clearInterval(this.counterInterval);
+            }
+        }, 1000);
     }
 
     /* When the user logs in set the state and store them in localStorage */
@@ -394,8 +418,23 @@ export default class App extends Component {
                     </ScrollToTop>
                 </Router>
             );
+        } else if (this.state.appLoadFailed) {
+            return (
+                <div className="timeout-msg">
+                    <img src="steve.gif" alt="Steve Harvey - What's wrong withchu?" />
+                    <p>It seems like something has gone wrong with the database...</p>
+                    <p>Curse you free Heroku account!</p>
+                    <p>*shakes fist at the sky*</p>
+                </div>
+            );
         } else {
-            return <div />;
+            return (
+                <div className="loading-msg">
+                    <img src="cat.gif" alt="Cat swinging its tail" />
+                    <div className="text">LOADING...</div>
+                    <div>{this.state.counter} seconds</div>
+                </div>
+            );
         }
     }
 }

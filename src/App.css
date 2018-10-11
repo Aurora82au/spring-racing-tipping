@@ -1,7 +1,7 @@
 /* General */
 
 /* Used when hiding things like profile pics while at work - START */
-/* h2, .profile-pic, .tip .pic, .odds-totals .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic {
+/* h2, .profile-pic, .tip .pic, .odds-totals .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic, .menu .icon {
     display: none !important;
 }
 .icon-admin {
@@ -75,6 +75,45 @@ div.bg-green, div.bg-orange, div.bg-red {
 .back .btn img {
     width: 10rem;
     margin: 0;
+}
+
+.loading-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8.5rem;
+    margin-left: -5rem;
+}
+
+.loading-msg img {
+    display: block;
+    width: 10rem;
+}
+
+.loading-msg .text {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.timeout-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 32rem;
+    margin-top: -15rem;
+    margin-left: -16rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.timeout-msg img {
+    display: block;
+    width: 30rem;
+}
+
+.timeout-msg p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 
 .app {
@@ -163,8 +202,8 @@ h2 img {
 
 .profile-pic {
     position: absolute;
-    top: 0.5rem;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -177,8 +216,8 @@ h2 img {
 
 .info-icon {
     position: absolute;
-    top: 0.5rem;
-    right: 4rem;
+    top: 1rem;
+    right: 5rem;
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
@@ -194,8 +233,8 @@ h2 img {
 .reload-btn,
 .icon-admin {
     position: absolute;
-    top: 4.5rem;
-    right: 0;
+    top: 5.5rem;
+    right: 1rem;
     width: 3rem;
     height: 3rem;
     padding: 0.5rem 0.6rem 0.2rem;
@@ -217,7 +256,7 @@ h2 img {
 }
 
 .icon-admin {
-    right: 4rem;
+    right: 5rem;
     padding: 0.5rem 0.6rem 0.7rem;
     background-color: #fff;
 }
@@ -918,6 +957,15 @@ input.password {
 /***** Media Queries *****/
 
 @media (min-width: 360px) {
+    .timeout-msg {
+        max-width: 36rem;
+        margin-left: -18rem;
+    }
+    
+    .timeout-msg img {
+        width: 34rem;
+    }
+
     h2 {
         font-size: 1.8rem;
     }
@@ -942,6 +990,14 @@ input.password {
 }
 
 @media (min-width: 375px) {
+    .timeout-msg {
+        max-width: 37rem;
+        margin-left: -18.5rem;
+    }
+    
+    .timeout-msg img {
+        width: 35rem;
+    }
     .race-selector .circle {
         margin-right: 0.6rem;
     }
@@ -977,8 +1033,8 @@ input.password {
 
 @media (min-width: 410px) {
     .icon-admin {
-        top: 0.5rem;
-        right: 8rem;
+        top: 1rem;
+        right: 9rem;
     }
 
     .race-selector .circle {
