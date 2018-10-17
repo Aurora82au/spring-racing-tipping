@@ -18,6 +18,7 @@ export default class Information extends Component {
                     punters={this.props.punters}
                     user={this.props.user}
                     onReloadData={this.props.onReloadData}
+                    loadingData={this.props.loadingData}
                     isAdmin={this.props.isAdmin}
                     text="This is where you can find a run down of how each of the pages of this app work, as well as the browser support and what some of the ideas for the future are."
                 />

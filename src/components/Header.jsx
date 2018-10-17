@@ -95,11 +95,12 @@ export default class Header extends Component {
             );
 
         // Show the reload button on every page but the Login page
+        const reloadClass = this.props.loadingData ? 'reload-btn loading' : 'reload-btn';
         let reloadBtn =
             this.props.page !== 'Log In' ? (
                 <button
                     key="e"
-                    className="reload-btn"
+                    className={reloadClass}
                     onClick={this.props.onReloadData}>
                     <span className="icon-reload" />
                 </button>

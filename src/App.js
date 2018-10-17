@@ -25,6 +25,7 @@ export default class App extends Component {
             selectedRace: 1,
             selectedTab: 1,
             appLoadFailed: false,
+            loadingData: false,
             counter: 0
         };
         // this.databaseURL = 'http://localhost:3001'; // Local
@@ -45,6 +46,9 @@ export default class App extends Component {
     async getData() {
         var self = this;
         try {
+            self.setState({
+                loadingData: true
+            });
             // Used for local JSON files
             // let raceMeetResponse = await fetch(this.path + 'raceMeets.json'),
             //     meets = await raceMeetResponse.json(),
@@ -70,15 +74,22 @@ export default class App extends Component {
                         self.setState({
                             raceMeets: meets.data,
                             punters: punters.data,
-                            tips: tips.data
+                            tips: tips.data,
+                            loadingData: false
                         });
                     })
                 )
                 .catch(function(e) {
                     console.log('An Axios error occurred: ' + e);
+                    self.setState({
+                        loadingData: false
+                    });
                 });
         } catch (e) {
             console.log('An error occurred: ' + e);
+            self.setState({
+                loadingData: false
+            });
         }
     }
 
@@ -292,6 +303,7 @@ export default class App extends Component {
                                             punters={this.state.punters}
                                             selectedMeet={this.state.selectedMeet}
                                             onReloadData={this.handleReloadData}
+                                            loadingData={this.state.loadingData}
                                             onMeetChange={this.handleMeetSelect}
                                             onPlacingsChange={this.handleSavePlacings}
                                             onStatusChange={this.handleSaveStatus}
@@ -314,6 +326,7 @@ export default class App extends Component {
                                             path={this.path}
                                             punters={this.state.punters}
                                             onReloadData={this.handleReloadData}
+                                            loadingData={this.state.loadingData}
                                             authenticated={this.state.authenticated}
                                             user={this.state.user}
                                             isAdmin={this.state.isAdmin}
@@ -337,6 +350,7 @@ export default class App extends Component {
                                             selectedTab={this.state.selectedTab}
                                             onTabSelect={this.handleTabSelect}
                                             onReloadData={this.handleReloadData}
+                                            loadingData={this.state.loadingData}
                                             authenticated={this.state.authenticated}
                                             user={this.state.user}
                                             isAdmin={this.state.isAdmin}
@@ -359,6 +373,7 @@ export default class App extends Component {
                                             punters={this.state.punters}
                                             selectedMeet={this.state.selectedMeet}
                                             onReloadData={this.handleReloadData}
+                                            loadingData={this.state.loadingData}
                                             onMeetChange={this.handleMeetSelect}
                                             onSelectionChange={this.handleSaveTips}
                                             user={this.state.user}
@@ -383,6 +398,7 @@ export default class App extends Component {
                                             selectedMeet={this.state.selectedMeet}
                                             selectedRace={this.state.selectedRace}
                                             onReloadData={this.handleReloadData}
+                                            loadingData={this.state.loadingData}
                                             onMeetChange={this.handleMeetSelect}
                                             onRaceChange={this.handleRaceSelect}
                                             user={this.state.user}
@@ -406,6 +422,7 @@ export default class App extends Component {
                                             tips={this.state.tips}
                                             user={this.state.user}
                                             onReloadData={this.handleReloadData}
+                                            loadingData={this.state.loadingData}
                                             isAdmin={this.state.isAdmin}
                                         />
                                     ) : (

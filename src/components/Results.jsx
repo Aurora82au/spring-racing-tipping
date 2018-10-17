@@ -27,6 +27,7 @@ export default class Results extends Component {
                     punters={this.props.punters}
                     user={this.props.user}
                     onReloadData={this.props.onReloadData}
+                    loadingData={this.props.loadingData}
                     isAdmin={this.props.isAdmin}
                     text="This is where you can see the results of the hours of peoples research, strategy and rumination....before they just picked a number because they liked the jockey's pink star-spangled uniform."
                 />

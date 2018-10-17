@@ -244,6 +244,7 @@ export default class Leaderboard extends Component {
                     punters={this.props.punters}
                     user={this.props.user}
                     onReloadData={this.props.onReloadData}
+                    loadingData={this.props.loadingData}
                     isAdmin={this.props.isAdmin}
                     text="To the victors go the spoils, and to the losers....go home."
                 />

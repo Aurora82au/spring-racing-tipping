@@ -403,6 +403,7 @@ export default class App extends Component {
                     punters={this.props.punters}
                     user={this.props.user}
                     onReloadData={this.props.onReloadData}
+                    loadingData={this.props.loadingData}
                     isAdmin={this.props.isAdmin}
                     text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc."
                 />
