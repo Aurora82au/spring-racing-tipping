@@ -216,14 +216,14 @@ export default class App extends Component {
         let stats = this.calculateStats(),
             turnbullTemp = [],
             guineasTemp = [],
-            // coxPlateTemp = [],
+            caulCupTemp = [],
             // derbyDayTemp = [],
             // melbCupTemp = [],
             // oaksDayTemp = [],
             // stakesDayTemp = [],
             turnbull = [],
             guineas = [],
-            // coxPlate = [],
+            caulCup = [],
             // derbyDay = [],
             // melbCup = [],
             // oaksDay = [],
@@ -266,12 +266,12 @@ export default class App extends Component {
                         score: stats[i].meets[j].score
                     });
                 }
-                // if (stats[i].meets[j].meetId === 'COXPLATE') {
-                //     coxPlateTemp.push({
-                //         punterId: stats[i].punterId,
-                //         score: stats[i].meets[j].score
-                //     });
-                // }
+                if (stats[i].meets[j].meetId === 'CAULCUP') {
+                    caulCupTemp.push({
+                        punterId: stats[i].punterId,
+                        score: stats[i].meets[j].score
+                    });
+                }
                 // if (stats[i].meets[j].meetId === 'DERBYDAY') {
                 //     derbyDayTemp.push({
                 //         punterId: stats[i].punterId,
@@ -315,13 +315,13 @@ export default class App extends Component {
         // Create list of punters for the Caulfield Cup
         this.createStatArray(guineasTemp, guineas, 'meet');
 
-        // Sort punters in descending order by their score in the Cox Plate
-        // coxPlateTemp.sort((a, b) => {
-        //     return b.score - a.score;
-        // });
+        // Sort punters in descending order by their score in the Caulfield Cup
+        caulCupTemp.sort((a, b) => {
+            return b.score - a.score;
+        });
 
         // Create list of punters for the Cox Plate
-        // this.createStatArray(coxPlateTemp, coxPlate, 'meet');
+        this.createStatArray(caulCupTemp, caulCup, 'meet');
 
         // Sort punters in descending order by their score in the Derby Day
         // derbyDayTemp.sort((a, b) => {
@@ -421,10 +421,10 @@ export default class App extends Component {
                     <hr />
                     <div className="bold mt-20 mb-10">Caulfield Guineas</div>
                     <div className="stat-container">{guineas}</div>
-                    {/* <hr />
-                    <div className="bold mt-20 mb-10">Cox Plate</div>
-                    <div className="stat-container">{coxPlate}</div>
                     <hr />
+                    <div className="bold mt-20 mb-10">Caulfield Cup</div>
+                    <div className="stat-container">{caulCup}</div>
+                    {/* <hr />
                     <div className="bold mt-20 mb-10">Derby Day</div>
                     <div className="stat-container">{derbyDay}</div>
                     <hr />
