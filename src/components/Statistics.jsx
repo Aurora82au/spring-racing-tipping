@@ -217,6 +217,7 @@ export default class App extends Component {
             turnbullTemp = [],
             guineasTemp = [],
             caulCupTemp = [],
+            coxPlateTemp = [],
             // derbyDayTemp = [],
             // melbCupTemp = [],
             // oaksDayTemp = [],
@@ -224,6 +225,7 @@ export default class App extends Component {
             turnbull = [],
             guineas = [],
             caulCup = [],
+            coxPlate = [],
             // derbyDay = [],
             // melbCup = [],
             // oaksDay = [],
@@ -268,6 +270,12 @@ export default class App extends Component {
                 }
                 if (stats[i].meets[j].meetId === 'CAULCUP') {
                     caulCupTemp.push({
+                        punterId: stats[i].punterId,
+                        score: stats[i].meets[j].score
+                    });
+                }
+                if (stats[i].meets[j].meetId === 'COXPLATE') {
+                    coxPlateTemp.push({
                         punterId: stats[i].punterId,
                         score: stats[i].meets[j].score
                     });
@@ -322,6 +330,14 @@ export default class App extends Component {
 
         // Create list of punters for the Cox Plate
         this.createStatArray(caulCupTemp, caulCup, 'meet');
+
+        // Sort punters in descending order by their score in the Cox Plate
+        coxPlateTemp.sort((a, b) => {
+            return b.score - a.score;
+        });
+
+        // Create list of punters for the Cox Plate
+        this.createStatArray(coxPlateTemp, coxPlate, 'meet');
 
         // Sort punters in descending order by their score in the Derby Day
         // derbyDayTemp.sort((a, b) => {
@@ -424,6 +440,9 @@ export default class App extends Component {
                     <hr />
                     <div className="bold mt-20 mb-10">Caulfield Cup</div>
                     <div className="stat-container">{caulCup}</div>
+                    <hr />
+                    <div className="bold mt-20 mb-10">Cox Plate</div>
+                    <div className="stat-container">{coxPlate}</div>
                     {/* <hr />
                     <div className="bold mt-20 mb-10">Derby Day</div>
                     <div className="stat-container">{derbyDay}</div>
