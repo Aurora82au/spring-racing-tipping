@@ -218,18 +218,18 @@ export default class App extends Component {
             guineasTemp = [],
             caulCupTemp = [],
             coxPlateTemp = [],
-            // derbyDayTemp = [],
-            // melbCupTemp = [],
-            // oaksDayTemp = [],
-            // stakesDayTemp = [],
+            derbyDayTemp = [],
+            melbCupTemp = [],
+            oaksDayTemp = [],
+            stakesDayTemp = [],
             turnbull = [],
             guineas = [],
             caulCup = [],
             coxPlate = [],
-            // derbyDay = [],
-            // melbCup = [],
-            // oaksDay = [],
-            // stakesDay = [],
+            derbyDay = [],
+            melbCup = [],
+            oaksDay = [],
+            stakesDay = [],
             trifectas = [],
             quinellas = [],
             firsts = [],
@@ -280,30 +280,30 @@ export default class App extends Component {
                         score: stats[i].meets[j].score
                     });
                 }
-                // if (stats[i].meets[j].meetId === 'DERBYDAY') {
-                //     derbyDayTemp.push({
-                //         punterId: stats[i].punterId,
-                //         score: stats[i].meets[j].score
-                //     });
-                // }
-                // if (stats[i].meets[j].meetId === 'MELBCUP') {
-                //     melbCupTemp.push({
-                //         punterId: stats[i].punterId,
-                //         score: stats[i].meets[j].score
-                //     });
-                // }
-                // if (stats[i].meets[j].meetId === 'OAKSDAY') {
-                //     oaksDayTemp.push({
-                //         punterId: stats[i].punterId,
-                //         score: stats[i].meets[j].score
-                //     });
-                // }
-                // if (stats[i].meets[j].meetId === 'STAKESDAY') {
-                //     stakesDayTemp.push({
-                //         punterId: stats[i].punterId,
-                //         score: stats[i].meets[j].score
-                //     });
-                // }
+                if (stats[i].meets[j].meetId === 'DERBYDAY') {
+                    derbyDayTemp.push({
+                        punterId: stats[i].punterId,
+                        score: stats[i].meets[j].score
+                    });
+                }
+                if (stats[i].meets[j].meetId === 'MELBCUP') {
+                    melbCupTemp.push({
+                        punterId: stats[i].punterId,
+                        score: stats[i].meets[j].score
+                    });
+                }
+                if (stats[i].meets[j].meetId === 'OAKSDAY') {
+                    oaksDayTemp.push({
+                        punterId: stats[i].punterId,
+                        score: stats[i].meets[j].score
+                    });
+                }
+                if (stats[i].meets[j].meetId === 'STAKESDAY') {
+                    stakesDayTemp.push({
+                        punterId: stats[i].punterId,
+                        score: stats[i].meets[j].score
+                    });
+                }
             }
         }
 
@@ -340,36 +340,36 @@ export default class App extends Component {
         this.createStatArray(coxPlateTemp, coxPlate, 'meet');
 
         // Sort punters in descending order by their score in the Derby Day
-        // derbyDayTemp.sort((a, b) => {
-        //     return b.score - a.score;
-        // });
+        derbyDayTemp.sort((a, b) => {
+            return b.score - a.score;
+        });
 
         // Create list of punters for the Derby Day
-        // this.createStatArray(derbyDayTemp, derbyDay, 'meet');
+        this.createStatArray(derbyDayTemp, derbyDay, 'meet');
 
         // Sort punters in descending order by their score in the Melbourne Cup
-        // melbCupTemp.sort((a, b) => {
-        //     return b.score - a.score;
-        // });
+        melbCupTemp.sort((a, b) => {
+            return b.score - a.score;
+        });
 
         // Create list of punters for the Melbourne Cup
-        // this.createStatArray(melbCupTemp, melbCup, 'meet');
+        this.createStatArray(melbCupTemp, melbCup, 'meet');
 
         // Sort punters in descending order by their score in the Oaks Day
-        // oaksDayTemp.sort((a, b) => {
-        //     return b.score - a.score;
-        // });
+        oaksDayTemp.sort((a, b) => {
+            return b.score - a.score;
+        });
 
         // Create list of punters for the Oaks Day
-        // this.createStatArray(oaksDayTemp, oaksDay, 'meet');
+        this.createStatArray(oaksDayTemp, oaksDay, 'meet');
 
         // Sort punters in descending order by their score in the Stakes Day
-        // stakesDayTemp.sort((a, b) => {
-        //     return b.score - a.score;
-        // });
+        stakesDayTemp.sort((a, b) => {
+            return b.score - a.score;
+        });
 
         // Create list of punters for the Stakes Day
-        // this.createStatArray(stakesDayTemp, stakesDay, 'meet');
+        this.createStatArray(stakesDayTemp, stakesDay, 'meet');
 
         // Sort punters in descending order by trifectas
         stats.sort((a, b) => {
@@ -443,7 +443,7 @@ export default class App extends Component {
                     <hr />
                     <div className="bold mt-20 mb-10">Cox Plate</div>
                     <div className="stat-container">{coxPlate}</div>
-                    {/* <hr />
+                    <hr />
                     <div className="bold mt-20 mb-10">Derby Day</div>
                     <div className="stat-container">{derbyDay}</div>
                     <hr />
@@ -454,7 +454,7 @@ export default class App extends Component {
                     <div className="stat-container">{oaksDay}</div>
                     <hr />
                     <div className="bold mt-20 mb-10">Stakes Day</div>
-                    <div className="stat-container">{stakesDay}</div> */}
+                    <div className="stat-container">{stakesDay}</div>
                 </div>
                 <div className={tab2Class}>
                     <div className="bold mt-20 mb-10">Trifectas</div>
