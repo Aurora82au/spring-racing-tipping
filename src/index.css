@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 input[type="text"], input[type="tel"], input[type="password"] {
-    height: 3.3rem;
+    height: 3.8rem;
     padding: .7rem 1rem;
     border: 1px solid #aaa;
     outline: 0;
@@ -95,6 +95,8 @@ input[type="tel"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
 }
 
 a {
+    display: inline-block;
+    color: #27d3ff;
     text-decoration: none;
 }
 
@@ -127,6 +129,19 @@ li {
     content: "-";
     top: 0;
     left: -1rem;
+}
+
+button.link {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #27d3ff;
+    cursor: pointer;
+}
+
+button.link:hover {
+    text-decoration: underline;
 }
 
 p {

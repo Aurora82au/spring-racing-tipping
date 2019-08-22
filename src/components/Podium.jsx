@@ -7,7 +7,7 @@ export default function Podium(props) {
             <h4 className="lb-heading teal">PODIUM</h4>
             <div className="podium">
                 <div className="second">
-                    <img src={'pics/' + props.second.pic} alt="Profile pic" className="pic" />
+                    <img src={'pics/' + props.second.image} alt="Profile pic" className="pic" />
                     <span className="name">
                         {props.second.name.first} {props.second.name.last}
                     </span>
@@ -19,7 +19,7 @@ export default function Podium(props) {
                     </div>
                 </div>
                 <div className="first">
-                    <img src={'pics/' + props.first.pic} alt="Profile pic" className="pic" />
+                    <img src={'pics/' + props.first.image} alt="Profile pic" className="pic" />
                     <span className="name">
                         {props.first.name.first} {props.first.name.last}
                     </span>
@@ -32,7 +32,7 @@ export default function Podium(props) {
                     </div>
                 </div>
                 <div className="third">
-                    <img src={'pics/' + props.third.pic} alt="Profile pic" className="pic" />
+                    <img src={'pics/' + props.third.image} alt="Profile pic" className="pic" />
                     <span className="name">
                         {props.third.name.first} {props.third.name.last}
                     </span>

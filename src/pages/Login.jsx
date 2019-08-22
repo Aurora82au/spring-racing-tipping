@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
+import Button from '../components/Button';
+import LabelAndInput from '../components/LabelAndInput';
+import LabelAndSelectBox from '../components/LabelAndSelectBox';
+import CompetitionSelector from '../components/CompetitionSelector';
+import ErrorMessage from '../components/ErrorMessage';
+import { logOut } from '../helpers/utilities';
 
 export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            user: 1,
+            user: null,
             password: '',
             wrongPassword: false,
-            focused: false
+            showCompetitions: false
         };
     }
 
@@ -26,24 +32,10 @@ export default class Login extends Component {
         });
     };
 
-    /* When the user focuses the password field, set focused in the state to true.  Used to shift the label out of the field */
-    handlePasswordFocus = event => {
-        this.setState({
-            focused: true
-        });
-    };
-
-    /* When focus is lost on the password field, set focused in the state to false.  Used to shift the label into the field */
-    handlePasswordBlur = event => {
-        this.setState({
-            focused: false
-        });
-    };
-
     /* When the user enters a password, set it in the state and hide the wrong password message */
-    handlePasswordChange = event => {
+    handlePasswordChange = value => {
         this.setState({
-            password: event.target.value,
+            password: value,
             wrongPassword: false
         });
     };
@@ -59,16 +51,20 @@ export default class Login extends Component {
             this.setState({
                 wrongPassword: false
             });
-            // Call handleLogin from App.js to set the logged in user and if they are an admin
+            // Call handleLogin from App.js to set the logged in user
             this.props.handleLogin(this.state.user);
-            // Redirect to the Results page
-            this.props.history.push(this.props.path + 'results');
         } else {
             this.setState({
                 wrongPassword: true
             });
         }
     };
+
+    handleCompetitionSelect = event => {
+        this.props.handleCompetitionSelect(event.target.value);
+        // Redirect to the Results page
+        this.props.history.push(`${this.props.path}/results`);
+    }
 
     /* Function to render the component */
     render() {
@@ -85,7 +81,7 @@ export default class Login extends Component {
         }
 
         // Create an array of option elements for each punter
-        let options = sorted.map(punter => {
+        let punterOptions = sorted.map(punter => {
             return (
                 <option key={punter._id} value={punter._id}>
                     {punter.name.first} {punter.name.last}
@@ -93,8 +89,8 @@ export default class Login extends Component {
             );
         });
 
-        // Add a default <option> at the beginning
-        options.unshift(
+        // Add a default <option> at the beginning of punters
+        punterOptions.unshift(
             <option key="a" value="">
                 -- Select Name --
             </option>
@@ -102,9 +98,6 @@ export default class Login extends Component {
 
         // Show the error message if the password is wrong
         const errorClass = this.state.wrongPassword ? 'error' : 'error hide';
-
-        // Set focused class on the password label to have it move out of the input, but not go back in if there is a value
-        const labelClass = this.state.focused || this.state.password !== '' ? 'password-label focused' : 'password-label';
 
         return (
             <div className="app">
@@ -115,26 +108,40 @@ export default class Login extends Component {
                     isAdmin={this.props.isAdmin}
                     text="Please select your name from the drop down, and then enter your password to log in."
                 />
-                <div className="selector">
-                    <select onChange={this.handlePunterSelect}>{options}</select>
-                    <span className="icon-select" />
-                </div>
-                <label htmlFor="password" className={labelClass}>
-                    Password
-                </label>
-                <input
-                    id="password"
-                    className="password"
-                    type="password"
-                    defaultValue=""
-                    onFocus={this.handlePasswordFocus}
-                    onBlur={this.handlePasswordBlur}
-                    onChange={this.handlePasswordChange}
+                <LabelAndSelectBox
+                    labelClasses="sr-only"
+                    labelText="Select a punter"
+                    value={this.props.user ? this.props.user._id : this.state.user ? this.state.user : ''}
+                    handleSelect={this.handlePunterSelect}
+                    disabled={this.props.user}
+                    options={punterOptions}
                 />
-                <button className="btn" type="button" onClick={this.handleLoginClick}>
-                    Log In
-                </button>
-                <div className={errorClass}>The password for the name you selected is incorrect</div>
+                {
+                    !this.props.user &&
+                    <LabelAndInput
+                        labelText="Password"
+                        inputClasses="password"
+                        type="password"
+                        value={this.props.user ? this.props.user.password : ''}
+                        handleChange={this.handlePasswordChange}
+                        disabled={this.props.user}
+                    />
+                }
+                <Button
+                    classes="btn"
+                    type="button"
+                    onClick={this.props.user ? logOut : this.handleLoginClick}
+                    disabled={false}
+                    text={this.props.user ? 'Log Out' : 'Log In'}
+                />
+                <ErrorMessage classes={errorClass} text="The password for the name you selected is incorrect" />
+                {
+                    this.props.user && 
+                    <CompetitionSelector
+                        competitions={this.props.competitions}
+                        handleCompetitionSelect={this.props.handleCompetitionSelect}
+                    />
+                }
             </div>
         );
     }

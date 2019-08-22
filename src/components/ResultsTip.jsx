@@ -19,7 +19,7 @@ export default class ResultsTip extends Component {
         let thirdClass = '';
 
         // Set the scores and the 'correct' class on punters picks
-        index = self.props.tips.tips.indexOf(self.props.placings.first);
+        index = self.props.tips.selections.indexOf(self.props.placings.first);
         if (index > -1) {
             score += 3;
             if (index === 0) {
@@ -33,7 +33,7 @@ export default class ResultsTip extends Component {
             }
         }
 
-        index = self.props.tips.tips.indexOf(self.props.placings.second);
+        index = self.props.tips.selections.indexOf(self.props.placings.second);
         if (index > -1) {
             score += 2;
             if (index === 0) {
@@ -47,7 +47,7 @@ export default class ResultsTip extends Component {
             }
         }
 
-        index = self.props.tips.tips.indexOf(self.props.placings.third);
+        index = self.props.tips.selections.indexOf(self.props.placings.third);
         if (index > -1) {
             score++;
             if (index === 0) {
@@ -63,22 +63,22 @@ export default class ResultsTip extends Component {
 
         return (
             <div className="tip">
-                <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                <img src={'pics/' + punter.image} alt="Profile pic" className="pic" />
                 <span className="name">
                     {punter.name.first} {punter.name.last}
                 </span>
                 <div className="numbers">
                     <div className="group">
                         <span className="label">Pick 1</span>&nbsp;-&nbsp;
-                        <span className={firstClass}>{self.props.tips.tips[0]}</span>
+                        <span className={firstClass}>{self.props.tips.selections[0]}</span>
                     </div>
                     <div className="group">
                         <span className="label">Pick 2</span>&nbsp;-&nbsp;
-                        <span className={secondClass}>{self.props.tips.tips[1]}</span>
+                        <span className={secondClass}>{self.props.tips.selections[1]}</span>
                     </div>
                     <div className="group">
                         <span className="label">Pick 3</span>&nbsp;-&nbsp;
-                        <span className={thirdClass}>{self.props.tips.tips[2]}</span>
+                        <span className={thirdClass}>{self.props.tips.selections[2]}</span>
                     </div>
                 </div>
                 <div className="score">

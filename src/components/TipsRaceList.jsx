@@ -5,16 +5,16 @@ export default class TipsRaceList extends Component {
         super(props);
         this.state = {
             tips: [
-                { race: 1, selections: [] },
-                { race: 2, selections: [] },
-                { race: 3, selections: [] },
-                { race: 4, selections: [] },
-                { race: 5, selections: [] },
-                { race: 6, selections: [] },
-                { race: 7, selections: [] },
-                { race: 8, selections: [] },
-                { race: 9, selections: [] },
-                { race: 10, selections: [] }
+                { raceId: null, number: 1, databaseId: null, selections: [] },
+                { raceId: null, number: 2, databaseId: null, selections: [] },
+                { raceId: null, number: 3, databaseId: null, selections: [] },
+                { raceId: null, number: 4, databaseId: null, selections: [] },
+                { raceId: null, number: 5, databaseId: null, selections: [] },
+                { raceId: null, number: 6, databaseId: null, selections: [] },
+                { raceId: null, number: 7, databaseId: null, selections: [] },
+                { raceId: null, number: 8, databaseId: null, selections: [] },
+                { raceId: null, number: 9, databaseId: null, selections: [] },
+                { raceId: null, number: 10, databaseId: null, selections: [] }
             ]
         };
     }
@@ -46,12 +46,14 @@ export default class TipsRaceList extends Component {
             if (count === noOfRaces) {
                 break;
             }
-            if (passedProps.tips[i].punterId === passedProps.user) {
+            if (passedProps.tips[i].punterId === passedProps.user._id) {
                 for (let j = 0; j < noOfRaces; j++) {
                     if (passedProps.races[j]._id === passedProps.tips[i].raceId) {
                         tips[passedProps.races[j].number - 1] = {
-                            race: passedProps.races[j].number,
-                            selections: passedProps.tips[i].tips
+                            raceId: passedProps.races[j]._id,
+                            number: passedProps.races[j].number,
+                            databaseId: passedProps.tips[i]._id,
+                            selections: passedProps.tips[i].selections
                         };
                         break;
                     }
@@ -69,29 +71,29 @@ export default class TipsRaceList extends Component {
        passed in via props from App.js */
     handleSelectionClick = event => {
         const tips = this.state.tips;
-        const modifiedRace = parseInt(event.target.getAttribute('data-race'), 10);
+        const modifiedRace = parseInt(event.target.getAttribute('data-race-no'), 10);
         const tip = tips.find(tip => {
-            return tip.race === modifiedRace;
+            return tip.number === modifiedRace;
         });
         let index = tips.indexOf(tip);
 
         // If the selection is already selected, remove it, else if there is less than 3 selected add it
         if (event.target.classList.contains('selected')) {
-            index = tip.selections.indexOf(event.target.innerText);
+            index = tip.selections.indexOf(parseInt(event.target.innerText));
             if (index > -1) {
                 tip.selections.splice(index, 1);
             }
             this.setState({
                 tips: tips
             });
-            this.props.onSelectionChange(modifiedRace, tip);
+            this.props.onSelectionChange(tip);
         } else if (tip.selections.length < 3) {
-            tip.selections.push(event.target.innerText);
+            tip.selections.push(parseInt(event.target.innerText));
             tips[index] = tip;
             this.setState({
                 tips: tips
             });
-            this.props.onSelectionChange(modifiedRace, tip);
+            this.props.onSelectionChange(tip);
         }
     };
 
@@ -117,7 +119,7 @@ export default class TipsRaceList extends Component {
                 }
 
                 selections.push(
-                    <div key={j} className={className} data-race={i + 1} onClick={this.handleSelectionClick}>
+                    <div key={j} className={className} data-race-no={i + 1} onClick={this.handleSelectionClick}>
                         {j + 1}
                     </div>
                 );
@@ -142,7 +144,7 @@ export default class TipsRaceList extends Component {
     /* Function to render the component */
     render() {
         const raceList = this.generateList();
-        let raceDay = new Date(this.props.meet.date);
+        let raceDay = this.props.meet ? new Date(this.props.meet.date) : new Date();
         let raceListClass;
 
         // Set the meet to disabled if it is after 10:15am on race day
@@ -150,7 +152,7 @@ export default class TipsRaceList extends Component {
         raceDay.setMinutes(15);
 
         if (new Date() > raceDay) {
-            raceListClass = 'raceList disabled';
+            raceListClass = 'raceList'; //'raceList disabled';
         } else {
             raceListClass = 'raceList';
         }

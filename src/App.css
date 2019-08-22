@@ -29,6 +29,20 @@ div.bg-red {
 } */
 /* Used when hiding things like profile pics while at work - END */
 
+.sr-only {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+	border: 0 !important;
+	white-space: nowrap !important;
+}
+
 .flip-container.flipped .flipper {
     transform: rotateY(180deg);
 }
@@ -99,7 +113,7 @@ div.bg-red {
 }
 
 .error {
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #f00c;
 }
 
@@ -115,6 +129,22 @@ div.bg-red {
     outline: 0;
 }
 
+.competition-selector {
+    margin-top: 4rem;
+}
+
+.competition-selector ul {
+    padding-left: 0;
+}
+
+.competition-selector .link {
+    margin-bottom: 1rem;
+}
+
+.competition-selector a:hover {
+    text-decoration: underline;
+}
+
 .selector {
     position: relative;
     margin-top: 2rem;
@@ -123,7 +153,7 @@ div.bg-red {
 
 .selector select {
     width: 100%;
-    height: 3.7rem;
+    height: 3.8rem;
     padding: 0.8rem;
     border: 1px solid #aaa;
     outline: 0;
@@ -150,10 +180,13 @@ div.bg-red {
     font-size: 2.2rem;
 }
 
+
+
 /* Header */
 
 h2 {
     margin-top: 0.5rem;
+    margin-bottom: 4rem;
     font-size: 1.6rem;
 }
 
@@ -172,6 +205,13 @@ h2 img {
     color: #fff;
     background-color: #e029e8;
     vertical-align: top;
+}
+
+.comp-name {
+    position: absolute;
+    top: 5rem;
+    max-width: 21.5rem;
+    text-transform: uppercase;
 }
 
 .profile-pic {
@@ -225,6 +265,11 @@ h2 img {
     background-color: #aaa;
 }
 
+.reload-btn.loading {
+    animation: 1s linear infinite spinner;
+    pointer-events: none;
+}
+
 .icon-reload {
     vertical-align: 1px;
 }
@@ -240,6 +285,17 @@ h2 img {
     color: #27d3ff;
     border-color: #27d3ff;
 }
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+         transform: rotate(360deg);
+    }
+}
+
+
 
 /* Menu */
 
@@ -277,16 +333,18 @@ h2 img {
     font-size: 3.5rem;
 }
 
+
+
 /* Login */
 
-.password-label {
+label.label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     transform: translate(1rem, 3rem);
     transition: transform 200ms ease-in-out;
 }
 
-.password-label.focused {
+label.label.focused {
     transform: translate(0, 0);
     transition: transform 200ms ease-in-out;
 }
@@ -296,8 +354,10 @@ input.password {
     height: 3.7rem;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
+
+
 
 /* Admin */
 
@@ -390,7 +450,11 @@ input.password {
     background-color: #eee;
     pointer-events: none;
 }
+
+
+
 /* Information */
+
 .browser-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -434,7 +498,11 @@ input.password {
     padding: 0.2rem 0.3rem 0.3rem;
     font-size: 1rem;
 }
+
+
+
 /* Tips */
+
 .tip-examples {
     display: flex;
     align-items: center;
@@ -502,7 +570,11 @@ input.password {
     pointer-events: none;
     opacity: 0.5;
 }
+
+
+
 /* Results */
+
 .race-selector {
     display: flex;
     margin-top: 2rem;
@@ -653,7 +725,11 @@ input.password {
     vertical-align: top;
     text-align: center;
 }
+
+
+
 /* Leaderboard */
+
 .lb-heading {
     margin-top: 3rem;
     text-align: center;
@@ -778,7 +854,11 @@ input.password {
     overflow: hidden;
     vertical-align: middle;
 }
+
+
+
 /* Statistics */
+
 .tab-btns {
     display: flex;
     margin-bottom: 2rem;
@@ -819,10 +899,17 @@ input.password {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+
+
 /* **** Media Queries **** */
+
 @media (min-width: 360px) {
     h2 {
         font-size: 1.8rem;
+    }
+    .comp-name {
+        max-width: 24rem;
     }
     .race-selector .circle {
         width: 3rem;
@@ -839,6 +926,7 @@ input.password {
         grid-template-columns: minmax(auto, 24rem) 1fr;
     }
 }
+
 @media (min-width: 375px) {
     .race-selector .circle {
         margin-right: 0.6rem;
@@ -850,11 +938,13 @@ input.password {
         grid-template-columns: minmax(auto, 26rem) 1fr;
     }
 }
+
 @media (min-width: 384px) {
     .race-selector .circle {
         margin-right: 0.7rem;
     }
 }
+
 @media (min-width: 400px) {
     .race-selector .circle {
         margin-right: 0.8rem;
@@ -866,6 +956,7 @@ input.password {
         grid-template-columns: minmax(auto, 28rem) 1fr;
     }
 }
+
 @media (min-width: 410px) {
     .icon-admin {
         top: 2rem;
@@ -878,7 +969,7 @@ input.password {
         max-width: 33rem;
     }
 }
-/* To cater to phones in landscape */
+
 @media (min-width: 500px) {
     .selector,
     input.password {
@@ -903,7 +994,7 @@ input.password {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-/* To cater to tablets in landscape, and desktop */
+
 @media (min-width: 992px) {
     .menu {
         grid-template-columns: 1fr 1fr repeat(4, 25rem) 1fr 1fr;

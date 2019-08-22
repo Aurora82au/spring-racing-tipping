@@ -69,17 +69,17 @@ export default class Leaderboard extends Component {
 
                 raceScore = 0;
                 puntersPoints = this.findPuntersPoints(points, this.props.punters[a]._id);
-                if (tips.tips.includes(placings.first)) {
+                if (tips.selections.includes(placings.first)) {
                     puntersPoints.points += 3;
                     raceScore += 3;
                     puntersPoints.firsts++;
                 }
-                if (tips.tips.includes(placings.second)) {
+                if (tips.selections.includes(placings.second)) {
                     puntersPoints.points += 2;
                     raceScore += 2;
                     puntersPoints.seconds++;
                 }
-                if (tips.tips.includes(placings.third)) {
+                if (tips.selections.includes(placings.third)) {
                     puntersPoints.points += 1;
                     raceScore += 1;
                     puntersPoints.thirds++;
@@ -118,7 +118,7 @@ export default class Leaderboard extends Component {
         // Populate the oddsList array
         oddsList.push(
             <div key="a" className="total">
-                <img src={'pics/' + firstThree.pic} alt="Profile pic" className="pic" />
+                <img src={'pics/' + firstThree.image} alt="Profile pic" className="pic" />
                 <div className="name">
                     {firstThree.name.first} {firstThree.name.last}
                 </div>
@@ -127,7 +127,7 @@ export default class Leaderboard extends Component {
         );
         oddsList.push(
             <div key="b" className="total">
-                <img src={'pics/' + topOdds.pic} alt="Profile pic" className="pic" />
+                <img src={'pics/' + topOdds.image} alt="Profile pic" className="pic" />
                 <div className="name">
                     {topOdds.name.first} {topOdds.name.last}
                 </div>
@@ -136,7 +136,7 @@ export default class Leaderboard extends Component {
         );
         oddsList.push(
             <div key="c" className="total">
-                <img src={'pics/' + bottomOdds.pic} alt="Profile pic" className="pic" />
+                <img src={'pics/' + bottomOdds.image} alt="Profile pic" className="pic" />
                 <div className="name">
                     {bottomOdds.name.first} {bottomOdds.name.last}
                 </div>
@@ -193,7 +193,7 @@ export default class Leaderboard extends Component {
                             }}
                         />
                         <span className="points">{points[i].points} PTS</span>
-                        <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                        <img src={'pics/' + punter.image} alt="Profile pic" className="pic" />
                         <span className="name">
                             {punter.name.first} {punter.name.last}
                         </span>
@@ -209,6 +209,7 @@ export default class Leaderboard extends Component {
                     path={this.props.path}
                     punters={this.props.punters}
                     user={this.props.user}
+                    selectedCompetition={this.props.selectedCompetition}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="To the victors go the spoils, and to the losers....go home."

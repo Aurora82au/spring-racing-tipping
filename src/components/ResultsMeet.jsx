@@ -49,12 +49,17 @@ export default class ResultsMeet extends Component {
             );
         }
 
-        return (
-            <div className="race-meet">
-                <div className="race-selector">{raceSelectors}</div>
-                <h3>RACE {race.number}</h3>
-                <Race race={race} punters={self.props.punters} tips={raceTips} />
-            </div>
-        );
+        if (race) {
+            return (
+                <div className="race-meet">
+                    <div className="race-selector">{raceSelectors}</div>
+                    <h3>RACE {race.number}</h3>
+                    <Race race={race} punters={self.props.punters} tips={raceTips} />
+                </div>
+            );
+        }
+        else {
+            return <div />;
+        }
     }
 }

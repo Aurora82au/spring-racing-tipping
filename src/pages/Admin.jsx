@@ -314,6 +314,7 @@ export default class Admin extends Component {
                     path={this.props.path}
                     punters={this.props.punters}
                     user={this.props.user}
+                    selectedCompetition={this.props.selectedCompetition}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="This is the Administration page used to set placings and race statuses.  In the future you will also be able to set scratchings."

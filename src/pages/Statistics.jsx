@@ -130,15 +130,15 @@ export default class App extends Component {
                 puntersStatsMeet = this.findPuntersStatsMeet(puntersStats, this.props.races[c].meetId);
 
                 // Update the stats of that punter
-                if (tips.tips.includes(placings.first)) {
+                if (tips.selections.includes(placings.first)) {
                     puntersStats.firsts++;
                     raceScore += 3;
                 }
-                if (tips.tips.includes(placings.second)) {
+                if (tips.selections.includes(placings.second)) {
                     puntersStats.seconds++;
                     raceScore += 2;
                 }
-                if (tips.tips.includes(placings.third)) {
+                if (tips.selections.includes(placings.third)) {
                     puntersStats.thirds++;
                     raceScore += 1;
                 }
@@ -197,7 +197,7 @@ export default class App extends Component {
                     tempArray.push(
                         <div key={j} className="stat-item">
                             <div className="number" dangerouslySetInnerHTML={{ __html: j + 1 + position }} />
-                            <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                            <img src={'pics/' + punter.image} alt="Profile pic" className="pic" />
                             <div className="name">{punter.name.first}</div>
                             <div className="stat">{dataArray[i].scores[j].score}</div>
                         </div>
@@ -270,7 +270,7 @@ export default class App extends Component {
                     tempArray.push(
                         <div key={`${count}${i}`} className="stat-item">
                             <div className="number" dangerouslySetInnerHTML={{ __html: i + 1 + position }} />
-                            <img src={'pics/' + punter.pic} alt="Profile pic" className="pic" />
+                            <img src={'pics/' + punter.image} alt="Profile pic" className="pic" />
                             <div className="name">{punter.name.first}</div>
                             <div className="stat">{dataArray[i][name]}</div>
                         </div>
@@ -358,6 +358,7 @@ export default class App extends Component {
                     path={this.props.path}
                     punters={this.props.punters}
                     user={this.props.user}
+                    selectedCompetition={this.props.selectedCompetition}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc."

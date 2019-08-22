@@ -22,6 +22,14 @@ export default class Tips extends Component {
             return tip.meetId === this.props.selectedMeet;
         });
 
+        if (races) {
+            races.sort((a, b) => {
+                return (
+                    a.number - b.number
+                );
+            });
+        }
+
         return (
             <div className="app">
                 <Header
@@ -29,6 +37,7 @@ export default class Tips extends Component {
                     path={this.props.path}
                     punters={this.props.punters}
                     user={this.props.user}
+                    selectedCompetition={this.props.selectedCompetition}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="You want a tip?.....be good to your mother.  Otherwise, simply select 3 horses for each race.  If you already have 3 selected and want to change one, simply unselect one of them. Don't worry about saving at the end, your tips are saved every time you make a change."
