@@ -43,63 +43,59 @@ div.bg-red {
 	white-space: nowrap !important;
 }
 
-.flip-container.flipped .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container.flipped .flipper .front {
-    transform: rotateY(0deg);
-}
-
-.flip-container.preserve-3d .flipper {
-    transform-style: preserve-3d;
-}
-
-.flipper {
-    position: relative;
-    height: 100%;
-    transition: 0.6s;
-}
-
-.front,
-.back {
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    backface-visibility: hidden;
-}
-
-.front {
-    z-index: 2;
-}
-
-.back {
+.loading-msg {
     position: absolute;
-    height: 100%;
-    transform: rotateY(180deg);
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 140px;
+    margin-top: -8.5rem;
+    margin-left: -5rem;
     text-align: center;
 }
 
-.back img {
+.loading-msg .icon {
+    width: 130px;
+    height: 90px;
+    margin-bottom: 1rem;
+    background: url('images/horse-sprite.jpg') 0 0;
+    animation: run 800ms infinite steps(12);
+}
+
+.loading-msg .text {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+@keyframes run {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -1560px;
+    }
+}
+
+.timeout-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 32rem;
+    margin-top: -15rem;
+    margin-left: -16rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.timeout-msg img {
     display: block;
-    margin: 2rem auto;
+    width: 30rem;
 }
 
-.back .btn {
-    width: 26.7rem;
-    margin: 2rem auto 0;
-    background-color: #bbd4f3;
-}
-
-.back .you-got {
-    margin-top: 0;
-    width: 15rem;
-}
-
-.back .btn img {
-    width: 10rem;
-    margin: 0;
+.timeout-msg p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 
 .app {
