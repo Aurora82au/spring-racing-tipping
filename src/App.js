@@ -29,15 +29,16 @@ export default class App extends Component {
             selectedCompetition: null,
             selectedMeet: null,
             selectedRace: null,
-            selectedTab: 1
+            selectedTab: 1,
+            appLoadFailed: false,
+            loadingData: false
         };
 
         this.useJSON = false;
         // this.backendURL = 'http://localhost:4001'; // Local
         // this.backendURL = 'https://sleepy-harbor-88560.herokuapp.com'; // Production v1 - Heroku
         this.backendURL = 'https://spring-racing-tipping-88560.herokuapp.com'; // Production v2 - Heroku
-        this.path = '/'; // Local
-        // this.path = '/spring-racing-tipping/'; // Github
+        this.path = '/';
     }
 
     /* Determines whether React should re-render the component, in this case if the new state is different from the current state. */
@@ -50,16 +51,24 @@ export default class App extends Component {
         const self = this;
         const dataURL = self.useJSON ? `${self.path}mock/punters.json` : `${self.backendURL}/punters`;
         try {
+            self.setState({
+                loadingData: true
+            });
+
             const puntersResponse = await fetch(dataURL, { cache: 'no-store', mode: 'cors' });
             const punters = await puntersResponse.json();
 
             self.setState({
-                allPunters: punters
+                allPunters: punters,
+                loadingData: false
             });
 
             return 'complete';
         } catch (e) {
             console.log('An error occurred: ' + e);
+            self.setState({
+                loadingData: false
+            });
             return 'fail';
         }
     }
@@ -76,16 +85,24 @@ export default class App extends Component {
         const self = this;
         const dataURL = self.useJSON ? `${self.path}mock/competitions.json` : `${self.backendURL}/competitions/bypunter/${selectedUser}`;
         try {
+            self.setState({
+                loadingData: true
+            });
+
             const competitionsResponse = await fetch(dataURL, { cache: 'no-store', mode: 'cors' });
             const competitions = await competitionsResponse.json();
 
             self.setState({
-                competitions: competitions
+                competitions: competitions,
+                loadingData: false
             });
 
             return 'complete';
         } catch (e) {
             console.log('An error occurred: ' + e);
+            self.setState({
+                loadingData: false
+            });
             return 'fail';
         }
     }
@@ -100,6 +117,10 @@ export default class App extends Component {
         const tipsDataURL = self.useJSON ? `${self.path}mock/tips-${selectedCompetition.startDate.split('-')[0]}.json` :
                                             `${self.backendURL}/tips/bycompetition/${selectedCompetition._id}`;
         try {
+            self.setState({
+                loadingData: true
+            });
+
             const meetsResponse = await fetch(meetsDataURL, { cache: 'no-store', mode: 'cors' });
             const meets = await meetsResponse.json();
             const racesResponse = await fetch(racesDataURL, { cache: 'no-store', mode: 'cors' });
@@ -130,10 +151,14 @@ export default class App extends Component {
                 punters: this.getCompetitionPunters(selectedCompetition),
                 selectedCompetition: selectedCompetition,
                 selectedMeet: selectedMeet,
-                selectedRace: selectedRace
+                selectedRace: selectedRace,
+                loadingData: false
             });
         } catch (e) {
             console.log('An error occurred: ' + e);
+            self.setState({
+                loadingData: false
+            });
         }
     }
 
@@ -141,6 +166,15 @@ export default class App extends Component {
      * and if so, then retrieves all data and sets state that was stored in localStorage.
      * Otherwise, it will be on the login screen, so only retrieves the punters. */
     componentDidMount() {
+        // Start 30sec timer to check if app loaded
+        setTimeout(() => {
+            if (!this.state.allPunters.length) {
+                this.setState({
+                    appLoadFailed: true
+                });
+            }
+        }, 30000);
+
         // Check the localStorage to see if the user is already logged in
         if (localStorage.getItem('user')) {
             const userId = parseInt(localStorage.getItem('user'), 10);
@@ -456,9 +490,10 @@ export default class App extends Component {
     render() {
         const page = window.location.href.split("/").slice(-1)[0];
 
-        if ((this.state.selectedCompetition && this.state.punters.length) ||
+        if ((!this.state.loadingData && !this.state.appLoadFailed) &&
+            ((this.state.selectedCompetition && this.state.punters.length) ||
             (page === 'login' && this.state.allPunters.length) ||
-            (this.state.authenticated === false)) {
+            (this.state.authenticated === false))) {
             return (
                 // React Router routes to a particular component based on the URL path
                 <Router>
@@ -656,8 +691,22 @@ export default class App extends Component {
                     </ScrollToTop>
                 </Router>
             );
+        } else if (this.state.appLoadFailed) {
+            return (
+                <div className="timeout-msg">
+                    <img src="steve.gif" alt="Steve Harvey - What's wrong withchu?" />
+                    <p>It seems like something has gone wrong with the database...</p>
+                    <p>Curse you free Heroku account!</p>
+                    <p>*shakes fist at the sky*</p>
+                </div>
+            );
         } else {
-            return <div />;
+            return (
+                <div className="loading-msg">
+                    <div className="icon"></div>
+                    <div className="text">LOADING...</div>
+                </div>
+            );
         }
     }
 }
