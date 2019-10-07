@@ -15,6 +15,11 @@ export default class ResultsRace extends Component {
         });
         let statusClass;
         let statusName;
+
+        if (!tips.length) {
+            tips.push(<div key="a" className="no-races-msg">There are not yet any tips for this race.</div>);
+        }
+
         // Set the statusClass based on race's status
         switch (self.props.race.status) {
             case 1:
@@ -54,13 +59,13 @@ export default class ResultsRace extends Component {
                 <div className="placings">
                     <div className="mb-5 bold">Placings</div>
                     <div className="mb-5">
-                        <span className="placing bold gold">1st</span>&nbsp;{self.props.race.placings.first}
+                        <span className="placing bold gold">1st</span>&nbsp;{self.props.race.placings.first !== 0 ? self.props.race.placings.first : ''}
                     </div>
                     <div className="mb-5">
-                        <span className="placing bold silver">2nd</span>&nbsp;{self.props.race.placings.second}
+                        <span className="placing bold silver">2nd</span>&nbsp;{self.props.race.placings.second !== 0 ? self.props.race.placings.second : ''}
                     </div>
                     <div>
-                        <span className="placing bold bronze">3rd</span>&nbsp;{self.props.race.placings.third}
+                        <span className="placing bold bronze">3rd</span>&nbsp;{self.props.race.placings.third !== 0 ? self.props.race.placings.third : ''}
                     </div>
                 </div>
                 <div className="tips-heading bold">Tips</div>

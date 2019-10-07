@@ -1,0 +1,6 @@
+﻿
+https://icomoon.io/app/#/select
+
+
+If you need to modify the icons in these font files, then you can import *selection.json* back to the IcoMoon app using the *Import Icons* button (or via Main Menu → Manage Projects) to retrieve the icon selection.
+All selected icons are from the 'Material Icons' set.  This can be found by clicking on the *Icon Library* button next to *Import Icons*, then finding 'Material Icons' and clicking 'Add'.  On the selection screen you can now look through and search that icon set for the icon you need.

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import MeetSelector from '../components/MeetSelector';
-import Menu from '../components/Menu';
+import BottomMenu from '../components/BottomMenu';
+import Button from '../components/Button';
 
 export default class Admin extends Component {
     constructor(props) {
@@ -113,10 +114,11 @@ export default class Admin extends Component {
         this.setStateData(this.props.races, this.props.selectedMeet);
     }
 
-    /* Runs when the component receives new props, but before it renders, and calls setStateData with the next props races 
-       and selected meet */
-    componentWillReceiveProps(nextProps) {
-        this.setStateData(nextProps.races, nextProps.selectedMeet);
+    /* Runs when the component updates and calls setStateData with the new passed races and selected meet props, if they have changed */
+    componentDidUpdate(prevProps) {
+        if (this.props !== prevProps) {
+            this.setStateData(this.props.races, this.props.selectedMeet);
+        }
     }
 
     /* Takes the passed races and selected meet and updates the state */
@@ -142,15 +144,16 @@ export default class Admin extends Component {
         const raceChanged = event.target.id.split('-')[1];
         const placingChanged = event.target.id.split('-')[2];
         let placings = races[raceChanged - 1].placings;
+        const value = !Number.isNaN(parseInt(event.target.value)) ? parseInt(event.target.value) : 0;
 
         if (placingChanged === 'first') {
-            placings.first = event.target.value;
+            placings.first = value;
         }
         if (placingChanged === 'second') {
-            placings.second = event.target.value;
+            placings.second = value;
         }
         if (placingChanged === 'third') {
-            placings.third = event.target.value;
+            placings.third = value;
         }
 
         this.setState({
@@ -161,17 +164,16 @@ export default class Admin extends Component {
     /* When the user clicks a Save button, pass the modified placings to the onPlacingsChange function
        passed in via props from App.js */
     handleSaveClick = event => {
-        const modifiedRace = event.target.getAttribute('data-race');
-        const placings = this.state.races[modifiedRace - 1].placings;
-        this.props.onPlacingsChange(modifiedRace, placings);
+        const placings = this.state.races[event.target.getAttribute('data-race') - 1].placings;
+        this.props.onPlacingsChange(parseInt(event.target.getAttribute('data-race-id')), placings);
     };
 
     /* When the user selects a scratching, add or remove it from the state and pass the modified scratchings to the
        onScratchingChange function passed in via props from App.js */
     handleScratchingClick = event => {
         const races = this.state.races;
-        const modifiedRace = parseInt(event.target.getAttribute('data-race'), 10);
-        let modifiedScratchings = races[modifiedRace - 1].scratchings;
+        const modifiedRaceIndex = parseInt(event.target.getAttribute('data-race'), 10) - 1;
+        let modifiedScratchings = races[modifiedRaceIndex].scratchings;
 
         // If the selection is already selected, remove it, else add it
         if (event.target.classList.contains('scratched')) {
@@ -179,19 +181,14 @@ export default class Admin extends Component {
             if (index > -1) {
                 modifiedScratchings.splice(index, 1);
             }
-            races[modifiedRace - 1].scratchings = modifiedScratchings;
-            this.setState({
-                races: races
-            });
-            this.props.onScratchingChange(modifiedRace, modifiedScratchings);
         } else {
             modifiedScratchings.push(parseInt(event.target.innerText, 10));
-            races[modifiedRace - 1].scratchings = modifiedScratchings;
-            this.setState({
-                races: races
-            });
-            this.props.onScratchingChange(modifiedRace, modifiedScratchings);
         }
+        races[modifiedRaceIndex].scratchings = modifiedScratchings;
+        this.setState({
+            races: races
+        });
+        this.props.onScratchingChange(parseInt(event.target.getAttribute('data-race-id'), 10), modifiedScratchings);
     };
 
     /* Function to render the component */
@@ -215,7 +212,7 @@ export default class Admin extends Component {
                 }
 
                 selections.push(
-                    <div key={j} className={className} data-race={i + 1} onClick={this.handleScratchingClick}>
+                    <div key={j} className={className} data-race={i + 1} data-race-id={meetRaces[i]._id} onClick={this.handleScratchingClick}>
                         {j + 1}
                     </div>
                 );
@@ -234,7 +231,7 @@ export default class Admin extends Component {
                             <input
                                 id={'race-' + (i + 1) + '-first'}
                                 type="tel"
-                                value={this.state.races[i].placings.first}
+                                value={this.state.races[i].placings.first !== 0 ? this.state.races[i].placings.first : ''}
                                 onChange={this.handlePlacingChange}
                             />
                         </div>
@@ -243,7 +240,7 @@ export default class Admin extends Component {
                             <input
                                 id={'race-' + (i + 1) + '-second'}
                                 type="tel"
-                                value={this.state.races[i].placings.second}
+                                value={this.state.races[i].placings.second !== 0 ? this.state.races[i].placings.second : ''}
                                 onChange={this.handlePlacingChange}
                             />
                         </div>
@@ -252,52 +249,61 @@ export default class Admin extends Component {
                             <input
                                 id={'race-' + (i + 1) + '-third'}
                                 type="tel"
-                                value={this.state.races[i].placings.third}
+                                value={this.state.races[i].placings.third !== 0 ? this.state.races[i].placings.third : ''}
                                 onChange={this.handlePlacingChange}
                             />
                         </div>
-                        <button className="save-btn" type="button" data-race={i + 1} onClick={this.handleSaveClick}>
+                        <button className="save-btn" type="button" data-race={i + 1} data-race-id={meetRaces[i]._id} onClick={this.handleSaveClick}>
                             Save
                         </button>
                     </div>
                     <div className="mb-10 bold">Set Race Status</div>
                     <div className="status-selector">
-                        <button
-                            className={meetRaces[i].status === 1 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                            type="button"
-                            data-meet={this.props.selectedMeet}
-                            data-race={i + 1}
-                            data-status="Not Run Yet"
-                            onClick={this.props.onStatusChange}>
-                            Not Run Yet
-                        </button>
-                        <button
-                            className={meetRaces[i].status === 2 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                            type="button"
-                            data-meet={this.props.selectedMeet}
-                            data-race={i + 1}
-                            data-status="About To Jump"
-                            onClick={this.props.onStatusChange}>
-                            About To Jump
-                        </button>
-                        <button
-                            className={meetRaces[i].status === 3 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                            type="button"
-                            data-meet={this.props.selectedMeet}
-                            data-race={i + 1}
-                            data-status="Racing"
-                            onClick={this.props.onStatusChange}>
-                            Racing
-                        </button>
-                        <button
-                            className={meetRaces[i].status === 4 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
-                            type="button"
-                            data-meet={this.props.selectedMeet}
-                            data-race={i + 1}
-                            data-status="Has Run"
-                            onClick={this.props.onStatusChange}>
-                            Has Run
-                        </button>
+                        <Button
+                            classes={meetRaces[i].status === 1 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                            type='button'
+                            attributes={{
+                                'data-meet': this.props.selectedMeet,
+                                'data-race': i + 1,
+                                'data-race-id': meetRaces[i]._id,
+                                'data-status': 1
+                            }}
+                            onClick={this.props.onStatusChange}
+                            text='Not Run Yet'
+                             />
+                        <Button
+                            classes={meetRaces[i].status === 2 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                            type='button'
+                            attributes={{
+                                'data-meet': this.props.selectedMeet,
+                                'data-race': i + 1,
+                                'data-race-id': meetRaces[i]._id,
+                                'data-status': 2
+                            }}
+                            onClick={this.props.onStatusChange}
+                            text='About To Jump' />
+                        <Button
+                            classes={meetRaces[i].status === 3 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                            type='button'
+                            attributes={{
+                                'data-meet': this.props.selectedMeet,
+                                'data-race': i + 1,
+                                'data-race-id': meetRaces[i]._id,
+                                'data-status': 3
+                            }}
+                            onClick={this.props.onStatusChange}
+                            text='Racing' />
+                        <Button
+                            classes={meetRaces[i].status === 4 ? 'btn status-selector-btn selected' : 'btn status-selector-btn'}
+                            type='button'
+                            attributes={{
+                                'data-meet': this.props.selectedMeet,
+                                'data-race': i + 1,
+                                'data-race-id': meetRaces[i]._id,
+                                'data-status': 4
+                            }}
+                            onClick={this.props.onStatusChange}
+                            text='Has Run' />
                     </div>
                     <div className="scratching-list">
                         <div className="mb-10 bold">Scratchings</div>
@@ -312,16 +318,17 @@ export default class Admin extends Component {
                 <Header
                     page="Administration"
                     path={this.props.path}
-                    punters={this.props.punters}
+                    competitions={this.props.competitions}
                     user={this.props.user}
                     selectedCompetition={this.props.selectedCompetition}
+                    handleCompetitionSelect={this.props.handleCompetitionSelect}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="This is the Administration page used to set placings and race statuses.  In the future you will also be able to set scratchings."
                 />
                 <MeetSelector meets={this.props.meets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
                 <div className="adminRaceList">{raceList}</div>
-                <Menu path={this.props.path} />
+                <BottomMenu path={this.props.path} />
             </div>
         );
     }

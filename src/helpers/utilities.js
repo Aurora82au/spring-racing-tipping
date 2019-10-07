@@ -6,9 +6,9 @@ export function logOut() {
     window.location.href = '/login';
 };
 
-
 /* Generates a random number of the specified length, ensuring it never starts with 0. */
 export function generateId(length) {
+    if (!length) { length = 8; }
     let min = '1';
     let max = '9';
     
@@ -18,4 +18,13 @@ export function generateId(length) {
     }
     
     return Math.floor(parseInt(min) + Math.random() * parseInt(max));
+}
+
+/* Get just the competitions the punter is in. */
+export function getPunterCompetitions(competitions, punter) {
+    if (!competitions || !punter) { return []; }
+
+    return competitions.filter(competition => {
+        return competition.punters.includes(punter._id);
+    });
 }

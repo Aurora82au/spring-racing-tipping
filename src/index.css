@@ -59,6 +59,9 @@
 .icon-reload:before {
     content: "\ea2e";
 }
+.icon-arrow-up:before {
+  content: "\ea3a";
+}
 
 
 /* General */
@@ -77,6 +80,11 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
     color: #666;
+    -webkit-overflow-scrolling: touch;
+}
+
+html.no-scroll, html.no-scroll body {
+    overflow-y: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -219,4 +227,13 @@ hr {
 
 .bg-blue {
     background-color: #458fff !important;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    html.no-scroll, html.no-scroll body {
+        overflow-y: auto;
+    }
 }

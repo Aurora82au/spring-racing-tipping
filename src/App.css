@@ -4,7 +4,7 @@
 /* h2,
 .profile-pic,
 .tip .pic,
-.odds-totals .pic,
+.game-account-totals .pic,
 .podium .pic,
 .podium .icon-trophy,
 .loser .pic,
@@ -109,6 +109,7 @@ div.bg-red {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 1rem 8rem;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -141,6 +142,11 @@ div.bg-red {
     margin-bottom: 1rem;
 }
 
+.competition-selector .link.disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
 .competition-selector a:hover {
     text-decoration: underline;
 }
@@ -154,9 +160,12 @@ div.bg-red {
 .selector select {
     width: 100%;
     height: 3.8rem;
-    padding: 0.8rem;
+    padding: 0.8rem 2.6rem 0.8rem 0.8rem;
+    overflow: hidden;
     border: 1px solid #aaa;
     outline: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -214,29 +223,19 @@ h2 img {
     text-transform: uppercase;
 }
 
-.profile-pic {
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
 .overlay .btn {
     align-self: center;
 }
 
 .info-icon {
-    position: absolute;
-    top: 2rem;
-    right: 5rem;
+    display: inline-block;
     width: 3rem;
     height: 3rem;
+    margin-right: 1rem;
     font-size: 2rem;
     line-height: 2.8rem;
     color: #333;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 100%;
     text-align: center;
@@ -244,11 +243,10 @@ h2 img {
     outline: 0;
 }
 
-.reload-btn,
-.icon-admin {
+.reload-btn {
     position: absolute;
-    top: 6rem;
-    right: 1rem;
+    top: 8.8rem;
+    right: 1.2rem;
     width: 3rem;
     height: 3rem;
     padding: 0.5rem 0.6rem 0.2rem;
@@ -275,9 +273,16 @@ h2 img {
 }
 
 .icon-admin {
-    right: 5rem;
+    margin-right: 1rem;
     padding: 0.5rem 0.6rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    font-size: 1.6rem;
+    line-height: 3rem !important;
+    color: #333;
     background-color: #fff;
+    cursor: pointer;
+    outline: 0;
 }
 
 .info-icon.selected,
@@ -297,9 +302,112 @@ h2 img {
 
 
 
-/* Menu */
+/* Top Menu */
 
-.menu {
+.top-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 5rem);
+    padding: 2rem 3rem;
+    background-color: #eee;
+    border-left: 1px solid #aaa;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 400ms ease-in-out;
+}
+
+.top-menu.open {
+    transform: translateX(0);
+    transition: transform 400ms ease-in-out;
+}
+
+.top-menu::before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: 0;
+    left: -1000%;
+    bottom: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 400ms linear, width 0s linear 400ms;
+}
+
+.top-menu.open::before {
+    width: 1000%;
+    opacity: 1;
+    transition: opacity 400ms linear;
+}
+
+.top-menu a {
+    display: block;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+}
+
+.profile-pic-container {
+    position: absolute;
+    top: 1.3rem;
+    left: -5rem;
+    padding: .5rem 1.3rem .3rem .6rem;
+    background-color: #eee;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #aaa;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.profile-pic-container .profile-pic {
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 400ms linear;
+}
+
+.top-menu.open .profile-pic-container .profile-pic {
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: all 400ms linear;
+}
+
+.profile-pic-container .icon-arrow-up {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1rem;
+    opacity: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 400ms linear;
+}
+
+.top-menu.open .profile-pic-container .icon-arrow-up {
+    opacity: 1;
+    transform: rotate(90deg);
+    transition: all 400ms linear;
+}
+
+.logout {
+    background-color: #ccc;
+}
+
+
+
+/* Bottom Menu */
+
+.bottom-menu {
     position: fixed;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -310,7 +418,7 @@ h2 img {
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.menu a {
+.bottom-menu a {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #ccc;
@@ -318,17 +426,17 @@ h2 img {
     text-align: center;
 }
 
-.menu a.selected {
+.bottom-menu a.selected {
     color: #27d3ff;
 }
 
-.menu .icon {
+.bottom-menu .icon {
     margin-bottom: 0.7rem;
     font-size: 2.8rem;
 }
 
-.menu .icon-info,
-.menu .icon-leader-board {
+.bottom-menu .icon-info,
+.bottom-menu .icon-leader-board {
     margin-bottom: 0;
     font-size: 3.5rem;
 }
@@ -391,9 +499,9 @@ input.password {
 .save-btn {
     display: flex;
     width: 6rem;
-    height: 3.3rem;
+    height: 3.8rem;
     justify-content: center;
-    line-height: 3rem;
+    align-items: center;
     border: none;
     color: #fff;
     background-color: #666;
@@ -669,6 +777,10 @@ input.password {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
 }
+.tips .no-races-msg {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
 .tip {
     padding: 0.6rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -737,23 +849,24 @@ input.password {
 .lb-heading.teal {
     color: #27d3ff;
 }
-.odds-totals {
+.game-account-totals {
     display: flex;
     max-width: 36rem;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
-.odds-totals .total {
+.game-account-totals .total {
     width: 33.3333%;
     text-align: center;
 }
-.odds-totals img {
+.game-account-totals img {
     width: 6rem;
     height: 6rem;
     margin-bottom: 0.5rem;
     border-radius: 100%;
 }
-.odds-totals .name {
+.game-account-totals .name {
     margin-bottom: 0.5rem;
 }
 .podium {
@@ -995,11 +1108,97 @@ input.password {
     }
 }
 
+@media (min-width: 768px) {
+    .app {
+        padding-bottom: 12rem;
+    }
+
+    .top-menu {
+        display: grid;
+        top: auto;
+        left: 0;
+        bottom: auto;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        height: 21.2rem;
+        border: 1px solid #aaa;
+        border-top: none;
+        transform: translateY(-22.2rem);
+    }
+
+    .top-menu.open {
+        transform: translateY(-1.1rem);
+    }
+
+    .top-menu::before {
+        display: none;
+    }
+
+    .top-menu a {
+        margin-bottom: 3rem;
+    }
+
+    .top-menu .competition-selector {
+        margin-top: 0;
+    }
+
+    .top-menu ul,
+    .top-menu li:last-child,
+    .top-menu li:last-child button {
+        margin-bottom: 0;
+    }
+
+    .top-menu h3 {
+        margin-top: 0;
+    }
+
+    .top-menu .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu .column:last-child {
+        padding-left: 4rem;
+        border-left: 1px solid #ccc;
+    }
+
+    .profile-pic-container {
+        top: auto;
+        left: auto;
+        right: 1rem;
+        bottom: -6rem;
+        padding: 2.3rem .6rem .4rem;
+        border-top: none;
+        border-right-color: #aaa;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .profile-pic-container .icon-arrow-up {
+        top: auto;
+        left: 50%;
+        margin-left: -1rem;
+        transform: rotate(-90deg);
+    }
+
+    .top-menu.open .profile-pic-container .icon-arrow-up {
+        transform: rotate(0deg);
+    }
+
+    .logout {
+        margin-top: auto; 
+    }
+
+    .reload-btn {
+        right: 1.8rem;
+    }
+}
+
 @media (min-width: 992px) {
-    .menu {
+    .bottom-menu {
         grid-template-columns: 1fr 1fr repeat(4, 25rem) 1fr 1fr;
     }
-    .menu a:first-child {
+    .bottom-menu a:first-child {
         grid-column-start: 3;
     }
     .tips {

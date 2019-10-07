@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
-import { logOut } from '../helpers/utilities';
+import React, { Component } from 'react';
+import TopMenu from './TopMenu';
 
 export default class Header extends Component {
     constructor(props) {
@@ -32,32 +31,19 @@ export default class Header extends Component {
 
     /* Function to render the component. */
     render() {
-
         return (
-            <Fragment>
+            <>
                 {
-                    // Show the information page link on every page but the Login page.
+                    // Show the top menu on every page but the Login page.
                     this.props.page !== 'Log In' &&
-                    <NavLink to={this.props.path + 'information'} className="info-icon" activeClassName="selected">i</NavLink>
-                }
-                {
-                    // Show the overlay and Log Out button if showLogOut is true.
-                    this.state.showLogOut &&
-                    <div className="overlay" onClick={this.handleHideLogOutOverlay}>
-                        <button className="btn" type="button" onClick={logOut}>
-                            Log Out
-                        </button>
-                    </div>
-                }
-                {
-                    // Show the user profile pic, if logged in, on every page but the Login page.
-                    (this.props.page !== 'Log In' && this.props.user) &&
-                    <img className="profile-pic" src={'pics/' + this.props.user.image} alt="profile-pic" onClick={this.handleShowLogOutOverlay} />
-                }
-                {
-                    // Show the admin button only if the user is an admin and it's not the Login page.
-                    this.props.isAdmin && this.props.page !== 'Log In' &&
-                    <NavLink to={this.props.path + 'admin'} className="icon-admin" activeClassName="selected" />
+                    <TopMenu
+                        path={this.props.path}
+                        user={this.props.user}
+                        competitions={this.props.competitions}
+                        selectedCompetition={this.props.selectedCompetition}
+                        handleCompetitionSelect={this.props.handleCompetitionSelect}
+                        isAdmin={this.props.isAdmin}
+                    />
                 }
                 {
                     // Show the reload button on every page but the Login page.
@@ -77,7 +63,7 @@ export default class Header extends Component {
                 }
                 <h3>{this.props.page}</h3>
                 <p>{this.props.text}</p>
-            </Fragment>
+            </>
         );
     }
 }

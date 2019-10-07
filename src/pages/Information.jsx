@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import Menu from '../components/Menu';
+import BottomMenu from '../components/BottomMenu';
 
 export default class Information extends Component {
     /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
@@ -14,9 +14,10 @@ export default class Information extends Component {
             <div className="app">
                 <Header page="Information"
                     path={this.props.path}
-                    punters={this.props.punters}
+                    competitions={this.props.competitions}
                     user={this.props.user}
                     selectedCompetition={this.props.selectedCompetition}
+                    handleCompetitionSelect={this.props.handleCompetitionSelect}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="This is where you can find a run down of how each of the pages of this app work, as well as the browser support and what some of the ideas for the future are."
@@ -132,7 +133,7 @@ export default class Information extends Component {
                     </li>
                 </ul>
                 <p>If you come across any issues, or you have any ideas for things to add or improve, let me know via Facebook Messager or email - sanmerah@gmail.com</p>
-                <Menu path={this.props.path}></Menu>
+                <BottomMenu path={this.props.path}></BottomMenu>
             </div>
         );
     }

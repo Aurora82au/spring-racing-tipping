@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
-import Menu from '../components/Menu';
+import BottomMenu from '../components/BottomMenu';
 
 export default class App extends Component {
     constructor(props) {
@@ -122,34 +122,37 @@ export default class App extends Component {
                 placings = this.props.races[c].placings;
                 // Find the associated tips for this user and race
                 tips = this.findTips(this.props.punters[b]._id, this.props.races[c]._id);
-                // Reset the race score
-                raceScore = 0;
-                // Get the current punter's stats from the stats array
-                puntersStats = this.findPuntersStats(stats, this.props.punters[b]._id);
-                // Get the current race meet from the current punter's stats
-                puntersStatsMeet = this.findPuntersStatsMeet(puntersStats, this.props.races[c].meetId);
+                
+                if (tips) {
+                    // Reset the race score
+                    raceScore = 0;
+                    // Get the current punter's stats from the stats array
+                    puntersStats = this.findPuntersStats(stats, this.props.punters[b]._id);
+                    // Get the current race meet from the current punter's stats
+                    puntersStatsMeet = this.findPuntersStatsMeet(puntersStats, this.props.races[c].meetId);
 
-                // Update the stats of that punter
-                if (tips.selections.includes(placings.first)) {
-                    puntersStats.firsts++;
-                    raceScore += 3;
+                    // Update the stats of that punter
+                    if (tips.selections.includes(placings.first)) {
+                        puntersStats.firsts++;
+                        raceScore += 3;
+                    }
+                    if (tips.selections.includes(placings.second)) {
+                        puntersStats.seconds++;
+                        raceScore += 2;
+                    }
+                    if (tips.selections.includes(placings.third)) {
+                        puntersStats.thirds++;
+                        raceScore += 1;
+                    }
+                    if (raceScore === 6) {
+                        puntersStats.trifectas++;
+                    }
+                    if (raceScore === 5) {
+                        puntersStats.quinellas++;
+                    }
+                    // Add the race score to this meets score
+                    puntersStatsMeet.score += raceScore;
                 }
-                if (tips.selections.includes(placings.second)) {
-                    puntersStats.seconds++;
-                    raceScore += 2;
-                }
-                if (tips.selections.includes(placings.third)) {
-                    puntersStats.thirds++;
-                    raceScore += 1;
-                }
-                if (raceScore === 6) {
-                    puntersStats.trifectas++;
-                }
-                if (raceScore === 5) {
-                    puntersStats.quinellas++;
-                }
-                // Add the race score to this meets score
-                puntersStatsMeet.score += raceScore;
             }
         }
 
@@ -198,7 +201,7 @@ export default class App extends Component {
                         <div key={j} className="stat-item">
                             <div className="number" dangerouslySetInnerHTML={{ __html: j + 1 + position }} />
                             <img src={'pics/' + punter.image} alt="Profile pic" className="pic" />
-                            <div className="name">{punter.name.first}</div>
+                            <div className="name">{punter.name.display}</div>
                             <div className="stat">{dataArray[i].scores[j].score}</div>
                         </div>
                     );
@@ -271,7 +274,7 @@ export default class App extends Component {
                         <div key={`${count}${i}`} className="stat-item">
                             <div className="number" dangerouslySetInnerHTML={{ __html: i + 1 + position }} />
                             <img src={'pics/' + punter.image} alt="Profile pic" className="pic" />
-                            <div className="name">{punter.name.first}</div>
+                            <div className="name">{punter.name.display}</div>
                             <div className="stat">{dataArray[i][name]}</div>
                         </div>
                     );
@@ -355,10 +358,11 @@ export default class App extends Component {
             <div className="app">
                 <Header
                     page="Statistics"
+                    competitions={this.props.competitions}
                     path={this.props.path}
-                    punters={this.props.punters}
                     user={this.props.user}
                     selectedCompetition={this.props.selectedCompetition}
+                    handleCompetitionSelect={this.props.handleCompetitionSelect}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="Here you can find various statistics, such as the placings for each race meet, number of trifectas, quinellas, 1sts, 2nds, 3rds, etc."
@@ -373,7 +377,7 @@ export default class App extends Component {
                 </div>
                 <div className={tab1Class}>{meetScoresHTML}</div>
                 <div className={tab2Class}>{otherScoresHTML}</div>
-                <Menu path={this.props.path} />
+                <BottomMenu path={this.props.path} />
             </div>
         );
     }

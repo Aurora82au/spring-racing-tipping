@@ -5,7 +5,7 @@
         "name": {
             "first": "Dave",
             "last": "Williams",
-            "display": "Dave W"
+            "display": "Dave"
         },
         "image": "Dave.jpg"
     },
@@ -15,7 +15,7 @@
         "name": {
             "first": "Alaina",
             "last": "Zorzi",
-            "display": "Alaina Z"
+            "display": "Alaina"
         },
         "image": "Alaina.jpg"
     },
@@ -25,7 +25,7 @@
         "name": {
             "first": "Kate",
             "last": "Zorzi",
-            "display": "Kate Z"
+            "display": "Kate"
         },
         "image": "Kate.jpg"
     },
@@ -35,7 +35,7 @@
         "name": {
             "first": "Simon",
             "last": "Paini",
-            "display": "Simon P"
+            "display": "Simon"
         },
         "image": "Simon.jpg"
     },
@@ -45,7 +45,7 @@
         "name": {
             "first": "Nathan",
             "last": "Farrow",
-            "display": "Nathan F"
+            "display": "Nathan"
         },
         "image": "Nathan.jpg"
     },
@@ -55,7 +55,7 @@
         "name": {
             "first": "Lauren",
             "last": "Paini",
-            "display": "Lauren P"
+            "display": "Lauren"
         },
         "image": "Lauren.jpg"
     },
@@ -65,7 +65,7 @@
         "name": {
             "first": "Colin",
             "last": "Quinn",
-            "display": "Colin Q"
+            "display": "Colin"
         },
         "image": "Colin.jpg"
     },
@@ -75,7 +75,7 @@
         "name": {
             "first": "Melanie",
             "last": "Budge",
-            "display": "Melanie B"
+            "display": "Melanie"
         },
         "image": "Melanie.jpg"
     },
@@ -85,7 +85,7 @@
         "name": {
             "first": "Chris",
             "last": "Kelly",
-            "display": "Chris K"
+            "display": "Chris"
         },
         "image": "Chris.jpg"
     },
@@ -95,7 +95,7 @@
         "name": {
             "first": "Nicole",
             "last": "Selakovic",
-            "display": "Nicole S"
+            "display": "Nicole"
         },
         "image": "Nicole.jpg"
     },
@@ -105,7 +105,7 @@
         "name": {
             "first": "Bernie",
             "last": "Farrow",
-            "display": "Bernie F"
+            "display": "Bernie"
         },
         "image": "Bernie.jpg"
     },
@@ -115,7 +115,7 @@
         "name": {
             "first": "Kristy-Anne",
             "last": "Quinn",
-            "display": "Kristy-Anne Q"
+            "display": "KA"
         },
         "image": "KA.jpg"
     },
@@ -125,7 +125,7 @@
         "name": {
             "first": "Emma",
             "last": "Parnell",
-            "display": "Emma P"
+            "display": "Emma"
         },
         "image": "EmmaP.jpg"
     },
@@ -135,7 +135,7 @@
         "name": {
             "first": "Leigh",
             "last": "Sullivan",
-            "display": "Leigh S"
+            "display": "Leigh"
         },
         "image": "Leigh.jpg"
     },
@@ -145,7 +145,7 @@
         "name": {
             "first": "Tara",
             "last": "Smith",
-            "display": "Tara S"
+            "display": "Tara"
         },
         "image": "Tara.jpg"
     },
@@ -155,9 +155,9 @@
         "name": {
             "first": "1, 2, 3",
             "last": "",
-            "display": "Horse 1, 2, 3"
+            "display": "1, 2, 3"
         },
-        "image": "Default.png"
+        "image": "Game.png"
     },
     {
         "_id": 17,
@@ -165,9 +165,9 @@
         "name": {
             "first": "Top",
             "last": "Odds",
-            "display": "Top Odds"
+            "display": "Top"
         },
-        "image": "Default.png"
+        "image": "Game.png"
     },
     {
         "_id": 18,
@@ -175,8 +175,18 @@
         "name": {
             "first": "Bottom",
             "last": "Odds",
-            "display": "Bottom Odds"
+            "display": "Bottom"
         },
-        "image": "Default.png"
+        "image": "Game.png"
+    },
+    {
+        "_id": 19,
+        "password": "ls1111",
+        "name": {
+            "first": "Leigh's",
+            "last": "Algorithm",
+            "display": "Algorithm"
+        },
+        "image": "Game.png"
     }
 ]

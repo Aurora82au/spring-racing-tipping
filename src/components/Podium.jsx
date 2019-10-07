@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 export default function Podium(props) {
     // Returns the HTML for the podium, inserting the details for first, second and third from the passed props
     return (
-        <Fragment>
+        <>
             <h4 className="lb-heading teal">PODIUM</h4>
             <div className="podium">
                 <div className="second">
@@ -44,6 +44,6 @@ export default function Podium(props) {
                     </div>
                 </div>
             </div>
-        </Fragment>
+        </>
     );
 }

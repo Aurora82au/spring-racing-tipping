@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import { generateId } from '../helpers/utilities';
 
 export default class LabelAndSelectBox extends PureComponent {
@@ -6,7 +6,7 @@ export default class LabelAndSelectBox extends PureComponent {
         const id = generateId(6);
 
         return (
-            <Fragment>
+            <>
                 <label htmlFor={id} className={this.props.labelClasses}>
                     {this.props.labelText}
                 </label>
@@ -21,7 +21,7 @@ export default class LabelAndSelectBox extends PureComponent {
                     </select>
                     <span className="icon-select" />
                 </div>
-            </Fragment>
+            </>
         );
     }
 }

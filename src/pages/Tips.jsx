@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/Header';
 import MeetSelector from '../components/MeetSelector';
 import TipsRaceList from '../components/TipsRaceList';
-import Menu from '../components/Menu';
+import BottomMenu from '../components/BottomMenu';
 
 export default class Tips extends Component {
     /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
@@ -35,9 +35,10 @@ export default class Tips extends Component {
                 <Header
                     page="Tips"
                     path={this.props.path}
-                    punters={this.props.punters}
+                    competitions={this.props.competitions}
                     user={this.props.user}
                     selectedCompetition={this.props.selectedCompetition}
+                    handleCompetitionSelect={this.props.handleCompetitionSelect}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
                     text="You want a tip?.....be good to your mother.  Otherwise, simply select 3 horses for each race.  If you already have 3 selected and want to change one, simply unselect one of them. Don't worry about saving at the end, your tips are saved every time you make a change."
@@ -63,7 +64,7 @@ export default class Tips extends Component {
                     user={this.props.user}
                     onSelectionChange={this.props.onSelectionChange}
                 />
-                <Menu path={this.props.path} />
+                <BottomMenu path={this.props.path} />
             </div>
         );
     }

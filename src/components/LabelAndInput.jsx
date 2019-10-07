@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { generateId } from '../helpers/utilities';
 
 export default class LabelAndInput extends Component {
@@ -14,15 +14,6 @@ export default class LabelAndInput extends Component {
        or if the new state is different from the current state. */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props && nextState === this.state);
-    }
-
-    /* When the component recieves new props, set the local user and password from the passed props. */
-    componentWillReceiveProps() {
-        if (this.props.user) {
-            this.setState({
-                value: this.props.value
-            });
-        }
     }
 
     /* When the user types in the field, set the value in the state to what the user is typing. */
@@ -55,7 +46,7 @@ export default class LabelAndInput extends Component {
         labelClass += (this.state.focused || this.state.value !== '') ? 'label focused' : 'label';
 
         return (
-            <Fragment>
+            <>
                 <label htmlFor={id} className={labelClass}>
                     {this.props.labelText}
                 </label>
@@ -68,7 +59,7 @@ export default class LabelAndInput extends Component {
                     onChange={this.handleChange}
                     disabled={this.props.disabled}
                 />
-            </Fragment>
+            </>
         );
     }
 }

@@ -31,8 +31,10 @@ export default class TipsRaceList extends Component {
     }
 
     /* When the component is updating and is receiving the new props, call setTips passing it the new props */
-    componentWillReceiveProps(nextProps) {
-        this.setTips(nextProps);
+    componentDidUpdate(prevProps) {
+        if (this.props !== prevProps) {
+            this.setTips(this.props);
+        }
     }
 
     /* Function to take the passed props and set the currently selected tips */
@@ -152,7 +154,7 @@ export default class TipsRaceList extends Component {
         raceDay.setMinutes(15);
 
         if (new Date() > raceDay) {
-            raceListClass = 'raceList'; //'raceList disabled';
+            raceListClass = 'raceList disabled';
         } else {
             raceListClass = 'raceList';
         }

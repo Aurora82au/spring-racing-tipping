@@ -1,0 +1,58 @@
+[
+    {
+        "_id": 37523504,
+        "name": "Turnbull Stakes Day",
+        "location": "Flemington",
+        "date": "2018-10-06",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 39976886,
+        "name": "Caulfield Guineas",
+        "location": "Caulfield",
+        "date": "2018-10-13",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 51800067,
+        "name": "Caulfield Cup",
+        "location": "Caulfield",
+        "date": "2018-10-20",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 49275008,
+        "name": "Cox Plate",
+        "location": "Moonee Valley",
+        "date": "2018-10-27",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 87976407,
+        "name": "Derby Day",
+        "location": "Flemington",
+        "date": "2018-11-03",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 17993201,
+        "name": "Melbourne Cup",
+        "location": "Flemington",
+        "date": "2018-11-06",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 14635497,
+        "name": "Oaks Day",
+        "location": "Flemington",
+        "date": "2018-11-08",
+        "competitionId": 87654321
+    },
+    {
+        "_id": 58322811,
+        "name": "Stakes Day",
+        "location": "Flemington",
+        "date": "2018-11-10",
+        "competitionId": 87654321
+    }
+]
