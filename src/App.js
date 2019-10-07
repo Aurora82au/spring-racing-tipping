@@ -33,10 +33,11 @@ export default class App extends Component {
         };
 
         this.useJSON = false;
-        this.backendURL = 'http://localhost:4001'; // Local
-        // this.backendURL = 'https://sleepy-harbor-88560.herokuapp.com'; // Heroku
-        this.path = '/'; // Local
-        // this.path = '/spring-racing-tipping/'; // Github
+        // this.backendURL = 'http://localhost:4001'; // Local
+        // this.backendURL = 'https://sleepy-harbor-88560.herokuapp.com'; // Production v1 - Heroku
+        this.backendURL = 'https://spring-racing-tipping-88560.herokuapp.com'; // Production v2 - Heroku
+        // this.path = '/'; // Local
+        this.path = '/spring-racing-tipping/'; // Github
     }
 
     /* Determines whether React should re-render the component, in this case if the new state is different from the current state. */
