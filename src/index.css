@@ -59,6 +59,9 @@
 .icon-reload:before {
     content: "\ea2e";
 }
+.icon-arrow-up:before {
+  content: "\ea3a";
+}
 
 
 /* General */
@@ -77,6 +80,11 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
     color: #666;
+    -webkit-overflow-scrolling: touch;
+}
+
+html.no-scroll, html.no-scroll body {
+    overflow-y: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 input[type="text"], input[type="tel"], input[type="password"] {
-    height: 3.3rem;
+    height: 3.8rem;
     padding: .7rem 1rem;
     border: 1px solid #aaa;
     outline: 0;
@@ -95,6 +103,8 @@ input[type="tel"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
 }
 
 a {
+    display: inline-block;
+    color: #27d3ff;
     text-decoration: none;
 }
 
@@ -127,6 +137,19 @@ li {
     content: "-";
     top: 0;
     left: -1rem;
+}
+
+button.link {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #27d3ff;
+    cursor: pointer;
+}
+
+button.link:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -204,4 +227,13 @@ hr {
 
 .bg-blue {
     background-color: #458fff !important;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    html.no-scroll, html.no-scroll body {
+        overflow-y: auto;
+    }
 }

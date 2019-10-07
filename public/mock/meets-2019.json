@@ -1,0 +1,51 @@
+[
+    {
+        "_id": 80058422,
+        "name": "Caulfield Guineas",
+        "location": "Caulfield",
+        "date": "2019-10-12",
+        "competitionId": 31558550
+    },
+    {
+        "_id": 12066911,
+        "name": "Caulfield Cup",
+        "location": "Caulfield",
+        "date": "2019-10-19",
+        "competitionId": 31558550
+    },
+    {
+        "_id": 73669653,
+        "name": "Cox Plate",
+        "location": "Moonee Valley",
+        "date": "2019-10-26",
+        "competitionId": 31558550
+    },
+    {
+        "_id": 26319583,
+        "name": "Derby Day",
+        "location": "Flemington",
+        "date": "2019-11-02",
+        "competitionId": 31558550
+    },
+    {
+        "_id": 81371443,
+        "name": "Melbourne Cup",
+        "location": "Flemington",
+        "date": "2019-11-05",
+        "competitionId": 31558550
+    },
+    {
+        "_id": 38108820,
+        "name": "Oaks Day",
+        "location": "Flemington",
+        "date": "2019-11-07",
+        "competitionId": 31558550
+    },
+    {
+        "_id": 57558470,
+        "name": "Stakes Day",
+        "location": "Flemington",
+        "date": "2019-11-09",
+        "competitionId": 31558550
+    }
+]

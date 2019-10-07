@@ -1,6 +1,6 @@
 {
   "name": "spring-racing",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "homepage": "http://davidwilliams.ninja",
   "scripts": {
@@ -24,14 +24,13 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-fastclick": "^3.0.2",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
-    "react-scripts": "^1.0.14"
+    "gh-pages": "^2.1.1"
   }
 }

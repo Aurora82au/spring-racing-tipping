@@ -1,22 +1,47 @@
 /* General */
 
 /* Used when hiding things like profile pics while at work - START */
-/* h2, .profile-pic, .tip .pic, .odds-totals .pic, .podium .pic, .podium .icon-trophy, .loser .pic, .stat-item .pic, .menu .icon {
+/* h2,
+.profile-pic,
+.tip .pic,
+.game-account-totals .pic,
+.podium .pic,
+.podium .icon-trophy,
+.loser .pic,
+.stat-item .pic {
     display: none !important;
 }
 .icon-admin {
     top: 2rem !important;
 }
-div.bg-green, div.bg-orange, div.bg-red {
+div.bg-green,
+div.bg-orange,
+div.bg-red {
     background-color: #458fff !important;
 }
-.race-selector .circle.selected.bg-green::after, .race-selector .circle.selected.bg-orange::after, .race-selector .circle.selected.bg-red::after {
+.race-selector .circle.selected.bg-green::after,
+.race-selector .circle.selected.bg-orange::after,
+.race-selector .circle.selected.bg-red::after {
     border-top-color: #458fff !important;
 }
 .browser {
     background: none !important;
 } */
 /* Used when hiding things like profile pics while at work - END */
+
+.sr-only {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+	border: 0 !important;
+	white-space: nowrap !important;
+}
 
 .flip-container.flipped .flipper {
     transform: rotateY(180deg);
@@ -123,11 +148,12 @@ div.bg-green, div.bg-orange, div.bg-red {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 1rem 8rem;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
 .error {
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #f00c;
 }
 
@@ -143,6 +169,27 @@ div.bg-green, div.bg-orange, div.bg-red {
     outline: 0;
 }
 
+.competition-selector {
+    margin-top: 4rem;
+}
+
+.competition-selector ul {
+    padding-left: 0;
+}
+
+.competition-selector .link {
+    margin-bottom: 1rem;
+}
+
+.competition-selector .link.disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+.competition-selector a:hover {
+    text-decoration: underline;
+}
+
 .selector {
     position: relative;
     margin-top: 2rem;
@@ -151,12 +198,16 @@ div.bg-green, div.bg-orange, div.bg-red {
 
 .selector select {
     width: 100%;
-    height: 3.7rem;
-    padding: 0.8rem;
+    height: 3.8rem;
+    padding: 0.8rem 2.6rem 0.8rem 0.8rem;
+    overflow: hidden;
     border: 1px solid #aaa;
     outline: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
 }
 
 .selector select::-ms-expand {
@@ -177,10 +228,13 @@ div.bg-green, div.bg-orange, div.bg-red {
     font-size: 2.2rem;
 }
 
+
+
 /* Header */
 
 h2 {
     margin-top: 0.5rem;
+    margin-bottom: 4rem;
     font-size: 1.6rem;
 }
 
@@ -200,14 +254,11 @@ h2 img {
     vertical-align: top;
 }
 
-.profile-pic {
+.comp-name {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    cursor: pointer;
+    top: 5rem;
+    max-width: 21.5rem;
+    text-transform: uppercase;
 }
 
 .overlay .btn {
@@ -215,14 +266,14 @@ h2 img {
 }
 
 .info-icon {
-    position: absolute;
-    top: 1rem;
-    right: 5rem;
+    display: inline-block;
     width: 3rem;
     height: 3rem;
+    margin-right: 1rem;
     font-size: 2rem;
     line-height: 2.8rem;
     color: #333;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 100%;
     text-align: center;
@@ -230,11 +281,10 @@ h2 img {
     outline: 0;
 }
 
-.reload-btn,
-.icon-admin {
+.reload-btn {
     position: absolute;
-    top: 5.5rem;
-    right: 1rem;
+    top: 8.8rem;
+    right: 1.2rem;
     width: 3rem;
     height: 3rem;
     padding: 0.5rem 0.6rem 0.2rem;
@@ -255,6 +305,11 @@ h2 img {
     background-color: #aaa;
 }
 
+.reload-btn.loading {
+    animation: 1s linear infinite spinner;
+    pointer-events: none;
+}
+
 .icon-reload {
     vertical-align: 1px;
 }
@@ -273,9 +328,16 @@ h2 img {
 }
 
 .icon-admin {
-    right: 5rem;
+    margin-right: 1rem;
     padding: 0.5rem 0.6rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    font-size: 1.6rem;
+    line-height: 3rem !important;
+    color: #333;
     background-color: #fff;
+    cursor: pointer;
+    outline: 0;
 }
 
 .info-icon.selected,
@@ -284,9 +346,123 @@ h2 img {
     border-color: #27d3ff;
 }
 
-/* Menu */
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+         transform: rotate(360deg);
+    }
+}
 
-.menu {
+
+
+/* Top Menu */
+
+.top-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 5rem);
+    padding: 2rem 3rem;
+    background-color: #eee;
+    border-left: 1px solid #aaa;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 400ms ease-in-out;
+}
+
+.top-menu.open {
+    transform: translateX(0);
+    transition: transform 400ms ease-in-out;
+}
+
+.top-menu::before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: 0;
+    left: -1000%;
+    bottom: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 400ms linear, width 0s linear 400ms;
+}
+
+.top-menu.open::before {
+    width: 1000%;
+    opacity: 1;
+    transition: opacity 400ms linear;
+}
+
+.top-menu a {
+    display: block;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+}
+
+.profile-pic-container {
+    position: absolute;
+    top: 1.3rem;
+    left: -5rem;
+    padding: .5rem 1.3rem .3rem .6rem;
+    background-color: #eee;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #aaa;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.profile-pic-container .profile-pic {
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 400ms linear;
+}
+
+.top-menu.open .profile-pic-container .profile-pic {
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: all 400ms linear;
+}
+
+.profile-pic-container .icon-arrow-up {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1rem;
+    opacity: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 400ms linear;
+}
+
+.top-menu.open .profile-pic-container .icon-arrow-up {
+    opacity: 1;
+    transform: rotate(90deg);
+    transition: all 400ms linear;
+}
+
+.logout {
+    background-color: #ccc;
+}
+
+
+
+/* Bottom Menu */
+
+.bottom-menu {
     position: fixed;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -297,7 +473,7 @@ h2 img {
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.menu a {
+.bottom-menu a {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #ccc;
@@ -305,31 +481,33 @@ h2 img {
     text-align: center;
 }
 
-.menu a.selected {
+.bottom-menu a.selected {
     color: #27d3ff;
 }
 
-.menu .icon {
+.bottom-menu .icon {
     margin-bottom: 0.7rem;
     font-size: 2.8rem;
 }
 
-.menu .icon-info,
-.menu .icon-leader-board {
+.bottom-menu .icon-info,
+.bottom-menu .icon-leader-board {
     margin-bottom: 0;
     font-size: 3.5rem;
 }
 
+
+
 /* Login */
 
-.password-label {
+label.label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     transform: translate(1rem, 3rem);
     transition: transform 200ms ease-in-out;
 }
 
-.password-label.focused {
+label.label.focused {
     transform: translate(0, 0);
     transition: transform 200ms ease-in-out;
 }
@@ -339,8 +517,10 @@ input.password {
     height: 3.7rem;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
+
+
 
 /* Admin */
 
@@ -374,9 +554,9 @@ input.password {
 .save-btn {
     display: flex;
     width: 6rem;
-    height: 3.3rem;
+    height: 3.8rem;
     justify-content: center;
-    line-height: 3rem;
+    align-items: center;
     border: none;
     color: #fff;
     background-color: #666;
@@ -419,30 +599,28 @@ input.password {
         transparent 55%
     );
 }
-
 .adminRace .status-selector {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 }
-
 .adminRace .status-selector-btn {
     width: 100%;
 }
-
 .adminRace .status-selector-btn.selected {
     border-color: #813aff;
     color: #fff;
     background-color: #813aff;
     pointer-events: none;
 }
-
 .adminRace .status-selector-btn.disabled {
     border-color: #ddd;
     color: #aaa;
     background-color: #eee;
     pointer-events: none;
 }
+
+
 
 /* Information */
 
@@ -451,11 +629,9 @@ input.password {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 0.5rem;
 }
-
 .browser-list li {
     margin-bottom: 0.5rem;
 }
-
 .browser {
     display: inline-block;
     width: 3rem;
@@ -465,23 +641,18 @@ input.password {
     background-size: cover;
     vertical-align: -1rem;
 }
-
 .browser.chrome {
     background-position: 0 0;
 }
-
 .browser.firefox {
     background-position: -30px 0;
 }
-
 .browser.safari {
     background-position: -90px 0;
 }
-
 .browser.opera {
     background-position: -60px 0;
 }
-
 .demo-square {
     display: inline-block;
     width: 1rem;
@@ -489,7 +660,6 @@ input.password {
     margin-right: 0.5rem;
     vertical-align: -0.1rem;
 }
-
 .icon-admin.demo {
     position: relative;
     top: auto;
@@ -498,6 +668,8 @@ input.password {
     font-size: 1rem;
 }
 
+
+
 /* Tips */
 
 .tip-examples {
@@ -505,15 +677,12 @@ input.password {
     align-items: center;
     margin-bottom: 2rem;
 }
-
 .raceList .tip-group {
     margin-bottom: 2rem;
 }
-
 .raceList .details {
     margin-bottom: 1rem;
 }
-
 .raceList .name {
     display: inline-block;
     max-width: 24rem;
@@ -524,13 +693,11 @@ input.password {
     text-transform: uppercase;
     vertical-align: bottom;
 }
-
 .raceList .selections {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-row-gap: 1rem;
 }
-
 .raceList .selection,
 .tip-examples .selection {
     display: flex;
@@ -543,54 +710,37 @@ input.password {
     background-color: #aaa;
     cursor: pointer;
 }
-
 .tip-examples .selection {
     margin-left: 3rem;
     margin-right: 0.4rem;
     cursor: default;
 }
-
 .tip-examples .selection:first-child {
     margin-left: 0;
 }
-
 .raceList .selection.selected,
 .tip-examples .selection.selected {
     background-color: #813aff;
 }
-
 .raceList .selection.scratched,
 .tip-examples .selection.scratched {
-    background: repeating-linear-gradient(
-        -45deg,
-        transparent 46%,
-        #ff0000 49%,
-        #ff0000 52%,
-        transparent 55%
-    );
+    background: repeating-linear-gradient(-45deg, transparent 46%, #ff0000 49%, #ff0000 52%, transparent 55%);
 }
-
 .raceList .selection.selected.scratched,
 .tip-examples .selection.selected.scratched {
-    background: repeating-linear-gradient(
-        -45deg,
-        #813aff 46%,
-        #813aff 49%,
-        #fff 52%,
-        #813aff 55%
-    );
+    background: repeating-linear-gradient(-45deg, #813aff 46%, #813aff 49%, #fff 52%, #813aff 55%);
 }
-
 .disabled .bold,
 .disabled .details {
     color: #ccc;
 }
-
 .raceList.disabled .selection,
 .disabled .status {
     pointer-events: none;
     opacity: 0.5;
 }
+
+
 
 /* Results */
 
@@ -599,7 +749,6 @@ input.password {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 .race-selector .circle {
     position: relative;
     display: flex;
@@ -613,11 +762,9 @@ input.password {
     color: #fff;
     cursor: pointer;
 }
-
 .race-selector .circle:last-child {
     margin-right: 0;
 }
-
 .race-selector .circle.selected::after {
     position: absolute;
     display: block;
@@ -631,23 +778,18 @@ input.password {
     border-top: 1rem solid;
     border-bottom: 1rem solid transparent;
 }
-
 .race-selector .circle.selected.bg-green::after {
     border-top-color: green;
 }
-
 .race-selector .circle.selected.bg-orange::after {
     border-top-color: orange;
 }
-
 .race-selector .circle.selected.bg-red::after {
     border-top-color: red;
 }
-
 .race-selector .circle.selected.bg-blue::after {
     border-top-color: #458fff;
 }
-
 .race {
     display: grid;
     grid-template-columns: minmax(auto, 20rem) 1fr;
@@ -657,21 +799,17 @@ input.password {
         'tips         tips';
     grid-gap: 2rem;
 }
-
 .race .details {
     grid-area: details;
 }
-
 .race .details .name {
     text-transform: uppercase;
 }
-
 .race .placing {
     grid-area: placings;
     display: inline-block;
     width: 5rem;
 }
-
 .placing.gold:before,
 .placing.silver:before,
 .placing.bronze:before {
@@ -682,35 +820,32 @@ input.password {
     margin-right: 0.5rem;
     border-radius: 100%;
 }
-
 .placing.gold:before {
     background-color: #eacb3c;
 }
-
 .placing.silver:before {
     background-color: #e6e8fa;
 }
-
 .placing.bronze:before {
     background-color: #8c7853;
 }
-
 .tips-heading {
     grid-area: 'tips-heading';
 }
-
 .tips {
     display: grid;
     grid-area: tips;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
 }
-
+.tips .no-races-msg {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
 .tip {
     padding: 0.6rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
 .tip .pic {
     width: 3rem;
     height: 3rem;
@@ -718,7 +853,6 @@ input.password {
     border-radius: 100%;
     vertical-align: -1rem;
 }
-
 .tip .name {
     display: inline-block;
     width: calc(100% - 3.5rem);
@@ -727,44 +861,36 @@ input.password {
     overflow: hidden;
     vertical-align: middle;
 }
-
 .tip .name::after {
     display: block;
     content: ' ';
 }
-
 .tip .numbers {
     display: inline-block;
     width: 62%;
     margin-top: 0.5rem;
 }
-
 .tip .numbers .group {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
 .tip .numbers .group:last-child {
     margin-bottom: 0;
 }
-
 .tip .numbers .label {
     display: inline-block;
     width: 3.6rem;
     font-weight: bold;
 }
-
 .tip .correct {
     color: #27d3ff;
 }
-
 .tip .correct::after {
     display: inline-block;
     content: '\e5ca';
     margin-left: 0.2rem;
     font-family: 'icomoon';
 }
-
 .score {
     display: inline-block;
     width: 4rem;
@@ -773,40 +899,37 @@ input.password {
     text-align: center;
 }
 
+
+
 /* Leaderboard */
 
 .lb-heading {
     margin-top: 3rem;
     text-align: center;
 }
-
 .lb-heading.teal {
     color: #27d3ff;
 }
-
-.odds-totals {
+.game-account-totals {
     display: flex;
     max-width: 36rem;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
-
-.odds-totals .total {
+.game-account-totals .total {
     width: 33.3333%;
     text-align: center;
 }
-
-.odds-totals img {
+.game-account-totals img {
     width: 6rem;
     height: 6rem;
     margin-bottom: 0.5rem;
     border-radius: 100%;
 }
-
-.odds-totals .name {
+.game-account-totals .name {
     margin-bottom: 0.5rem;
 }
-
 .podium {
     display: flex;
     justify-content: center;
@@ -814,7 +937,6 @@ input.password {
     margin-top: 2rem;
     text-align: center;
 }
-
 .podium .first,
 .podium .second,
 .podium .third {
@@ -825,14 +947,12 @@ input.password {
     width: 33.3333%;
     max-width: 12rem;
 }
-
 .podium .pic {
     display: block;
     width: 8rem;
     margin-bottom: 0.5rem;
     border-radius: 100%;
 }
-
 .podium .name {
     width: 90%;
     margin-bottom: 0.5rem;
@@ -840,7 +960,6 @@ input.password {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 .podium .bar {
     display: flex;
     flex-direction: column;
@@ -849,63 +968,51 @@ input.password {
     width: 100%;
     background-color: #ddd;
 }
-
 .podium .first .bar {
     height: 18rem;
 }
-
 .podium .second .bar {
     height: 13rem;
 }
-
 .podium .third .bar {
     height: 8rem;
 }
-
 .podium .icon-trophy {
     font-size: 6rem;
     margin-bottom: 4rem;
     color: #eacb3c;
 }
-
 .podium .bar .number {
     margin-bottom: 0.5rem;
     font-size: 2rem;
     color: #444;
 }
-
 .podium .bar sup {
     font-size: 1.2rem;
     vertical-align: 0.6rem;
 }
-
 .podium .bar .points {
     margin-bottom: 1.8rem;
 }
-
 .loser {
     width: 27rem;
     margin: 0 auto 1rem;
 }
-
 .loser .number {
     display: inline-block;
     margin-right: 1rem;
     width: 3rem;
     vertical-align: -0.1rem;
 }
-
 .loser .number sup {
     font-size: 0.8rem;
 }
-
 .loser .points {
     display: inline-block;
     margin-right: 1rem;
     width: 5rem;
     vertical-align: middle;
 }
-
 .loser .pic {
     width: 5rem;
     height: 5rem;
@@ -913,7 +1020,6 @@ input.password {
     border-radius: 100%;
     vertical-align: middle;
 }
-
 .loser .name {
     display: inline-block;
     width: 10.9rem;
@@ -923,55 +1029,54 @@ input.password {
     vertical-align: middle;
 }
 
+
+
 /* Statistics */
 
 .tab-btns {
     display: flex;
     margin-bottom: 2rem;
 }
-
 .tab-btn {
     flex-basis: 50%;
 }
-
 .tab-btn.selected {
     color: #fff;
     background-color: #813aff;
     border-color: #813aff;
 }
-
+.tab-panel hr:first-child {
+    display: none;
+}
 .stat-container {
     display: flex;
     padding-bottom: 2rem;
     overflow-x: auto;
 }
-
 .stat-item {
     width: 6rem;
     margin-right: 2rem;
     text-align: center;
 }
-
 .stat-item .number {
     margin-bottom: 0.5rem;
 }
-
 .stat-item .number sup {
     font-size: 0.8rem;
 }
-
 .stat-item .pic {
     width: 6rem;
     border-radius: 100%;
 }
-
 .stat-item .name {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-/***** Media Queries *****/
+
+
+/* **** Media Queries **** */
 
 @media (min-width: 360px) {
     .timeout-msg {
@@ -986,43 +1091,32 @@ input.password {
     h2 {
         font-size: 1.8rem;
     }
-
+    .comp-name {
+        max-width: 24rem;
+    }
     .race-selector .circle {
         width: 3rem;
         height: 3rem;
         margin-right: 0.4rem;
     }
-
     .adminRace input[type='tel'] {
         margin-right: 2rem;
     }
-
     .raceList .name {
         max-width: 28rem;
     }
-
     .race {
         grid-template-columns: minmax(auto, 24rem) 1fr;
     }
 }
 
 @media (min-width: 375px) {
-    .timeout-msg {
-        max-width: 37rem;
-        margin-left: -18.5rem;
-    }
-    
-    .timeout-msg img {
-        width: 35rem;
-    }
     .race-selector .circle {
         margin-right: 0.6rem;
     }
-
     .raceList .name {
         max-width: 29rem;
     }
-
     .race {
         grid-template-columns: minmax(auto, 26rem) 1fr;
     }
@@ -1038,11 +1132,9 @@ input.password {
     .race-selector .circle {
         margin-right: 0.8rem;
     }
-
     .raceList .name {
         max-width: 32rem;
     }
-
     .race {
         grid-template-columns: minmax(auto, 28rem) 1fr;
     }
@@ -1050,66 +1142,138 @@ input.password {
 
 @media (min-width: 410px) {
     .icon-admin {
-        top: 1rem;
+        top: 2rem;
         right: 9rem;
     }
-
     .race-selector .circle {
         margin-right: 1rem;
     }
-
     .raceList .name {
         max-width: 33rem;
     }
 }
-
-/* To cater to phones in landscape */
 
 @media (min-width: 500px) {
     .selector,
     input.password {
         max-width: 39rem;
     }
-
     .tips {
         grid-template-columns: repeat(3, 1fr);
     }
-
     .raceList .selections,
     .scratching-list .selections {
         grid-template-columns: repeat(12, 1fr);
     }
-
     .race {
         grid-template-columns: minmax(auto, 30rem) 1fr;
     }
-
     .adminRace .status-selector {
         max-width: 39rem;
     }
 }
-
 @media (min-width: 660px) {
     .tips {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* To cater to tablets in landscape, and desktop */
+@media (min-width: 768px) {
+    .app {
+        padding-bottom: 12rem;
+    }
+
+    .top-menu {
+        display: grid;
+        top: auto;
+        left: 0;
+        bottom: auto;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        height: 21.2rem;
+        border: 1px solid #aaa;
+        border-top: none;
+        transform: translateY(-22.2rem);
+    }
+
+    .top-menu.open {
+        transform: translateY(-1.1rem);
+    }
+
+    .top-menu::before {
+        display: none;
+    }
+
+    .top-menu a {
+        margin-bottom: 3rem;
+    }
+
+    .top-menu .competition-selector {
+        margin-top: 0;
+    }
+
+    .top-menu ul,
+    .top-menu li:last-child,
+    .top-menu li:last-child button {
+        margin-bottom: 0;
+    }
+
+    .top-menu h3 {
+        margin-top: 0;
+    }
+
+    .top-menu .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu .column:last-child {
+        padding-left: 4rem;
+        border-left: 1px solid #ccc;
+    }
+
+    .profile-pic-container {
+        top: auto;
+        left: auto;
+        right: 1rem;
+        bottom: -6rem;
+        padding: 2.3rem .6rem .4rem;
+        border-top: none;
+        border-right-color: #aaa;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .profile-pic-container .icon-arrow-up {
+        top: auto;
+        left: 50%;
+        margin-left: -1rem;
+        transform: rotate(-90deg);
+    }
+
+    .top-menu.open .profile-pic-container .icon-arrow-up {
+        transform: rotate(0deg);
+    }
+
+    .logout {
+        margin-top: auto; 
+    }
+
+    .reload-btn {
+        right: 1.8rem;
+    }
+}
 
 @media (min-width: 992px) {
-    .menu {
+    .bottom-menu {
         grid-template-columns: 1fr 1fr repeat(4, 25rem) 1fr 1fr;
     }
-
-    .menu a:first-child {
+    .bottom-menu a:first-child {
         grid-column-start: 3;
     }
-
     .tips {
         grid-template-columns: repeat(5, 1fr);
     }
-
     .raceList .selections,
     .scratching-list .selections {
         grid-template-columns: repeat(24, 1fr);
