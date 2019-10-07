@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cdcb19bcae7f725ebe2c40dbe26bcdc7",
+    "revision": "5a86861f314bfac79fb6aab3a36ce2df",
     "url": "/index.html"
   },
   {
-    "revision": "bb73eab9485eb7472b91",
-    "url": "/static/css/main.5379a102.chunk.css"
+    "revision": "ed17522d714e6de3f8af",
+    "url": "/static/css/main.f865b22e.chunk.css"
   },
   {
     "revision": "4663ac3ab12da3ce5d56",
     "url": "/static/js/2.f470c8d4.chunk.js"
   },
   {
-    "revision": "bb73eab9485eb7472b91",
-    "url": "/static/js/main.e97e0231.chunk.js"
+    "revision": "ed17522d714e6de3f8af",
+    "url": "/static/js/main.f276c908.chunk.js"
   },
   {
     "revision": "bf06c2c863ee9bdac404",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "73ced3e233a721f7d59c4cd0a39b94b7",
     "url": "/static/media/browser-icons.73ced3e2.jpg"
+  },
+  {
+    "revision": "c01582dffb2842c8af082e123516f001",
+    "url": "/static/media/horse-sprite.c01582df.jpg"
   },
   {
     "revision": "25f98489eca4fcdabab5daf7cc78f297",
