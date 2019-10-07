@@ -600,11 +600,15 @@ input.password {
     vertical-align: -0.1rem;
 }
 .icon-admin.demo {
-    position: relative;
-    top: auto;
-    right: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     padding: 0.2rem 0.3rem 0.3rem;
     font-size: 1rem;
+}
+.icon-info.demo {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+    vertical-align: -0.3rem;
 }
 
 

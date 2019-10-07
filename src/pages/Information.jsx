@@ -32,23 +32,23 @@ export default class Information extends Component {
                 </ul>
                 <div className="bold mt-20">Game Accounts</div>
                 <p>There are three game accounts which appear in lists like regular people (excluding the leaderboard).  These three accounts are:</p>
-                <div className="odds-totals">
+                <div className="game-account-totals">
                     <div className="total">
-                        <img src={'pics/Default.png'} alt="Profile pic" className="pic" />
-                        <div className="name">1, 2, 3</div>
-                    </div>
-                    <div className="total">
-                        <img src={'pics/Default.png'} alt="Profile pic" className="pic" />
+                        <img src={'pics/Game.png'} alt="Profile pic" className="pic" />
                         <div className="name">Top Odds</div>
                     </div>
                     <div className="total">
-                        <img src={'pics/Default.png'} alt="Profile pic" className="pic" />
+                        <img src={'pics/Game.png'} alt="Profile pic" className="pic" />
                         <div className="name">Bottom Odds</div>
                     </div>
+                    <div className="total">
+                        <img src={'pics/Game.png'} alt="Profile pic" className="pic" />
+                        <div className="name">Leigh's Algorithm</div>
+                    </div>
                 </div>
-                <p>1, 2, 3 = Always picks horses 1, 2 and 3.</p>
                 <p>Top Odds = Always picks the horses with the top three odds. Decided on form if more than one horse have the same odds.</p>
                 <p>Bottom Odds = Always picks the horses with the bottom three odds. Decided on form if more than one horse have the same odds.</p>
+                <p>Leigh's Algorithm is the results of Leigh Sullivan's attempts to create an algorithm that can predict the winners.</p>
                 <div className="bold mt-20">Tips</div>
                 <p>On the Tips page you can select a race meet from the drop down menu to view the list of races and their associated tips. You can submit 3 tips for each race of every race meet.  If you have selected 3 horses already, but want to change a selection, then you will have to unselect a horse before you can select a new one.  If you select less than 3 horses, then you simply miss out on the opprtunity to get those points.</p>
                 <p>To select or unselect a number, you must double-click/double-tap on it.  This is to help prevent people accidently selecting or unselecting things while they are just scrolling the page.</p>
@@ -69,15 +69,12 @@ export default class Information extends Component {
                 <p>On the Leaderboard page you can see the current rank of all the punters.  The rank is determined first by people's overall score, then how many trifectas (first, second, third) they have, then how many quinellas (first, second) they have, then by number of first places, then finally second places.</p>
                 <p>The top three will appear on the podium, everybody else will be listed in order under 'Best of the Rest'.</p>
                 <div className="bold mt-20">Admin</div>
-                <p>Anybody who is marked as an admin will see an admin icon appear in the top right of the screen, below the profile picture <span className="icon-admin demo"></span></p>
+                <p>Anybody who is marked as an admin will see an Administration link <span className="icon-admin demo"></span> appear in the menu, above the Information link <span className="icon-info demo"></span></p>
                 <p>When you click the admin link it will take you to the Admin page.  Currently on the Admin page you can set the placings, status and scratchings for each race.</p>
                 <p>In the future I'd like to add more functionality here, like for example the ability to disable people from getting points, etc.</p>
                 <div className="bold mt-20">Future Plans</div>
                 <ul className="marked-list">
-                    <li>After the Caulfield Cup I would like to replace this information page on the menu with a Statistics section that shows various statistics, like who won each race meet, most number of trifectas, quinellas, 1st, 2nds, 3rds, etc.</li>
                     <li>People can create accounts and it has proper authentication.</li>
-                    <li>Introduce groups, so different groups of people can have their own tipping competitions.</li>
-                    <li>To improve the design for tablet and desktop screen sizes.</li>
                     <li>Use a service worker to allow people to pin the page to their Home screens with an icon, and cache all the files so that the page will start up instantly like a native app.</li>
                     <li>
                         Make a different version of the same app, but introduce some game-type elements.  So it would be more for fun than serious tipping.  It could also be modified to be for the greyhounds.
