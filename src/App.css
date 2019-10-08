@@ -1227,7 +1227,7 @@ input.password {
         flex-direction: column;
     }
 
-    .top-menu .column:last-child {
+    .top-menu .competition-container {
         padding-left: 4rem;
         border-left: 1px solid #ccc;
     }

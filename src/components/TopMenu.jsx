@@ -69,7 +69,7 @@ export default class TopMenu extends Component {
                 </div>
                 {
                     punterComps.length > 1 &&
-                    <div className="column">
+                    <div className="column competition-container">
                         <CompetitionSelector
                             competitions={this.props.competitions}
                             selectedCompetition={this.props.selectedCompetition}
