@@ -6,7 +6,6 @@ import LabelAndSelectBox from '../components/LabelAndSelectBox';
 import CompetitionSelector from '../components/CompetitionSelector';
 import ErrorMessage from '../components/ErrorMessage';
 import { logOut } from '../helpers/utilities';
-import { getPunterCompetitions } from '../helpers/utilities';
 
 export default class Login extends Component {
     constructor(props) {
@@ -23,21 +22,6 @@ export default class Login extends Component {
        or if the new state is different from the current . */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props && nextState === this.state);
-    }
-
-    componentDidUpdate(prevProps) {
-        if (this.props.competitions !== prevProps.competitions) {
-            // Get all the competitions the punter is apart of, and if it is only one, pass it to handleCompetitionSelect.
-            const punterComps = getPunterCompetitions(this.props.competitions, this.props.user);
-            if (punterComps.length === 1) {
-                this.handleCompetitionSelect(punterComps[0]);
-            }
-            else {
-                this.setState({
-                    punterComps: punterComps
-                });
-            }
-        }
     }
 
     /* When the user selects a punter from the drop down, set that user in the state and hide the password error. */
@@ -154,9 +138,9 @@ export default class Login extends Component {
                 <ErrorMessage classes={errorClass} text="The password for the name you selected is incorrect" />
                 {
                     this.props.user &&
-                    this.state.punterComps.length > 1 &&
+                    this.props.competitions.length &&
                     <CompetitionSelector
-                        competitions={this.state.punterComps}
+                        competitions={this.props.competitions}
                         handleCompetitionSelect={this.handleCompetitionSelect}
                     />
                 }

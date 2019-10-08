@@ -108,7 +108,7 @@ export default class App extends Component {
     }
 
     /* Asyncronously get all the meets, races and tips data, either from local JSON files while in development, or the database. */
-    async setData(selectedCompetition) {
+    async setData(selectedCompetition, showLoading) {
         const self = this;
         const meetsDataURL = self.useJSON ? `${self.path}mock/meets-${selectedCompetition.startDate.split('-')[0]}.json`:
                                             `${self.backendURL}/meets/bycompetition/${selectedCompetition._id}`;
@@ -117,9 +117,11 @@ export default class App extends Component {
         const tipsDataURL = self.useJSON ? `${self.path}mock/tips-${selectedCompetition.startDate.split('-')[0]}.json` :
                                             `${self.backendURL}/tips/bycompetition/${selectedCompetition._id}`;
         try {
-            self.setState({
-                loadingData: true
-            });
+            if (showLoading) {
+                self.setState({
+                    loadingData: true
+                });
+            }
 
             const meetsResponse = await fetch(meetsDataURL, { cache: 'no-store', mode: 'cors' });
             const meets = await meetsResponse.json();
@@ -204,7 +206,7 @@ export default class App extends Component {
                                         selectedCompetition = this.state.competitions[i];
                                     }
                                 }
-                                this.setData(selectedCompetition);
+                                this.setData(selectedCompetition, true);
                             }
                         }
                     });
@@ -287,14 +289,14 @@ export default class App extends Component {
         localStorage.setItem('selectedCompetitionId', competitionId);
         localStorage.setItem('selectedMeet', meetId);
         localStorage.setItem('isAdmin', isAdmin);
-        this.setData(selectedCompetition);
+        this.setData(selectedCompetition, true);
     }
 
     /* When the user clicks the reload button, spin the icon and request the data again. */
     handleReloadData = event => {
         const btn = event.target.classList.contains('icon-reload') ? event.target.parentElement : event.target;
         btn.classList.add('loading');
-        this.setData(this.state.selectedCompetition)
+        this.setData(this.state.selectedCompetition, false)
             .then(() => {
                 btn.classList.remove('loading');
             });

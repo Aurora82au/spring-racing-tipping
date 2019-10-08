@@ -56,9 +56,9 @@ export default class TopMenu extends Component {
                 <div className="column">
                     {
                         this.props.isAdmin &&
-                        <NavLink to={this.props.path + 'admin'}><span className="icon-admin"></span>Administration</NavLink>
+                        <NavLink to={this.props.path + 'admin'} onClick={this.handlePicClick}><span className="icon-admin"></span>Administration</NavLink>
                     }
-                    <NavLink to={this.props.path + 'information'}><span className="info-icon">i</span>Information</NavLink>
+                    <NavLink to={this.props.path + 'information'} onClick={this.handlePicClick}><span className="info-icon">i</span>Information</NavLink>
                     <Button 
                         classes="btn logout"
                         type="button"
