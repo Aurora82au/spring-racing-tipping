@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c9379abf.chunk.css",
-    "main.js": "/static/js/main.38c30e22.chunk.js",
-    "main.js.map": "/static/js/main.38c30e22.chunk.js.map",
+    "main.js": "/static/js/main.deea4922.chunk.js",
+    "main.js.map": "/static/js/main.deea4922.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2553b0e0.js",
     "runtime-main.js.map": "/static/js/runtime-main.2553b0e0.js.map",
     "static/js/2.f470c8d4.chunk.js": "/static/js/2.f470c8d4.chunk.js",
     "static/js/2.f470c8d4.chunk.js.map": "/static/js/2.f470c8d4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c13b2bd5dec4c4afe7acf0f66e9620c8.js": "/precache-manifest.c13b2bd5dec4c4afe7acf0f66e9620c8.js",
+    "precache-manifest.fb6355e673237a9a5266a8c89d520a15.js": "/precache-manifest.fb6355e673237a9a5266a8c89d520a15.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c9379abf.chunk.css.map": "/static/css/main.c9379abf.chunk.css.map",
     "static/media/App.css": "/static/media/horse-sprite.c01582df.jpg",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.2553b0e0.js",
     "static/js/2.f470c8d4.chunk.js",
     "static/css/main.c9379abf.chunk.css",
-    "static/js/main.38c30e22.chunk.js"
+    "static/js/main.deea4922.chunk.js"
   ]
 }
