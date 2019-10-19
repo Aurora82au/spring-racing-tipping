@@ -200,6 +200,14 @@ export default class Admin extends Component {
         let selections = [];
         let className;
 
+        if (meetRaces) {
+            meetRaces.sort((a, b) => {
+                return (
+                    a.number - b.number
+                );
+            });
+        }
+
         // For each race in the selected meet
         for (let i = 0, l = meetRaces.length; i < l; i++) {
             selections = [];
