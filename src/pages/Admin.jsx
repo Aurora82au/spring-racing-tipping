@@ -128,6 +128,14 @@ export default class Admin extends Component {
             return race.meetId === propsSelectedMeet;
         });
 
+        if (meetRaces) {
+            meetRaces.sort((a, b) => {
+                return (
+                    a.number - b.number
+                );
+            });
+        }
+
         for (let i = 0, j = meetRaces.length; i < j; i++) {
             stateRaces[i].placings = meetRaces[i].placings;
             stateRaces[i].scratchings = meetRaces[i].scratchings;
