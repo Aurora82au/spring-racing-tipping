@@ -164,7 +164,7 @@
         "name": "Inglis Banner",
         "meetId": 73669653,
         "number": 1,
-        "time": "TBC",
+        "time": "12:10pm",
         "distance": "1000m",
         "status": 1,
         "placings": {
@@ -177,11 +177,11 @@
     },
     {
         "_id": 85626389,
-        "name": "1300 Australia Stakes",
+        "name": "Strathmore Community Bendigo Bank Handicap",
         "meetId": 73669653,
         "number": 2,
-        "time": "TBC",
-        "distance": "1200m",
+        "time": "12:40pm",
+        "distance": "955m",
         "status": 1,
         "placings": {
             "first": 0,
@@ -193,11 +193,11 @@
     },
     {
         "_id": 39923306,
-        "name": "Drummond Golf Vase",
+        "name": "Antler Luggage Fillies Classic",
         "meetId": 73669653,
         "number": 3,
-        "time": "TBC",
-        "distance": "2040m",
+        "time": "1:15pm",
+        "distance": "1600m",
         "status": 1,
         "placings": {
             "first": 0,
@@ -212,7 +212,7 @@
         "name": "PFD Food Services Crockett Stakes",
         "meetId": 73669653,
         "number": 4,
-        "time": "TBC",
+        "time": "1:50pm",
         "distance": "1200m",
         "status": 1,
         "placings": {
@@ -225,11 +225,11 @@
     },
     {
         "_id": 16591456,
-        "name": "Fillies Classic",
+        "name": "1300 Australia Stakes",
         "meetId": 73669653,
         "number": 5,
-        "time": "TBC",
-        "distance": "1600m",
+        "time": "2:25pm",
+        "distance": "1200m",
         "status": 1,
         "placings": {
             "first": 0,
@@ -241,42 +241,10 @@
     },
     {
         "_id": 64049131,
-        "name": "Strathmore Bendigo Bank Handicap",
+        "name": "Drummond Golf Vase",
         "meetId": 73669653,
         "number": 6,
-        "time": "TBC",
-        "distance": "955m",
-        "status": 1,
-        "placings": {
-            "first": 0,
-            "second": 0,
-            "third": 0
-        },
-        "scratchings": [],
-        "competitionId": 31558550
-    },
-    {
-        "_id": 18193606,
-        "name": "Schweppes Crystal Mile",
-        "meetId": 73669653,
-        "number": 7,
-        "time": "TBC",
-        "distance": "1600m",
-        "status": 1,
-        "placings": {
-            "first": 0,
-            "second": 0,
-            "third": 0
-        },
-        "scratchings": [],
-        "competitionId": 31558550
-    },
-    {
-        "_id": 87850658,
-        "name": "Ladbrokes Cox Plate",
-        "meetId": 73669653,
-        "number": 8,
-        "time": "TBC",
+        "time": "3:00pm",
         "distance": "2040m",
         "status": 1,
         "placings": {
@@ -288,12 +256,44 @@
         "competitionId": 31558550
     },
     {
-        "_id": 64144811,
+        "_id": 18193606,
         "name": "McCafe Moonee Valley Gold Cup",
         "meetId": 73669653,
-        "number": 9,
-        "time": "TBC",
+        "number": 7,
+        "time": "3:35pm",
         "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 31558550
+    },
+    {
+        "_id": 87850658,
+        "name": "Schweppes Crystal Mile",
+        "meetId": 73669653,
+        "number": 8,
+        "time": "4:10pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 31558550
+    },
+    {
+        "_id": 64144811,
+        "name": "Ladbrokes Cox Plate",
+        "meetId": 73669653,
+        "number": 9,
+        "time": "4:55pm",
+        "distance": "2040m",
         "status": 1,
         "placings": {
             "first": 0,
@@ -308,7 +308,7 @@
         "name": "Powerflo Solutions Stakes",
         "meetId": 73669653,
         "number": 10,
-        "time": "TBC",
+        "time": "5:45pm",
         "distance": "1600m",
         "status": 1,
         "placings": {
