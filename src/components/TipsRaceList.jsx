@@ -40,7 +40,18 @@ export default class TipsRaceList extends Component {
     /* Function to take the passed props and set the currently selected tips */
     setTips = passedProps => {
         const noOfRaces = passedProps.races.length;
-        let tips = this.state.tips;
+        let tips = [
+            { raceId: null, number: 1, databaseId: null, selections: [] },
+            { raceId: null, number: 2, databaseId: null, selections: [] },
+            { raceId: null, number: 3, databaseId: null, selections: [] },
+            { raceId: null, number: 4, databaseId: null, selections: [] },
+            { raceId: null, number: 5, databaseId: null, selections: [] },
+            { raceId: null, number: 6, databaseId: null, selections: [] },
+            { raceId: null, number: 7, databaseId: null, selections: [] },
+            { raceId: null, number: 8, databaseId: null, selections: [] },
+            { raceId: null, number: 9, databaseId: null, selections: [] },
+            { raceId: null, number: 10, databaseId: null, selections: [] }
+        ];
         let count = 0;
 
         // Set the current users tips for each race of the chosen race meet
