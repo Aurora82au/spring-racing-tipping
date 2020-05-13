@@ -3117,5 +3117,5657 @@
         "raceId": 52926575,
         "punterId": 18,
         "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            7
+        ],
+        "_id": 11768900,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            2
+        ],
+        "_id": 97949530,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            5,
+            1
+        ],
+        "_id": 51144991,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 94848916,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            7
+        ],
+        "_id": 75517179,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            12
+        ],
+        "_id": 56440202,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 34948487,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            8,
+            13
+        ],
+        "_id": 15879444,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            1
+        ],
+        "_id": 27535913,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            1
+        ],
+        "_id": 20303830,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            2
+        ],
+        "_id": 60198015,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            1,
+            7
+        ],
+        "_id": 58938893,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            8
+        ],
+        "_id": 90369713,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            1
+        ],
+        "_id": 47189621,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            5
+        ],
+        "_id": 34741254,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            2
+        ],
+        "_id": 93492838,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            14,
+            6
+        ],
+        "_id": 27560963,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            2,
+            1
+        ],
+        "_id": 32872132,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            7,
+            8
+        ],
+        "_id": 54096525,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 54213005,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 97590776,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 74180033,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            13
+        ],
+        "_id": 71458312,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            12
+        ],
+        "_id": 87391486,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 10929164,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            8
+        ],
+        "_id": 77449878,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            5
+        ],
+        "_id": 35573722,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            4,
+            7
+        ],
+        "_id": 43833265,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 17453025,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 55516735,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 21772588,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            9
+        ],
+        "_id": 96174669,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            12
+        ],
+        "_id": 70256987,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 17397368,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            8
+        ],
+        "_id": 75041570,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 39638776,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            9,
+            10
+        ],
+        "_id": 88138515,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            11,
+            12
+        ],
+        "_id": 24182413,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            8,
+            10
+        ],
+        "_id": 75955824,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            11,
+            12
+        ],
+        "_id": 39852202,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            14,
+            16
+        ],
+        "_id": 98664502,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            9,
+            11
+        ],
+        "_id": 83095137,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            14,
+            15,
+            16
+        ],
+        "_id": 67063879,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            17,
+            19
+        ],
+        "_id": 96141953,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            13,
+            14
+        ],
+        "_id": 46628419,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            8
+        ],
+        "_id": 72584404,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            2
+        ],
+        "_id": 91676329,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            7
+        ],
+        "_id": 51515333,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 68683484,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            7
+        ],
+        "_id": 80427097,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            12
+        ],
+        "_id": 30083527,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            1,
+            2
+        ],
+        "_id": 23228080,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            6,
+            5
+        ],
+        "_id": 65299384,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            1,
+            5
+        ],
+        "_id": 33964353,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            10
+        ],
+        "_id": 61834008,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 69050881,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            7
+        ],
+        "_id": 25634651,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            6,
+            8
+        ],
+        "_id": 64947606,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            7
+        ],
+        "_id": 73315121,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            8,
+            15
+        ],
+        "_id": 11406241,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            8
+        ],
+        "_id": 22700748,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            8,
+            13
+        ],
+        "_id": 66988031,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            8
+        ],
+        "_id": 28983931,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            7
+        ],
+        "_id": 46491242,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            2
+        ],
+        "_id": 58318822,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            5,
+            6
+        ],
+        "_id": 39309444,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            6,
+            1
+        ],
+        "_id": 76505116,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            10,
+            9
+        ],
+        "_id": 96766900,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            2
+        ],
+        "_id": 86118845,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 34510097,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            6,
+            5
+        ],
+        "_id": 21224598,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            2
+        ],
+        "_id": 52981543,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            3,
+            4
+        ],
+        "_id": 83108400,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            2
+        ],
+        "_id": 51377324,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            4,
+            7
+        ],
+        "_id": 43668439,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            5
+        ],
+        "_id": 65792406,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            1
+        ],
+        "_id": 97827820,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            12,
+            4
+        ],
+        "_id": 88388435,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            9
+        ],
+        "_id": 87758666,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            10,
+            6
+        ],
+        "_id": 14207495,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            8,
+            3
+        ],
+        "_id": 28134349,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            8
+        ],
+        "_id": 40996330,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            1
+        ],
+        "_id": 25425225,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 92865148,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            5,
+            9
+        ],
+        "_id": 33027008,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            12
+        ],
+        "_id": 92880446,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            11
+        ],
+        "_id": 92573270,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            8,
+            1
+        ],
+        "_id": 40639399,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            8,
+            7
+        ],
+        "_id": 36625388,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            6
+        ],
+        "_id": 12286303,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            7
+        ],
+        "_id": 62334314,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            12,
+            6
+        ],
+        "_id": 33907607,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            15,
+            7
+        ],
+        "_id": 67242467,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 15448092,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 46481515,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            12,
+            10
+        ],
+        "_id": 32723434,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            8
+        ],
+        "_id": 35290280,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            7,
+            8
+        ],
+        "_id": 91705144,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 17078416,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            5
+        ],
+        "_id": 17989220,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 23099907,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            5,
+            7
+        ],
+        "_id": 63822562,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 95314645,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            10
+        ],
+        "_id": 85338192,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 10870760,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            12
+        ],
+        "_id": 79367751,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 25654165,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            10
+        ],
+        "_id": 49161859,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77353034,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            4
+        ],
+        "_id": 72529305,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 77182478,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            13,
+            14
+        ],
+        "_id": 44247848,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 59283989,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            10
+        ],
+        "_id": 93917333,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            2,
+            12
+        ],
+        "_id": 73076982,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 30388435,
+        "competitionId": 31558550,
+        "meetId": 26319583,
+        "raceId": 48322656,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            14,
+            7
+        ],
+        "_id": 73171833,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            7
+        ],
+        "_id": 79573035,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            10,
+            3
+        ],
+        "_id": 67557132,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            3,
+            5
+        ],
+        "_id": 91171828,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            14,
+            2,
+            4
+        ],
+        "_id": 71322173,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 32379578,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            19,
+            23
+        ],
+        "_id": 18501190,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            17,
+            11,
+            8
+        ],
+        "_id": 49879168,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            3,
+            2
+        ],
+        "_id": 32599194,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            18
+        ],
+        "_id": 38995983,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            13,
+            3
+        ],
+        "_id": 97990114,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            1,
+            5
+        ],
+        "_id": 40090156,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            10,
+            12
+        ],
+        "_id": 32314167,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            7
+        ],
+        "_id": 60811175,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            16,
+            15
+        ],
+        "_id": 67395592,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            4
+        ],
+        "_id": 24389007,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            17,
+            8,
+            11
+        ],
+        "_id": 70811469,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            2,
+            18
+        ],
+        "_id": 15167848,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            3,
+            2
+        ],
+        "_id": 26751279,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            4,
+            5
+        ],
+        "_id": 29640848,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            8
+        ],
+        "_id": 41739482,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            8
+        ],
+        "_id": 33406727,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            10,
+            13
+        ],
+        "_id": 18678732,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            10
+        ],
+        "_id": 65474206,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            14
+        ],
+        "_id": 25952025,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            10
+        ],
+        "_id": 84234943,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            14,
+            23
+        ],
+        "_id": 24812762,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            15,
+            17
+        ],
+        "_id": 62820130,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            6,
+            13
+        ],
+        "_id": 95180638,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            11
+        ],
+        "_id": 44110531,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            8
+        ],
+        "_id": 74032021,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            7
+        ],
+        "_id": 83516882,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            7,
+            10
+        ],
+        "_id": 57308129,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            7
+        ],
+        "_id": 65536874,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            14
+        ],
+        "_id": 87302988,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 36640059,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            11,
+            19
+        ],
+        "_id": 53538035,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            11,
+            17
+        ],
+        "_id": 72668648,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            6
+        ],
+        "_id": 36980256,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            6
+        ],
+        "_id": 25117045,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            10,
+            11
+        ],
+        "_id": 33478417,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            10
+        ],
+        "_id": 54677447,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            14,
+            16
+        ],
+        "_id": 18275368,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            12,
+            14
+        ],
+        "_id": 56604144,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            12,
+            13
+        ],
+        "_id": 24982949,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            11,
+            12
+        ],
+        "_id": 33439996,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            16,
+            21
+        ],
+        "_id": 55516058,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            12,
+            14
+        ],
+        "_id": 34705635,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            11,
+            12
+        ],
+        "_id": 67171362,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            17
+        ],
+        "_id": 54158003,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            8,
+            13
+        ],
+        "_id": 17419107,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            7
+        ],
+        "_id": 26839309,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            10
+        ],
+        "_id": 17308330,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            10
+        ],
+        "_id": 39017763,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            14
+        ],
+        "_id": 56210807,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 62795975,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            11,
+            19
+        ],
+        "_id": 27821213,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            11,
+            17
+        ],
+        "_id": 23645504,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            6
+        ],
+        "_id": 19861899,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            6,
+            8
+        ],
+        "_id": 46078349,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            15,
+            7
+        ],
+        "_id": 25231931,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            5,
+            1
+        ],
+        "_id": 84908670,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            13,
+            6
+        ],
+        "_id": 14490339,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            8,
+            7
+        ],
+        "_id": 30471894,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            14,
+            5,
+            4
+        ],
+        "_id": 87385248,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            10,
+            4
+        ],
+        "_id": 95327667,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            23,
+            2
+        ],
+        "_id": 52910670,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            17,
+            11,
+            8
+        ],
+        "_id": 63808418,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            10,
+            3
+        ],
+        "_id": 19222024,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            8,
+            6
+        ],
+        "_id": 34650753,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            9,
+            8
+        ],
+        "_id": 41210131,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            7
+        ],
+        "_id": 39297592,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            7
+        ],
+        "_id": 51840320,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            13
+        ],
+        "_id": 92483332,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            16,
+            2,
+            15
+        ],
+        "_id": 25408128,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            9
+        ],
+        "_id": 66473571,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            1,
+            19
+        ],
+        "_id": 61168599,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            8,
+            17
+        ],
+        "_id": 53681481,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            7,
+            12
+        ],
+        "_id": 89610182,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            11
+        ],
+        "_id": 53831730,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            10,
+            15
+        ],
+        "_id": 73820771,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            8
+        ],
+        "_id": 39043871,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            10,
+            13
+        ],
+        "_id": 72071700,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            10,
+            13
+        ],
+        "_id": 40705919,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            7,
+            12
+        ],
+        "_id": 88086955,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            12,
+            14,
+            23
+        ],
+        "_id": 19024374,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            11,
+            17
+        ],
+        "_id": 97704583,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            11
+        ],
+        "_id": 35576661,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            6
+        ],
+        "_id": 74934573,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            17,
+            18
+        ],
+        "_id": 17557365,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            8,
+            2
+        ],
+        "_id": 25403185,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            7,
+            2
+        ],
+        "_id": 19906420,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            1,
+            3
+        ],
+        "_id": 40245244,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            7
+        ],
+        "_id": 33821054,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            9,
+            13
+        ],
+        "_id": 38296388,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            2,
+            10
+        ],
+        "_id": 76676966,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            10,
+            9
+        ],
+        "_id": 41276032,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            1
+        ],
+        "_id": 83224770,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            18,
+            11
+        ],
+        "_id": 60450443,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            14,
+            3
+        ],
+        "_id": 82772888,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            10
+        ],
+        "_id": 20468540,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            1
+        ],
+        "_id": 30005929,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            18,
+            6
+        ],
+        "_id": 70746044,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            11,
+            19
+        ],
+        "_id": 20781117,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            1,
+            5
+        ],
+        "_id": 80059987,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            11,
+            17
+        ],
+        "_id": 66066804,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            10,
+            13
+        ],
+        "_id": 87654059,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            1,
+            2
+        ],
+        "_id": 52834325,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            2,
+            4
+        ],
+        "_id": 26827763,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            4,
+            6
+        ],
+        "_id": 11475429,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            2,
+            7
+        ],
+        "_id": 28819313,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 77740594,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            1,
+            3
+        ],
+        "_id": 50069718,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 49279940,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            2,
+            10
+        ],
+        "_id": 26967233,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 18299734,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            5
+        ],
+        "_id": 46523121,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 80997758,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            16,
+            3,
+            4
+        ],
+        "_id": 24197259,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 86974853,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            8
+        ],
+        "_id": 67416416,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 97348579,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            11,
+            19
+        ],
+        "_id": 33052013,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 13711395,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            17,
+            11,
+            8
+        ],
+        "_id": 28123037,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 70458107,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            1,
+            4
+        ],
+        "_id": 86117691,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 39255731,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            4,
+            6
+        ],
+        "_id": 29238705,
+        "competitionId": 31558550,
+        "meetId": 81371443,
+        "raceId": 72849434,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            7
+        ],
+        "_id": 38348961,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            9,
+            7
+        ],
+        "_id": 38045308,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            10
+        ],
+        "_id": 41700389,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            15,
+            16
+        ],
+        "_id": 86225640,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            11,
+            7
+        ],
+        "_id": 12955830,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            6
+        ],
+        "_id": 99785470,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            10,
+            4
+        ],
+        "_id": 63012241,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            3
+        ],
+        "_id": 14372446,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            15,
+            4
+        ],
+        "_id": 44588161,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            6
+        ],
+        "_id": 56614710,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            11,
+            8
+        ],
+        "_id": 51197704,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            1,
+            7
+        ],
+        "_id": 84573292,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            16,
+            2
+        ],
+        "_id": 41324926,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            11,
+            2
+        ],
+        "_id": 30328891,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            6
+        ],
+        "_id": 22795267,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            3,
+            13
+        ],
+        "_id": 32678910,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            3
+        ],
+        "_id": 18823917,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            5
+        ],
+        "_id": 66053461,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            8
+        ],
+        "_id": 71334300,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            9,
+            10
+        ],
+        "_id": 42885223,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            10,
+            1
+        ],
+        "_id": 79241975,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            10,
+            15
+        ],
+        "_id": 44511723,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            11
+        ],
+        "_id": 50403447,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            4
+        ],
+        "_id": 28010786,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            1,
+            10
+        ],
+        "_id": 99392395,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 84213424,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            4
+        ],
+        "_id": 86492212,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            10,
+            4
+        ],
+        "_id": 28373480,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            9,
+            10
+        ],
+        "_id": 21230716,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            10,
+            7
+        ],
+        "_id": 48324574,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            3,
+            17
+        ],
+        "_id": 47693228,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            7,
+            13
+        ],
+        "_id": 87681132,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            5
+        ],
+        "_id": 97360059,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            3,
+            7
+        ],
+        "_id": 47487974,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            3
+        ],
+        "_id": 26645336,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            14
+        ],
+        "_id": 35642120,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            8,
+            10
+        ],
+        "_id": 27556873,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            8,
+            10
+        ],
+        "_id": 78329935,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            10
+        ],
+        "_id": 79788935,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            11,
+            15
+        ],
+        "_id": 42706565,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            13
+        ],
+        "_id": 38646990,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            4
+        ],
+        "_id": 81675438,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            10
+        ],
+        "_id": 53285842,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 58457419,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            14
+        ],
+        "_id": 95023402,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            6,
+            8
+        ],
+        "_id": 36808053,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            10,
+            11
+        ],
+        "_id": 13498316,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            10
+        ],
+        "_id": 23643854,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            15,
+            16
+        ],
+        "_id": 92217326,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            11
+        ],
+        "_id": 22786039,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            4
+        ],
+        "_id": 52034371,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            10
+        ],
+        "_id": 15606456,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 94741142,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            4
+        ],
+        "_id": 25316727,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            11
+        ],
+        "_id": 23035969,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            4,
+            12
+        ],
+        "_id": 25679540,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            11,
+            14
+        ],
+        "_id": 64024913,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            19,
+            20
+        ],
+        "_id": 43641875,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            8
+        ],
+        "_id": 62075909,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            19,
+            20
+        ],
+        "_id": 32550000,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            12,
+            13,
+            14
+        ],
+        "_id": 60966013,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            11,
+            15
+        ],
+        "_id": 93031985,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            16,
+            17,
+            18
+        ],
+        "_id": 21430187,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            10,
+            11
+        ],
+        "_id": 95139235,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            1,
+            8
+        ],
+        "_id": 63346171,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            10,
+            7
+        ],
+        "_id": 78758154,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            10,
+            7
+        ],
+        "_id": 67972468,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            7,
+            13
+        ],
+        "_id": 60136118,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            3
+        ],
+        "_id": 19329737,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            10,
+            7
+        ],
+        "_id": 65521512,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            3,
+            1
+        ],
+        "_id": 20221639,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            14
+        ],
+        "_id": 48261859,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            5,
+            8
+        ],
+        "_id": 80530349,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            10
+        ],
+        "_id": 20953146,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            11
+        ],
+        "_id": 99309890,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            12,
+            15,
+            16
+        ],
+        "_id": 33245832,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            11
+        ],
+        "_id": 92436866,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            4
+        ],
+        "_id": 51807428,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            10,
+            12
+        ],
+        "_id": 38137432,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            10,
+            14
+        ],
+        "_id": 86468978,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            13,
+            15
+        ],
+        "_id": 80085116,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 13,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            10
+        ],
+        "_id": 90322092,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            2,
+            1
+        ],
+        "_id": 69553839,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            3,
+            1
+        ],
+        "_id": 48137600,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            3
+        ],
+        "_id": 45954337,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            11,
+            7
+        ],
+        "_id": 98735691,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            16,
+            2
+        ],
+        "_id": 46307118,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            10,
+            7
+        ],
+        "_id": 60851297,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            11,
+            9,
+            2
+        ],
+        "_id": 77448219,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            6
+        ],
+        "_id": 98147085,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            1,
+            9
+        ],
+        "_id": 43477658,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            1,
+            4
+        ],
+        "_id": 11646228,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            6
+        ],
+        "_id": 26058238,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            7,
+            11
+        ],
+        "_id": 82449475,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            11,
+            4
+        ],
+        "_id": 84373451,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            4
+        ],
+        "_id": 97018820,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            7,
+            3
+        ],
+        "_id": 10749882,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 26482280,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            3
+        ],
+        "_id": 11781578,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            4,
+            6
+        ],
+        "_id": 15897749,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 27311857,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            11,
+            9
+        ],
+        "_id": 17521348,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 36673769,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            1,
+            7
+        ],
+        "_id": 30929540,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 42274664,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            16,
+            2
+        ],
+        "_id": 68734162,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 66611698,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            11,
+            4
+        ],
+        "_id": 98710948,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 58997440,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            3
+        ],
+        "_id": 67391707,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 53406311,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            3,
+            1
+        ],
+        "_id": 16924857,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 45828004,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            2
+        ],
+        "_id": 27518581,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 86984422,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            3
+        ],
+        "_id": 45177675,
+        "competitionId": 31558550,
+        "meetId": 38108820,
+        "raceId": 18986336,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            11,
+            1
+        ],
+        "_id": 28969358,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            3
+        ],
+        "_id": 96772941,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            9,
+            6
+        ],
+        "_id": 42942458,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            5,
+            8
+        ],
+        "_id": 61804168,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            8,
+            9
+        ],
+        "_id": 87499418,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            13
+        ],
+        "_id": 27753908,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            6,
+            12
+        ],
+        "_id": 93691604,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            8,
+            15
+        ],
+        "_id": 92173609,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            4
+        ],
+        "_id": 94036387,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 2,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            4
+        ],
+        "_id": 49483775,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            8
+        ],
+        "_id": 89784337,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            9,
+            11
+        ],
+        "_id": 19805089,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            5,
+            6
+        ],
+        "_id": 47671588,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            9
+        ],
+        "_id": 56505137,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            7,
+            13
+        ],
+        "_id": 91461681,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            6,
+            8
+        ],
+        "_id": 69749808,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            8,
+            15
+        ],
+        "_id": 18322522,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            19
+        ],
+        "_id": 87184409,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 4,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            1,
+            4
+        ],
+        "_id": 52392655,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            2,
+            3
+        ],
+        "_id": 53888356,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            11,
+            6
+        ],
+        "_id": 14260770,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            9
+        ],
+        "_id": 41134621,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            8,
+            2
+        ],
+        "_id": 54995511,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            13,
+            7,
+            2
+        ],
+        "_id": 42622005,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            12,
+            10,
+            6
+        ],
+        "_id": 56677604,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            14,
+            15,
+            3
+        ],
+        "_id": 87413589,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            7,
+            12
+        ],
+        "_id": 37755152,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 3,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            1
+        ],
+        "_id": 15302298,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            7
+        ],
+        "_id": 26905015,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            6,
+            11
+        ],
+        "_id": 65912702,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            11,
+            8
+        ],
+        "_id": 87296483,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            9,
+            2
+        ],
+        "_id": 14535650,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            9,
+            13
+        ],
+        "_id": 98812362,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            12,
+            6
+        ],
+        "_id": 45169677,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            16,
+            14
+        ],
+        "_id": 93011369,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            16
+        ],
+        "_id": 87346028,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 6,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 72229459,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            1,
+            2
+        ],
+        "_id": 51778230,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            7
+        ],
+        "_id": 74550106,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            9,
+            3
+        ],
+        "_id": 14277945,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            6,
+            11
+        ],
+        "_id": 12143299,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            3,
+            9
+        ],
+        "_id": 21618391,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            2,
+            8
+        ],
+        "_id": 34064267,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            12,
+            6
+        ],
+        "_id": 67592820,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            1,
+            2
+        ],
+        "_id": 30375857,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            9,
+            1,
+            2
+        ],
+        "_id": 25453760,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            8,
+            7,
+            13
+        ],
+        "_id": 19285553,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            8,
+            7
+        ],
+        "_id": 87300065,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            3,
+            12
+        ],
+        "_id": 60938881,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            6,
+            3,
+            5
+        ],
+        "_id": 60224905,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            14,
+            1
+        ],
+        "_id": 27103164,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            14,
+            1
+        ],
+        "_id": 67130286,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            16,
+            1,
+            7
+        ],
+        "_id": 53461131,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 14,
+        "__v": 0
+    },
+    {
+        "selections": [
+            16,
+            12,
+            3
+        ],
+        "_id": 60341181,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 19,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 30076827,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            2,
+            8
+        ],
+        "_id": 91116400,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            11,
+            6
+        ],
+        "_id": 67921552,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            8,
+            2
+        ],
+        "_id": 51070918,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            9
+        ],
+        "_id": 45852999,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            13,
+            7,
+            2
+        ],
+        "_id": 58218151,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            12
+        ],
+        "_id": 97175885,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            15,
+            8,
+            14
+        ],
+        "_id": 95490983,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            16
+        ],
+        "_id": 47188405,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 12,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            4,
+            11
+        ],
+        "_id": 98353821,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            8
+        ],
+        "_id": 52648248,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            6,
+            9
+        ],
+        "_id": 47799378,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            7,
+            8
+        ],
+        "_id": 82177859,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            6,
+            9
+        ],
+        "_id": 96015694,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            7,
+            13
+        ],
+        "_id": 13117269,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            9
+        ],
+        "_id": 92611053,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            14,
+            15
+        ],
+        "_id": 24393607,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            3,
+            16
+        ],
+        "_id": 79978433,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 1,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 65914531,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            2,
+            8
+        ],
+        "_id": 39923335,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            9,
+            6
+        ],
+        "_id": 74327241,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            8,
+            1
+        ],
+        "_id": 39632142,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            9
+        ],
+        "_id": 19400212,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            13,
+            7,
+            2
+        ],
+        "_id": 70924924,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            4
+        ],
+        "_id": 79376833,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            8
+        ],
+        "_id": 83085696,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            6
+        ],
+        "_id": 29717626,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            6,
+            11
+        ],
+        "_id": 66019963,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            7,
+            8
+        ],
+        "_id": 48564596,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            2,
+            9
+        ],
+        "_id": 82065156,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            8,
+            15
+        ],
+        "_id": 47469193,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            2,
+            7,
+            13
+        ],
+        "_id": 62400747,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            5,
+            6
+        ],
+        "_id": 32216474,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            16
+        ],
+        "_id": 15262562,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 7,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            8,
+            15
+        ],
+        "_id": 11971142,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            7,
+            16
+        ],
+        "_id": 35209273,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 17,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            10,
+            12
+        ],
+        "_id": 34486708,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 81310455,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            1,
+            4,
+            11
+        ],
+        "_id": 13757404,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 63667941,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            7,
+            10
+        ],
+        "_id": 22282080,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 54810733,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            4,
+            10,
+            12
+        ],
+        "_id": 69387015,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52160175,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            3,
+            4,
+            5
+        ],
+        "_id": 49230577,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38968208,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            10,
+            15,
+            16
+        ],
+        "_id": 41170998,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 38063382,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            7,
+            11,
+            13
+        ],
+        "_id": 82194606,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 56719292,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            5,
+            9,
+            10
+        ],
+        "_id": 60312698,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 52346297,
+        "punterId": 18,
+        "__v": 0
+    },
+    {
+        "selections": [
+            13,
+            15,
+            17
+        ],
+        "_id": 85329327,
+        "competitionId": 31558550,
+        "meetId": 57558470,
+        "raceId": 49431487,
+        "punterId": 18,
+        "__v": 0
     }
 ]
