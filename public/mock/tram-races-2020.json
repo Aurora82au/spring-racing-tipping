@@ -1,0 +1,162 @@
+[
+    {
+        "_id": 61845549,
+        "name": "ZircoDATA Handicap",
+        "meetId": 70951668,
+        "number": 1,
+        "time": "12:15pm",
+        "distance": "1700m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 32391678,
+        "name": "QMS Media Plate",
+        "meetId": 70951668,
+        "number": 2,
+        "time": "12:50pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 76026494,
+        "name": "Polytrack Gothic Stakes",
+        "meetId": 70951668,
+        "number": 3,
+        "time": "1:25pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 79612294,
+        "name": "Neds Classic",
+        "meetId": 70951668,
+        "number": 4,
+        "time": "2:00pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 85600313,
+        "name": "Lexus Ethereal Stakes",
+        "meetId": 70951668,
+        "number": 5,
+        "time": "2:35pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 70995230,
+        "name": "Carlton Draught Alinghi Stakes",
+        "meetId": 70951668,
+        "number": 6,
+        "time": "3:10pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 80371144,
+        "name": "McCafé Caulfield Sprint",
+        "meetId": 70951668,
+        "number": 7,
+        "time": "3:45pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 54226807,
+        "name": "Neds Moonga Stakes",
+        "meetId": 70951668,
+        "number": 8,
+        "time": "4:30pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 65448661,
+        "name": "Stella Artois Caulfield Cup",
+        "meetId": 70951668,
+        "number": 9,
+        "time": "5:15pm",
+        "distance": "2400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 15177668,
+        "name": "Schweppes Tristarc Stakes",
+        "meetId": 70951668,
+        "number": 10,
+        "time": "5:50pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    }
+]
