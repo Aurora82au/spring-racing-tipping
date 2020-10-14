@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Prompt } from 'react-router-dom';
 
 export default class TipsRaceList extends Component {
     constructor(props) {
@@ -154,6 +155,16 @@ export default class TipsRaceList extends Component {
         return races;
     };
 
+    /* Determine whether the user has selected 3 tips for each race in order to stop the user leaving the Tips page without entering all their tips */
+    hasntEnteredAllTips = () => {
+        for (let i = 0, l = this.state.tips.length; i < l; i++) {
+            if (this.state.tips[i].selections.length !== 3) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /* Function to render the component */
     render() {
         const raceList = this.generateList();
@@ -170,6 +181,14 @@ export default class TipsRaceList extends Component {
             raceListClass = 'raceList';
         }
 
-        return <div className={raceListClass}>{raceList}</div>;
+        return (
+            <>
+                <Prompt
+                    when={this.hasntEnteredAllTips()}
+                    message='You have not yet entered all your tips for this meet, are you sure you want to leave the Tips page?'
+                />
+                <div className={raceListClass}>{raceList}</div>
+            </>
+        );
     }
 }
