@@ -1,0 +1,51 @@
+[
+    {
+        "_id": 66332664,
+        "name": "Caulfield Cup",
+        "location": "Caulfield",
+        "date": "2020-10-17",
+        "competitionId": 16543668
+    },
+    {
+        "_id": 91460221,
+        "name": "Geelong Cup",
+        "location": "Geelong",
+        "date": "2020-10-21",
+        "competitionId": 16543668
+    },
+    {
+        "_id": 22806313,
+        "name": "Cox Plate",
+        "location": "Moonee Valley",
+        "date": "2020-10-24",
+        "competitionId": 16543668
+    },
+    {
+        "_id": 42918857,
+        "name": "Derby Day",
+        "location": "Flemington",
+        "date": "2020-10-31",
+        "competitionId": 16543668
+    },
+    {
+        "_id": 36570536,
+        "name": "Melbourne Cup",
+        "location": "Flemington",
+        "date": "2020-11-03",
+        "competitionId": 16543668
+    },
+    {
+        "_id": 61693514,
+        "name": "Oaks Day",
+        "location": "Flemington",
+        "date": "2020-11-05",
+        "competitionId": 16543668
+    },
+    {
+        "_id": 77609845,
+        "name": "Stakes Day",
+        "location": "Flemington",
+        "date": "2020-11-07",
+        "competitionId": 16543668
+    }
+]
