@@ -268,5 +268,35 @@
             "display": "Jimmy"
         },
         "image": "Default.png"
+    },
+    {
+        "_id": 28,
+        "password": "bj1904",
+        "name": {
+            "first": "Brett",
+            "last": "Jordan",
+            "display": "Brett"
+        },
+        "image": "Default.png"
+    },
+    {
+        "_id": 29,
+        "password": "ks1904",
+        "name": {
+            "first": "Kate",
+            "last": "Scott",
+            "display": "Kate"
+        },
+        "image": "Default.png"
+    },
+    {
+        "_id": 30,
+        "password": "sm1904",
+        "name": {
+            "first": "Scott",
+            "last": "Mackenzie",
+            "display": "Scott"
+        },
+        "image": "ScottMckenzie.png"
     }
 ]
