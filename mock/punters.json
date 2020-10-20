@@ -244,7 +244,7 @@
         "password": "ka1904",
         "name": {
             "first": "Kay",
-            "last": "Andersson",
+            "last": "Anderson",
             "display": "Kay"
         },
         "image": "Default.png"
@@ -281,11 +281,11 @@
     },
     {
         "_id": 29,
-        "password": "ks1904",
+        "password": "tu1904",
         "name": {
-            "first": "Kate",
-            "last": "Scott",
-            "display": "Kate"
+            "first": "Test",
+            "last": "User",
+            "display": "Test"
         },
         "image": "Default.png"
     },
