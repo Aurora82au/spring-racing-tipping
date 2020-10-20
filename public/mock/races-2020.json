@@ -158,5 +158,149 @@
         },
         "scratchings": [],
         "competitionId": 16543668
+    },
+    {
+        "_id": 62516182,
+        "name": "Coulter Roache BM70 Handicap",
+        "meetId": 91460221,
+        "number": 1,
+        "time": "12:30pm",
+        "distance": "2400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 27804289,
+        "name": "Jack Rabbit BM70 Handicap",
+        "meetId": 91460221,
+        "number": 2,
+        "time": "1:00pm",
+        "distance": "1700m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 66457942,
+        "name": "Geelong Australia BM64 Handicap",
+        "meetId": 91460221,
+        "number": 3,
+        "time": "1:35pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 66832294,
+        "name": "Jack McLean Dual Choice Plate",
+        "meetId": 91460221,
+        "number": 4,
+        "time": "2:10pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 68823626,
+        "name": "Hamilton Group Melbourne Cup Carnival Country Series BM78 Hcp",
+        "meetId": 91460221,
+        "number": 5,
+        "time": "2:45pm",
+        "distance": "1500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 80831889,
+        "name": "Roderick Insurance Brokers Geelong Classic",
+        "meetId": 91460221,
+        "number": 6,
+        "time": "3:20pm",
+        "distance": "2200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 32596430,
+        "name": "bet365 Geelong Cup",
+        "meetId": 91460221,
+        "number": 7,
+        "time": "4:00pm",
+        "distance": "2400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 87838962,
+        "name": "Bennett Racing Black Pearl Stakes",
+        "meetId": 91460221,
+        "number": 8,
+        "time": "4:40pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 60097015,
+        "name": "No Fuss Event Hire BM64 Handicap",
+        "meetId": 91460221,
+        "number": 9,
+        "time": "5:20pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
     }
 ]
