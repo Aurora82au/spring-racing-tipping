@@ -157,7 +157,7 @@ export default class TipsRaceList extends Component {
 
     /* Determine whether the user has selected 3 tips for each race in order to stop the user leaving the Tips page without entering all their tips */
     hasntEnteredAllTips = () => {
-        for (let i = 0, l = this.state.tips.length; i < l; i++) {
+        for (let i = 0, l = this.props.races.length; i < l; i++) {
             if (this.state.tips[i].selections.length !== 3) {
                 return true;
             }
