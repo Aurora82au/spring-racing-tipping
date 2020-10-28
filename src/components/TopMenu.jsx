@@ -4,6 +4,7 @@ import { logOut } from '../helpers/utilities';
 import { getPunterCompetitions } from '../helpers/utilities';
 import Button from './Button';
 import CompetitionSelector from './CompetitionSelector';
+import pkg from '../../package.json';
 
 export default class TopMenu extends Component {
     constructor(props) {
@@ -48,8 +49,8 @@ export default class TopMenu extends Component {
             <div className={menuClass}>
                 {
                     this.props.user &&
-                    <div className="profile-pic-container" onClick={this.handlePicClick}>
-                        <img className="profile-pic" src={'pics/' + this.props.user.image} alt="profile-pic" />
+                    <div className="menu-btn-container" onClick={this.handlePicClick}>
+                        <div className="icon-menu-vertical"></div>
                         <span className="icon-arrow-up"></span>
                     </div>
                 }
@@ -59,13 +60,16 @@ export default class TopMenu extends Component {
                         <NavLink to={this.props.path + 'admin'} onClick={this.handlePicClick}><span className="icon-admin"></span>Administration</NavLink>
                     }
                     <NavLink to={this.props.path + 'information'} onClick={this.handlePicClick}><span className="info-icon">i</span>Information</NavLink>
-                    <Button 
-                        classes="btn logout"
-                        type="button"
-                        onClick={logOut}
-                        disabled={false}
-                        text="Log Out"
-                    />
+                    <div className="btn-container">
+                        <Button 
+                            classes="btn logout"
+                            type="button"
+                            onClick={logOut}
+                            disabled={false}
+                            text="Log Out"
+                        />
+                        <span>App Version: {pkg.version}</span>
+                    </div>
                 </div>
                 {
                     punterComps.length > 1 &&

@@ -34,23 +34,22 @@ export default class Header extends Component {
         return (
             <>
                 {
-                    // Show the top menu on every page but the Login page.
+                    // Show the top menu, profile pic and reload data button on every page but the Login page.
                     this.props.page !== 'Log In' &&
-                    <TopMenu
-                        path={this.props.path}
-                        user={this.props.user}
-                        competitions={this.props.competitions}
-                        selectedCompetition={this.props.selectedCompetition}
-                        handleCompetitionSelect={this.props.handleCompetitionSelect}
-                        isAdmin={this.props.isAdmin}
-                    />
-                }
-                {
-                    // Show the reload button on every page but the Login page.
-                    this.props.page !== 'Log In' &&
-                    <button className="reload-btn" onClick={this.props.onReloadData}>
-                        <span className="icon-reload" />
-                    </button>
+                    <>
+                        <TopMenu
+                            path={this.props.path}
+                            user={this.props.user}
+                            competitions={this.props.competitions}
+                            selectedCompetition={this.props.selectedCompetition}
+                            handleCompetitionSelect={this.props.handleCompetitionSelect}
+                            isAdmin={this.props.isAdmin}
+                        />
+                        <img className="profile-pic" src={'pics/' + this.props.user.image} alt="profile-pic" title={`${this.props.user.name.first} ${this.props.user.name.last}`} />
+                        <button className="reload-btn" onClick={this.props.onReloadData}>
+                            <span className="icon-reload" />
+                        </button>
+                    </>
                 }
                 <h2>
                     Spring Racing Tipping <img src="horse.png" alt="Title logo" />

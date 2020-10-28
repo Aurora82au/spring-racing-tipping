@@ -130,7 +130,7 @@ export default class App extends Component {
             const tipsResponse = await fetch(tipsDataURL, { cache: 'no-store', mode: 'cors' });
             const tips = await tipsResponse.json();
             let selectedMeet = self.state.selectedMeet || parseInt(localStorage.getItem('selectedMeet')) || null;
-            let selectedRace = self.state.selectedRace;
+            let selectedRace = self.state.selectedRace || parseInt(localStorage.getItem('selectedRace')) || null;
 
             // If no selected meet, set to the first meet
             if (!selectedMeet) {
@@ -142,6 +142,7 @@ export default class App extends Component {
                 for (let i = 0, l = races.length; i < l; i++) {
                     if (races[i].meetId === selectedMeet && races[i].number === 1) {
                         selectedRace = races[i]._id;
+                        localStorage.setItem('selectedRace', selectedRace);
                     }
                 }
             }
@@ -288,6 +289,7 @@ export default class App extends Component {
         });
         localStorage.setItem('selectedCompetitionId', competitionId);
         localStorage.setItem('selectedMeet', meetId);
+        localStorage.setItem('selectedRace', raceId);
         localStorage.setItem('isAdmin', isAdmin);
         this.setData(selectedCompetition, true);
     }
@@ -304,7 +306,7 @@ export default class App extends Component {
 
     /* When the user selects a race meet, update the state and save to localStorage. */
     handleMeetSelect = event => {
-        const races = this.state.races;
+        const races = [...this.state.races];
         const chosenMeet = parseInt(event.target.value, 10);
         let firstRace;
         for (let i = 0, j = races.length; i < j; i++) {
@@ -317,12 +319,15 @@ export default class App extends Component {
             selectedRace: firstRace
         });
         localStorage.setItem('selectedMeet', event.target.value);
+        localStorage.setItem('selectedRace', firstRace);
     };
 
     /* When the user selects a race on the Results page, update the state. */
     handleRaceSelect = event => {
+        const chosenRace = parseInt(event.target.id, 10);
+        localStorage.setItem('selectedRace', chosenRace);
         this.setState({
-            selectedRace: parseInt(event.target.id, 10)
+            selectedRace: chosenRace
         });
     };
 
@@ -337,7 +342,7 @@ export default class App extends Component {
     handleSaveTips = modifiedTips => {
         const self = this;
         if (!self.useJSON) {
-            let tips = self.state.tips;
+            let tips = [...self.state.tips];
             let newTip;
             
             // Updating tips that have already been saved before.
@@ -382,7 +387,7 @@ export default class App extends Component {
                 }
 
                 // Find and set the raceId
-                let races = this.state.races;
+                let races = [...this.state.races];
                 for (let i = 0, l = races.length; i < l; i++) {
                     if (races[i].meetId === this.state.selectedMeet &&
                         races[i].number === modifiedTips.number) {
@@ -413,7 +418,7 @@ export default class App extends Component {
 
     /* When the user clicks Save for placings on the Admin page, save to the database and update the state */
     handleSavePlacings = (modifiedRaceId, modifiedPlacings) => {
-        let races = this.state.races;
+        let races = [...this.state.races];
         let race = races.find(race => {
             return race._id === modifiedRaceId;
         });
@@ -432,7 +437,7 @@ export default class App extends Component {
     /* When the user selects a race status on the Admin page, save to the database and update the state */
     handleSaveStatus = event => {
         const modifiedRaceId = parseInt(event.target.getAttribute('data-race-id'), 10);
-        let races = this.state.races;
+        let races = [...this.state.races];
         let race = races.find(race => {
             return race._id === modifiedRaceId;
         });
@@ -450,7 +455,7 @@ export default class App extends Component {
 
     /* When the user selects a scratching on the Admin page, save to the database and update the state */
     handleSaveScratchings = (modifiedRaceId, modifiedScratchings) => {
-        let races = this.state.races;
+        let races = [...this.state.races];
         let race = races.find(race => {
             return race._id === modifiedRaceId;
         });
@@ -491,6 +496,8 @@ export default class App extends Component {
     /* Function to render the component */
     render() {
         const page = window.location.href.split("/").slice(-1)[0];
+
+        // console.log(generateId());
 
         if ((!this.state.loadingData && !this.state.appLoadFailed) &&
             ((this.state.selectedCompetition && this.state.punters.length) ||

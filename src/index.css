@@ -26,6 +26,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu-vertical:before {
+    content: "\e900";
+}
 .icon-tick:before {
     content: "\e5ca";
 }

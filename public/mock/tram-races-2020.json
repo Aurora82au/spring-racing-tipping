@@ -302,5 +302,165 @@
         },
         "scratchings": [],
         "competitionId": 20967977
+    },
+    {
+        "_id": 59949316,
+        "name": "Strathmore Community Bendigo Bank Handicap",
+        "meetId": 34887989,
+        "number": 1,
+        "time": "11:40am",
+        "distance": "955m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 80779250,
+        "name": "Inglis Banner",
+        "meetId": 34887989,
+        "number": 2,
+        "time": "12:10pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 22903041,
+        "name": "PFD Food Services Red Anchor Stakes",
+        "meetId": 34887989,
+        "number": 3,
+        "time": "12:40pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 40167008,
+        "name": "Lexus Fillies Classic",
+        "meetId": 34887989,
+        "number": 4,
+        "time": "1:10pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 85335682,
+        "name": "Powerflo Solutions Stakes",
+        "meetId": 34887989,
+        "number": 5,
+        "time": "1:40pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 49620232,
+        "name": "Drummond Golf Vase",
+        "meetId": 34887989,
+        "number": 6,
+        "time": "2:15pm",
+        "distance": "2040m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 12227899,
+        "name": "Schweppes Crystal Mile",
+        "meetId": 34887989,
+        "number": 7,
+        "time": "2:50pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 26391224,
+        "name": "McCafe Moonee Valley Gold Cup",
+        "meetId": 34887989,
+        "number": 8,
+        "time": "3:30pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 91638969,
+        "name": "Ladbrokes Cox Plate",
+        "meetId": 34887989,
+        "number": 9,
+        "time": "4:15pm",
+        "distance": "2040m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 64045100,
+        "name": "Ladbrokes Crockett Stakes",
+        "meetId": 34887989,
+        "number": 10,
+        "time": "4:50pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
     }
 ]
