@@ -166,7 +166,10 @@ export default class App extends Component {
                 if (races[i].meetId === selectedMeet) {
                     raceTip = tips.find(tip => tip.raceId === races[i]._id && tip.punterId === this.state.user._id);
                     if (raceTip) {
-                        updatedSavedRaces[`race${races[i].number}`] = raceTip.selections.length === 3? true : false;
+                        updatedSavedRaces[`race${races[i].number}`] = raceTip.selections.length === 3 ? true : false;
+                    }
+                    else {
+                        updatedSavedRaces[`race${races[i].number}`] = false;
                     }
                 }
             }
@@ -339,9 +342,24 @@ export default class App extends Component {
                 firstRace = races[i]._id;
             }
         }
+        // Update the saved status of each race.
+        let updatedSavedRaces = {...this.state.savedRaces};
+        let raceTip;
+        for (let i = 0, l = races.length; i < l; i++) {
+            if (races[i].meetId === chosenMeet) {
+                raceTip = this.state.tips.find(tip => tip.raceId === races[i]._id && tip.punterId === this.state.user._id);
+                if (raceTip) {
+                    updatedSavedRaces[`race${races[i].number}`] = raceTip.selections.length === 3 ? true : false;
+                }
+                else {
+                    updatedSavedRaces[`race${races[i].number}`] = false;
+                }
+            }
+        }
         this.setState({
             selectedMeet: chosenMeet,
-            selectedRace: firstRace
+            selectedRace: firstRace,
+            savedRaces: updatedSavedRaces
         });
         localStorage.setItem('selectedMeet', event.target.value);
         localStorage.setItem('selectedRace', firstRace);
