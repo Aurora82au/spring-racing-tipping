@@ -462,5 +462,149 @@
         },
         "scratchings": [],
         "competitionId": 16543668
+    },
+    {
+        "_id": 30234027,
+        "name": "Network 10 Carbine Club Stakes",
+        "meetId": 42918857,
+        "number": 1,
+        "time": "11:40am",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 21525373,
+        "name": "G.H.Mumm Wakeful Stakes",
+        "meetId": 42918857,
+        "number": 2,
+        "time": "12:20pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 88453046,
+        "name": "TAB Stakes",
+        "meetId": 42918857,
+        "number": 3,
+        "time": "1:00pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 39382676,
+        "name": "Lexus Hotham Stakes",
+        "meetId": 42918857,
+        "number": 4,
+        "time": "1:40pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 37305618,
+        "name": "TAB Empire Rose Stakes",
+        "meetId": 42918857,
+        "number": 5,
+        "time": "2:20pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 95561341,
+        "name": "Coolmore Stud Stakes",
+        "meetId": 42918857,
+        "number": 6,
+        "time": "3:00pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 49956009,
+        "name": "AAMI Victoria Derby",
+        "meetId": 42918857,
+        "number": 7,
+        "time": "3:45pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 54428257,
+        "name": "Kennedy Cantala",
+        "meetId": 42918857,
+        "number": 8,
+        "time": "4:30pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
+    },
+    {
+        "_id": 22229682,
+        "name": "Furphy Sprint",
+        "meetId": 42918857,
+        "number": 9,
+        "time": "5:10pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 16543668
     }
 ]
