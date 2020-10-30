@@ -115,7 +115,7 @@ export default class TipsRaceList extends Component {
     generateList = () => {
         let races = [];
         let selections = [];
-        let className;
+        let className, savedStatus, j;
 
         // For each race in the selected meet
         for (let i = 0, l = this.props.races.length; i < l; i++) {
@@ -123,7 +123,7 @@ export default class TipsRaceList extends Component {
             selections = [];
 
             // Generate 24 selections for the tips
-            for (let j = 0; j < 24; j++) {
+            for (j = 0; j < 24; j++) {
                 className = 'selection';
                 if (this.props.races[i].scratchings.includes(j + 1)) {
                     className += ' scratched';
@@ -139,11 +139,17 @@ export default class TipsRaceList extends Component {
                 );
             }
 
+            // Set the saved status for each race.
+            savedStatus = this.props.savedRaces[`race${this.props.races[i].number}`] === true ? <span className="saved-status">Tips completed</span> : '';
+
             // Create the HTML for each race and insert into the races array
             races.push(
                 <div key={i} className="tip-group">
                     <div className="details">
-                        <div className="bold">RACE {this.props.races[i].number}</div>
+                        <div>
+                            <span className="bold">RACE {this.props.races[i].number}</span>
+                            {savedStatus}
+                        </div>
                         <span>{this.props.races[i].time}</span>
                         <span className="name">&nbsp;-&nbsp;{this.props.races[i].name}</span>
                     </div>
@@ -158,9 +164,12 @@ export default class TipsRaceList extends Component {
     /* Determine whether the user has selected 3 tips for each race in order to stop the user leaving the Tips page without entering all their tips */
     hasntEnteredAllTips = () => {
         for (let i = 0, l = this.props.races.length; i < l; i++) {
-            if (this.state.tips[i].selections.length !== 3) {
+            if (this.props.savedRaces[`race${this.props.races[i].number}`] === false) {
                 return true;
             }
+            // if (this.state.tips[i].selections.length !== 3) {
+            //     return true;
+            // }
         }
         return false;
     }

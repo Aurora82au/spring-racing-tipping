@@ -31,7 +31,19 @@ export default class App extends Component {
             selectedRace: null,
             selectedTab: 1,
             appLoadFailed: false,
-            loadingData: false
+            loadingData: false,
+            savedRaces: {
+                race1: false,
+                race2: false,
+                race3: false,
+                race4: false,
+                race5: false,
+                race6: false,
+                race7: false,
+                race8: false,
+                race9: false,
+                race10: false
+            }
         };
 
         this.useJSON = false;
@@ -132,17 +144,29 @@ export default class App extends Component {
             let selectedMeet = self.state.selectedMeet || parseInt(localStorage.getItem('selectedMeet')) || null;
             let selectedRace = self.state.selectedRace || parseInt(localStorage.getItem('selectedRace')) || null;
 
-            // If no selected meet, set to the first meet
+            // If no selected meet, set to the first meet.
             if (!selectedMeet) {
                 selectedMeet = meets.length ? meets[0]._id : null;
                 localStorage.setItem('selectedMeet', selectedMeet);
             }
-            // If no selected race, set to the first race of the race meet
+            // If no selected race, set to the first race of the race meet.
             if (!selectedRace) {
                 for (let i = 0, l = races.length; i < l; i++) {
                     if (races[i].meetId === selectedMeet && races[i].number === 1) {
                         selectedRace = races[i]._id;
                         localStorage.setItem('selectedRace', selectedRace);
+                    }
+                }
+            }
+
+            // Update the saved status of each race.
+            let updatedSavedRaces = {...this.state.savedRaces};
+            let raceTip;
+            for (let i = 0, l = races.length; i < l; i++) {
+                if (races[i].meetId === selectedMeet) {
+                    raceTip = tips.find(tip => tip.raceId === races[i]._id && tip.punterId === this.state.user._id);
+                    if (raceTip) {
+                        updatedSavedRaces[`race${races[i].number}`] = raceTip.selections.length === 3? true : false;
                     }
                 }
             }
@@ -155,6 +179,7 @@ export default class App extends Component {
                 selectedCompetition: selectedCompetition,
                 selectedMeet: selectedMeet,
                 selectedRace: selectedRace,
+                savedRaces: updatedSavedRaces,
                 loadingData: false
             });
         } catch (e) {
@@ -169,7 +194,7 @@ export default class App extends Component {
      * and if so, then retrieves all data and sets state that was stored in localStorage.
      * Otherwise, it will be on the login screen, so only retrieves the punters. */
     componentDidMount() {
-        // Start 30sec timer to check if app loaded
+        // Start a 30sec timer to check if the app loaded.
         setTimeout(() => {
             if (!this.state.allPunters.length) {
                 this.setState({
@@ -178,7 +203,7 @@ export default class App extends Component {
             }
         }, 30000);
 
-        // Check the localStorage to see if the user is already logged in
+        // Check the localStorage to see if the user is already logged in.
         if (localStorage.getItem('user')) {
             const userId = parseInt(localStorage.getItem('user'), 10);
 
@@ -187,7 +212,7 @@ export default class App extends Component {
                 isAdmin: localStorage.getItem('isAdmin') === 'true'
             });
 
-            // Load all the data
+            // Load all the data.
             this.getAllPunters().then(result => {
                 if (result === 'complete') {
                     const selectedUser = this.state.allPunters.find(user => {
@@ -219,7 +244,7 @@ export default class App extends Component {
                 authenticated: false
             });
 
-            // Load only the punters
+            // Load only the punters.
             this.getAllPunters();
         }
     }
@@ -230,14 +255,14 @@ export default class App extends Component {
             return user._id === userId;
         });
 
-        // Update the state with the user
+        // Update the state with the user.
         this.setState({
             authenticated: true,
             user: userObj
         });
-        // Set the localStorage for the logged in user
+        // Set the localStorage for the logged in user.
         localStorage.setItem('user', userId);
-        // Get the competitions the user is apart of
+        // Get the competitions the user is apart of.
         this.getUserCompetitions(userId);
     };
 
@@ -347,7 +372,7 @@ export default class App extends Component {
             
             // Updating tips that have already been saved before.
             if (modifiedTips.databaseId) {
-                // Get a reference to the current saved tip
+                // Get a reference to the current saved tip.
                 for (let i = 0, l = tips.length; i < l; i++) {
                     if (tips[i]._id === modifiedTips.databaseId) {
                         newTip = tips[i];
@@ -356,7 +381,7 @@ export default class App extends Component {
                 }
 
                 if (newTip) {
-                    // Update the selections
+                    // Update the selections.
                     newTip.selections = modifiedTips.selections;
 
                     fetch(`${self.backendURL}/tips/${modifiedTips.databaseId}`, {
@@ -368,7 +393,24 @@ export default class App extends Component {
                         },
                         body: JSON.stringify({'selections': newTip.selections})
                     })
-                    .catch(error => console.error('Fetch error:', error));
+                    .then(response => {
+                        if (!response.ok) { 
+                            return res.text().then(text => {throw new Error(text)});
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const updatedSavedRaces = {...this.state.savedRaces};
+                        const raceNo = this.state.races.find(race => race._id === data.raceId).number;
+                        updatedSavedRaces[`race${raceNo}`] = data.selections.length === 3 ? true : false;
+                        this.setState({
+                            savedRaces: updatedSavedRaces
+                        });
+                    })
+                    .catch(error => {
+                        this.setData(this.state.selectedCompetition, false);
+                        alert(`There was an error saving a tip.  Try re-selecting it again.\nIf you keep getting the error, take a screenshot of this message and send it to your competition administrator.\n\n${error}`);
+                    });
 
                     self.setState({
                         tips: tips
@@ -386,7 +428,7 @@ export default class App extends Component {
                     selections: modifiedTips.selections
                 }
 
-                // Find and set the raceId
+                // Find and set the raceId.
                 let races = [...this.state.races];
                 for (let i = 0, l = races.length; i < l; i++) {
                     if (races[i].meetId === this.state.selectedMeet &&
@@ -405,7 +447,15 @@ export default class App extends Component {
                     },
                     body: JSON.stringify(newTip)
                 })
-                .catch(error => console.error('Fetch error:', error));
+                .then(response => {
+                    if (!response.ok) { 
+                        return res.text().then(text => {throw new Error(text)});
+                    }
+                })
+                .catch(error => {
+                    this.setData(this.state.selectedCompetition, false);
+                    alert(`There was an error saving a tip.  Try re-selecting it again.\nIf you keep getting the error, take a screenshot of this message and send it to your competition administrator.\n\n${error}`);
+                });
 
                 tips.push(newTip);
 
@@ -416,7 +466,7 @@ export default class App extends Component {
         }
     }
 
-    /* When the user clicks Save for placings on the Admin page, save to the database and update the state */
+    /* When the user clicks Save for placings on the Admin page, save to the database and update the state. */
     handleSavePlacings = (modifiedRaceId, modifiedPlacings) => {
         let races = [...this.state.races];
         let race = races.find(race => {
@@ -424,17 +474,17 @@ export default class App extends Component {
         });
         const raceIndex = races.indexOf(race);
 
-        // Update the placings for the selected race
+        // Update the placings for the selected race.
         race.placings = modifiedPlacings;
 
-        // Insert the updated race back into the races array
+        // Insert the updated race back into the races array.
         races[raceIndex] = race;
 
-        // Update the race in the database and local state
+        // Update the race in the database and local state.
         this.updateRace(modifiedRaceId, races, race);
     };
 
-    /* When the user selects a race status on the Admin page, save to the database and update the state */
+    /* When the user selects a race status on the Admin page, save to the database and update the state. */
     handleSaveStatus = event => {
         const modifiedRaceId = parseInt(event.target.getAttribute('data-race-id'), 10);
         let races = [...this.state.races];
@@ -443,17 +493,17 @@ export default class App extends Component {
         });
         const raceIndex = races.indexOf(race);
 
-        // Update the status for the selected race
+        // Update the status for the selected race.
         race.status = parseInt(event.target.getAttribute('data-status'), 10);
 
-        // Insert the updated race back into the races array
+        // Insert the updated race back into the races array.
         races[raceIndex] = race;
 
-        // Update the race in the database and local state
+        // Update the race in the database and local state.
         this.updateRace(modifiedRaceId, races, race);
     };
 
-    /* When the user selects a scratching on the Admin page, save to the database and update the state */
+    /* When the user selects a scratching on the Admin page, save to the database and update the state. */
     handleSaveScratchings = (modifiedRaceId, modifiedScratchings) => {
         let races = [...this.state.races];
         let race = races.find(race => {
@@ -461,20 +511,20 @@ export default class App extends Component {
         });
         const raceIndex = races.indexOf(race);
 
-        // Update the placings for the selected race
+        // Update the placings for the selected race.
         race.scratchings = modifiedScratchings;
 
-        // Insert the updated race back into the races array
+        // Insert the updated race back into the races array.
         races[raceIndex] = race;
 
-        // Update the race in the database and local state
+        // Update the race in the database and local state.
         this.updateRace(modifiedRaceId, races, race);
     };
 
-    /* When the user selects a scratching on the Admin page, save to the database and update the state */
+    /* When the user selects a scratching on the Admin page, save to the database and update the state. */
     updateRace = (modifiedRaceId, races, race) => {
         if (!this.useJSON) {
-            // Send the updated race to the database
+            // Send the updated race to the database.
             fetch(`${this.backendURL}/races/${modifiedRaceId}`, {
                 method: 'PUT',
                 cache: 'no-store',
@@ -487,13 +537,13 @@ export default class App extends Component {
             .catch(error => console.error('Fetch error:', error));
         }
 
-        // Update the local state with the updated races array
+        // Update the local state with the updated races array.
         this.setState({
             races: races
         });
     };
 
-    /* Function to render the component */
+    /* Function to render the component. */
     render() {
         const page = window.location.href.split("/").slice(-1)[0];
 
@@ -504,7 +554,7 @@ export default class App extends Component {
             (page === 'login' && this.state.allPunters.length) ||
             (this.state.authenticated === false))) {
             return (
-                // React Router routes to a particular component based on the URL path
+                // React Router routes to a particular component based on the URL path.
                 <Router>
                     <ScrollToTop>
                         <ErrorHandling>
@@ -634,6 +684,7 @@ export default class App extends Component {
                                                 onSelectionChange={this.handleSaveTips}
                                                 user={this.state.user}
                                                 isAdmin={this.state.isAdmin}
+                                                savedRaces={this.state.savedRaces}
                                             />
                                         ) : (
                                             <Redirect to={this.path + 'login'} />
@@ -720,7 +771,7 @@ export default class App extends Component {
     }
 }
 
-// Use to time functions
+// Use to time functions.
 
 //const t0 = performance.now(); <- Put before code to be timed
 //const t1 = performance.now(); <- Put after code to be timed

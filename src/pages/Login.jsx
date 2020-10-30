@@ -47,16 +47,18 @@ export default class Login extends Component {
             return punter._id === this.state.user;
         });
 
-        if (punter.password === this.state.password) {
-            this.setState({
-                wrongPassword: false
-            });
-            // Call handleLogin from App.js to set the logged in user
-            this.props.handleLogin(this.state.user);
-        } else {
-            this.setState({
-                wrongPassword: true
-            });
+        if (punter) {
+            if (punter.password === this.state.password) {
+                this.setState({
+                    wrongPassword: false
+                });
+                // Call handleLogin from App.js to set the logged in user
+                this.props.handleLogin(this.state.user);
+            } else {
+                this.setState({
+                    wrongPassword: true
+                });
+            }
         }
     };
 
@@ -125,6 +127,7 @@ export default class Login extends Component {
                         type="password"
                         value={this.props.user ? this.props.user.password : ''}
                         handleChange={this.handlePasswordChange}
+                        onKeyDown={event => { if (event.code === "Enter" || event.code === "NumpadEnter") { this.handleLoginClick(event); } }}
                         disabled={this.props.user}
                     />
                 }

@@ -8,6 +8,7 @@ export default class Button extends PureComponent {
                     type={this.props.type}
                     {...this.props.attributes}
                     onClick={this.props.onClick}
+                    onKeyDown={event => { if (event.code === "Enter" || event.code === "NumpadEnter") { this.props.onClick(event); } }}
                     disabled={this.props.disabled}>
                 {this.props.text}
             </button>

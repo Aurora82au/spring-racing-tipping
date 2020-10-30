@@ -57,6 +57,7 @@ export default class LabelAndInput extends Component {
                     onFocus={this.handleFocus}
                     onBlur={this.handleBlur}
                     onChange={this.handleChange}
+                    onKeyDown={this.props.onKeyDown}
                     disabled={this.props.disabled}
                 />
             </>

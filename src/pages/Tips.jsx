@@ -61,6 +61,7 @@ export default class Tips extends Component {
                     races={races}
                     tips={tips}
                     selectedRace={this.props.selectedRace}
+                    savedRaces={this.props.savedRaces}
                     user={this.props.user}
                     onSelectionChange={this.props.onSelectionChange}
                 />
