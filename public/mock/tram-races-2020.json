@@ -606,5 +606,165 @@
         },
         "scratchings": [],
         "competitionId": 20967977
+    },
+    {
+        "_id": 93449177,
+        "name": "Darley Maribyrnong Plate",
+        "meetId": 65659909,
+        "number": 1,
+        "time": "10:45am",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 36068440,
+        "name": "World Horse Racing Desirable Stakes",
+        "meetId": 65659909,
+        "number": 2,
+        "time": "11:20am",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 54435239,
+        "name": "Schweppervescence Plate",
+        "meetId": 65659909,
+        "number": 3,
+        "time": "12:00pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 50979770,
+        "name": "The Macca's Run",
+        "meetId": 65659909,
+        "number": 4,
+        "time": "12:40pm",
+        "distance": "2800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 48619284,
+        "name": "TAB Trophy",
+        "meetId": 65659909,
+        "number": 5,
+        "time": "1:20pm",
+        "distance": "1800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 55905756,
+        "name": "Grinders Coffee Roasters Trophy",
+        "meetId": 65659909,
+        "number": 6,
+        "time": "1:55pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 86827363,
+        "name": "Lexus Melbourne Cup",
+        "meetId": 65659909,
+        "number": 7,
+        "time": "3:00pm",
+        "distance": "3200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 98585081,
+        "name": "Furphy Plate",
+        "meetId": 65659909,
+        "number": 8,
+        "time": "4:00pm",
+        "distance": "1800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 92063830,
+        "name": "The Hong Kong Jockey Club Stakes",
+        "meetId": 65659909,
+        "number": 9,
+        "time": "4:40pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 95500797,
+        "name": "MSS Security Sprint",
+        "meetId": 65659909,
+        "number": 10,
+        "time": "5:15pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
     }
 ]
