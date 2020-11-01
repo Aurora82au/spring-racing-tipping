@@ -34,13 +34,16 @@ export default class Leaderboard extends Component {
     calculatePoints = () => {
         let points = [];
         let a = this.props.punters.length;
-        let b;
+        let b, c, l;
         let placings;
         let tips;
         let puntersPoints;
         let raceScore;
+        let firsts = 0;
+        let seconds = 0;
+        let thirds = 0;
 
-        // Load each punter into the points array with a score of 0
+        // Load each punter into the points array with a score of 0.
         while (a--) {
             points.push({
                 punterId: this.props.punters[a]._id,
@@ -53,42 +56,91 @@ export default class Leaderboard extends Component {
             });
         }
 
-        // Reset the length of the punters after the first while loop
+        // Reset the length of the punters after the first while loop.
         a = this.props.punters.length;
 
-        // For each punter
+        // For each punter.
         while (a--) {
-            // Reset the length of the races
+            // Reset the length of the races.
             b = this.props.races.length;
-            // Loop through each race
+            // Loop through each race.
             while (b--) {
-                // Set placings to the placings for this race
+                // Set placings to the placings for this race.
                 placings = this.props.races[b].placings;
-                // Find the associated tips for this user and race
+                // Find the associated tips for this user and race.
                 tips = this.findTips(this.props.punters[a]._id, this.props.races[b]._id);
 
                 if (tips) {
-                    raceScore = 0;
+                    // Reset the race score, and the number of firsts, seconds and thirds.
+                    raceScore = firsts = seconds = thirds = 0;
+                    // Get the current punter's points.
                     puntersPoints = this.findPuntersPoints(points, this.props.punters[a]._id);
-                    if (tips.selections.includes(placings.first)) {
-                        puntersPoints.points += 3;
-                        raceScore += 3;
-                        puntersPoints.firsts++;
+                    // Set first place points.
+                    if (placings.first.constructor === Array) {
+                        for (c = 0, l = placings.first.length; c < l; c++) {
+                            if (tips.selections.includes(placings.first[c])) {
+                                puntersPoints.points += 3;
+                                raceScore += 3;
+                                puntersPoints.firsts++;
+                                firsts++;
+                            }
+                        }
                     }
-                    if (tips.selections.includes(placings.second)) {
-                        puntersPoints.points += 2;
-                        raceScore += 2;
-                        puntersPoints.seconds++;
+                    else {
+                        if (tips.selections.includes(placings.first)) {
+                            puntersPoints.points += 3;
+                            raceScore += 3;
+                            puntersPoints.firsts++;
+                            firsts++;
+                        }
                     }
-                    if (tips.selections.includes(placings.third)) {
-                        puntersPoints.points += 1;
-                        raceScore += 1;
-                        puntersPoints.thirds++;
+                    // Set second place points.
+                    if (placings.second.constructor === Array) {
+                        for (c = 0, l = placings.second.length; c < l; c++) {
+                            if (tips.selections.includes(placings.second[c])) {
+                                puntersPoints.points += 2;
+                                raceScore += 2;
+                                puntersPoints.seconds++;
+                                seconds++;
+                            }
+                        }
                     }
-                    if (raceScore === 6) {
+                    else {
+                        if (tips.selections.includes(placings.second)) {
+                            puntersPoints.points += 2;
+                            raceScore += 2;
+                            puntersPoints.seconds++;
+                            seconds++;
+                        }
+                    }
+                    // Set third place points.
+                    if (placings.third.constructor === Array) {
+                        for (c = 0, l = placings.third.length; c < l; c++) {
+                            if (tips.selections.includes(placings.third[c])) {
+                                puntersPoints.points += 1;
+                                raceScore += 1;
+                                puntersPoints.thirds++;
+                                thirds++;
+                            }
+                        }
+                    }
+                    else {
+                        if (tips.selections.includes(placings.third)) {
+                            puntersPoints.points += 1;
+                            raceScore += 1;
+                            puntersPoints.thirds++;
+                            thirds++;
+                        }
+                    }
+                    // Set trifectas.
+                    if ((firsts === 1 && seconds === 1 && thirds === 1) ||
+                        (firsts === 2 && seconds === 1) ||
+                        (firsts === 1 && seconds === 2)) {
                         puntersPoints.trifectas++;
                     }
-                    if (raceScore === 5) {
+                    // Set quinellas.
+                    if ((firsts === 1 && seconds === 1 && thirds === 0) ||
+                        (firsts === 2 && seconds === 0)) {
                         puntersPoints.quinellas++;
                     }
                 }

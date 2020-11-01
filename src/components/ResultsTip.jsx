@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 export default class ResultsTip extends Component {
-    /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
+    /* Determines whether React should re-render the component, in this case if the new props are different from the old props. */
     shouldComponentUpdate(nextProps, nextState) {
         return !(nextProps === this.props);
     }
 
-    /* Function to render the component */
+    /* Function to render the component. */
     render() {
         const self = this;
         const punter = this.props.punters.find(tipPunter => {
@@ -14,50 +14,74 @@ export default class ResultsTip extends Component {
         });
         let score = 0;
         let index;
-        let firstClass = '';
-        let secondClass = '';
-        let thirdClass = '';
+        let firstPickClass = '';
+        let secondPickClass = '';
+        let thirdPickClass = '';
 
-        // Set the scores and the 'correct' class on punters picks
-        index = self.props.tips.selections.indexOf(self.props.placings.first);
-        if (index > -1) {
-            score += 3;
-            if (index === 0) {
-                firstClass = 'correct';
+        // Set the 'correct' class on punters picks.
+        const setPickClass = i => {
+            if (i === 0) {
+                firstPickClass = 'correct';
             }
-            if (index === 1) {
-                secondClass = 'correct';
+            if (i === 1) {
+                secondPickClass = 'correct';
             }
-            if (index === 2) {
-                thirdClass = 'correct';
+            if (i === 2) {
+                thirdPickClass = 'correct';
             }
         }
 
-        index = self.props.tips.selections.indexOf(self.props.placings.second);
-        if (index > -1) {
-            score += 2;
-            if (index === 0) {
-                firstClass = 'correct';
-            }
-            if (index === 1) {
-                secondClass = 'correct';
-            }
-            if (index === 2) {
-                thirdClass = 'correct';
+        // Set the scores for first place.
+        if (self.props.placings.first.constructor === Array) {
+            for (let i = 0, l = self.props.placings.first.length; i < l; i++) {
+                index = self.props.tips.selections.indexOf(self.props.placings.first[i]);
+                if (index > -1) {
+                    score += 3;
+                    setPickClass(index);
+                }
             }
         }
-
-        index = self.props.tips.selections.indexOf(self.props.placings.third);
-        if (index > -1) {
-            score++;
-            if (index === 0) {
-                firstClass = 'correct';
+        else {
+            index = self.props.tips.selections.indexOf(self.props.placings.first);
+            if (index > -1) {
+                score += 3;
+                setPickClass(index);
             }
-            if (index === 1) {
-                secondClass = 'correct';
+        }
+        
+        // Set the scores for second place.
+        if (self.props.placings.second.constructor === Array) {
+            for (let i = 0, l = self.props.placings.second.length; i < l; i++) {
+                index = self.props.tips.selections.indexOf(self.props.placings.second[i]);
+                if (index > -1) {
+                    score += 2;
+                    setPickClass(index);
+                }
             }
-            if (index === 2) {
-                thirdClass = 'correct';
+        }
+        else {
+            index = self.props.tips.selections.indexOf(self.props.placings.second);
+            if (index > -1) {
+                score += 2;
+                setPickClass(index);
+            }
+        }
+        
+        // Set the scores for third place.
+        if (self.props.placings.third.constructor === Array) {
+            for (let i = 0, l = self.props.placings.third.length; i < l; i++) {
+                index = self.props.tips.selections.indexOf(self.props.placings.third[i]);
+                if (index > -1) {
+                    score++;
+                    setPickClass(index);
+                }
+            }
+        }
+        else {
+            index = self.props.tips.selections.indexOf(self.props.placings.third);
+            if (index > -1) {
+                score++;
+                setPickClass(index);
             }
         }
 
@@ -70,15 +94,15 @@ export default class ResultsTip extends Component {
                 <div className="numbers">
                     <div className="group">
                         <span className="label">Pick 1</span>&nbsp;-&nbsp;
-                        <span className={firstClass}>{self.props.tips.selections[0]}</span>
+                        <span className={firstPickClass}>{self.props.tips.selections[0]}</span>
                     </div>
                     <div className="group">
                         <span className="label">Pick 2</span>&nbsp;-&nbsp;
-                        <span className={secondClass}>{self.props.tips.selections[1]}</span>
+                        <span className={secondPickClass}>{self.props.tips.selections[1]}</span>
                     </div>
                     <div className="group">
                         <span className="label">Pick 3</span>&nbsp;-&nbsp;
-                        <span className={thirdClass}>{self.props.tips.selections[2]}</span>
+                        <span className={thirdPickClass}>{self.props.tips.selections[2]}</span>
                     </div>
                 </div>
                 <div className="score">

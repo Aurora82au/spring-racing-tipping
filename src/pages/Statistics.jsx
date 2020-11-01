@@ -71,9 +71,12 @@ export default class App extends Component {
     calculateStats = () => {
         let stats = [];
         let meetsArray = [];
+        let firsts = 0;
+        let seconds = 0;
+        let thirds = 0;
         let a = this.props.meets.length;
         let b = this.props.punters.length;
-        let c;
+        let c, d, l;
         let placings;
         let tips;
         let puntersStats;
@@ -89,14 +92,14 @@ export default class App extends Component {
             });
         }
 
-        // Sort the meets array in order of date
+        // Sort the meets array in order of date.
         meetsArray.sort((a, b) => {
             const aDate = Date.parse(a.date);
             const bDate = Date.parse(b.date);
             return aDate - bDate;
         });
 
-        // Load each punter into the points array with a score of 0
+        // Load each punter into the points array with a score of 0.
         while (b--) {
             stats.push({
                 punterId: this.props.punters[b]._id,
@@ -105,49 +108,92 @@ export default class App extends Component {
                 firsts: 0,
                 seconds: 0,
                 thirds: 0,
-                meets: meetsArray.map(x => ({ ...x })) // Use map and the spread operator to clone the array with cloned values, instead of references
+                meets: meetsArray.map(x => ({ ...x })) // Use map and the spread operator to clone the array with cloned values, instead of references.
             });
         }
 
-        // Reset the length of the punters after the first while loop
+        // Reset the length of the punters after the first while loop.
         b = this.props.punters.length;
 
-        // For each punter
+        // For each punter.
         while (b--) {
-            // Reset the length of the races
+            // Reset the length of the races.
             c = this.props.races.length;
-            // Loop through each race
+            // Loop through each race.
             while (c--) {
-                // Set placings to the placings for this race
+                // Set placings to the placings for this race.
                 placings = this.props.races[c].placings;
-                // Find the associated tips for this user and race
+                // Find the associated tips for this user and race.
                 tips = this.findTips(this.props.punters[b]._id, this.props.races[c]._id);
                 
                 if (tips) {
-                    // Reset the race score
-                    raceScore = 0;
-                    // Get the current punter's stats from the stats array
+                    // Reset the race score, and the number of firsts, seconds and thirds.
+                    raceScore = firsts = seconds = thirds = 0;
+                    // Get the current punter's stats from the stats array.
                     puntersStats = this.findPuntersStats(stats, this.props.punters[b]._id);
-                    // Get the current race meet from the current punter's stats
+                    // Get the current race meet from the current punter's stats.
                     puntersStatsMeet = this.findPuntersStatsMeet(puntersStats, this.props.races[c].meetId);
 
-                    // Update the stats of that punter
-                    if (tips.selections.includes(placings.first)) {
-                        puntersStats.firsts++;
-                        raceScore += 3;
+                    // Update the stats for first place.
+                    if (placings.first.constructor === Array) {
+                        for (d = 0, l = placings.first.length; d < l; d++) {
+                            if (tips.selections.includes(placings.first[d])) {
+                                raceScore += 3;
+                                puntersStats.firsts++;
+                                firsts++;
+                            }
+                        }
                     }
-                    if (tips.selections.includes(placings.second)) {
-                        puntersStats.seconds++;
-                        raceScore += 2;
+                    else {
+                        if (tips.selections.includes(placings.first)) {
+                            raceScore += 3;
+                            puntersStats.firsts++;
+                            firsts++;
+                        }
                     }
-                    if (tips.selections.includes(placings.third)) {
-                        puntersStats.thirds++;
-                        raceScore += 1;
+                    // Update the stats for second place.
+                    if (placings.second.constructor === Array) {
+                        for (d = 0, l = placings.second.length; d < l; d++) {
+                            if (tips.selections.includes(placings.second[d])) {
+                                raceScore += 2;
+                                puntersStats.seconds++;
+                                seconds++;
+                            }
+                        }
                     }
-                    if (raceScore === 6) {
+                    else {
+                        if (tips.selections.includes(placings.second)) {
+                            raceScore += 2;
+                            puntersStats.seconds++;
+                            seconds++;
+                        }
+                    }
+                    // Update the stats for third place.
+                    if (placings.third.constructor === Array) {
+                        for (d = 0, l = placings.third.length; d < l; d++) {
+                            if (tips.selections.includes(placings.third[d])) {
+                                raceScore += 1;
+                                puntersStats.thirds++;
+                                thirds++;
+                            }
+                        }
+                    }
+                    else {
+                        if (tips.selections.includes(placings.third)) {
+                            raceScore += 1;
+                            puntersStats.thirds++;
+                            thirds++;
+                        }
+                    }
+                    // Set trifectas.
+                    if ((firsts === 1 && seconds === 1 && thirds === 1) ||
+                        (firsts === 2 && seconds === 1) ||
+                        (firsts === 1 && seconds === 2)) {
                         puntersStats.trifectas++;
                     }
-                    if (raceScore === 5) {
+                    // Set quinellas.
+                    if ((firsts === 1 && seconds === 1 && thirds === 0) ||
+                        (firsts === 2 && seconds === 0)) {
                         puntersStats.quinellas++;
                     }
                     // Add the race score to this meets score
@@ -330,10 +376,16 @@ export default class App extends Component {
         }
 
         // Populate the meet array with each meet
-        for (let i = 0, l = this.props.meets.length; i < l; i++) {
+        let meets = [...this.props.meets];
+        meets.sort((a, b) => {
+            const aDate = Date.parse(a.date);
+            const bDate = Date.parse(b.date);
+            return aDate - bDate;
+        });
+        for (let i = 0, l = meets.length; i < l; i++) {
             meetArray.push({
-                meetId: this.props.meets[i]._id,
-                name: this.props.meets[i].name,
+                meetId: meets[i]._id,
+                name: meets[i].name,
                 scores: []
             });
         }

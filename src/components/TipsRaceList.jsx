@@ -167,9 +167,6 @@ export default class TipsRaceList extends Component {
             if (this.props.savedRaces[`race${this.props.races[i].number}`] === false) {
                 return true;
             }
-            // if (this.state.tips[i].selections.length !== 3) {
-            //     return true;
-            // }
         }
         return false;
     }

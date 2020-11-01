@@ -148,11 +148,18 @@ export default class Admin extends Component {
 
     /* When the user enters a value in one of the placing fields, update it in the state */
     handlePlacingChange = event => {
-        const races = this.state.races;
+        const targetValue = event.target.value;
+        const races = [...this.state.races];
         const raceChanged = event.target.id.split('-')[1];
         const placingChanged = event.target.id.split('-')[2];
         let placings = races[raceChanged - 1].placings;
-        const value = !Number.isNaN(parseInt(event.target.value)) ? parseInt(event.target.value) : 0;
+        let value;
+        if (targetValue.indexOf(',') > -1) {
+            value = targetValue.replace(', 0', '').replace(',0', '');
+        }
+        else {
+            value = !Number.isNaN(parseInt(targetValue)) ? parseInt(targetValue) : 0;
+        }
 
         if (placingChanged === 'first') {
             placings.first = value;
@@ -172,7 +179,26 @@ export default class Admin extends Component {
     /* When the user clicks a Save button, pass the modified placings to the onPlacingsChange function
        passed in via props from App.js */
     handleSaveClick = event => {
+        const convertStringToArray = str => {
+            const split = str.replace(' ', '').split(',');
+            return split.reduce((result, val) => {
+                if (val !== '0' && !Number.isNaN(parseInt(val))) {
+                    result.push(parseInt(val));
+                }
+                return result;
+            }, []);
+        }
         const placings = this.state.races[event.target.getAttribute('data-race') - 1].placings;
+
+        if (placings.first.constructor === String && placings.first.indexOf(',') > -1) {
+            placings.first = convertStringToArray(placings.first);
+        }
+        if (placings.second.constructor === String && placings.second.indexOf(',') > -1) {
+            placings.second = convertStringToArray(placings.second);
+        }
+        if (placings.third.constructor === String && placings.third.indexOf(',') > -1) {
+            placings.third = convertStringToArray(placings.third);
+        }
         this.props.onPlacingsChange(parseInt(event.target.getAttribute('data-race-id')), placings);
     };
 
@@ -234,6 +260,20 @@ export default class Admin extends Component {
                 );
             }
 
+            // Set placings.
+            let firstPlace = this.state.races[i].placings.first !== 0 ? this.state.races[i].placings.first : '';
+            let secondPlace = this.state.races[i].placings.second !== 0 ? this.state.races[i].placings.second : '';
+            let thirdPlace = this.state.races[i].placings.third !== 0 ? this.state.races[i].placings.third : '';
+            if (firstPlace.constructor === Array) {
+                firstPlace = firstPlace.join(', ');
+            }
+            if (secondPlace.constructor === Array) {
+                secondPlace = secondPlace.join(', ');
+            }
+            if (thirdPlace.constructor === Array) {
+                thirdPlace = thirdPlace.join(', ');
+            }
+
             // Create the HTML for each race and insert into the raceList array
             raceList.push(
                 <div key={i} className="adminRace">
@@ -247,7 +287,7 @@ export default class Admin extends Component {
                             <input
                                 id={'race-' + (i + 1) + '-first'}
                                 type="tel"
-                                value={this.state.races[i].placings.first !== 0 ? this.state.races[i].placings.first : ''}
+                                value={firstPlace}
                                 onChange={this.handlePlacingChange}
                             />
                         </div>
@@ -256,7 +296,7 @@ export default class Admin extends Component {
                             <input
                                 id={'race-' + (i + 1) + '-second'}
                                 type="tel"
-                                value={this.state.races[i].placings.second !== 0 ? this.state.races[i].placings.second : ''}
+                                value={secondPlace}
                                 onChange={this.handlePlacingChange}
                             />
                         </div>
@@ -265,14 +305,15 @@ export default class Admin extends Component {
                             <input
                                 id={'race-' + (i + 1) + '-third'}
                                 type="tel"
-                                value={this.state.races[i].placings.third !== 0 ? this.state.races[i].placings.third : ''}
+                                value={thirdPlace}
                                 onChange={this.handlePlacingChange}
                             />
                         </div>
-                        <button className="save-btn" type="button" data-race={i + 1} data-race-id={meetRaces[i]._id} onClick={this.handleSaveClick}>
-                            Save
-                        </button>
                     </div>
+                    <button className="save-btn" type="button" data-race={i + 1} data-race-id={meetRaces[i]._id} onClick={this.handleSaveClick}>
+                        Save
+                    </button>
+                    <div className="dead-heat-msg">For dead heats, just enter each number seperated by a comma eg. 1, 2.</div>
                     <div className="mb-10 bold">Set Race Status</div>
                     <div className="status-selector">
                         <Button

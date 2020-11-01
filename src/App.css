@@ -560,8 +560,17 @@ input.password {
 
 .adminRace .placings {
     display: flex;
+    max-width: 39rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.adminRace .placings > div {
+    margin-right: 1rem;
+}
+
+.adminRace .placings > div:last-child {
+    margin-right: 0;
 }
 
 .adminRace label {
@@ -570,14 +579,15 @@ input.password {
 }
 
 .adminRace input[type='tel'] {
-    width: 4rem;
-    margin-right: 1rem;
+    width: calc(100% - 3rem);
 }
 
 .save-btn {
     display: flex;
-    width: 6rem;
+    width: 100%;
+    max-width: 39rem;
     height: 3.8rem;
+    margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
     border: none;
@@ -589,6 +599,20 @@ input.password {
 
 .save-btn:hover {
     background-color: #000;
+}
+
+.dead-heat-msg {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 0.8rem;
+}
+
+.dead-heat-msg::before {
+    position: absolute;
+    content: "*";
+    display: block;
+    top: 0;
+    left: 0;
 }
 
 .scratching-list {
@@ -1265,10 +1289,6 @@ input.password {
         margin-right: 0.4rem;
     }
 
-    .adminRace input[type='tel'] {
-        margin-right: 2rem;
-    }
-
     .raceList .name {
         max-width: 28rem;
     }
@@ -1344,7 +1364,17 @@ input.password {
     }
 
     .adminRace .status-selector {
-        max-width: 39rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .adminRace .placings {
+        display: inline-flex;
+    }
+
+    .save-btn {
+        display: inline-flex;
+        max-width: 10rem;
+        margin-left: 2rem;
     }
 }
 @media (min-width: 660px) {
@@ -1421,7 +1451,6 @@ input.password {
 
     .top-menu.open .menu-btn-container {
         border-right-color: #aaa;
-        /* transition: border-color 400ms linear; */
     }
 
     .menu-btn-container .icon-arrow-up {
