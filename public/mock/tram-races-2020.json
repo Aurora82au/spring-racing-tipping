@@ -766,5 +766,293 @@
         },
         "scratchings": [],
         "competitionId": 20967977
+    },
+    {
+        "_id": 12393104,
+        "name": "TCL TV Stakes",
+        "meetId": 51282497,
+        "number": 1,
+        "time": "12:40am",
+        "distance": "1700m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 97306618,
+        "name": "Darley Ottawa Stakes",
+        "meetId": 51282497,
+        "number": 2,
+        "time": "1:15pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 49079547,
+        "name": "G.H. Mumm Century Stakes",
+        "meetId": 51282497,
+        "number": 3,
+        "time": "1:55pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 17685326,
+        "name": "Twitter Trophy",
+        "meetId": 51282497,
+        "number": 4,
+        "time": "2:35pm",
+        "distance": "1800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 77512672,
+        "name": "Off The Track Subzero Handicap",
+        "meetId": 51282497,
+        "number": 5,
+        "time": "3:15pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 85551496,
+        "name": "Inglis Bracelet",
+        "meetId": 51282497,
+        "number": 6,
+        "time": "3:50pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 89367407,
+        "name": "Melbourne Cup Carnival Country Final",
+        "meetId": 51282497,
+        "number": 7,
+        "time": "4:30pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 94172722,
+        "name": "Kennedy Oaks",
+        "meetId": 51282497,
+        "number": 8,
+        "time": "5:10pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 56975749,
+        "name": "Network 10 Red Roses Stakes",
+        "meetId": 51282497,
+        "number": 9,
+        "time": "5:50pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 36272055,
+        "name": "Very Special Kids Pin and Win Trophy",
+        "meetId": 26903306,
+        "number": 1,
+        "time": "12:25pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 75614345,
+        "name": "The Amanda Elliott",
+        "meetId": 26903306,
+        "number": 2,
+        "time": "1:00pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 58025193,
+        "name": "Network 10 Chatham Stakes",
+        "meetId": 26903306,
+        "number": 3,
+        "time": "1:35pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 55171014,
+        "name": "Nova100 Trophy",
+        "meetId": 26903306,
+        "number": 4,
+        "time": "2:15pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 37375629,
+        "name": "Queen Elizabeth Stakes",
+        "meetId": 26903306,
+        "number": 5,
+        "time": "2:55pm",
+        "distance": "2600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 97414259,
+        "name": "Darley Sprint Classic",
+        "meetId": 26903306,
+        "number": 6,
+        "time": "3:35pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 14959275,
+        "name": "TAB Matriarch Stakes",
+        "meetId": 26903306,
+        "number": 7,
+        "time": "4:15pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 62587336,
+        "name": "Seppelt Mackinnon Stakes",
+        "meetId": 26903306,
+        "number": 8,
+        "time": "5:00pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
+    },
+    {
+        "_id": 85179857,
+        "name": "Seppelt Drumborg Grand Handicap",
+        "meetId": 26903306,
+        "number": 9,
+        "time": "5:45pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 20967977
     }
 ]
