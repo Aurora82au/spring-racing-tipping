@@ -980,7 +980,7 @@
         "name": "Queen Elizabeth Stakes",
         "meetId": 77609845,
         "number": 5,
-        "time": "2:55pm",
+        "time": "3:35pm",
         "distance": "2600m",
         "status": 1,
         "placings": {
@@ -996,7 +996,7 @@
         "name": "Darley Sprint Classic",
         "meetId": 77609845,
         "number": 6,
-        "time": "3:35pm",
+        "time": "4:15pm",
         "distance": "1200m",
         "status": 1,
         "placings": {
@@ -1012,7 +1012,7 @@
         "name": "TAB Matriarch Stakes",
         "meetId": 77609845,
         "number": 7,
-        "time": "4:15pm",
+        "time": "5:00pm",
         "distance": "2000m",
         "status": 1,
         "placings": {
@@ -1028,7 +1028,7 @@
         "name": "Seppelt Mackinnon Stakes",
         "meetId": 77609845,
         "number": 8,
-        "time": "5:00pm",
+        "time": "5:45pm",
         "distance": "2000m",
         "status": 1,
         "placings": {
@@ -1044,7 +1044,7 @@
         "name": "Seppelt Drumborg Grand Handicap",
         "meetId": 77609845,
         "number": 9,
-        "time": "5:45pm",
+        "time": "6:25pm",
         "distance": "1100m",
         "status": 1,
         "placings": {
