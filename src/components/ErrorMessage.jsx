@@ -1,9 +1,5 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
-export default class ErrorMessage extends PureComponent {
-    render() {
-        return (
-            <div className={this.props.classes}>{this.props.text}</div>
-        );
-    }
-}
+const ErrorMessage = ({ classes, text }) => <div className={classes}>{text}</div>;
+
+export default ErrorMessage;

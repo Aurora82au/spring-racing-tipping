@@ -1,68 +1,47 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TopMenu from './TopMenu';
 
-export default class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showLogOut: false
-        };
-    }
-
-    /* Determines whether React should re-render the component, in this case if the new props are different from the old props,
-       or if the new state is different from the current state. */
-    shouldComponentUpdate(nextProps, nextState) {
-        return !(nextProps === this.props && nextState === this.state);
-    }
-
-    /* Updates the state to show the log out overlay when the user has clicked the profile picture. */
-    handleShowLogOutOverlay = () => {
-        this.setState({
-            showLogOut: true
-        });
-    };
-
-    /* Updates the state to hide the log out overlay when the user has clicked on the overlay background. */
-    handleHideLogOutOverlay = () => {
-        this.setState({
-            showLogOut: false
-        });
-    };
-
-    /* Function to render the component. */
-    render() {
-        return (
+const Header = ({ path, page, user, isAdmin, competitions, selectedCompetition, handleCompetitionSelect, onReloadData, text }) => (
+    <>
+        {
+            // Show the top menu, profile pic and reload data button on every page but the Login page.
+            page !== 'Log In' &&
             <>
-                {
-                    // Show the top menu, profile pic and reload data button on every page but the Login page.
-                    this.props.page !== 'Log In' &&
-                    <>
-                        <TopMenu
-                            path={this.props.path}
-                            user={this.props.user}
-                            competitions={this.props.competitions}
-                            selectedCompetition={this.props.selectedCompetition}
-                            handleCompetitionSelect={this.props.handleCompetitionSelect}
-                            isAdmin={this.props.isAdmin}
-                        />
-                        <img className="profile-pic" src={'pics/' + this.props.user.image} alt="profile-pic" title={`${this.props.user.name.first} ${this.props.user.name.last}`} />
-                        <button className="reload-btn" onClick={this.props.onReloadData}>
-                            <span className="icon-reload" />
-                        </button>
-                    </>
-                }
-                <h2>
-                    Spring Racing Tipping <img src="horse.png" alt="Title logo" />
-                    <span className="beta">BETA</span>
-                </h2>
-                {
-                    // Show the competition name on every page but the Login page, and if the selectedCompetition is set.
-                    this.props.page !== 'Log In' && this.props.selectedCompetition &&
-                    <span className="comp-name">{this.props.selectedCompetition.name}</span>
-                }
-                <h3>{this.props.page}</h3>
-                <p>{this.props.text}</p>
+                <TopMenu
+                    path={path}
+                    user={user}
+                    competitions={competitions}
+                    selectedCompetition={selectedCompetition}
+                    handleCompetitionSelect={handleCompetitionSelect}
+                    isAdmin={isAdmin}
+                />
+                <img className="profile-pic" src={'pics/' + user.image} alt="profile-pic" title={`${user.name.first} ${user.name.last}`} />
+                <button className="reload-btn" onClick={onReloadData}>
+                    <span className="icon-reload" />
+                </button>
             </>
-        );
-    }
+        }
+        <h2>
+            Spring Racing Tipping <img src="horse.png" alt="Title logo" />
+            <span className="beta">BETA</span>
+        </h2>
+        {
+            // Show the competition name on every page but the Login page, and if the selectedCompetition is set.
+            page !== 'Log In' && selectedCompetition &&
+            <span className="comp-name">{selectedCompetition.name}</span>
+        }
+        <h3>{page}</h3>
+        <p>{text}</p>
+    </>
+);
+
+const areEqual = (prevProps, nextProps) => {
+    return nextProps.page === prevProps.page &&
+           (prevProps.user && nextProps.user.name.first === prevProps.user.name.first) &&
+           (prevProps.user && nextProps.user.name.last === prevProps.user.name.last) &&
+           nextProps.isAdmin === prevProps.isAdmin &&
+           nextProps.competitions.length === prevProps.competitions.length &&
+           nextProps.selectedCompetition.name === prevProps.selectedCompetition.name;
 }
+
+export default React.memo(Header, areEqual);

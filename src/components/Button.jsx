@@ -1,17 +1,15 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
-export default class Button extends PureComponent {
-    render() {
-        return (
-            <button id={this.props.id}
-                    className={this.props.classes}
-                    type={this.props.type}
-                    {...this.props.attributes}
-                    onClick={this.props.onClick}
-                    onKeyDown={event => { if (event.code === "Enter" || event.code === "NumpadEnter") { this.props.onClick(event); } }}
-                    disabled={this.props.disabled}>
-                {this.props.text}
-            </button>
-        );
-    }
-}
+const Button = ({ id, classes, type, attributes, onClick, disabled, text }) => (
+    <button id={id}
+            className={classes}
+            type={type}
+            {...attributes}
+            onClick={onClick}
+            onKeyDown={event => { if (event.code === "Enter" || event.code === "NumpadEnter") { this.props.onClick(event); } }}
+            disabled={disabled}>
+        {text}
+    </button>
+);
+
+export default Button;
