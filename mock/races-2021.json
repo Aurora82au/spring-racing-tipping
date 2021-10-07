@@ -1,0 +1,162 @@
+[
+    {
+        "_id": 99443356,
+        "name": "Magic Millions Debutant Stakes",
+        "meetId": 84865344,
+        "number": 1,
+        "time": "12:15pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 63656307,
+        "name": "The Big Screen Company Weekend Hussler",
+        "meetId": 84865344,
+        "number": 2,
+        "time": "12:50pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [8],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 10988623,
+        "name": "Neds Village Stakes",
+        "meetId": 84865344,
+        "number": 3,
+        "time": "1:25pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 76946511,
+        "name": "Thoroughbred Club Stakes",
+        "meetId": 84865344,
+        "number": 4,
+        "time": "2:00pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [6, 7],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 50918662,
+        "name": "Lexus Schillaci Stakes",
+        "meetId": 84865344,
+        "number": 5,
+        "time": "2:35pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 52086077,
+        "name": "Neds Might And Power",
+        "meetId": 84865344,
+        "number": 6,
+        "time": "3:10pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 49440676,
+        "name": "SENET Northwood Plume Stakes",
+        "meetId": 84865344,
+        "number": 7,
+        "time": "3:50pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [10],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 66296505,
+        "name": "Neds Caulfield Guineas",
+        "meetId": 84865344,
+        "number": 8,
+        "time": "4:30pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [9, 13],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 80581999,
+        "name": "Hyland Race Colours Toorak Handicap",
+        "meetId": 84865344,
+        "number": 9,
+        "time": "5:10pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 14249515,
+        "name": "Neds Herbert Power Stakes",
+        "meetId": 84865344,
+        "number": 10,
+        "time": "5:45pm",
+        "distance": "2400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [8],
+        "competitionId": 61562876
+    }
+]
