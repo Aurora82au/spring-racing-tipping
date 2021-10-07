@@ -17,6 +17,7 @@ export default class ResultsTip extends Component {
         let firstPickClass = '';
         let secondPickClass = '';
         let thirdPickClass = '';
+        let perfectClass = '';
 
         // Set the 'correct' class on punters picks.
         const setPickClass = i => {
@@ -48,7 +49,7 @@ export default class ResultsTip extends Component {
                 setPickClass(index);
             }
         }
-        
+
         // Set the scores for second place.
         if (self.props.placings.second.constructor === Array) {
             for (let i = 0, l = self.props.placings.second.length; i < l; i++) {
@@ -66,7 +67,7 @@ export default class ResultsTip extends Component {
                 setPickClass(index);
             }
         }
-        
+
         // Set the scores for third place.
         if (self.props.placings.third.constructor === Array) {
             for (let i = 0, l = self.props.placings.third.length; i < l; i++) {
@@ -84,6 +85,9 @@ export default class ResultsTip extends Component {
                 setPickClass(index);
             }
         }
+
+        // If it is a perfect score (greater than 6, allowing for dead heats with 1st or 2nd) then add a class to the score for a celebration animation.
+        if (score >= 6) { perfectClass = 'perfect animate'; }
 
         return (
             <div className="tip">
@@ -106,8 +110,8 @@ export default class ResultsTip extends Component {
                     </div>
                 </div>
                 <div className="score">
-                    <div className="mb-5 bold">Score</div>
-                    <div>{score}</div>
+                    <div className="heading">Score</div>
+                    <div className={perfectClass}>{score}</div>
                 </div>
             </div>
         );

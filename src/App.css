@@ -49,9 +49,14 @@ div.bg-red {
     left: 50%;
     width: 13rem;
     height: 1.4rem;
-    margin-top: -8.5rem;
-    margin-left: -5rem;
+    margin-top: -8rem;
+    margin-left: -6.5rem;
     text-align: center;
+}
+
+.loading-msg img {
+    display: block;
+    width: 10rem;
 }
 
 .loading-msg .icon {
@@ -82,54 +87,21 @@ div.bg-red {
     top: 50%;
     left: 50%;
     max-width: 32rem;
-    margin-top: -15rem;
+    margin-top: -20.8rem;
     margin-left: -16rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.timeout-msg h2 {
+    margin-bottom: 2rem;
 }
 
 .timeout-msg img {
     display: block;
     width: 30rem;
-}
-
-.timeout-msg p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-}
-
-.loading-msg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -8rem;
-    margin-left: -6.5rem;
-}
-
-.loading-msg img {
-    display: block;
-    width: 10rem;
-}
-
-.loading-msg .text {
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-}
-
-.timeout-msg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 32rem;
-    margin-top: -15rem;
-    margin-left: -16rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.timeout-msg img {
-    display: block;
-    width: 30rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
 }
 
 .timeout-msg p {
@@ -161,6 +133,7 @@ div.bg-red {
     cursor: pointer;
     border: 1px solid #aaa;
     color: #444;
+    font-size: 1.4rem;
     background-color: #eee;
     outline: 0;
 }
@@ -197,7 +170,12 @@ div.bg-red {
     height: 3.8rem;
     padding: 0.8rem 2.6rem 0.8rem 0.8rem;
     overflow: hidden;
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
+    color: #666;
     border: 1px solid #aaa;
+    background-color: #fff;
+    border-radius: 0;
     outline: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -558,15 +536,23 @@ input.password {
     border-top: none;
 }
 
-.adminRace .placings {
+.adminRace .placings-container {
     display: flex;
-    max-width: 39rem;
+    flex-direction: column;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
+.adminRace .placings {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 .adminRace .placings > div {
+    display: flex;
+    width: 33.3333%;
     margin-right: 1rem;
+    align-items: center;
 }
 
 .adminRace .placings > div:last-child {
@@ -575,22 +561,22 @@ input.password {
 
 .adminRace label {
     display: inline-block;
-    width: 3rem;
+    margin-right: 1rem;
 }
 
 .adminRace input[type='tel'] {
-    width: calc(100% - 3rem);
+    width: 100%;
 }
 
 .save-btn {
     display: flex;
     width: 100%;
-    max-width: 39rem;
-    height: 3.8rem;
+    height: 4.4rem;
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
     border: none;
+    font-size: 1.4rem;
     color: #fff;
     background-color: #666;
     outline: 0;
@@ -600,6 +586,35 @@ input.password {
 .save-btn:hover {
     background-color: #000;
 }
+
+.loader,
+.loader::after {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.loader {
+  margin: 6rem auto;
+  font-size: 1rem;
+  position: relative;
+  border-top: 1.1rem solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1rem solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1rem solid #ffffff;
+  transform: translateZ(0);
+  animation: rotate 1.1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .dead-heat-msg {
     position: relative;
@@ -633,6 +648,7 @@ input.password {
     align-items: center;
     border-radius: 100%;
     color: #fff;
+    line-height: 3rem;
     background-color: #aaa;
     cursor: pointer;
 }
@@ -776,6 +792,7 @@ input.password {
     align-items: center;
     border-radius: 100%;
     color: #fff;
+    line-height: 3rem;
     background-color: #aaa;
     cursor: pointer;
 }
@@ -818,7 +835,7 @@ input.password {
     font-family: 'icomoon';
     font-size: 1.4rem;
     line-height: 1.2rem;
-    vertical-align: top;
+    vertical-align: -2px;
 }
 
 .disabled .bold,
@@ -917,7 +934,7 @@ input.password {
 
 .race {
     display: grid;
-    grid-template-columns: minmax(auto, 20rem) 1fr;
+    grid-template-columns: minmax(auto, 19rem) 1fr;
     grid-template-areas:
         'details      placings'
         'tips-heading tips-heading'
@@ -933,37 +950,50 @@ input.password {
     text-transform: uppercase;
 }
 
-.race .placing {
-    grid-area: placings;
-    display: inline-block;
-    width: 5rem;
+.race .details .status {
+    font-weight: 600;
 }
 
-.placing.gold:before,
-.placing.silver:before,
-.placing.bronze:before {
+.race .placings {
+    grid-area: placings;
+}
+
+.race .placing {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.race .placing .label {
+    display: inline-block;
+    width: 6rem;
+}
+
+.race .placing .label.gold:before,
+.race .placing .label.silver:before,
+.race .placing .label.bronze:before {
     display: inline-block;
     content: ' ';
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 0.5rem;
     border-radius: 100%;
+    vertical-align: -0.4rem;
 }
 
-.placing.gold:before {
+.race .placing .label.gold:before {
     background-color: #eacb3c;
 }
 
-.placing.silver:before {
+.race .placing .label.silver:before {
     background-color: #e6e8fa;
 }
 
-.placing.bronze:before {
+.race .placing .label.bronze:before {
     background-color: #8c7853;
 }
 
 .tips-heading {
-    grid-area: 'tips-heading';
+    grid-area: tips-heading;
 }
 
 .tips {
@@ -979,7 +1009,7 @@ input.password {
 }
 
 .tip {
-    padding: 0.6rem;
+    padding: 1rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -1007,8 +1037,8 @@ input.password {
 
 .tip .numbers {
     display: inline-block;
-    width: 62%;
-    margin-top: 0.5rem;
+    width: 66.6666%;
+    margin-top: 1rem;
 }
 
 .tip .numbers .group {
@@ -1039,15 +1069,118 @@ input.password {
     content: '\e5ca';
     margin-left: 0.2rem;
     font-family: 'icomoon';
-    vertical-align: top;
+    vertical-align: -0.1rem;
 }
 
 .score {
     display: inline-block;
     width: 4rem;
-    margin-top: 0.5rem;
-    vertical-align: top;
+    margin-top: 0.6rem;
+    color: #444;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
     text-align: center;
+    vertical-align: top;
+}
+
+.score .heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.score .perfect {
+    position: relative;
+    width: 4rem;
+    margin: 0 auto;
+    color: #eacb3c;
+}
+
+.score .perfect::before,
+.score .perfect::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -10%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+.score .perfect::before {
+    display: none;
+    top: -75%;
+    background-image:
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, #27d3ff 20%, transparent 30%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #27d3ff 15%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #27d3ff 20%, transparent 20%);
+    background-size: 20% 20%, 40% 40%, 30% 30%, 40% 40%, 36% 36%, 20% 20%, 30% 30%, 20% 20%, 36% 36%;
+}
+
+.score .perfect::after {
+    display: none;
+    bottom: -75%;
+    background-image:
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #27d3ff 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #27d3ff 15%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%),
+        radial-gradient(circle, #27d3ff 20%, transparent 20%),
+        radial-gradient(circle, #813aff 20%, transparent 20%);
+    background-size: 30% 30%, 40% 40%, 36% 36%, 40% 40%, 30% 30%, 20% 20%, 40% 40%;
+}
+
+.score .perfect.animate::before {
+      display: block;
+      animation: topBubbles 3s ease-in-out 1s infinite;
+}
+
+.score .perfect.animate::after {
+    display: block;
+    animation: bottomBubbles 3s ease-in-out 1s infinite;
+}
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    17% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    34% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    17% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    34% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
 }
 
 
@@ -1090,7 +1223,7 @@ input.password {
 .podium {
     display: flex;
     justify-content: center;
-    height: 28.5rem;
+    height: 29.5rem;
     margin-top: 2rem;
     text-align: center;
 }
@@ -1109,6 +1242,7 @@ input.password {
 .podium .pic {
     display: block;
     width: 8rem;
+    height: 8rem;
     margin-bottom: 0.5rem;
     border-radius: 100%;
 }
@@ -1131,7 +1265,7 @@ input.password {
 }
 
 .podium .first .bar {
-    height: 18rem;
+    height: 19rem;
 }
 
 .podium .second .bar {
@@ -1164,12 +1298,13 @@ input.password {
 }
 
 .loser {
-    width: 27rem;
+    max-width: 30rem;
     margin: 0 auto 1rem;
 }
 
 .loser .number {
     display: inline-block;
+    margin-left: 1.8rem;
     margin-right: 1rem;
     width: 3rem;
     vertical-align: -0.1rem;
@@ -1182,7 +1317,7 @@ input.password {
 .loser .points {
     display: inline-block;
     margin-right: 1rem;
-    width: 5rem;
+    width: 6rem;
     vertical-align: middle;
 }
 
@@ -1196,7 +1331,7 @@ input.password {
 
 .loser .name {
     display: inline-block;
-    width: 10.9rem;
+    width: 11.2rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1209,6 +1344,7 @@ input.password {
 
 .tab-btns {
     display: flex;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -1248,6 +1384,7 @@ input.password {
 
 .stat-item .pic {
     width: 6rem;
+    height: 6rem;
     border-radius: 100%;
 }
 
@@ -1261,12 +1398,70 @@ input.password {
 
 /* **** Media Queries **** */
 
+@media (max-width: 319px) {
+    .timeout-msg {
+        margin-left: -14rem;
+    }
+
+    .profile-pic {
+        display: none;
+    }
+
+    .tip-examples .selection {
+        margin-left: 1rem;
+    }
+
+    .race-selector .circle {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .race-selector .circle.selected.bg-green::after {
+        bottom: -1.4rem;
+    }
+
+    .race {
+        grid-template-columns: minmax(auto, 16rem) 1fr;
+    }
+
+    .tip .numbers,
+    .score {
+        width: 100%;
+    }
+
+    .loser {
+        max-width: 26rem;
+    }
+
+    .loser .number {
+        margin-right: 0;
+        margin-left: 0.5rem;
+    }
+
+    .loser .points {
+        width: 5rem;
+    }
+
+    .loser .name {
+        width: 10.2rem;
+    }
+
+    .podium {
+        margin-top: -2rem;
+    }
+
+    .podium .pic {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
 @media (min-width: 360px) {
     .timeout-msg {
         max-width: 36rem;
         margin-left: -18rem;
     }
-    
+
     .timeout-msg img {
         width: 34rem;
     }
@@ -1276,7 +1471,7 @@ input.password {
     }
 
     .comp-name {
-        max-width: 24rem;
+        max-width: 25rem;
     }
 
     .profile-pic {
@@ -1294,11 +1489,15 @@ input.password {
     }
 
     .race {
-        grid-template-columns: minmax(auto, 24rem) 1fr;
+        grid-template-columns: minmax(auto, 22rem) 1fr;
     }
 }
 
 @media (min-width: 375px) {
+    .comp-name {
+        max-width: 27rem;
+    }
+
     .race-selector .circle {
         margin-right: 0.6rem;
     }
@@ -1308,7 +1507,7 @@ input.password {
     }
 
     .race {
-        grid-template-columns: minmax(auto, 26rem) 1fr;
+        grid-template-columns: minmax(auto, 23rem) 1fr;
     }
 }
 
@@ -1319,6 +1518,19 @@ input.password {
 }
 
 @media (min-width: 400px) {
+    .timeout-msg {
+        max-width: 39rem;
+        margin-left: -19.5rem;
+    }
+
+    .timeout-msg img {
+        width: 35rem;
+    }
+
+    .comp-name {
+        max-width: 30rem;
+    }
+
     .race-selector .circle {
         margin-right: 0.8rem;
     }
@@ -1328,7 +1540,7 @@ input.password {
     }
 
     .race {
-        grid-template-columns: minmax(auto, 28rem) 1fr;
+        grid-template-columns: minmax(auto, 26rem) 1fr;
     }
 }
 
@@ -1346,6 +1558,10 @@ input.password {
 }
 
 @media (min-width: 500px) {
+    .comp-name {
+        max-width: 45rem;
+    }
+
     .selector, input.password {
         max-width: 39rem;
     }
@@ -1377,6 +1593,7 @@ input.password {
         margin-left: 2rem;
     }
 }
+
 @media (min-width: 660px) {
     .tips {
         grid-template-columns: repeat(4, 1fr);
@@ -1385,7 +1602,21 @@ input.password {
 
 @media (min-width: 768px) {
     .app {
-        padding-bottom: 12rem;
+        padding: 1rem 2rem 10rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h2 img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .comp-name {
+        top: 5.5rem;
+        max-width: 60rem;
     }
 
     .top-menu {
@@ -1395,14 +1626,14 @@ input.password {
         bottom: auto;
         grid-template-columns: 1fr 1fr;
         width: auto;
-        height: 21.2rem;
+        height: 23.4rem;
         border: 1px solid #aaa;
         border-top: none;
-        transform: translateY(-22.2rem);
+        transform: translateY(-24.4rem);
     }
 
     .top-menu.open {
-        transform: translateY(-1.1rem);
+        transform: translateY(-1.3rem);
     }
 
     .top-menu::before {
@@ -1437,12 +1668,17 @@ input.password {
         border-left: 1px solid #ccc;
     }
 
+    .profile-pic {
+        width: 4rem;
+        height: 4rem;
+    }
+
     .menu-btn-container {
         top: auto;
         left: auto;
         right: 1rem;
-        bottom: -5.7rem;
-        padding: 2.3rem .6rem .4rem;
+        bottom: -6.2rem;
+        padding: 2.8rem .6rem .4rem;
         border-top: none;
         border-right-color: #fff;
         border-top-left-radius: 0;
@@ -1465,7 +1701,12 @@ input.password {
     }
 
     .btn-container {
-        margin-top: auto; 
+        margin-top: auto;
+    }
+
+    .btn,
+    .save-btn {
+        font-size: 1.6rem;
     }
 
     .logout {
@@ -1476,6 +1717,103 @@ input.password {
 
     .reload-btn {
         right: 1.8rem;
+    }
+
+    .adminRace .placings-container {
+        flex-direction: row;
+        max-width: 49rem;
+    }
+
+    .tip .numbers .label {
+        width: 4.1rem;
+    }
+
+    .login-page p {
+        margin-bottom: 4rem;
+    }
+
+    .selector,
+    input.password {
+        max-width: 49rem;
+    }
+
+    .raceList .saved-status::before {
+        vertical-align: -1px;
+    }
+
+    .scratching-list .selection,
+    .raceList .selection,
+    .tip-examples .selection {
+        width: 3.6rem;
+        height: 3.6rem;
+        line-height: 3.6rem;
+    }
+
+    .race-selector .circle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .race-selector .circle.selected::after {
+        bottom: -1.75rem;
+    }
+
+    .race {
+        grid-template-columns: minmax(auto, 40rem) 1fr;
+    }
+
+    .selector select {
+        height: 4.4rem;
+        font-size: 1.4rem;
+    }
+
+    label.label {
+        transform: translate(1rem, 3.5rem);
+    }
+
+    .score {
+        margin-top: 0.8rem;
+    }
+
+    .score .heading {
+        font-size: 1.4rem;
+    }
+
+    .game-account-totals img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .podium {
+        height: 31.5rem;
+    }
+
+    .podium .first,
+    .podium .second,
+    .podium .third {
+        max-width: 14rem;
+    }
+
+    .podium .pic {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .loser {
+        max-width: 42rem;
+    }
+
+    .loser .number {
+        margin-left: 7.2rem;
+    }
+
+    .loser .pic {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .loser .name {
+        width: 16rem;
     }
 }
 
@@ -1488,12 +1826,34 @@ input.password {
         grid-column-start: 3;
     }
 
-    .tips {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
     .raceList .selections,
     .scratching-list .selections {
         grid-template-columns: repeat(24, 1fr);
+    }
+}
+
+@media (min-width: 1170px) {
+    .app {
+        max-width: 120rem;
+    }
+
+    .comp-name {
+        max-width: 100rem;
+    }
+
+    label.label {
+        transform: translate(1rem, 3.3rem);
+    }
+
+    .scratching-list .selection,
+    .raceList .selection,
+    .tip-examples .selection {
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .tips {
+        grid-template-columns: repeat(5, 1fr);
     }
 }

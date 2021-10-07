@@ -188,7 +188,8 @@ export default class App extends Component {
         } catch (e) {
             console.log('An error occurred: ' + e);
             self.setState({
-                loadingData: false
+                loadingData: false,
+                appLoadFailed: true
             });
         }
     }
@@ -308,7 +309,7 @@ export default class App extends Component {
                 break;
             }
         }
-        
+
         const isAdmin = selectedCompetition.admins.includes(this.state.user._id);
         this.setState({
             selectedMeet: meetId,
@@ -387,7 +388,7 @@ export default class App extends Component {
         if (!self.useJSON) {
             let tips = [...self.state.tips];
             let newTip;
-            
+
             // Updating tips that have already been saved before.
             if (modifiedTips.databaseId) {
                 // Get a reference to the current saved tip.
@@ -412,7 +413,7 @@ export default class App extends Component {
                         body: JSON.stringify({'selections': newTip.selections})
                     })
                     .then(response => {
-                        if (!response.ok) { 
+                        if (!response.ok) {
                             return res.text().then(text => {throw new Error(text)});
                         }
                         return response.json();
@@ -466,7 +467,7 @@ export default class App extends Component {
                     body: JSON.stringify(newTip)
                 })
                 .then(response => {
-                    if (!response.ok) { 
+                    if (!response.ok) {
                         return res.text().then(text => {throw new Error(text)});
                     }
                 })
@@ -772,6 +773,7 @@ export default class App extends Component {
         } else if (this.state.appLoadFailed) {
             return (
                 <div className="timeout-msg">
+                    <h2>Oh ohhh...</h2>
                     <img src="steve.gif" alt="Steve Harvey - What's wrong withchu?" />
                     <p>It seems like something has gone wrong with the database...</p>
                     <p>Curse you free Heroku account!</p>

@@ -100,10 +100,10 @@ export default class Login extends Component {
 
         // Show the error message if the password is wrong.
         const errorClass = this.state.wrongPassword ? 'error' : 'error hide';
-        
+
 
         return (
-            <div className="app">
+            <div className="app login-page">
                 <Header
                     page="Log In"
                     competitions={this.props.competitions}
@@ -111,42 +111,43 @@ export default class Login extends Component {
                     isAdmin={this.props.isAdmin}
                     text="Please select your name from the drop down, and then enter your password to log in."
                 />
-                <LabelAndSelectBox
-                    labelClasses="sr-only"
-                    labelText="Select a punter"
-                    value={this.props.user ? this.props.user._id : this.state.user ? this.state.user : ''}
-                    handleSelect={this.handlePunterSelect}
-                    disabled={this.props.user}
-                    options={punterOptions}
-                />
-                {
-                    !this.props.user &&
-                    <LabelAndInput
-                        labelText="Password"
-                        inputClasses="password"
-                        type="password"
-                        value={this.props.user ? this.props.user.password : ''}
-                        handleChange={this.handlePasswordChange}
-                        onKeyDown={event => { if (event.code === "Enter" || event.code === "NumpadEnter") { this.handleLoginClick(event); } }}
+                <form onSubmit={this.props.user ? e => logOut(e) : this.handleLoginClick}>
+                    <LabelAndSelectBox
+                        labelClasses="sr-only"
+                        labelText="Select a punter"
+                        value={this.props.user ? this.props.user._id : this.state.user ? this.state.user : ''}
+                        handleSelect={this.handlePunterSelect}
                         disabled={this.props.user}
+                        options={punterOptions}
                     />
-                }
-                <Button
-                    classes="btn"
-                    type="button"
-                    onClick={this.props.user ? logOut : this.handleLoginClick}
-                    disabled={false}
-                    text={this.props.user ? 'Log Out' : 'Log In'}
-                />
-                <ErrorMessage classes={errorClass} text="The password for the name you selected is incorrect" />
-                {
-                    this.props.user &&
-                    this.props.competitions.length &&
-                    <CompetitionSelector
-                        competitions={this.props.competitions}
-                        handleCompetitionSelect={this.handleCompetitionSelect}
+                    {
+                        !this.props.user &&
+                        <LabelAndInput
+                            labelText="Password"
+                            inputClasses="password"
+                            type="password"
+                            value={this.props.user ? this.props.user.password : ''}
+                            handleChange={this.handlePasswordChange}
+                            onKeyDown={event => { if (event.code === "Enter" || event.code === "NumpadEnter") { this.handleLoginClick(event); } }}
+                            disabled={this.props.user}
+                        />
+                    }
+                    <Button
+                        classes="btn"
+                        type="submit"
+                        disabled={false}
+                        text={this.props.user ? 'Log Out' : 'Log In'}
                     />
-                }
+                    <ErrorMessage classes={errorClass} text="The password for the name you selected is incorrect" />
+                    {
+                        this.props.user &&
+                        this.props.competitions.length &&
+                        <CompetitionSelector
+                            competitions={this.props.competitions}
+                            handleCompetitionSelect={this.handleCompetitionSelect}
+                        />
+                    }
+                </form>
             </div>
         );
     }

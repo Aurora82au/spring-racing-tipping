@@ -281,38 +281,40 @@ export default class Admin extends Component {
                         <span className="bold">RACE {meetRaces[i].number}</span>
                         <span className="name">&nbsp;-&nbsp;{meetRaces[i].name}</span>
                     </div>
-                    <div className="placings">
-                        <div>
-                            <label htmlFor={'race-' + (i + 1) + '-first'}>1st</label>
-                            <input
-                                id={'race-' + (i + 1) + '-first'}
-                                type="tel"
-                                value={firstPlace}
-                                onChange={this.handlePlacingChange}
-                            />
+                    <div className="placings-container">
+                        <div className="placings">
+                            <div>
+                                <label htmlFor={'race-' + (i + 1) + '-first'}>1st</label>
+                                <input
+                                    id={'race-' + (i + 1) + '-first'}
+                                    type="tel"
+                                    value={firstPlace}
+                                    onChange={this.handlePlacingChange}
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor={'race-' + (i + 1) + '-second'}>2nd</label>
+                                <input
+                                    id={'race-' + (i + 1) + '-second'}
+                                    type="tel"
+                                    value={secondPlace}
+                                    onChange={this.handlePlacingChange}
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor={'race-' + (i + 1) + '-third'}>3rd</label>
+                                <input
+                                    id={'race-' + (i + 1) + '-third'}
+                                    type="tel"
+                                    value={thirdPlace}
+                                    onChange={this.handlePlacingChange}
+                                />
+                            </div>
                         </div>
-                        <div>
-                            <label htmlFor={'race-' + (i + 1) + '-second'}>2nd</label>
-                            <input
-                                id={'race-' + (i + 1) + '-second'}
-                                type="tel"
-                                value={secondPlace}
-                                onChange={this.handlePlacingChange}
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor={'race-' + (i + 1) + '-third'}>3rd</label>
-                            <input
-                                id={'race-' + (i + 1) + '-third'}
-                                type="tel"
-                                value={thirdPlace}
-                                onChange={this.handlePlacingChange}
-                            />
-                        </div>
+                        <button className="save-btn" type="button" data-race={i + 1} data-race-id={meetRaces[i]._id} onClick={this.handleSaveClick}>
+                            Save
+                        </button>
                     </div>
-                    <button className="save-btn" type="button" data-race={i + 1} data-race-id={meetRaces[i]._id} onClick={this.handleSaveClick}>
-                        Save
-                    </button>
                     <div className="dead-heat-msg">For dead heats, just enter each number seperated by a comma eg. 1, 2.</div>
                     <div className="mb-10 bold">Set Race Status</div>
                     <div className="status-selector">

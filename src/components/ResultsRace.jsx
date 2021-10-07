@@ -72,14 +72,14 @@ export default class ResultsRace extends Component {
                 </div>
                 <div className="placings">
                     <div className="mb-5 bold">Placings</div>
-                    <div className="mb-5">
-                        <span className="placing bold gold">1st</span>&nbsp;{firstPlace}
+                    <div className="placing mb-5">
+                        <span className="label bold gold">1st</span>&nbsp;{firstPlace}
                     </div>
-                    <div className="mb-5">
-                        <span className="placing bold silver">2nd</span>&nbsp;{secondPlace}
+                    <div className="placing mb-5">
+                        <span className="label bold silver">2nd</span>&nbsp;{secondPlace}
                     </div>
-                    <div>
-                        <span className="placing bold bronze">3rd</span>&nbsp;{thirdPlace}
+                    <div className="placing">
+                        <span className="label bold bronze">3rd</span>&nbsp;{thirdPlace}
                     </div>
                 </div>
                 <div className="tips-heading bold">Tips</div>

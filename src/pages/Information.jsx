@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Header from '../components/Header';
 import BottomMenu from '../components/BottomMenu';
 
-export default class Information extends Component {
-    /* Determines whether React should re-render the component, in this case if the new props are different from the old props */
-    shouldComponentUpdate(nextProps, nextState) {
-        return !(nextProps === this.props);
-    }
-    
+export default class Information extends PureComponent {
     /* Function to render the component */
     render() {
         return (

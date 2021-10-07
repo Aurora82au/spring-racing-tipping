@@ -1,7 +1,8 @@
 /********** Helper functions that could be used in multiple places throughout the app. **********/
 
 /* Logout the user and return to the Log In page. */
-export function logOut() {
+export function logOut(e) {
+    if (e) { e.preventDefault(); }
     localStorage.clear();
     window.location.href = '/login';
 };
@@ -11,12 +12,12 @@ export function generateId(length) {
     if (!length) { length = 8; }
     let min = '1';
     let max = '9';
-    
+
     for (let i = 0; i < length - 1; i++) {
         min += '0';
         max += '0';
     }
-    
+
     return Math.floor(parseInt(min) + Math.random() * parseInt(max));
 }
 
