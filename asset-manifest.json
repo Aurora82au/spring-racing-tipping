@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bba5234b.chunk.css",
-    "main.js": "/static/js/main.680adb30.chunk.js",
-    "main.js.map": "/static/js/main.680adb30.chunk.js.map",
+    "main.css": "/static/css/main.c8f8eeef.chunk.css",
+    "main.js": "/static/js/main.3c8dff54.chunk.js",
+    "main.js.map": "/static/js/main.3c8dff54.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0128ab0d.js",
     "runtime-main.js.map": "/static/js/runtime-main.0128ab0d.js.map",
     "static/js/2.8ec71729.chunk.js": "/static/js/2.8ec71729.chunk.js",
     "static/js/2.8ec71729.chunk.js.map": "/static/js/2.8ec71729.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bba5234b.chunk.css.map": "/static/css/main.bba5234b.chunk.css.map",
+    "static/css/main.c8f8eeef.chunk.css.map": "/static/css/main.c8f8eeef.chunk.css.map",
     "static/js/2.8ec71729.chunk.js.LICENSE.txt": "/static/js/2.8ec71729.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/horse-sprite.1009b97c.jpg",
     "static/media/index.css": "/static/media/icomoon.f8cfc6e9.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.0128ab0d.js",
     "static/js/2.8ec71729.chunk.js",
-    "static/css/main.bba5234b.chunk.css",
-    "static/js/main.680adb30.chunk.js"
+    "static/css/main.c8f8eeef.chunk.css",
+    "static/js/main.3c8dff54.chunk.js"
   ]
 }
