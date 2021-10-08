@@ -361,7 +361,7 @@
     },
     {
         "_id": 37,
-        "password": "cw4099",
+        "password": "cw0000",
         "name": {
             "first": "Charlie",
             "last": "Williams",
@@ -418,15 +418,5 @@
             "display": "Nicole"
         },
         "image": "NicolePettersen.jpg"
-    },
-    {
-        "_id": 43,
-        "password": "ct4819",
-        "name": {
-            "first": "Chris",
-            "last": "Thomson",
-            "display": "Chris"
-        },
-        "image": "ChrisThomson.jpg"
     }
 ]
