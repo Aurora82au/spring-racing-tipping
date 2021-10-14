@@ -312,6 +312,7 @@ export default class App extends Component {
 
         const isAdmin = selectedCompetition.admins.includes(this.state.user._id);
         this.setState({
+            selectedCompetition: competitionId,
             selectedMeet: meetId,
             selectedRace: raceId,
             isAdmin: isAdmin

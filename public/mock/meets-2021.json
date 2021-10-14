@@ -5,5 +5,12 @@
         "location": "Caulfield",
         "date": "2021-10-09",
         "competitionId": 61562876
+    },
+    {
+        "_id": 67763344,
+        "name": "Caulfield Cup",
+        "location": "Caulfield",
+        "date": "2021-10-16",
+        "competitionId": 61562876
     }
 ]

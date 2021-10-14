@@ -11,7 +11,7 @@ export default class ResultsRace extends Component {
     render() {
         const self = this;
         const tips = self.props.tips.map(punterTips => {
-            return <Tip key={punterTips._id} tips={punterTips} punters={self.props.punters} placings={self.props.race.placings} />;
+            return <Tip key={punterTips._id} tips={punterTips} meets={self.props.meets} punters={self.props.punters} user={self.props.user} placings={self.props.race.placings} />;
         });
         let statusClass;
         let statusName;

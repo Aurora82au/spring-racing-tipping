@@ -2,8 +2,10 @@ import React from 'react';
 import Button from '../components/Button';
 
 const CompetitionSelector = ({ competitions, selectedCompetition, handleCompetitionSelect }) => {
-    let options = [];
-    let selector;
+    let thisYearsOptions = [];
+    let previousYearsOptions = [];
+    let selectedComp = selectedCompetition ? selectedCompetition._id : undefined;
+    let defaultOption, selector, currentYear;
 
     if (competitions.length) {
         // If there are no competitions, display a message.
@@ -17,27 +19,39 @@ const CompetitionSelector = ({ competitions, selectedCompetition, handleCompetit
         }
         // If there are more than 5 competitions, display them as a select box.
         else if (competitions.length > 5) {
+            currentYear = new Date().getFullYear().toString();
             for (let i = 0, l = competitions.length; i < l; i++) {
-                options.push(
-                    <option key={competitions[i]._id} value={competitions[i]._id}>
-                        {competitions[i].name}
-                    </option>
-                );
+                if (competitions[i].startDate.split('-')[0] === currentYear) {
+                    thisYearsOptions.push(
+                        <option key={competitions[i]._id} value={competitions[i]._id}>
+                            {competitions[i].name}
+                        </option>
+                    );
+                }
+                else {
+                    previousYearsOptions.push(
+                        <option key={competitions[i]._id} value={competitions[i]._id}>
+                            {competitions[i].name}
+                        </option>
+                    );
+                }
             }
 
             // Add a default <option> at the beginning of the list if no selected competition.
-            if (!selectedCompetition) {
-                options.unshift(
-                    <option key="a" value="">
-                        -- Select Competition --
-                    </option>
-                );
+            if (!selectedComp) {
+                defaultOption = <option key="a" value="">-- Select Competition --</option>;
             }
 
             selector = (
                 <div className="selector">
-                    <select defaultValue={selectedCompetition} onChange={handleCompetitionSelect}>
-                        {options}
+                    <select value={selectedComp} onChange={handleCompetitionSelect}>
+                        {defaultOption}
+                        <optgroup label="This Years">
+                            {thisYearsOptions}
+                        </optgroup>
+                        <optgroup label="Previous Years">
+                            {previousYearsOptions}
+                        </optgroup>
                     </select>
                     <span className="icon-select" />
                 </div>
@@ -45,6 +59,7 @@ const CompetitionSelector = ({ competitions, selectedCompetition, handleCompetit
         }
         // Else display them as a list.
         else {
+            let options = [];
             let linkClass;
 
             for (let i = 0, l = competitions.length; i < l; i++) {

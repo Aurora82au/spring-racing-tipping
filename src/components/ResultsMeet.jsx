@@ -54,7 +54,7 @@ export default class ResultsMeet extends Component {
                 <div className="race-meet">
                     <div className="race-selector">{raceSelectors}</div>
                     <h3>RACE {race.number}</h3>
-                    <Race race={race} punters={self.props.punters} tips={raceTips} />
+                    <Race race={race} meets={self.props.meets} punters={self.props.punters} user={self.props.user} tips={raceTips} />
                 </div>
             );
         }

@@ -1055,6 +1055,13 @@ input.password {
     height: 1.4rem;
 }
 
+.tip .group .question-mark {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
 .tip .numbers .label {
     width: 3.6rem;
     font-weight: bold;

@@ -20,7 +20,7 @@ export default class Results extends Component {
                 a.number - b.number
             );
         });
-        
+
         return (
             <div className="app">
                 <Header
@@ -40,7 +40,9 @@ export default class Results extends Component {
                     <Meet
                         races={meetRaces}
                         selectedRace={this.props.selectedRace}
+                        user={this.props.user}
                         punters={this.props.punters}
+                        meets={this.props.meets}
                         meetTips={meetTips}
                         onClick={this.props.onRaceChange}
                     />
