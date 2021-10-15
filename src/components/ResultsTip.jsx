@@ -12,7 +12,10 @@ export default class ResultsTip extends Component {
         const punter = this.props.punters.find(tipPunter => {
             return tipPunter._id === self.props.tips.punterId;
         });
-        let raceDay = this.props.meet ? new Date(this.props.meet.date) : new Date();
+        const meet = this.props.meets.find(meet => {
+            return meet._id === this.props.selectedMeetId;
+        });
+        let raceDay = meet ? new Date(meet.date) : new Date();
         let isAfterCutoff = false;
         let score = 0;
         let firstPickClass = '';

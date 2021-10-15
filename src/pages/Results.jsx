@@ -39,6 +39,7 @@ export default class Results extends Component {
                     meetRaces && meetTips &&
                     <Meet
                         races={meetRaces}
+                        selectedMeetId={this.props.selectedMeet}
                         selectedRace={this.props.selectedRace}
                         user={this.props.user}
                         punters={this.props.punters}
