@@ -12,5 +12,12 @@
         "location": "Caulfield",
         "date": "2021-10-16",
         "competitionId": 11717590
+    },
+    {
+        "_id": 66148341,
+        "name": "Cox Plate",
+        "location": "Moonee Valley",
+        "date": "2021-10-23",
+        "competitionId": 11717590
     }
 ]
