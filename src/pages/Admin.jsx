@@ -383,7 +383,7 @@ export default class Admin extends Component {
                     handleCompetitionSelect={this.props.handleCompetitionSelect}
                     onReloadData={this.props.onReloadData}
                     isAdmin={this.props.isAdmin}
-                    text="This is the Administration page used to set placings and race statuses.  In the future you will also be able to set scratchings."
+                    text="This is the Administration page used to set placings, race statuses and scratchings."
                 />
                 <MeetSelector meets={this.props.meets} selectedMeetId={this.props.selectedMeet} onChange={this.props.onMeetChange} />
                 <div className="adminRaceList">{raceList}</div>
