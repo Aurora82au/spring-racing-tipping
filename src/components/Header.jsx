@@ -16,7 +16,7 @@ const Header = ({ path, page, user, isAdmin, competitions, selectedCompetition, 
                     isAdmin={isAdmin}
                 />
                 <img className="profile-pic" src={'pics/' + user.image} alt="profile-pic" title={`${user.name.first} ${user.name.last}`} />
-                <button className="reload-btn" onClick={onReloadData}>
+                <button className="reload-btn" title="Reload data" onClick={onReloadData}>
                     <span className="icon-reload" />
                 </button>
             </>
