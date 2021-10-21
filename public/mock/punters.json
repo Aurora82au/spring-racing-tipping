@@ -418,5 +418,65 @@
             "display": "Nicole"
         },
         "image": "NicolePettersen.jpg"
+    },
+    {
+        "_id": 43,
+        "password": "ba3810",
+        "name": {
+            "first": "Brent",
+            "last": "Anglim",
+            "display": "Brent"
+        },
+        "image": "BrentAnglim.jpg"
+    },
+    {
+        "_id": 44,
+        "password": "ja1834",
+        "name": {
+            "first": "Josh",
+            "last": "Anglim",
+            "display": "Josh"
+        },
+        "image": "JoshAnglim.jpg"
+    },
+    {
+        "_id": 45,
+        "password": "rm2183",
+        "name": {
+            "first": "Rich",
+            "last": "Mclean",
+            "display": "Rich"
+        },
+        "image": "RichMclean.jpg"
+    },
+    {
+        "_id": 46,
+        "password": "cb5291",
+        "name": {
+            "first": "Cameron",
+            "last": "Benjamin",
+            "display": "Cameron"
+        },
+        "image": "CameronBenjamin.jpg"
+    },
+    {
+        "_id": 47,
+        "password": "av7321",
+        "name": {
+            "first": "Alex",
+            "last": "Vanjorek",
+            "display": "Alex"
+        },
+        "image": "AlexVanjorek.jpg"
+    },
+    {
+        "_id": 48,
+        "password": "ws6203",
+        "name": {
+            "first": "Wes",
+            "last": "Sheppard",
+            "display": "Wes"
+        },
+        "image": "WesSheppard.jpg"
     }
 ]

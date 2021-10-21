@@ -1,0 +1,162 @@
+[
+    {
+        "_id": 83512141,
+        "name": "Inglis Banner",
+        "meetId": 30631858,
+        "number": 1,
+        "time": "12:15pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [12],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 25625973,
+        "name": "Ladbrokes Handicap",
+        "meetId": 30631858,
+        "number": 2,
+        "time": "12:50pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [9],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 65329255,
+        "name": "PFD Food Services Crockett Stakes",
+        "meetId": 30631858,
+        "number": 3,
+        "time": "1:25pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 40541722,
+        "name": "Tandem Building Group Red Anchor Stakes",
+        "meetId": 30631858,
+        "number": 4,
+        "time": "2:00pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 14787869,
+        "name": "3 Point Motors Fillies Classic",
+        "meetId": 30631858,
+        "number": 5,
+        "time": "2:35pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 22725713,
+        "name": "Schweppes Crystal Mile",
+        "meetId": 30631858,
+        "number": 6,
+        "time": "3:10pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 21488298,
+        "name": "Drummond Golf Vase",
+        "meetId": 30631858,
+        "number": 7,
+        "time": "3:45pm",
+        "distance": "2040m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 12909274,
+        "name": "McCafé Moonee Valley Gold Cup",
+        "meetId": 30631858,
+        "number": 8,
+        "time": "4:25pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 37946344,
+        "name": "Ladbrokes Cox Plate",
+        "meetId": 30631858,
+        "number": 9,
+        "time": "5:10pm",
+        "distance": "2040m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 90882039,
+        "name": "Powerflo Solutions Tesio Stakes",
+        "meetId": 30631858,
+        "number": 10,
+        "time": "5:50pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    }
+]

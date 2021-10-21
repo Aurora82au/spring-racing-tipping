@@ -70,5 +70,13 @@
         "admins": [1],
         "gameAccounts": [17, 18],
         "punters": [1, 17, 18, 32, 33, 34, 35, 37, 38, 39, 40]
+    },
+    {
+        "_id": 27760163,
+        "name": "BB Tipping Comp 2021",
+        "startDate": "2021-10-23",
+        "admins": [33],
+        "gameAccounts": [17, 18],
+        "punters": [17, 18, 33, 43, 44, 45, 46, 47, 48]
     }
 ]
