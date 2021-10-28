@@ -158,5 +158,151 @@
         },
         "scratchings": [],
         "competitionId": 27760163
+    },
+    {
+        "_id": 20036640,
+        "name": "Paramount+ Carbine Club Stakes",
+        "meetId": 20053582,
+        "number": 1,
+        "time": "12:20pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 69308690,
+        "name": "Lexus Hotham Stakes",
+        "meetId": 20053582,
+        "number": 2,
+        "time": "1:00pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 62869988,
+        "name": "ZED RUN Wakeful Stakes",
+        "meetId": 20053582,
+        "number": 3,
+        "time": "1:40pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 96150351,
+        "name": "TAB Not One Day Linlithgow Stakes",
+        "meetId": 20053582,
+        "number": 4,
+        "time": "2:20pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 95724339,
+        "name": "TAB Empire Rose Stakes",
+        "meetId": 20053582,
+        "number": 5,
+        "time": "3:00pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 77337980,
+        "name": "Penfolds Victoria Derby",
+        "meetId": 20053582,
+        "number": 6,
+        "time": "3:45pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 57863395,
+        "name": "Coolmore Stud Stakes",
+        "meetId": 20053582,
+        "number": 7,
+        "time": "4:30pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 17421759,
+        "name": "Kennedy Cantala",
+        "meetId": 20053582,
+        "number": 8,
+        "time": "5:10pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 27760163
+    },
+    {
+        "_id": 27177367,
+        "name": "Furphy Sprint",
+        "meetId": 20053582,
+        "number": 9,
+        "time": "5:50pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            13
+        ],
+        "competitionId": 27760163
     }
 ]
