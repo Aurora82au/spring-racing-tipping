@@ -19,5 +19,26 @@
         "location": "Moonee Valley",
         "date": "2021-10-23",
         "competitionId": 61562876
+    },
+    {
+        "_id": 79482450,
+        "name": "Derby Day",
+        "location": "Flemington",
+        "date": "2021-10-30",
+        "competitionId": 61562876
+    },
+    {
+        "_id": 80032411,
+        "name": "Melbourne Cup",
+        "location": "Flemington",
+        "date": "2021-11-02",
+        "competitionId": 61562876
+    },
+    {
+        "_id": 46420214,
+        "name": "Oaks Day",
+        "location": "Flemington",
+        "date": "2021-11-04",
+        "competitionId": 61562876
     }
 ]

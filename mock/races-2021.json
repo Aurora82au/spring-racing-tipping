@@ -28,7 +28,9 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [8],
+        "scratchings": [
+            8
+        ],
         "competitionId": 61562876
     },
     {
@@ -60,7 +62,10 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [6, 7],
+        "scratchings": [
+            6,
+            7
+        ],
         "competitionId": 61562876
     },
     {
@@ -108,7 +113,9 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [10],
+        "scratchings": [
+            10
+        ],
         "competitionId": 61562876
     },
     {
@@ -124,7 +131,10 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [9, 13],
+        "scratchings": [
+            9,
+            13
+        ],
         "competitionId": 61562876
     },
     {
@@ -156,7 +166,9 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [8],
+        "scratchings": [
+            8
+        ],
         "competitionId": 61562876
     },
     {
@@ -284,7 +296,10 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [1, 11],
+        "scratchings": [
+            1,
+            11
+        ],
         "competitionId": 61562876
     },
     {
@@ -332,7 +347,9 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [12],
+        "scratchings": [
+            12
+        ],
         "competitionId": 61562876
     },
     {
@@ -348,7 +365,9 @@
             "second": 0,
             "third": 0
         },
-        "scratchings": [9],
+        "scratchings": [
+            9
+        ],
         "competitionId": 61562876
     },
     {
@@ -477,6 +496,473 @@
             "third": 0
         },
         "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 43537834,
+        "name": "Paramount+ Carbine Club Stakes",
+        "meetId": 79482450,
+        "number": 1,
+        "time": "12:20pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 36212582,
+        "name": "Lexus Hotham Stakes",
+        "meetId": 79482450,
+        "number": 2,
+        "time": "1:00pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 88643063,
+        "name": "ZED RUN Wakeful Stakes",
+        "meetId": 79482450,
+        "number": 3,
+        "time": "1:40pm",
+        "distance": "2000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 71308637,
+        "name": "TAB Not One Day Linlithgow Stakes",
+        "meetId": 79482450,
+        "number": 4,
+        "time": "2:20pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 11645733,
+        "name": "TAB Empire Rose Stakes",
+        "meetId": 79482450,
+        "number": 5,
+        "time": "3:00pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 65771968,
+        "name": "Penfolds Victoria Derby",
+        "meetId": 79482450,
+        "number": 6,
+        "time": "3:45pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 59346413,
+        "name": "Coolmore Stud Stakes",
+        "meetId": 79482450,
+        "number": 7,
+        "time": "4:30pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 93797831,
+        "name": "Kennedy Cantala",
+        "meetId": 79482450,
+        "number": 8,
+        "time": "5:10pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 45495002,
+        "name": "Furphy Sprint",
+        "meetId": 79482450,
+        "number": 9,
+        "time": "5:50pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            13
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 81418459,
+        "name": "Darley Maribyrnong Plate",
+        "meetId": 80032411,
+        "number": 1,
+        "time": "10:45am",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 42901609,
+        "name": "The Macca's Run",
+        "meetId": 80032411,
+        "number": 2,
+        "time": "11:20am",
+        "distance": "2800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            12
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 77580652,
+        "name": "Resimax Group Subzero Handicap",
+        "meetId": 80032411,
+        "number": 3,
+        "time": "12:00pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            10
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 52757575,
+        "name": "Furphy Plate",
+        "meetId": 80032411,
+        "number": 4,
+        "time": "12:40pm",
+        "distance": "1800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 38201216,
+        "name": "Grinders Coffee Roasters Trophy",
+        "meetId": 80032411,
+        "number": 5,
+        "time": "1:20pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 53175897,
+        "name": "The Schweppervescence Plate",
+        "meetId": 80032411,
+        "number": 6,
+        "time": "1:55pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            6
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 48883589,
+        "name": "Lexus Melbourne Cup",
+        "meetId": 80032411,
+        "number": 7,
+        "time": "3:00pm",
+        "distance": "3200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 26330739,
+        "name": "The Hong Kong Jockey Club Stakes",
+        "meetId": 80032411,
+        "number": 8,
+        "time": "4:00pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 90426441,
+        "name": "TAB Trophy",
+        "meetId": 80032411,
+        "number": 9,
+        "time": "4:40pm",
+        "distance": "1800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            15
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 16525684,
+        "name": "MSS Security Sprint",
+        "meetId": 80032411,
+        "number": 10,
+        "time": "5:15pm",
+        "distance": "1200m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            9
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 13829249,
+        "name": "TCL TV Stakes",
+        "meetId": 46420214,
+        "number": 1,
+        "time": "12:40pm",
+        "distance": "1700m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 48138490,
+        "name": "Inglis Bracelet",
+        "meetId": 46420214,
+        "number": 2,
+        "time": "1:15pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 55628816,
+        "name": "Darley Ottawa Stakes",
+        "meetId": 46420214,
+        "number": 3,
+        "time": "1:55pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            6,
+            8
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 95700892,
+        "name": "Twitter Trophy",
+        "meetId": 46420214,
+        "number": 4,
+        "time": "2:35pm",
+        "distance": "1800m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 94992106,
+        "name": "Off the Track Desirable Stakes",
+        "meetId": 46420214,
+        "number": 5,
+        "time": "3:15pm",
+        "distance": "1400m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 16149608,
+        "name": "G.H. Mumm Century Stakes",
+        "meetId": 46420214,
+        "number": 6,
+        "time": "3:50pm",
+        "distance": "1000m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            1
+        ],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 87782390,
+        "name": "Melbourne Cup Carnival Country Final",
+        "meetId": 46420214,
+        "number": 7,
+        "time": "4:30pm",
+        "distance": "1600m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 74833191,
+        "name": "Kennedy Oaks",
+        "meetId": 46420214,
+        "number": 8,
+        "time": "5:10pm",
+        "distance": "2500m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [],
+        "competitionId": 61562876
+    },
+    {
+        "_id": 25652205,
+        "name": "Network 10 Red Roses Stakes",
+        "meetId": 46420214,
+        "number": 9,
+        "time": "5:50pm",
+        "distance": "1100m",
+        "status": 1,
+        "placings": {
+            "first": 0,
+            "second": 0,
+            "third": 0
+        },
+        "scratchings": [
+            1
+        ],
         "competitionId": 61562876
     }
 ]
