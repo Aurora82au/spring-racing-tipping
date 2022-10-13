@@ -1,0 +1,162 @@
+[
+  {
+      "_id": 14299283,
+      "name": "Tile Importer Trophy",
+      "meetId": 41119597,
+      "number": 1,
+      "time": "12:15pm",
+      "distance": "1400m",
+      "status": 1,
+      "placings": {
+          "first": 0,
+          "second": 0,
+          "third": 0
+      },
+      "scratchings": [],
+      "competitionId": 67521477
+  },
+  {
+    "_id": 42829707,
+    "name": "Lamaro's Hotel Grand Handicap",
+    "meetId": 41119597,
+    "number": 2,
+    "time": "12:50pm",
+    "distance": "1700m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 26668550,
+    "name": "Neds Classic",
+    "meetId": 41119597,
+    "number": 3,
+    "time": "1:25pm",
+    "distance": "2000m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 17344056,
+    "name": "Schweppes Ethereal Stakes",
+    "meetId": 41119597,
+    "number": 4,
+    "time": "2:00pm",
+    "distance": "2000m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 10832202,
+    "name": "Stow Storage Gothic Stakes",
+    "meetId": 41119597,
+    "number": 5,
+    "time": "2:35pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 93341717,
+    "name": "Carlton Draught Alinghi Stakes",
+    "meetId": 41119597,
+    "number": 6,
+    "time": "3:10pm",
+    "distance": "1100m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 57632629,
+    "name": "The McCafé Sprint",
+    "meetId": 41119597,
+    "number": 7,
+    "time": "3:45pm",
+    "distance": "1000m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 65823421,
+    "name": "Lexus Tristarc Stakes",
+    "meetId": 41119597,
+    "number": 8,
+    "time": "4:30pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 12339917,
+    "name": "Carlton Draught Caulfield Cup",
+    "meetId": 41119597,
+    "number": 9,
+    "time": "5:15pm",
+    "distance": "2400m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 61959957,
+    "name": "Neds Moonga Stakes",
+    "meetId": 41119597,
+    "number": 10,
+    "time": "5:50pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+        "first": 0,
+        "second": 0,
+        "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  }
+]

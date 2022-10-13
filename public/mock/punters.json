@@ -478,5 +478,35 @@
             "display": "Wes"
         },
         "image": "WesSheppard.jpg"
+    },
+    {
+        "_id": 49,
+        "password": "jp7210",
+        "name": {
+            "first": "Jeff",
+            "last": "Paini",
+            "display": "Jeff"
+        },
+        "image": "JeffPaini.jpg"
+    },
+    {
+        "_id": 50,
+        "password": "tc6969",
+        "name": {
+            "first": "Tanya",
+            "last": "Connor",
+            "display": "Tanya"
+        },
+        "image": "TanyaConnor.jpg"
+    },
+    {
+        "_id": 51,
+        "password": "bc5020",
+        "name": {
+            "first": "Bec",
+            "last": "Connor",
+            "display": "Bec"
+        },
+        "image": "BecConnor.jpg"
     }
 ]
