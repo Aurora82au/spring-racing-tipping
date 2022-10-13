@@ -26,5 +26,19 @@
         "location": "Flemington",
         "date": "2021-10-30",
         "competitionId": 11717590
+    },
+    {
+        "_id": 51068261,
+        "name": "Melbourne Cup",
+        "location": "Flemington",
+        "date": "2021-11-02",
+        "competitionId": 11717590
+    },
+    {
+        "_id": 74114106,
+        "name": "Oaks Day",
+        "location": "Flemington",
+        "date": "2021-11-04",
+        "competitionId": 11717590
     }
 ]

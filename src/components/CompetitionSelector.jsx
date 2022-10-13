@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Button from '../components/Button';
 
 const CompetitionSelector = ({ competitions, selectedCompetition, handleCompetitionSelect }) => {
+    const selectInput = useRef(null);
     let thisYearsOptions = [];
     let previousYearsOptions = [];
     let selectedComp = selectedCompetition ? selectedCompetition._id : undefined;
     let defaultOption, selector, currentYear;
+
+    function handleIconClick() {
+        selectInput.current.click();
+    }
 
     if (competitions.length) {
         // If there are no competitions, display a message.
@@ -44,7 +49,7 @@ const CompetitionSelector = ({ competitions, selectedCompetition, handleCompetit
 
             selector = (
                 <div className="selector">
-                    <select value={selectedComp} onChange={handleCompetitionSelect}>
+                    <select value={selectedComp} onChange={handleCompetitionSelect} ref={selectInput}>
                         {defaultOption}
                         <optgroup label="This Years">
                             {thisYearsOptions}
@@ -53,7 +58,7 @@ const CompetitionSelector = ({ competitions, selectedCompetition, handleCompetit
                             {previousYearsOptions}
                         </optgroup>
                     </select>
-                    <span className="icon-select" />
+                    <span className="icon-select" onClick={handleIconClick}></span>
                 </div>
             );
         }

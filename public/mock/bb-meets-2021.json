@@ -12,5 +12,12 @@
         "location": "Flemington",
         "date": "2021-10-30",
         "competitionId": 27760163
+    },
+    {
+        "_id": 36458402,
+        "name": "Melbourne Cup",
+        "location": "Flemington",
+        "date": "2021-11-02",
+        "competitionId": 27760163
     }
 ]
