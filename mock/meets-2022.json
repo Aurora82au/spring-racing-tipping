@@ -3,7 +3,14 @@
       "_id": 41119597,
       "name": "Caulfield Cup",
       "location": "Caulfield",
-      "date": "2021-10-15",
+      "date": "2022-10-15",
       "competitionId": 67521477
+  },
+  {
+    "_id": 72478403,
+    "name": "Cox Plate",
+    "location": "Mooney Valley",
+    "date": "2022-10-22",
+    "competitionId": 67521477
   }
 ]
