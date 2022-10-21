@@ -15,7 +15,8 @@ export default class TipsRaceList extends Component {
                 { raceId: null, number: 7, databaseId: null, selections: [] },
                 { raceId: null, number: 8, databaseId: null, selections: [] },
                 { raceId: null, number: 9, databaseId: null, selections: [] },
-                { raceId: null, number: 10, databaseId: null, selections: [] }
+                { raceId: null, number: 10, databaseId: null, selections: [] },
+                { raceId: null, number: 11, databaseId: null, selections: [] }
             ]
         };
     }
@@ -51,6 +52,7 @@ export default class TipsRaceList extends Component {
             { raceId: null, number: 7, databaseId: null, selections: [] },
             { raceId: null, number: 8, databaseId: null, selections: [] },
             { raceId: null, number: 9, databaseId: null, selections: [] },
+            { raceId: null, number: 10, databaseId: null, selections: [] },
             { raceId: null, number: 10, databaseId: null, selections: [] }
         ];
         let count = 0;

@@ -5,5 +5,12 @@
       "location": "Caulfield",
       "date": "2022-10-15",
       "competitionId": 85076002
+  },
+  {
+    "_id": 86295789,
+    "name": "Cox Plate",
+    "location": "Mooney Valley",
+    "date": "2022-10-22",
+    "competitionId": 85076002
   }
 ]

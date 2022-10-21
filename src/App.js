@@ -42,7 +42,8 @@ export default class App extends Component {
                 race7: false,
                 race8: false,
                 race9: false,
-                race10: false
+                race10: false,
+                race11: false
             }
         };
 
