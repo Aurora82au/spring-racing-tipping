@@ -98,6 +98,15 @@ export default class Admin extends Component {
                         third: ''
                     },
                     scratchings: []
+                },
+                {
+                    number: 11,
+                    placings: {
+                        first: '',
+                        second: '',
+                        third: ''
+                    },
+                    scratchings: []
                 }
             ]
         };
