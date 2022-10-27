@@ -12,5 +12,12 @@
     "location": "Mooney Valley",
     "date": "2022-10-22",
     "competitionId": 67521477
+  },
+  {
+    "_id": 99231807,
+    "name": "Derby Day",
+    "location": "Flemington",
+    "date": "2022-10-29",
+    "competitionId": 67521477
   }
 ]

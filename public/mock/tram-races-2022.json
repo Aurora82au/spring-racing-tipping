@@ -8,9 +8,9 @@
       "distance": "1400m",
       "status": 1,
       "placings": {
-          "first": 0,
-          "second": 0,
-          "third": 0
+        "first": 0,
+        "second": 0,
+        "third": 0
       },
       "scratchings": [],
       "competitionId": 82811418
@@ -24,9 +24,9 @@
     "distance": "1700m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -40,9 +40,9 @@
     "distance": "2000m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -56,9 +56,9 @@
     "distance": "2000m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -72,9 +72,9 @@
     "distance": "1400m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -88,9 +88,9 @@
     "distance": "1100m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -104,9 +104,9 @@
     "distance": "1000m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -120,9 +120,9 @@
     "distance": "1400m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -136,9 +136,9 @@
     "distance": "2400m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -152,9 +152,9 @@
     "distance": "1400m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -168,9 +168,9 @@
     "distance": "1000m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -184,9 +184,9 @@
     "distance": "1000m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [1],
     "competitionId": 82811418
@@ -200,9 +200,9 @@
     "distance": "1200m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [11],
     "competitionId": 82811418
@@ -216,9 +216,9 @@
     "distance": "1200m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [1, 2, 4],
     "competitionId": 82811418
@@ -232,9 +232,9 @@
     "distance": "1600m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [11],
     "competitionId": 82811418
@@ -248,9 +248,9 @@
     "distance": "1600m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -264,9 +264,9 @@
     "distance": "2040m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -280,9 +280,9 @@
     "distance": "2500m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -296,9 +296,9 @@
     "distance": "2040m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -312,9 +312,9 @@
     "distance": "1600m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
@@ -328,9 +328,153 @@
     "distance": "1200m",
     "status": 1,
     "placings": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 56082983,
+    "name": "Network 10 Carbine Club Stakes",
+    "meetId": 57899434,
+    "number": 1,
+    "time": "12:20pm",
+    "distance": "1600m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 54033513,
+    "name": "Lexus Archer Stakes",
+    "meetId": 57899434,
+    "number": 2,
+    "time": "1:00pm",
+    "distance": "2500m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 97749390,
+    "name": "Paramount+ Rising Fast Stakes",
+    "meetId": 57899434,
+    "number": 3,
+    "time": "1:40pm",
+    "distance": "1200m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 83675028,
+    "name": "Racing and Sports Wakeful Stakes",
+    "meetId": 57899434,
+    "number": 4,
+    "time": "2:20pm",
+    "distance": "2000m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 17367955,
+    "name": "TAB Linlithgow Stakes",
+    "meetId": 57899434,
+    "number": 5,
+    "time": "3:00pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [10, 13],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 54757214,
+    "name": "Coolmore Stud Stakes",
+    "meetId": 57899434,
+    "number": 6,
+    "time": "3:40pm",
+    "distance": "1200m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 35339023,
+    "name": "Penfolds Victoria Derby",
+    "meetId": 57899434,
+    "number": 7,
+    "time": "4:20pm",
+    "distance": "2500m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [3],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 43502747,
+    "name": "TAB Empire Rose Stakes",
+    "meetId": 57899434,
+    "number": 8,
+    "time": "5:00pm",
+    "distance": "1600m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [10, 11],
+    "competitionId": 82811418
+  },
+  {
+    "_id": 87907547,
+    "name": "Furphy Sprint",
+    "meetId": 57899434,
+    "number": 9,
+    "time": "5:40pm",
+    "distance": "1100m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
     },
     "scratchings": [],
     "competitionId": 82811418
