@@ -478,5 +478,165 @@
     },
     "scratchings": [],
     "competitionId": 67521477
+  },
+  {
+    "_id": 43506937,
+    "name": "Darley Maribyrnong Plate",
+    "meetId": 34361972,
+    "number": 1,
+    "time": "10:45am",
+    "distance": "1000m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 90318965,
+    "name": "The Macca's Run",
+    "meetId": 34361972,
+    "number": 2,
+    "time": "11:20am",
+    "distance": "2800m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 93657995,
+    "name": "Resimax Group Subzero Handicap",
+    "meetId": 34361972,
+    "number": 3,
+    "time": "12:00pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 85960983,
+    "name": "TAB Trophy",
+    "meetId": 34361972,
+    "number": 4,
+    "time": "12:40pm",
+    "distance": "1800m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [2, 6],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 56624900,
+    "name": "The Schweppervescence Plate",
+    "meetId": 34361972,
+    "number": 5,
+    "time": "1:20pm",
+    "distance": "1000m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [10, 18],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 14847173,
+    "name": "Furphy Plate",
+    "meetId": 34361972,
+    "number": 6,
+    "time": "1:55pm",
+    "distance": "1800m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [2],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 82480296,
+    "name": "Lexus Melbourne Cup",
+    "meetId": 34361972,
+    "number": 7,
+    "time": "3:00pm",
+    "distance": "3200m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [21],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 68146014,
+    "name": "In Memory of Her Majesty Queen Elizabeth II",
+    "meetId": 34361972,
+    "number": 8,
+    "time": "3:50pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [3, 4],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 85042374,
+    "name": "The Hong Kong Jockey Club Stakes",
+    "meetId": 34361972,
+    "number": 9,
+    "time": "4:35pm",
+    "distance": "1400m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [],
+    "competitionId": 67521477
+  },
+  {
+    "_id": 58885763,
+    "name": "MSS Security Sprint",
+    "meetId": 34361972,
+    "number": 10,
+    "time": "5:15pm",
+    "distance": "1200m",
+    "status": 1,
+    "placings": {
+      "first": 0,
+      "second": 0,
+      "third": 0
+    },
+    "scratchings": [2, 7, 12],
+    "competitionId": 67521477
   }
 ]

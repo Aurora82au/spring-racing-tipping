@@ -19,5 +19,12 @@
     "location": "Flemington",
     "date": "2022-10-29",
     "competitionId": 67521477
+  },
+  {
+    "_id": 34361972,
+    "name": "Melbourne Cup",
+    "location": "Flemington",
+    "date": "2022-11-01",
+    "competitionId": 67521477
   }
 ]
