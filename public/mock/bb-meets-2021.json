@@ -19,5 +19,12 @@
         "location": "Flemington",
         "date": "2021-11-02",
         "competitionId": 27760163
+    },
+    {
+        "_id": 79864930,
+        "name": "Stakes Day",
+        "location": "Flemington",
+        "date": "2021-11-06",
+        "competitionId": 27760163
     }
 ]

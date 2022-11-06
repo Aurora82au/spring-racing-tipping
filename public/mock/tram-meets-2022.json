@@ -1,10 +1,10 @@
 [
   {
-      "_id": 68174639,
-      "name": "Caulfield Cup",
-      "location": "Caulfield",
-      "date": "2022-10-15",
-      "competitionId": 82811418
+    "_id": 68174639,
+    "name": "Caulfield Cup",
+    "location": "Caulfield",
+    "date": "2022-10-15",
+    "competitionId": 82811418
   },
   {
     "_id": 96585615,
@@ -25,6 +25,20 @@
     "name": "Melbourne Cup",
     "location": "Flemington",
     "date": "2022-11-01",
+    "competitionId": 82811418
+  },
+  {
+    "_id": 33099810,
+    "name": "Oaks Day",
+    "location": "Flemington",
+    "date": "2022-11-03",
+    "competitionId": 82811418
+  },
+  {
+    "_id": 62211962,
+    "name": "Champions Stakes Day",
+    "location": "Flemington",
+    "date": "2022-11-05",
     "competitionId": 82811418
   }
 ]
